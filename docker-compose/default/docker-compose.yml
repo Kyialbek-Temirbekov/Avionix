@@ -1,8 +1,8 @@
 services:
 
   configserver:
-    image: "adpsorcerer/cloudticket-configserver:r1"
-    container_name: configserver-r1
+    image: "adpsorcerer/avionix-configserver:r1"
+    container_name: configserver
     ports:
       - "8071:8071"
     healthcheck:
@@ -16,8 +16,8 @@ services:
       service: microservice-base-config
 
   eurekaserver:
-    image: "adpsorcerer/cloudticket-eurekaserver:r1"
-    container_name: eurekaserver-r1
+    image: "adpsorcerer/avionix-eurekaserver:r1"
+    container_name: eurekaserver
     ports:
       - "8070:8070"
     healthcheck:
@@ -32,9 +32,9 @@ services:
     environment:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
-  flight:
-    image: "adpsorcerer/cloudticket-flight:r1"
-    container_name: flight-r1
+  discovery:
+    image: "adpsorcerer/avionix-discovery:r1"
+    container_name: discovery
     ports:
       - "9000:9000"
     healthcheck:
@@ -44,14 +44,14 @@ services:
       retries: 10
       start_period: 10s
     environment:
-      SPRING_APPLICATION_NAME: "flight"
+      SPRING_APPLICATION_NAME: "discovery"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
 
   client:
-    image: "adpsorcerer/cloudticket-client:r1"
-    container_name: client-r1
+    image: "adpsorcerer/avionix-client:r1"
+    container_name: client
     ports:
       - "8080:8080"
     healthcheck:
@@ -61,7 +61,7 @@ services:
       retries: 10
       start_period: 10s
     depends_on:
-      flight:
+      discovery:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "client"
@@ -69,9 +69,9 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
 
-  booking:
-    image: "adpsorcerer/cloudticket-booking:r1"
-    container_name: booking-r1
+  flight:
+    image: "adpsorcerer/avionix-flight:r1"
+    container_name: flight
     ports:
       - "8090:8090"
     healthcheck:
@@ -84,14 +84,14 @@ services:
       client:
         condition: service_healthy
     environment:
-      SPRING_APPLICATION_NAME: "booking"
+      SPRING_APPLICATION_NAME: "flight"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
 
   gatewayserver:
-    image: "adpsorcerer/cloudticket-gatewayserver:r1"
-    container_name: gatewayserver-r1
+    image: "adpsorcerer/avionix-gatewayserver:r1"
+    container_name: gatewayserver
     ports:
       - "8072:8072"
     depends_on:
@@ -99,7 +99,7 @@ services:
         condition: service_healthy
       client:
         condition: service_healthy
-      booking:
+      discovery:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "gatewayserver"
@@ -108,5 +108,5 @@ services:
       service: microservice-eureka-config
 
 networks:
-  cloudticket:
+  avionix:
     driver: "bridge"

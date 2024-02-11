@@ -1,4 +1,4 @@
-package avia.cloud.client.config;
+package avia.cloud.client.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

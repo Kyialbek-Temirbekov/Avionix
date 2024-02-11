@@ -1,6 +1,5 @@
 package avia.cloud.client.controller;
 
-import avia.cloud.client.dto.ClientDetails;
 import avia.cloud.client.dto.CustomerDTO;
 import avia.cloud.client.dto.ResponseDTO;
 import avia.cloud.client.dto.VerificationInfo;
@@ -9,6 +8,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,5 +26,9 @@ public class CustomerController {
     @PostMapping()
     public ResponseEntity<CustomerDTO> createCustomer(@Valid @RequestBody CustomerDTO customerDTO) {
         return ResponseEntity.status(HttpStatus.CREATED).body(iCustomerService.createCustomer(customerDTO));
+    }
+    @GetMapping("/signIn")
+    public ResponseEntity<?> getUserDetailsAfterLogin(Authentication auth) {
+        return ResponseEntity.status(HttpStatus.OK).body(auth.getName());
     }
 }

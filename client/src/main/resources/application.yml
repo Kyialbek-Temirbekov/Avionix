@@ -41,6 +41,7 @@ logging:
     avia:
       cloud:
         client: DEBUG
-
-
+    org:
+      springframework:
+        security: DEBUG
 

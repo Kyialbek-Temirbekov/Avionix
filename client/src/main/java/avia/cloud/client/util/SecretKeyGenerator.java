@@ -20,9 +20,5 @@ public class SecretKeyGenerator {
         return hexString.toString();
     }
 
-    public static void main(String[] args) {
-        String secretKey = generateSecretKey();
-        System.out.println("Generated Secret Key: " + secretKey);
-    }
 }
 

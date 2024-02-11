@@ -1,7 +1,7 @@
 services:
   network-deploy-service:
     networks:
-      - cloudticket
+      - avionix
 
   microservice-base-config:
     extends:
