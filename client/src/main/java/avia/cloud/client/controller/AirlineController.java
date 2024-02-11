@@ -1,0 +1,31 @@
+package avia.cloud.client.controller;
+
+import avia.cloud.client.dto.*;
+import avia.cloud.client.service.IAirlineService;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/airline")
+@RequiredArgsConstructor
+@Validated
+public class AirlineController {
+    private final IAirlineService iAirlineService;
+    @PostMapping()
+    public ResponseEntity<ClientCredentials> createClient(@Valid @RequestBody String name) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(iAirlineService.createClient(name));
+    }
+    @PatchMapping()
+    public ResponseEntity<AirlineDTO> createAirline(@Valid @RequestBody AirlineDTO airlineDTO) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(iAirlineService.createAirline(airlineDTO));
+    }
+    @PatchMapping("/confirmEmail")
+    public ResponseEntity<ResponseDTO> confirmEmail(@Valid @RequestBody VerificationInfo verificationInfo) {
+        iAirlineService.confirmEmail(verificationInfo);
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200","Email verified successfully"));
+    }
+}

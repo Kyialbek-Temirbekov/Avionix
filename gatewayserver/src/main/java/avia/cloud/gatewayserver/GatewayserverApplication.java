@@ -31,7 +31,7 @@ public class GatewayserverApplication {
 				.route(p -> p
 						.path("/avionix/discovery/**")
 						.filters(f -> f.rewritePath("/avionix/discovery/(?<segment>.*)","/${segment}"))
-						.uri("lb://INFO")).build();
+						.uri("lb://DISCOVERY")).build();
 	}
 
 }
