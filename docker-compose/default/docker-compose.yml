@@ -1,0 +1,112 @@
+services:
+
+  configserver:
+    image: "adpsorcerer/cloudticket-configserver:r1"
+    container_name: configserver-r1
+    ports:
+      - "8071:8071"
+    healthcheck:
+      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    extends:
+      file: common-config.yml
+      service: microservice-base-config
+
+  eurekaserver:
+    image: "adpsorcerer/cloudticket-eurekaserver:r1"
+    container_name: eurekaserver-r1
+    ports:
+      - "8070:8070"
+    healthcheck:
+      test: "curl --fail --silent localhost:8070/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
+    environment:
+      SPRING_APPLICATION_NAME: "eurekaserver"
+
+  flight:
+    image: "adpsorcerer/cloudticket-flight:r1"
+    container_name: flight-r1
+    ports:
+      - "9000:9000"
+    healthcheck:
+      test: "curl --fail --silent localhost:9000/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    environment:
+      SPRING_APPLICATION_NAME: "flight"
+    extends:
+      file: common-config.yml
+      service: microservice-eureka-config
+
+  client:
+    image: "adpsorcerer/cloudticket-client:r1"
+    container_name: client-r1
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: "curl --fail --silent localhost:8080/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    depends_on:
+      flight:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "client"
+    extends:
+      file: common-config.yml
+      service: microservice-eureka-config
+
+  booking:
+    image: "adpsorcerer/cloudticket-booking:r1"
+    container_name: booking-r1
+    ports:
+      - "8090:8090"
+    healthcheck:
+      test: "curl --fail --silent localhost:8090/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    depends_on:
+      client:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "booking"
+    extends:
+      file: common-config.yml
+      service: microservice-eureka-config
+
+  gatewayserver:
+    image: "adpsorcerer/cloudticket-gatewayserver:r1"
+    container_name: gatewayserver-r1
+    ports:
+      - "8072:8072"
+    depends_on:
+      flight:
+        condition: service_healthy
+      client:
+        condition: service_healthy
+      booking:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "gatewayserver"
+    extends:
+      file: common-config.yml
+      service: microservice-eureka-config
+
+networks:
+  cloudticket:
+    driver: "bridge"

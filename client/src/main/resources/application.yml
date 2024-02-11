@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: "client"
+  profiles:
+    active: "default"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+  info:
+    env:
+      enabled: true
+
+endpoints:
+  shutdown:
+    enabled: true
+
+info:
+  app:
+    name: "client"
+    description: "Avionix Client Application"
+    version: "1.0"
+
+logging:
+  level:
+    avia:
+      cloud:
+        client: DEBUG
+
+
+
