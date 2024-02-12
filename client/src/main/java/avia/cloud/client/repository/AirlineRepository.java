@@ -10,5 +10,6 @@ import java.util.Optional;
 public interface AirlineRepository extends JpaRepository<Airline,String> {
 
     Optional<Airline> findByEmail(String username);
+    Optional<Airline> findByEmailAndEnabledTrue(String username);
     Optional<Airline> findByClientId(String clientId);
 }

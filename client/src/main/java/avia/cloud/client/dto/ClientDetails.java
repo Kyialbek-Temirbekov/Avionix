@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class ClientDetails {
-    private String username;
+    private String email;
     private List<Role> roles;
     private boolean enabled;
     private boolean nonLocked;

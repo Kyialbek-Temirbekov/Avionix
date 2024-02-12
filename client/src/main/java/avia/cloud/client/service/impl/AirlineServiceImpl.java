@@ -16,10 +16,15 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -41,7 +46,7 @@ public class AirlineServiceImpl implements IAirlineService {
     }
 
     @Override
-    public AirlineDTO createAirline(AirlineDTO airlineDTO) {
+    public void createAirline(AirlineDTO airlineDTO) {
         Airline airlineData = airlineRepository.findByClientId(airlineDTO.getClientId())
                 .orElseThrow(() -> new NotFoundException("Airline","clientId",airlineDTO.getClientId()));
         if (!airlineData.getClientSecret().equals(airlineDTO.getClientSecret())) {
@@ -57,7 +62,6 @@ public class AirlineServiceImpl implements IAirlineService {
         airline.setId(airlineData.getId());
         airlineRepository.save(airline);
         messagingService.sendMessage(airlineDTO.getEmail(),"Email Verification", code + " - this is verification code. Use it to sign up to Cloud Ticket Airlines.");
-        return convertToAirlineDTO(airline);
     }
 
     @Override
@@ -70,6 +74,11 @@ public class AirlineServiceImpl implements IAirlineService {
         airline.setEnabled(true);
         airline.setCode(null);
         airlineRepository.save(airline);
+        Authentication auth = new UsernamePasswordAuthenticationToken(airline.getEmail(), null,
+                AuthorityUtils.commaSeparatedStringToAuthorityList(
+                        airline.getRoles().stream().map(Enum::toString).collect(Collectors.joining(","))
+                ));
+        SecurityContextHolder.getContextHolderStrategy().createEmptyContext().setAuthentication(auth);
     }
 
     private ClientDetails convertToClientDetails(Airline airline) {

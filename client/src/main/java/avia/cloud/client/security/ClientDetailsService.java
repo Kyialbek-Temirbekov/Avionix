@@ -25,8 +25,8 @@ public class ClientDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         List<GrantedAuthority> authorities = new ArrayList<>();
-        AccountBase account = airlineRepository.findByEmail(email).map(airline -> (AccountBase)airline)
-                .or(() -> customerRepository.findByEmail(email).map(customer -> (AccountBase)customer))
+        AccountBase account = airlineRepository.findByEmailAndEnabledTrue(email).map(airline -> (AccountBase)airline)
+                .or(() -> customerRepository.findByEmailAndEnabledTrue(email).map(customer -> (AccountBase)customer))
                 .orElseThrow(() -> new UsernameNotFoundException("User details not found for user: " + email));
         account.getRoles().forEach(role -> authorities.add(new SimpleGrantedAuthority(role.toString())));
         return new User(account.getEmail(), account.getPassword(), account.isEnabled(), true, true, account.isNonLocked(), authorities);

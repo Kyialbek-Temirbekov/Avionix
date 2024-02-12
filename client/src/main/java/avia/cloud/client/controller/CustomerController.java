@@ -8,7 +8,6 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,16 +18,17 @@ import org.springframework.web.bind.annotation.*;
 public class CustomerController {
     private final ICustomerService iCustomerService;
     @PatchMapping("/confirmEmail")
-    public ResponseEntity<ResponseDTO> confirmEmail(@Valid @RequestBody VerificationInfo verificationInfo) {
+    public ResponseEntity<?> confirmEmail(@Valid @RequestBody VerificationInfo verificationInfo) {
         iCustomerService.confirmEmail(verificationInfo);
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200","Email verified successfully"));
+        return ResponseEntity.status(HttpStatus.CREATED).body(null);
     }
     @PostMapping()
-    public ResponseEntity<CustomerDTO> createCustomer(@Valid @RequestBody CustomerDTO customerDTO) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(iCustomerService.createCustomer(customerDTO));
+    public ResponseEntity<?> createCustomer(@Valid @RequestBody CustomerDTO customerDTO) {
+        iCustomerService.createCustomer(customerDTO);
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200","Verification code sent to email " + customerDTO.getEmail()));
     }
     @GetMapping("/signIn")
-    public ResponseEntity<?> getUserDetailsAfterLogin(Authentication auth) {
-        return ResponseEntity.status(HttpStatus.OK).body(auth.getName());
+    public ResponseEntity<?> getUserDetailsAfterLogin() {
+        return ResponseEntity.status(HttpStatus.OK).body(null);
     }
 }

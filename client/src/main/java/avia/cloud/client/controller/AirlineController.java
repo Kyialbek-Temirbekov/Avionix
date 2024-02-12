@@ -20,12 +20,13 @@ public class AirlineController {
         return ResponseEntity.status(HttpStatus.CREATED).body(iAirlineService.createClient(name));
     }
     @PatchMapping()
-    public ResponseEntity<AirlineDTO> createAirline(@Valid @RequestBody AirlineDTO airlineDTO) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(iAirlineService.createAirline(airlineDTO));
+    public ResponseEntity<?> createAirline(@Valid @RequestBody AirlineDTO airlineDTO) {
+        iAirlineService.createAirline(airlineDTO);
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200", "Verification code sent to email " + airlineDTO.getEmail()));
     }
     @PatchMapping("/confirmEmail")
-    public ResponseEntity<ResponseDTO> confirmEmail(@Valid @RequestBody VerificationInfo verificationInfo) {
+    public ResponseEntity<?> confirmEmail(@Valid @RequestBody VerificationInfo verificationInfo) {
         iAirlineService.confirmEmail(verificationInfo);
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200","Email verified successfully"));
+        return ResponseEntity.status(HttpStatus.CREATED).body(null);
     }
 }

@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
                 LocalDateTime.now()
         );
         System.out.println(exception.getClass());
-        return new ResponseEntity<>(errorResponseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(errorResponseDTO, HttpStatus.BAD_REQUEST);
     }
     @ExceptionHandler(BadRequestException.class)
     public ResponseEntity<ErrorResponseDTO> handleGlobalException(BadRequestException exception,
@@ -35,7 +35,7 @@ public class GlobalExceptionHandler {
                 LocalDateTime.now()
         );
         System.out.println(exception.getClass());
-        return new ResponseEntity<>(errorResponseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(errorResponseDTO, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(NotFoundException.class)
@@ -47,7 +47,7 @@ public class GlobalExceptionHandler {
                 exception.getMessage(),
                 LocalDateTime.now()
         );
-        return new ResponseEntity<>(errorResponseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(errorResponseDTO, HttpStatus.NOT_FOUND);
     }
     @ExceptionHandler(BadCredentialsException.class)
     public ResponseEntity<ErrorResponseDTO> handleGlobalException(BadCredentialsException exception,
@@ -58,7 +58,7 @@ public class GlobalExceptionHandler {
                 exception.getMessage(),
                 LocalDateTime.now()
         );
-        return new ResponseEntity<>(errorResponseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(errorResponseDTO, HttpStatus.UNAUTHORIZED);
     }
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponseDTO> handleGlobalException(Exception exception,

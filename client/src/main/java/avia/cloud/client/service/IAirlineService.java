@@ -5,5 +5,5 @@ import avia.cloud.client.dto.ClientCredentials;
 
 public interface IAirlineService extends IClientDetailsService{
     ClientCredentials createClient(String name);
-    AirlineDTO createAirline(AirlineDTO airlineDTO);
+    void createAirline(AirlineDTO airlineDTO);
 }
