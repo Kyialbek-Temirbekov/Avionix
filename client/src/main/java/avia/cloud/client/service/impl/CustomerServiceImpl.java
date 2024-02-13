@@ -1,5 +1,6 @@
 package avia.cloud.client.service.impl;
 
+import avia.cloud.client.dto.Authorization;
 import avia.cloud.client.dto.ClientDetails;
 import avia.cloud.client.dto.CustomerDTO;
 import avia.cloud.client.dto.VerificationInfo;
@@ -8,6 +9,7 @@ import avia.cloud.client.entity.Customer;
 import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.CustomerRepository;
+import avia.cloud.client.security.AuthProvider;
 import avia.cloud.client.service.ICustomerService;
 import avia.cloud.client.service.MessagingService;
 import avia.cloud.client.util.NumericTokenGenerator;
@@ -15,10 +17,6 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -33,6 +31,7 @@ public class CustomerServiceImpl implements ICustomerService {
     private final CustomerRepository customerRepository;
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
+    private final AuthProvider authProvider;
     @Override
     public void createCustomer(CustomerDTO customerDTO) {
         String code = NumericTokenGenerator.generateToken(6);
@@ -47,7 +46,7 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public void confirmEmail(VerificationInfo verificationInfo) {
+    public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Customer customer = customerRepository.findByEmail(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Customer","email", verificationInfo.getEmail()));
         if(!customer.getCode().equals(verificationInfo.getCode())) {
@@ -56,11 +55,12 @@ public class CustomerServiceImpl implements ICustomerService {
         customer.setEnabled(true);
         customer.setCode(null);
         customerRepository.save(customer);
-        Authentication auth = new UsernamePasswordAuthenticationToken(customer.getEmail(), null,
-                AuthorityUtils.commaSeparatedStringToAuthorityList(
-                        customer.getRoles().stream().map(Enum::toString).collect(Collectors.joining(","))
-                ));
-        SecurityContextHolder.getContextHolderStrategy().createEmptyContext().setAuthentication(auth);
+        return authProvider.createAuth(customer.getEmail(), customer.getRoles()
+                .stream().map(Enum::toString).collect(Collectors.joining(",")));
+    }
+    @Override
+    public void removeAll() {
+        customerRepository.deleteAll();
     }
 
     private Customer convertToCustomer(CustomerDTO customerDTO) {

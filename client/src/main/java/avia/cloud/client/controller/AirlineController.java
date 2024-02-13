@@ -25,8 +25,12 @@ public class AirlineController {
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200", "Verification code sent to email " + airlineDTO.getEmail()));
     }
     @PatchMapping("/confirmEmail")
-    public ResponseEntity<?> confirmEmail(@Valid @RequestBody VerificationInfo verificationInfo) {
-        iAirlineService.confirmEmail(verificationInfo);
-        return ResponseEntity.status(HttpStatus.CREATED).body(null);
+    public ResponseEntity<Authorization> confirmEmail(@Valid @RequestBody VerificationInfo verificationInfo) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(iAirlineService.confirmEmail(verificationInfo));
+    }
+    @DeleteMapping("/removeAll")
+    public ResponseEntity<?> removeAll() {
+        iAirlineService.removeAll();
+        return ResponseEntity.ok("Airline table data removed");
     }
 }

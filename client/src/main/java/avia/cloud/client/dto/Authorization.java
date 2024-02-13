@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Auth {
+public class Authorization {
     private String tokenType;
     private String accessToken;
     private int accessExpiresIn;

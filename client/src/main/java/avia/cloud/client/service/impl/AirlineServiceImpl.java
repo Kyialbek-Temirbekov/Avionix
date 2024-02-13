@@ -1,13 +1,11 @@
 package avia.cloud.client.service.impl;
 
-import avia.cloud.client.dto.AirlineDTO;
-import avia.cloud.client.dto.ClientCredentials;
-import avia.cloud.client.dto.ClientDetails;
-import avia.cloud.client.dto.VerificationInfo;
+import avia.cloud.client.dto.*;
 import avia.cloud.client.entity.Airline;
 import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AirlineRepository;
+import avia.cloud.client.security.AuthProvider;
 import avia.cloud.client.service.IAirlineService;
 import avia.cloud.client.service.MessagingService;
 import avia.cloud.client.util.ClientCredentialGenerator;
@@ -16,10 +14,6 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +29,7 @@ public class AirlineServiceImpl implements IAirlineService {
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
     private final ClientCredentialGenerator clientCredentialGenerator;
+    private final AuthProvider authProvider;
     @Override
     public ClientCredentials createClient(String name) {
         Airline airline = Airline.builder()
@@ -65,7 +60,7 @@ public class AirlineServiceImpl implements IAirlineService {
     }
 
     @Override
-    public void confirmEmail(VerificationInfo verificationInfo) {
+    public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Airline airline = airlineRepository.findByEmail(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Airline","email", verificationInfo.getEmail()));
         if(!airline.getCode().equals(verificationInfo.getCode())) {
@@ -74,11 +69,12 @@ public class AirlineServiceImpl implements IAirlineService {
         airline.setEnabled(true);
         airline.setCode(null);
         airlineRepository.save(airline);
-        Authentication auth = new UsernamePasswordAuthenticationToken(airline.getEmail(), null,
-                AuthorityUtils.commaSeparatedStringToAuthorityList(
-                        airline.getRoles().stream().map(Enum::toString).collect(Collectors.joining(","))
-                ));
-        SecurityContextHolder.getContextHolderStrategy().createEmptyContext().setAuthentication(auth);
+        return authProvider.createAuth(airline.getEmail(),airline.getRoles()
+                .stream().map(Enum::toString).collect(Collectors.joining(",")));
+    }
+    @Override
+    public void removeAll() {
+        airlineRepository.deleteAll();
     }
 
     private ClientDetails convertToClientDetails(Airline airline) {
