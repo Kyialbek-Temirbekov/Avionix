@@ -12,5 +12,7 @@ public class ErrorResponseDTO {
     private HttpStatus errorCode;
     private  String errorMessage;
     private String errorTime;
-
+    public RequestBuilder builder() {
+        return new RequestBuilder();
+    }
 }

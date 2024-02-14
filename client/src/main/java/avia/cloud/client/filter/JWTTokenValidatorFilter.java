@@ -19,11 +19,18 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import javax.crypto.SecretKey;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Optional;
 
 @Component
 public class JWTTokenValidatorFilter extends OncePerRequestFilter {
     @Value("${application.jwt.key}")
     private String jwtKey;
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+        Optional<String> auth = Optional.ofNullable(request.getHeader("Authorization"));
+        return auth.map(s -> s.startsWith("Bearer")).orElse(false);
+    }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
