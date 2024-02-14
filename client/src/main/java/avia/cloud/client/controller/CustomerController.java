@@ -9,6 +9,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +27,10 @@ public class CustomerController {
     public ResponseEntity<?> createCustomer(@Valid @RequestBody CustomerDTO customerDTO) {
         iCustomerService.createCustomer(customerDTO);
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200","Verification code sent to email " + customerDTO.getEmail()));
+    }
+    @GetMapping()
+    public ResponseEntity<CustomerDTO> fetchCustomer(Authentication authentication) {
+        return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.fetchCustomer(authentication.getName()));
     }
     @PostMapping("/signIn")
     public ResponseEntity<?> getUserDetailsAfterLogin() {

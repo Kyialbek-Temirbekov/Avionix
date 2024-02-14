@@ -49,15 +49,23 @@ public class CustomerServiceImpl implements ICustomerService {
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Customer customer = customerRepository.findByEmail(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Customer","email", verificationInfo.getEmail()));
-        if(!customer.getCode().equals(verificationInfo.getCode())) {
-            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
-        }
+//        if(!customer.getCode().equals(verificationInfo.getCode())) {
+//            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
+//        }
         customer.setEnabled(true);
         customer.setCode(null);
         customerRepository.save(customer);
         return authProvider.createAuth(customer.getEmail(), customer.getRoles()
                 .stream().map(Enum::toString).collect(Collectors.joining(",")));
     }
+
+    @Override
+    public CustomerDTO fetchCustomer(String email) {
+        Customer customer = customerRepository.findByEmail(email)
+                .orElseThrow(() -> new NotFoundException("Customer","email", email));
+        return convertToCustomerDTO(customer);
+    }
+
     @Override
     public void removeAll() {
         customerRepository.deleteAll();

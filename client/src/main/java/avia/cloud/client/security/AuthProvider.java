@@ -17,13 +17,13 @@ public class AuthProvider {
 
     public Authorization createAuth(String username, String authorities) {
         SecretKey key = Keys.hmacShaKeyFor(jwtKey.getBytes(StandardCharsets.UTF_8));
-        String accessToken = Jwts.builder().setIssuer("Avionix").setSubject("ACCESS TOKEN")
+        String accessToken = Jwts.builder().setIssuer("Avionix").setSubject("ACCESS_TOKEN")
                 .claim("username", username)
                 .claim("authorities", authorities)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(new Date().getTime() + 3600000))
                 .signWith(key).compact();
-        String refreshToken = Jwts.builder().setIssuer("Avionix").setSubject("REFRESH TOKEN")
+        String refreshToken = Jwts.builder().setIssuer("Avionix").setSubject("REFRESH_TOKEN")
                 .claim("username", username)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(new Date().getTime() + 604800000))

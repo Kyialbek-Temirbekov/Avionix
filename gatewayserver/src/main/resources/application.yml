@@ -34,3 +34,6 @@ logging:
       cloud:
         gatewayserver: DEBUG
 
+application:
+  jwt:
+    key: "jxgEQeXHuPq8VdbyYFNkANdudQ53YUn5"

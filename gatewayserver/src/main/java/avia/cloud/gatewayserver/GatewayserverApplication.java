@@ -34,5 +34,9 @@ public class GatewayserverApplication {
 						.filters(f -> f.rewritePath("/avionix/discovery/(?<segment>.*)","/${segment}"))
 						.uri("lb://DISCOVERY")).build();
 	}
+	@Bean
+	ObjectMapper objectMapper() {
+		return new ObjectMapper();
+	}
 
 }
