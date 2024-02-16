@@ -2,6 +2,7 @@ package avia.cloud.client.filter;
 
 import avia.cloud.client.dto.Authorization;
 import avia.cloud.client.security.AuthProvider;
+import avia.cloud.client.util.RoleConverter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -54,7 +55,7 @@ public class JWTTokenGeneratorFilter extends OncePerRequestFilter {
     private String populateAuthorities(Collection<? extends GrantedAuthority> authorities) {
         Set<String> authoritiesSet = new HashSet<>();
         for(GrantedAuthority authority : authorities)
-            authoritiesSet.add(authority.getAuthority());
+            authoritiesSet.add(RoleConverter.convert(authority.getAuthority()));
         return String.join(",", authoritiesSet);
     }
 }

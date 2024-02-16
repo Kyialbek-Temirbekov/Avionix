@@ -33,7 +33,6 @@ logging:
     avia:
       cloud:
         gatewayserver: DEBUG
-
-application:
-  jwt:
-    key: "jxgEQeXHuPq8VdbyYFNkANdudQ53YUn5"
+    org:
+      springframework:
+        security: DEBUG

@@ -9,6 +9,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -31,6 +32,11 @@ public class CustomerController {
     @GetMapping()
     public ResponseEntity<CustomerDTO> fetchCustomer(Authentication authentication) {
         return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.fetchCustomer(authentication.getName()));
+    }
+
+    @GetMapping("/test")
+    public ResponseEntity<?> test() {
+        return ResponseEntity.status(HttpStatus.OK).body("Success");
     }
     @PostMapping("/signIn")
     public ResponseEntity<?> getUserDetailsAfterLogin() {

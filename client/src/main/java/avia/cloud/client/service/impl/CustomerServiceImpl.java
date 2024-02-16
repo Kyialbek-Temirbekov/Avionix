@@ -13,9 +13,11 @@ import avia.cloud.client.security.AuthProvider;
 import avia.cloud.client.service.ICustomerService;
 import avia.cloud.client.service.MessagingService;
 import avia.cloud.client.util.NumericTokenGenerator;
+import avia.cloud.client.util.RoleConverter;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -32,6 +34,7 @@ public class CustomerServiceImpl implements ICustomerService {
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
     private final AuthProvider authProvider;
+
     @Override
     public void createCustomer(CustomerDTO customerDTO) {
         String code = NumericTokenGenerator.generateToken(6);
@@ -56,7 +59,7 @@ public class CustomerServiceImpl implements ICustomerService {
         customer.setCode(null);
         customerRepository.save(customer);
         return authProvider.createAuth(customer.getEmail(), customer.getRoles()
-                .stream().map(Enum::toString).collect(Collectors.joining(",")));
+                .stream().map(Enum::toString).map(RoleConverter::convert).collect(Collectors.joining(",")));
     }
 
     @Override
@@ -76,9 +79,6 @@ public class CustomerServiceImpl implements ICustomerService {
     }
     private ClientDetails convertToClientDetails(Customer customer) {
         return modelMapper.map(customer, ClientDetails.class);
-    }
-    private ClientDetails convertToClientDetails(AccountBase account) {
-        return modelMapper.map(account, ClientDetails.class);
     }
 
     private CustomerDTO convertToCustomerDTO(Customer customer) {

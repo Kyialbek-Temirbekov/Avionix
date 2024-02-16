@@ -10,6 +10,7 @@ import avia.cloud.client.service.IAirlineService;
 import avia.cloud.client.service.MessagingService;
 import avia.cloud.client.util.ClientCredentialGenerator;
 import avia.cloud.client.util.NumericTokenGenerator;
+import avia.cloud.client.util.RoleConverter;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -63,14 +64,14 @@ public class AirlineServiceImpl implements IAirlineService {
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Airline airline = airlineRepository.findByEmail(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Airline","email", verificationInfo.getEmail()));
-        if(!airline.getCode().equals(verificationInfo.getCode())) {
-            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
-        }
+//        if(!airline.getCode().equals(verificationInfo.getCode())) {
+//            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
+//        }
         airline.setEnabled(true);
         airline.setCode(null);
         airlineRepository.save(airline);
         return authProvider.createAuth(airline.getEmail(),airline.getRoles()
-                .stream().map(Enum::toString).collect(Collectors.joining(",")));
+                .stream().map(Enum::toString).map(RoleConverter::convert).collect(Collectors.joining(",")));
     }
     @Override
     public void removeAll() {
