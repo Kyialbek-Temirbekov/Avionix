@@ -8,6 +8,7 @@ import avia.cloud.client.entity.AccountBase;
 import avia.cloud.client.entity.Customer;
 import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.exception.NotFoundException;
+import avia.cloud.client.repository.AirlineRepository;
 import avia.cloud.client.repository.CustomerRepository;
 import avia.cloud.client.security.AuthProvider;
 import avia.cloud.client.service.ICustomerService;
@@ -19,6 +20,7 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +33,7 @@ import java.util.stream.Collectors;
 public class CustomerServiceImpl implements ICustomerService {
     private final MessagingService messagingService;
     private final CustomerRepository customerRepository;
+    private final AirlineRepository airlineRepository;
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
     private final AuthProvider authProvider;
@@ -46,6 +49,16 @@ public class CustomerServiceImpl implements ICustomerService {
         customer.setPassword(passwordEncoder.encode(customerDTO.getPassword()));
         customerRepository.save(customer);
         messagingService.sendMessage(customerDTO.getEmail(),"Email Verification", code + " - this is verification code. Use it to sign up to Cloud Ticket Airlines.");
+    }
+
+    @Override
+    public void createCustomerOAuth(String email) {
+        Customer customer = new Customer();
+        customer.setEmail(email);
+        customer.setRoles(Arrays.asList(Role.CLIENT));
+        customer.setEnabled(false);
+        customer.setNonLocked(true);
+        customerRepository.save(customer);
     }
 
     @Override
@@ -67,6 +80,13 @@ public class CustomerServiceImpl implements ICustomerService {
         Customer customer = customerRepository.findByEmail(email)
                 .orElseThrow(() -> new NotFoundException("Customer","email", email));
         return convertToCustomerDTO(customer);
+    }
+
+    @Override
+    public AccountBase fetchAccount(String email) {
+        return  airlineRepository.findByEmailAndEnabledTrue(email).map(airline -> (AccountBase)airline)
+                .or(() -> customerRepository.findByEmailAndEnabledTrue(email).map(customer -> (AccountBase)customer))
+                .orElseThrow(() -> new UsernameNotFoundException("User details not found for user: " + email));
     }
 
     @Override

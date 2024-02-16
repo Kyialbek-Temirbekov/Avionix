@@ -9,6 +9,18 @@ spring:
         locator:
           enabled: false
           lowerCaseServiceId: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 124905365987-tk4l4gg6e2lu5kc89bpa16qjudogv6pb.apps.googleusercontent.com
+            client-secret: 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
+            scope: openid,profile,email
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+          jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
 
 management:
   endpoints:

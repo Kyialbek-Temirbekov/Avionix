@@ -16,25 +16,22 @@ public class AuthProvider {
     private String jwtKey;
 
     public Authorization createAuth(String username, String authorities) {
-        SecretKey key = Keys.hmacShaKeyFor(jwtKey.getBytes(StandardCharsets.UTF_8));
-        String accessToken = Jwts.builder().setIssuer("Avionix").setSubject("ACCESS_TOKEN")
-                .claim("username", username)
-                .claim("authorities", authorities)
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(new Date().getTime() + 3600000))
-                .signWith(key).compact();
-        String refreshToken = Jwts.builder().setIssuer("Avionix").setSubject("REFRESH_TOKEN")
-                .claim("username", username)
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(new Date().getTime() + 604800000))
-                .signWith(key).compact();
         return new Authorization(
                 "JWT",
-                accessToken,
+                getToken(username,authorities,"ACCESS_TOKEN",3600000),
                 3600000,
-                refreshToken,
+                getToken(username,authorities,"REFRESH_TOKEN",604800000),
                 604800000,
                 authorities
         );
+    }
+    public String getToken(String username, String authorities, String subject, int expiryTime) {
+        SecretKey key = Keys.hmacShaKeyFor(jwtKey.getBytes(StandardCharsets.UTF_8));
+        return Jwts.builder().setIssuer("Avionix").setSubject(subject)
+                .claim("username", username)
+                .claim("authorities", authorities)
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(new Date().getTime() + expiryTime))
+                .signWith(key).compact();
     }
 }

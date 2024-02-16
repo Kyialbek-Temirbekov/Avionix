@@ -1,8 +1,7 @@
 package avia.cloud.client.security;
 
 import avia.cloud.client.entity.AccountBase;
-import avia.cloud.client.repository.AirlineRepository;
-import avia.cloud.client.repository.CustomerRepository;
+import avia.cloud.client.service.ICustomerService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
@@ -20,14 +19,11 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class ClientDetailsService implements UserDetailsService {
-    private final CustomerRepository customerRepository;
-    private final AirlineRepository airlineRepository;
+    private final ICustomerService iCustomerService;
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         List<GrantedAuthority> authorities = new ArrayList<>();
-        AccountBase account = airlineRepository.findByEmailAndEnabledTrue(email).map(airline -> (AccountBase)airline)
-                .or(() -> customerRepository.findByEmailAndEnabledTrue(email).map(customer -> (AccountBase)customer))
-                .orElseThrow(() -> new UsernameNotFoundException("User details not found for user: " + email));
+        AccountBase account = iCustomerService.fetchAccount(email);
         account.getRoles().forEach(role -> authorities.add(new SimpleGrantedAuthority(role.toString())));
         return new User(account.getEmail(), account.getPassword(), account.isEnabled(), true, true, account.isNonLocked(), authorities);
     }

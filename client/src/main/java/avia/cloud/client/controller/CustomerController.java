@@ -9,8 +9,9 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,13 +39,27 @@ public class CustomerController {
     public ResponseEntity<?> test() {
         return ResponseEntity.status(HttpStatus.OK).body("Success");
     }
-    @PostMapping("/signIn")
+
+    @PostMapping("/google")
     public ResponseEntity<?> getUserDetailsAfterLogin() {
         return ResponseEntity.status(HttpStatus.OK).body(null);
     }
+
+    @PostMapping("/google")
+    public ResponseEntity<?> getUserDetailsOrEnroll(@AuthenticationPrincipal Jwt jwt) {
+        String email = jwt.getClaim("email");
+        iCustomerService.createCustomerOAuth(email);
+        return ResponseEntity.ok("Customer created successfully. Complete registration to get access");
+    }
+
     @DeleteMapping("/removeAll")
     public ResponseEntity<?> removeAll() {
         iCustomerService.removeAll();
         return ResponseEntity.ok("Customer table data removed");
+    }
+
+    @GetMapping("/refresh")
+    public ResponseEntity<ResponseDTO> refresh() {
+        return ResponseEntity.ok(new ResponseDTO("200","Access token received successfully"));
     }
 }
