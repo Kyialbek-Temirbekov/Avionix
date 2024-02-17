@@ -28,7 +28,7 @@ public class SecurityConfig {
                 .authorizeExchange(exchange -> exchange
                         .anyExchange().permitAll())
                 .oauth2ResourceServer(oAuth2ResourceServerSpec -> oAuth2ResourceServerSpec
-                        .jwt(jwtSpec -> jwtSpec.jwkSetUri(issuerUri)));
+                        .jwt(jwtSpec -> jwtSpec.jwtDecoder(jwtDecoder())));
         return serverHttpSecurity.build();
     }
 }
