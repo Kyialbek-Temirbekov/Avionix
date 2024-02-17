@@ -10,7 +10,7 @@ import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AirlineRepository;
 import avia.cloud.client.repository.CustomerRepository;
-import avia.cloud.client.security.AuthProvider;
+import avia.cloud.client.security.TokenGenerator;
 import avia.cloud.client.service.ICustomerService;
 import avia.cloud.client.service.MessagingService;
 import avia.cloud.client.util.NumericTokenGenerator;
@@ -18,8 +18,6 @@ import avia.cloud.client.util.RoleConverter;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -36,7 +34,7 @@ public class CustomerServiceImpl implements ICustomerService {
     private final AirlineRepository airlineRepository;
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
-    private final AuthProvider authProvider;
+    private final TokenGenerator tokenGenerator;
 
     @Override
     public void createCustomer(CustomerDTO customerDTO) {
@@ -52,11 +50,10 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public void createCustomerOAuth(String email) {
-        Customer customer = new Customer();
-        customer.setEmail(email);
+    public void createCustomerOAuth(CustomerDTO customerDTO) {
+        Customer customer = convertToCustomer(customerDTO);
         customer.setRoles(Arrays.asList(Role.CLIENT));
-        customer.setEnabled(false);
+        customer.setEnabled(true);
         customer.setNonLocked(true);
         customerRepository.save(customer);
     }
@@ -71,7 +68,7 @@ public class CustomerServiceImpl implements ICustomerService {
         customer.setEnabled(true);
         customer.setCode(null);
         customerRepository.save(customer);
-        return authProvider.createAuth(customer.getEmail(), customer.getRoles()
+        return tokenGenerator.generate(customer.getEmail(), customer.getRoles()
                 .stream().map(Enum::toString).map(RoleConverter::convert).collect(Collectors.joining(",")));
     }
 

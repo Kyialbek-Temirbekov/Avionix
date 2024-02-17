@@ -1,7 +1,7 @@
 package avia.cloud.client.security;
 
-import avia.cloud.client.filter.JWTTokenValidatorFilter;
-import avia.cloud.client.filter.JWTTokenGeneratorFilter;
+import avia.cloud.client.filter.JWTTokenReceiverFilter;
+import avia.cloud.client.filter.JWTTokenSupplierFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,8 +21,8 @@ import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 @Configuration
 @RequiredArgsConstructor
 public class SecurityConfig {
-    private final JWTTokenGeneratorFilter jwtTokenGeneratorFilter;
-    private final JWTTokenValidatorFilter jwtTokenValidatorFilter;
+    private final JWTTokenSupplierFilter jwtTokenSupplierFilter;
+    private final JWTTokenReceiverFilter jwtTokenReceiverFilter;
     @Bean
     MvcRequestMatcher.Builder mvc(HandlerMappingIntrospector introspector) {
         return new MvcRequestMatcher.Builder(introspector);
@@ -35,8 +35,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/customer/test")).hasRole("OWNER")
                         .anyRequest().permitAll())
-                .addFilterBefore(jwtTokenValidatorFilter, BasicAuthenticationFilter.class)
-                .addFilterAfter(jwtTokenGeneratorFilter, BasicAuthenticationFilter.class)
+                .addFilterBefore(jwtTokenReceiverFilter, BasicAuthenticationFilter.class)
+                .addFilterAfter(jwtTokenSupplierFilter, BasicAuthenticationFilter.class)
                 .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
                 .httpBasic(Customizer.withDefaults())
                 .formLogin(Customizer.withDefaults());

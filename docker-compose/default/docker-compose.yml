@@ -35,8 +35,6 @@ services:
   discovery:
     image: "adpsorcerer/avionix-discovery:r1"
     container_name: discovery
-    ports:
-      - "9000:9000"
     healthcheck:
       test: "curl --fail --silent localhost:9000/actuator/health/readiness | grep UP || exit 1"
       interval: 10s
@@ -52,8 +50,6 @@ services:
   client:
     image: "adpsorcerer/avionix-client:r1"
     container_name: client
-    ports:
-      - "8080:8080"
     healthcheck:
       test: "curl --fail --silent localhost:8080/actuator/health/readiness | grep UP || exit 1"
       interval: 10s
@@ -72,8 +68,6 @@ services:
   flight:
     image: "adpsorcerer/avionix-flight:r1"
     container_name: flight
-    ports:
-      - "8090:8090"
     healthcheck:
       test: "curl --fail --silent localhost:8090/actuator/health/readiness | grep UP || exit 1"
       interval: 10s

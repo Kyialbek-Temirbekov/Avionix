@@ -14,5 +14,6 @@ public class AccountBaseDTO {
     private String phone;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
-    private boolean agreedToPrivacyPolicy;
+    private String confirmPassword;
+    private boolean agreedToTermsOfUse;
 }

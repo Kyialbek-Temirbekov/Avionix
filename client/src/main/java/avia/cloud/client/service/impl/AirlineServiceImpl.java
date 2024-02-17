@@ -5,7 +5,7 @@ import avia.cloud.client.entity.Airline;
 import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AirlineRepository;
-import avia.cloud.client.security.AuthProvider;
+import avia.cloud.client.security.TokenGenerator;
 import avia.cloud.client.service.IAirlineService;
 import avia.cloud.client.service.MessagingService;
 import avia.cloud.client.util.ClientCredentialGenerator;
@@ -30,7 +30,7 @@ public class AirlineServiceImpl implements IAirlineService {
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
     private final ClientCredentialGenerator clientCredentialGenerator;
-    private final AuthProvider authProvider;
+    private final TokenGenerator tokenGenerator;
     @Override
     public ClientCredentials createClient(String name) {
         Airline airline = Airline.builder()
@@ -70,7 +70,7 @@ public class AirlineServiceImpl implements IAirlineService {
         airline.setEnabled(true);
         airline.setCode(null);
         airlineRepository.save(airline);
-        return authProvider.createAuth(airline.getEmail(),airline.getRoles()
+        return tokenGenerator.generate(airline.getEmail(),airline.getRoles()
                 .stream().map(Enum::toString).map(RoleConverter::convert).collect(Collectors.joining(",")));
     }
     @Override

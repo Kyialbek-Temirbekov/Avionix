@@ -40,16 +40,16 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.OK).body("Success");
     }
 
-    @PostMapping("/google")
-    public ResponseEntity<?> getUserDetailsAfterLogin() {
+    @PostMapping("/signIn")
+    public ResponseEntity<?> singIn() {
         return ResponseEntity.status(HttpStatus.OK).body(null);
     }
 
     @PostMapping("/google")
-    public ResponseEntity<?> getUserDetailsOrEnroll(@AuthenticationPrincipal Jwt jwt) {
-        String email = jwt.getClaim("email");
-        iCustomerService.createCustomerOAuth(email);
-        return ResponseEntity.ok("Customer created successfully. Complete registration to get access");
+    public ResponseEntity<?> createGoogleCustomer(Authentication authentication, @Valid @RequestBody CustomerDTO customerDTO) {
+        customerDTO.setEmail(authentication.getName());
+        iCustomerService.createCustomerOAuth(customerDTO);
+        return ResponseEntity.ok("Customer created successfully");
     }
 
     @DeleteMapping("/removeAll")

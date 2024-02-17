@@ -11,11 +11,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @Component
-public class AuthProvider {
+public class TokenGenerator {
     @Value("${application.jwt.key}")
     private String jwtKey;
 
-    public Authorization createAuth(String username, String authorities) {
+    public Authorization generate(String username, String authorities) {
         return new Authorization(
                 "JWT",
                 getToken(username,authorities,"ACCESS_TOKEN",3600000),

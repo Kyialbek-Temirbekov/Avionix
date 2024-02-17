@@ -8,5 +8,5 @@ public interface ICustomerService extends IClientDetailsService{
     void createCustomer(CustomerDTO customerDTO);
     CustomerDTO fetchCustomer(String email);
     AccountBase fetchAccount(String email);
-    void createCustomerOAuth(String email);
+    void createCustomerOAuth(CustomerDTO customerDTO);
 }

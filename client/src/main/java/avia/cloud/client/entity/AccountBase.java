@@ -28,6 +28,6 @@ public class AccountBase extends BaseEntity {
     private List<Role> roles;
     private boolean enabled;
     private boolean nonLocked;
-    private boolean agreedToPrivacyPolicy;
+    private boolean agreedToTermsOfUse;
     private String code;
 }
