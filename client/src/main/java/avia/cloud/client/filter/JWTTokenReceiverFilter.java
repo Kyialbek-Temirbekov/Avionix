@@ -28,13 +28,13 @@ public class JWTTokenReceiverFilter extends OncePerRequestFilter {
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
         Optional<String> auth = Optional.ofNullable(request.getHeader("Authorization"));
-        return auth.map(s -> s.startsWith("Bearer")).orElse(false);
+        return auth.map(s -> s.startsWith("Bearer") || s.startsWith("Basic")).orElse(false);
     }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String jwt = request.getHeader("Authorization");
-        if(null != jwt && !jwt.startsWith("Basic")) {
+        if(null != jwt) {
             try {
                 SecretKey key = Keys.hmacShaKeyFor(jwtKey.getBytes(StandardCharsets.UTF_8));
                 Claims claims = Jwts.parserBuilder()

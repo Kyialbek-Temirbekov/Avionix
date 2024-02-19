@@ -1,34 +1,24 @@
 spring:
   application:
-    name: "client"
+    name: "message"
   profiles:
     active: "default"
   config:
     import: "optional:configserver:http://localhost:8071/"
   cloud:
+    function:
+      definition: sendSimpleMailMessage
     stream:
       bindings:
-        sendSimpleMessage-out-0:
+        sendSimpleMailMessage-in-0:
           destination: send-simple-message
+          group: ${spring.application.name}
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
     connection-timeout: 10s
-
-  security:
-    oauth2:
-      client:
-        registration:
-          google:
-            client-id: 124905365987-tk4l4gg6e2lu5kc89bpa16qjudogv6pb.apps.googleusercontent.com
-            client-secret: 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
-            scope: openid,profile,email
-      resourceserver:
-        jwt:
-          issuer-uri: https://accounts.google.com
-          jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
 
 management:
   endpoints:
@@ -56,15 +46,8 @@ endpoints:
 
 info:
   app:
-    name: "client"
-    description: "Avionix Client Application"
+    name: "message"
+    description: "Avionix Message Application"
     version: "1.0"
 
-logging:
-  level:
-    avia:
-      cloud:
-        client: DEBUG
-    org:
-      springframework:
-        security: DEBUG
+

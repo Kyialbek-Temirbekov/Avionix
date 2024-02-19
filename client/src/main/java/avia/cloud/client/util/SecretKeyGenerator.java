@@ -3,7 +3,7 @@ package avia.cloud.client.util;
 import java.security.SecureRandom;
 
 public class SecretKeyGenerator {
-    private static final int KEY_LENGTH_BYTES = 32; // 256 bits
+    private static final int KEY_LENGTH_BYTES = 32;
 
     public static String generateSecretKey() {
         SecureRandom secureRandom = new SecureRandom();

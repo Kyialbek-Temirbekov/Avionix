@@ -7,8 +7,8 @@ import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AirlineRepository;
 import avia.cloud.client.security.TokenGenerator;
 import avia.cloud.client.service.IAirlineService;
-import avia.cloud.client.service.MessagingService;
 import avia.cloud.client.util.ClientCredentialGenerator;
+import avia.cloud.client.util.Messenger;
 import avia.cloud.client.util.NumericTokenGenerator;
 import avia.cloud.client.util.RoleConverter;
 import jakarta.transaction.Transactional;
@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 @Transactional
 @RequiredArgsConstructor
 public class AirlineServiceImpl implements IAirlineService {
-    private final MessagingService messagingService;
+    private final Messenger messenger;
     private final AirlineRepository airlineRepository;
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
@@ -57,7 +57,11 @@ public class AirlineServiceImpl implements IAirlineService {
         airline.setPassword(passwordEncoder.encode(airlineDTO.getPassword()));
         airline.setId(airlineData.getId());
         airlineRepository.save(airline);
-        messagingService.sendMessage(airlineDTO.getEmail(),"Email Verification", code + " - this is verification code. Use it to sign up to Cloud Ticket Airlines.");
+        messenger.sendSimpleMessage(new SimpleMailMessageDTO(
+                        airlineDTO.getEmail(),
+                        "Email Verification",
+                        code + " - This is verification code. Use it to sign up to Avionix Airline."
+                ));
     }
 
     @Override

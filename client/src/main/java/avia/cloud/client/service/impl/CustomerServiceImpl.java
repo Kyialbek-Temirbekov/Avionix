@@ -1,9 +1,6 @@
 package avia.cloud.client.service.impl;
 
-import avia.cloud.client.dto.Authorization;
-import avia.cloud.client.dto.ClientDetails;
-import avia.cloud.client.dto.CustomerDTO;
-import avia.cloud.client.dto.VerificationInfo;
+import avia.cloud.client.dto.*;
 import avia.cloud.client.entity.AccountBase;
 import avia.cloud.client.entity.Customer;
 import avia.cloud.client.entity.enums.Role;
@@ -12,7 +9,7 @@ import avia.cloud.client.repository.AirlineRepository;
 import avia.cloud.client.repository.CustomerRepository;
 import avia.cloud.client.security.TokenGenerator;
 import avia.cloud.client.service.ICustomerService;
-import avia.cloud.client.service.MessagingService;
+import avia.cloud.client.util.Messenger;
 import avia.cloud.client.util.NumericTokenGenerator;
 import avia.cloud.client.util.RoleConverter;
 import jakarta.transaction.Transactional;
@@ -29,7 +26,7 @@ import java.util.stream.Collectors;
 @Transactional
 @RequiredArgsConstructor
 public class CustomerServiceImpl implements ICustomerService {
-    private final MessagingService messagingService;
+    private final Messenger messenger;
     private final CustomerRepository customerRepository;
     private final AirlineRepository airlineRepository;
     private final ModelMapper modelMapper;
@@ -46,7 +43,11 @@ public class CustomerServiceImpl implements ICustomerService {
         customer.setCode(code);
         customer.setPassword(passwordEncoder.encode(customerDTO.getPassword()));
         customerRepository.save(customer);
-        messagingService.sendMessage(customerDTO.getEmail(),"Email Verification", code + " - this is verification code. Use it to sign up to Cloud Ticket Airlines.");
+        messenger.sendSimpleMessage(new SimpleMailMessageDTO(
+                        customerDTO.getEmail(),
+                        "Email Verification",
+                        code + " - This is verification code. Use it to sign up to Avionix Airline."
+                ));
     }
 
     @Override
