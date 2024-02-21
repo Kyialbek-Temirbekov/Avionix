@@ -10,15 +10,15 @@ CREATE TABLE IF NOT EXISTS AIRLINE (
     IATA VARCHAR(3),
     name VARCHAR(50),
     logo BYTEA,
-    address VARCHAR(59),
+    address VARCHAR(50),
     official_website_url VARCHAR(50),
     description TEXT,
     client_id VARCHAR(50) UNIQUE,
     client_secret VARCHAR(100),
     priority INTEGER,
-    created_at DATE,
+    created_at TIMESTAMP,
     created_by VARCHAR(50),
-    updated_at DATE DEFAULT NULL,
+    updated_at TIMESTAMP DEFAULT NULL,
     updated_by VARCHAR(50) DEFAULT NULL
 );
 
@@ -39,9 +39,9 @@ CREATE TABLE IF NOT EXISTS CUSTOMER (
     passport_id VARCHAR(25) UNIQUE,
     passport_expiry_date DATE,
     image BYTEA,
-    created_at DATE,
+    created_at TIMESTAMP,
     created_by VARCHAR(50),
-    updated_at DATE DEFAULT NULL,
+    updated_at TIMESTAMP DEFAULT NULL,
     updated_by VARCHAR(50) DEFAULT NULL
 );
 

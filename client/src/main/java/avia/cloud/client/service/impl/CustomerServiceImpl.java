@@ -15,6 +15,7 @@ import avia.cloud.client.util.RoleConverter;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -63,9 +64,9 @@ public class CustomerServiceImpl implements ICustomerService {
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Customer customer = customerRepository.findByEmail(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Customer","email", verificationInfo.getEmail()));
-//        if(!customer.getCode().equals(verificationInfo.getCode())) {
-//            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
-//        }
+        if(!customer.getCode().equals(verificationInfo.getCode())) {
+            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
+        }
         customer.setEnabled(true);
         customer.setCode(null);
         customerRepository.save(customer);
@@ -82,8 +83,8 @@ public class CustomerServiceImpl implements ICustomerService {
 
     @Override
     public AccountBase fetchAccount(String email) {
-        return  airlineRepository.findByEmailAndEnabledTrue(email).map(airline -> (AccountBase)airline)
-                .or(() -> customerRepository.findByEmailAndEnabledTrue(email).map(customer -> (AccountBase)customer))
+        return  airlineRepository.findByEmail(email).map(airline -> (AccountBase)airline)
+                .or(() -> customerRepository.findByEmail(email).map(customer -> (AccountBase)customer))
                 .orElseThrow(() -> new UsernameNotFoundException("User details not found for user: " + email));
     }
 

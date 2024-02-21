@@ -1,0 +1,104 @@
+[
+  {
+    "createdAt": "",
+    "createdBy": "",
+    "updatedAt": "",
+    "updatedBy": "",
+    "id": "478c2e4c-dfd5-4a0e-bb2d-b26b18abdbef",
+    "logo": null,
+    "contents": [
+      {
+        "id": "8d99836f-6a93-45a8-a6e5-0daceaf18b65",
+        "title": "",
+        "description": "",
+        "lan": "KG"
+      },
+      {
+        "id": "5f0df3d7-cb89-4767-b8a1-7a28af57b9bc",
+        "title": "",
+        "description": "",
+        "lan": "TR"
+      },
+      {
+        "id": "d1a3a93c-7cbb-4b24-930b-08de893dc3ab",
+        "title": "",
+        "description": "",
+        "lan": "EN"
+      },
+      {
+        "id": "b87b1a65-94eb-4420-af23-19a8db9d4f92",
+        "title": "",
+        "description": "",
+        "lan": "RU"
+      }
+    ]
+  },
+  {
+    "createdAt": "",
+    "createdBy": "",
+    "updatedAt": "",
+    "updatedBy": "",
+    "id": "2dc9a12f-8839-4d1d-b7eb-9031546e96b7",
+    "logo": null,
+    "contents": [
+      {
+        "id": "42de6df4-2a4a-41c8-9434-b63b6c863335",
+        "title": "",
+        "description": "",
+        "lan": "KG"
+      },
+      {
+        "id": "5c5dc890-1a44-4a7a-b733-4e97b9f70b7d",
+        "title": "",
+        "description": "",
+        "lan": "TR"
+      },
+      {
+        "id": "a74a3583-5955-49b6-a7d7-240026c84dab",
+        "title": "",
+        "description": "",
+        "lan": "EN"
+      },
+      {
+        "id": "a2b2ed70-6fc1-4dcf-9873-53f4db0d465a",
+        "title": "",
+        "description": "",
+        "lan": "RU"
+      }
+    ]
+  },
+  {
+    "createdAt": "",
+    "createdBy": "",
+    "updatedAt": "",
+    "updatedBy": "",
+    "id": "44c81d0b-c589-4a28-bf97-5b8cb4da8e56",
+    "logo": null,
+    "contents": [
+      {
+        "id": "b3f35b4d-45ff-4e9e-bc33-19d1ec701be1",
+        "title": "",
+        "description": "",
+        "lan": "KG"
+      },
+      {
+        "id": "8795b1b8-b146-4a58-ba5f-b453c96cf9cc",
+        "title": "",
+        "description": "",
+        "lan": "TR"
+      },
+      {
+        "id": "eb4c1cb4-81d7-4975-8f47-d4e53107fc8b",
+        "title": "",
+        "description": "",
+        "lan": "EN"
+      },
+      {
+        "id": "b2db5883-aa45-4a49-95b2-9056070cc292",
+        "title": "",
+        "description": "",
+        "lan": "RU"
+      }
+    ]
+  }
+]

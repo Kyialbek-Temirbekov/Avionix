@@ -89,7 +89,7 @@ public class JWTTokenValidatorFilter implements GlobalFilter {
                 .pathMatchers(HttpMethod.POST, "/api/customer","/api/customer/signIn","/api/airline")
                 .pathMatchers(HttpMethod.PATCH,"/api/customer/confirmEmail","/api/airline","/api/airline/confirmEmail")
                 .pathMatchers(HttpMethod.DELETE,"/api/customer/removeAll","/api/airline/removeAll")
-                .pathMatchers(HttpMethod.GET,"/api/customer/refresh")
+                .pathMatchers(HttpMethod.GET,"/api/customer/refresh","/api/whyUs")
                 .build();
         boolean isSecured = requests.stream().noneMatch(r -> exchange.getRequest().getMethod().equals(r.getHttpMethod()) &&
                 exchange.getRequest().getPath().toString().startsWith(r.getPath()));

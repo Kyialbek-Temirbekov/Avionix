@@ -4,10 +4,12 @@ import avia.cloud.client.entity.enums.Gender;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.OneToMany;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @EqualsAndHashCode(callSuper = true)
@@ -27,4 +29,6 @@ public class Customer extends AccountBase {
     private String passportId;
     private LocalDate passportExpiryDate;
     private byte[] image;
+    @OneToMany(mappedBy = "customer")
+    private List<Comment> comments;
 }

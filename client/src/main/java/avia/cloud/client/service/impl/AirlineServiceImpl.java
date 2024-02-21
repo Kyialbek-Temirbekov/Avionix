@@ -68,9 +68,9 @@ public class AirlineServiceImpl implements IAirlineService {
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Airline airline = airlineRepository.findByEmail(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Airline","email", verificationInfo.getEmail()));
-//        if(!airline.getCode().equals(verificationInfo.getCode())) {
-//            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
-//        }
+        if(!airline.getCode().equals(verificationInfo.getCode())) {
+            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
+        }
         airline.setEnabled(true);
         airline.setCode(null);
         airlineRepository.save(airline);
