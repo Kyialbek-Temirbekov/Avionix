@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class SkylineBenefitsDTO {
-    private byte[] logo;
+    private String id;
     @JsonUnwrapped
     private SkylineBenefitsContentDTO content;
 }

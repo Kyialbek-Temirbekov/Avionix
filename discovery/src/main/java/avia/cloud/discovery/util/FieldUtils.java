@@ -5,13 +5,13 @@ import avia.cloud.discovery.entity.enums.Lan;
 import java.lang.reflect.Field;
 import java.util.List;
 
-public class LanguageUtils {
-    public static<T> T getRequired(List<T> items, String requiredLanguage) throws NoSuchFieldException, IllegalAccessException {
+public class FieldUtils {
+    public static<T> T getField(List<T> items, String declaredField, String value) throws NoSuchFieldException, IllegalAccessException {
         for (T item : items) {
-            Field field = item.getClass().getDeclaredField("lan");
+            Field field = item.getClass().getDeclaredField(declaredField);
             field.setAccessible(true);
             Lan lan = (Lan) field.get(item);
-            if (lan.toString().equals(requiredLanguage)) {
+            if (lan.toString().equals(value)) {
                 return item;
             }
         }

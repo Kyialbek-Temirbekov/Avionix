@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static avia.cloud.discovery.util.LanguageUtils.getRequired;
+import static avia.cloud.discovery.util.FieldUtils.getField;
 
 
 @Service
@@ -30,7 +30,7 @@ public class SkylineBenefitsServiceImpl implements ISkylineBenefitsService {
     @SneakyThrows
     private SkylineBenefitsDTO convertToSkylineBenefitsDTO(SkylineBenefits skylineBenefits, String lan) {
         SkylineBenefitsDTO skylineBenefitsDTO = modelMapper.map(skylineBenefits, SkylineBenefitsDTO.class);
-        skylineBenefitsDTO.setContent(modelMapper.map(getRequired(skylineBenefits.getContent(),lan),SkylineBenefitsContentDTO.class));
+        skylineBenefitsDTO.setContent(modelMapper.map(getField(skylineBenefits.getContent(),"lan",lan),SkylineBenefitsContentDTO.class));
         return skylineBenefitsDTO;
     }
 }
