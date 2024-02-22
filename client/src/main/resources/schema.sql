@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS AIRLINE (
     description TEXT,
     client_id VARCHAR(50) UNIQUE,
     client_secret VARCHAR(100),
-    priority INTEGER,
+    priority SMALLINT,
     created_at TIMESTAMP,
     created_by VARCHAR(50),
     updated_at TIMESTAMP DEFAULT NULL,

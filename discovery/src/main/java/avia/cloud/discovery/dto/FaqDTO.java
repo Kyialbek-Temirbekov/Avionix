@@ -10,9 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SkylineBenefitsDTO {
+public class FaqDTO {
     private String id;
-    private byte[] logo;
     @JsonUnwrapped
-    private SkylineBenefitsContentDTO content;
+    private FaqContentDTO content;
 }

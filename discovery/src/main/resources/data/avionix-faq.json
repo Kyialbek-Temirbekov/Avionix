@@ -1,0 +1,134 @@
+[
+  {
+    "createdAt": "2024-02-19T12:00:00",
+    "createdBy": "avionix2024@gmail.com",
+    "updatedAt": "2024-02-19T12:00:00",
+    "updatedBy": "avionix2024@gmail.com",
+    "id": "a3baf58b-8572-4f4f-b9d5-571b64fc99ff",
+    "content": [
+      {
+        "id": "e6ad3ac7-3a45-4d13-ba17-302627d1e8e0",
+        "question": "How to book a flight?",
+        "answer": "Go to flights section, search for the necessary flight and press 'book', fill your data choose your baggage, setting and proceed to the payment tab, enter your card information and press 'pay now'.",
+        "lan": "EN"
+      },
+      {
+        "id": "e0b2d9f0-c1f3-4876-9f3a-7922e3311cf7",
+        "question": "Как забронировать рейс?",
+        "answer": "Зайдите в раздел «Авиабилеты», найдите нужный рейс и нажмите «Забронировать», заполните свои данные, выберите багаж, настройки и перейдите на вкладку оплаты, введите данные своей карты и нажмите «Оплатить сейчас».",
+        "lan": "RU"
+      },
+      {
+        "id": "32f975e2-b8ac-484e-b0a0-0a05b3dbac25",
+        "question": "Кантип рейс заказ кылса болот?",
+        "answer": "Аба каттамдары бөлүмүнө өтүп, керектүү рейсти издеп, 'Брондоо' баскычын басыңыз, маалыматыңызды толтуруңуз, багажыңызды тандаңыз, жөндөөлөрүңүз жана төлөм өтмөгүнө өтүңүз, картаңыздын маалыматын киргизиңиз жана 'азыр төлөө' баскычын басыңыз.",
+        "lan": "KY"
+      },
+      {
+        "id": "bf44dcbc-1e82-489a-b86b-2e13ac6b425f",
+        "question": "Uçuş rezervasyonu nasıl yapılır?",
+        "answer": "Uçuşlar bölümüne gidin, gerekli uçuşu arayın ve 'rezervasyon'a basın, bilgilerinizi doldurun, bagajınızı seçin, ayarları yapın ve ödeme sekmesine geçin, kart bilgilerinizi girin ve 'hemen öde'ye basın.",
+        "lan": "TR"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-02-19T12:00:00",
+    "createdBy": "avionix2024@gmail.com",
+    "updatedAt": "2024-02-19T12:00:00",
+    "updatedBy": "avionix2024@gmail.com",
+    "id": "d3b95c1e-d1b7-4ac1-8641-2752e9824eae",
+    "content": [
+      {
+        "id": "df7b0b0f-8ff7-46aa-af5d-fb6bf7435e8d",
+        "question": "How to rent a car?",
+        "answer": "In order to rent a car, you must follow several steps. Below are general guidelines that may help: 1) Selecting a rental company: Use online platforms or search engines to compare offers from different rental companies. Pay attention to the rental conditions, cost and availability of additional services. 2) Determining criteria: Select the type of car that suits your needs (size, brand, class, fuel policy and other options). 3) Filling out the reservation: After choosing a company and car, fill out the online reservation form. Indicate the rental dates, place of pickup and delivery of the car, as well as other necessary information. 4) Check and compare insurances: Review insurance offers and choose the options that suit your needs. Pay attention to insurance against damage, theft, liability and other aspects. 5) Booking Confirmation: After entering the required information and selecting insurances, confirm your booking. Receive your booking confirmation and important details such as rental office address, contact details and rental conditions. 6) Receiving the car: Arrive at the rental office at the specified time and place. Provide the necessary documents (driver's license, credit card) and sign the rental agreement. Check the condition of the car, clarify the rules of use and return the car on time. Remember to read the lease terms carefully and ask questions if anything is unclear.",
+        "lan": "EN"
+      },
+      {
+        "id": "07a20a05-5be6-4a9d-90d6-9bdf99a00db4",
+        "question": "Как арендовать автомобиль?",
+        "answer": "Для того чтобы арендовать автомобиль, следует выполнить несколько шагов. Ниже приведены общие инструкции которые могут помочь: 1) Выбор арендной компании: Используйте онлайн-платформы или поисковые системы для сравнения предложений от различных арендных компаний. Обратите внимание на условия аренды, стоимость и наличие дополнительных услуг. 2) Определение критериев: Выберите тип автомобиля, который соответствует вашим потребностям (размер, бренд, класс, топливная политика и другие опции). 3) Заполнение бронирования: После выбора компании и автомобиля, заполните онлайн-форму бронирования. Укажите даты аренды, место получения и сдачи автомобиля, а также другие необходимые данные. 4) Проверка и сравнение страховок: Рассмотрите предложения по страховке и выберите те варианты, которые соответствуют вашим отребностям.Обратите внимание на страховку от ущерба, кражи, гражданской ответственности и другие аспекты. 5) Подтверждение бронирования: После внесения необходимой информации и выбора страховок, подтвердите бронирование. Получите подтверждение бронирования и важные детали, такие как адрес офиса аренды, контактные данные и условия аренды. 6) Получение автомобиля: В указанное время и месте прибудьте в офис аренды. Предоставьте необходимые документы (водительское удостоверение, кредитная карта) и подпишите договор аренды. Проверьте состояние автомобиля, уточните правила использования и верните автомобиль вовремя. Не забывайте внимательно читать условия аренды и задавать вопросы, если что-то не ясно.",
+        "lan": "RU"
+      },
+      {
+        "id": "09d2b1f0-6d53-41c6-aabb-282fcabf2cc5",
+        "question": "Кантип машинени ижарага алуу керек?",
+        "answer": "Унааны ижарага алуу үчүн, сиз бир нече кадамдарды аткарышыңыз керек. Төмөндө жардам бере турган жалпы көрсөтмөлөр келтирилген: 1) Ижарага берүүчү компанияны тандоо: Ар кандай ижара компанияларынын сунуштарын салыштыруу үчүн онлайн платформаларды же издөө системаларын колдонуңуз. Ижара шарттарына, баасына жана кошумча кызматтардын болушуна көңүл буруңуз. 2) Критерийлерди аныктоо: Сиздин муктаждыктарыңызга ылайыктуу машинанын түрүн тандаңыз (көлөмү, маркасы, классы, күйүүчү май саясаты жана башка варианттар). 3) Брондоону толтуруу: Компанияны жана унааны тандагандан кийин онлайн брондоо формасын толтуруңуз. Ижарага алуу күндөрүн, унааны алып кетүү жана жеткирүү жерин, ошондой эле башка керектүү маалыматтарды көрсөтүңүз. 4) Камсыздандырууларды текшериңиз жана салыштырыңыз: Камсыздандыруу сунуштарын карап чыгыңыз жана өзүңүздүн муктаждыктарыңызга ылайыктуу варианттарды тандаңыз.Камсыздандырууга көңүл буруңуз зыяндан, уурдоодон, жоопкерчиликтен жана башка аспектилерден. 5) Брондоону ырастоо: Керектүү маалыматты киргизип, камсыздандырууну тандагандан кийин, ээлеп коюуңузду ырастаңыз. Брондоо ырастооңузду жана ижара кеңсесинин дареги, байланыш маалыматтары жана ижара шарттары сыяктуу маанилүү маалыматтарды алыңыз. 6) Автоунааны кабыл алуу: Ижарага алуу кеңсесине белгиленген убакытта жана жерде келиңиз. Керектүү документтерди (айдоочунун күбөлүгү, кредиттик карта) бериңиз жана ижара келишимине кол коюңуз. Машинанын абалын текшерип, пайдалануу эрежелерин тактап, унааны өз убагында кайтарып бер. Ижара шарттарын кунт коюп окуп чыгууну унутпаңыз жана бир нерсе түшүнүксүз болсо, суроолорду бериңиз.",
+        "lan": "KY"
+      },
+      {
+        "id": "5d2b8a54-0342-43d9-8045-c870029ef145",
+        "question": "Nasıl araba kiralanır?",
+        "answer": "Araç kiralamak için birkaç adımı takip etmeniz gerekmektedir. Aşağıda yardımcı olabilecek genel yönergeler verilmiştir: 1) Bir kiralama şirketi seçmek: Farklı kiralama şirketlerinin tekliflerini karşılaştırmak için çevrimiçi platformları veya arama motorlarını kullanın. Kiralama koşullarına, maliyetine ve ek hizmetlerin kullanılabilirliğine dikkat edin. 2) Kriterlerin belirlenmesi: İhtiyaçlarınıza uygun araç tipini seçin (boyut, marka, sınıf, yakıt politikası ve diğer seçenekler). 3) Rezervasyonun doldurulması: Firma ve araç seçtikten sonra online rezervasyon formunu doldurunuz. Kiralama tarihlerini, aracın teslim alınacağı ve teslim edileceği yeri ve diğer gerekli bilgileri belirtin. 4) Sigortaları kontrol edin ve karşılaştırın: Sigorta tekliflerini inceleyin ve ihtiyaçlarınıza uygun seçenekleri seçin.Hasar, hırsızlık, sorumluluk ve diğer hususlara karşı sigortaya dikkat edin. 5) Rezervasyon Onayı: Gerekli bilgileri girdikten ve sigortaları seçtikten sonra rezervasyonunuzu onaylayın. Rezervasyon onayınızı ve kiralık ofis adresi, iletişim bilgileri ve kiralama koşulları gibi önemli ayrıntıları alın. 6) Aracın teslim alınması: Belirtilen saat ve yerde kiralama ofisine geliniz. Gerekli belgeleri (ehliyet, kredi kartı) sağlayın ve kira sözleşmesini imzalayın. Aracın durumunu kontrol edin, kullanım kurallarını netleştirin ve aracı zamanında iade edin. Kira koşullarını dikkatlice okumayı ve net olmayan bir şey varsa soru sormayı unutmayın.",
+        "lan": "TR"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-02-19T12:00:00",
+    "createdBy": "avionix2024@gmail.com",
+    "updatedAt": "2024-02-19T12:00:00",
+    "updatedBy": "avionix2024@gmail.com",
+    "id": "ce26fadc-1202-40b6-b700-43724b0fa0c4",
+    "content": [
+      {
+        "id": "e8900792-f7b0-4990-92a2-e47aa1e4325a",
+        "question": "Can i cancel my booking?",
+        "answer": "Yes, we have the ability to cancel your booking according to our cancellation policy. Please review the cancellation terms on our website or contact our customer service for details. Please note that cancellation options and timing may vary depending on the type of ticket and the terms of your booking. We strive to provide flexible options for our customers and our team is ready to assist you whenever needed.",
+        "lan": "EN"
+      },
+      {
+        "id": "50d67d86-7ee3-4d4a-94e2-989c5744dc92",
+        "question": "Могу ли я отменить бронирование?",
+        "answer": "Да, у нас предусмотрена возможность отмены бронирования в соответствии с нашей политикой отмены. Пожалуйста, ознакомьтесь с условиями отмены на нашем веб-сайте или свяжитесь с нашей службой поддержки для получения подробной информации. Учтите, что возможность отмены и сроки могут различаться в зависимости от типа билета и условий вашего бронирования. Мы стараемся предоставить гибкие варианты для наших клиентов, и наша команда готова помочь вам в случае необходимости.",
+        "lan": "RU"
+      },
+      {
+        "id": "eb1746f3-7ef4-4db3-b890-6d28e12a9350",
+        "question": "Мен брондоомду жокко чыгарсам болобу?",
+        "answer": "Ооба, биздин жокко чыгаруу саясатыбызга ылайык брондооңузду жокко чыгаруу мүмкүнчүлүгүбүз бар. Сураныч, биздин веб-сайттагы жокко чыгаруу шарттарын карап чыгыңыз же кеңири маалымат билүү үчүн кардарларды тейлөө менен байланышыңыз. Эсиңизде болсун, жокко чыгаруу варианттары жана убактысы билеттин түрүнө жана брондоо шарттарына жараша өзгөрүшү мүмкүн. Биз кардарларыбызга ийкемдүү варианттарды берүүгө аракет кылабыз жана биздин команда сизге керектүү учурда жардам берүүгө даяр.",
+        "lan": "KY"
+      },
+      {
+        "id": "b2fd7ef7-20d3-4767-a434-0e1d4c9a5d0d",
+        "question": "Rezervasyonumu iptal edebilir miyim?",
+        "answer": "Evet, iptal politikamıza göre rezervasyonunuzu iptal etme olanağımız bulunmaktadır. Lütfen web sitemizdeki iptal koşullarını inceleyin veya ayrıntılar için müşteri hizmetlerimizle iletişime geçin. İptal seçeneklerinin ve zamanlamasının bilet türüne ve rezervasyon şartlarına göre değişebileceğini lütfen unutmayın. Müşterilerimize esnek seçenekler sunmaya çalışıyoruz ve ekibimiz ihtiyaç duyduğunuzda size yardımcı olmaya hazır.",
+        "lan": "TR"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-02-19T12:00:00",
+    "createdBy": "avionix2024@gmail.com",
+    "updatedAt": "2024-02-19T12:00:00",
+    "updatedBy": "avionix2024@gmail.com",
+    "id": "45883ff3-799d-4d91-a4e4-60bda64b20e5",
+    "content": [
+      {
+        "id": "fa90c16f-f82b-4d46-a3f8-1579b7233141",
+        "question": "Is there a loyalty program?",
+        "answer": "Yes, we have a loyalty program for our clients. We appreciate your choice to use our services when purchasing air tickets. Our loyalty program provides various privileges such as discounts, bonuses and special offers to our regular customers. We try to create favorable conditions for our passengers and thank you for your loyalty.",
+        "lan": "EN"
+      },
+      {
+        "id": "b925b3fc-8b67-4e4a-b392-57238dc1f5f6",
+        "question": "Есть ли программа лояльности?",
+        "answer": "Да, у нас есть программа лояльности для наших клиентов. Мы ценим ваш выбор воспользоваться нашими услугами при покупке авиабилетов. Наша программа лояльности предоставляет различные привилегии, такие как скидки, бонусы и специальные предложения для наших постоянных клиентов. Мы стараемся создать выгодные условия для наших пассажиров и благодарим за вашу лояльность.",
+        "lan": "RU"
+      },
+      {
+        "id": "53aef2c5-5b1a-4b7c-9c74-914539f175e6",
+        "question": "Лоялдуулук программасы барбы?",
+        "answer": "",
+        "lan": "KY"
+      },
+      {
+        "id": "be5ebebb-53f0-4900-b16e-b90a30e6cb6e",
+        "question": "Bir sadakat programı var mı?",
+        "answer": "Evet, müşterilerimiz için bir sadakat programımız var. Uçak bileti satın alırken hizmetlerimizi kullanmayı tercih ettiğiniz için teşekkür ederiz. Sadakat programımız düzenli müşterilerimize indirim, bonus ve özel teklifler gibi çeşitli ayrıcalıklar sağlar. Yolcularımız için uygun koşullar yaratmaya çalışıyoruz ve sadakatiniz için teşekkür ediyoruz.",
+        "lan": "TR"
+      }
+    ]
+  }
+]

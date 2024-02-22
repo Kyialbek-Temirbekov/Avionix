@@ -5,7 +5,7 @@ CREATE TABLE FAQ (
     created_by VARCHAR(50),
     updated_by VARCHAR(50)
 );
-CREATE TABLE faq_content (
+CREATE TABLE FAQ_CONTENT (
     id VARCHAR(36) PRIMARY KEY,
     faq_id VARCHAR(36) REFERENCES FAQ(id) ON DELETE CASCADE,
     question VARCHAR(500),

@@ -1,6 +1,8 @@
 package avia.cloud.discovery.controller;
 
+import avia.cloud.discovery.dto.FaqDTO;
 import avia.cloud.discovery.dto.SkylineBenefitsDTO;
+import avia.cloud.discovery.service.IFaqService;
 import avia.cloud.discovery.service.ISkylineBenefitsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -14,13 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/whyUs")
+@RequestMapping("/api/faq")
 @RequiredArgsConstructor
 @Validated
-public class SkylineBenefitsController {
-    private final ISkylineBenefitsService iSkylineBenefitsService;
+public class FaqController {
+    private final IFaqService iFaqService;
     @GetMapping()
-    public ResponseEntity<List<SkylineBenefitsDTO>> fetchSkylineBenefits(@RequestParam String lan) {
-        return ResponseEntity.status(HttpStatus.OK).body(iSkylineBenefitsService.fetchSkylineBenefits(lan));
+    public ResponseEntity<List<FaqDTO>> fetchFaq(@RequestParam String lan) {
+        return ResponseEntity.status(HttpStatus.OK).body(iFaqService.fetchFaq(lan));
     }
 }

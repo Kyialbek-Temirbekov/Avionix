@@ -9,8 +9,7 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
-import static jakarta.persistence.CascadeType.PERSIST;
-import static jakarta.persistence.CascadeType.REMOVE;
+import static jakarta.persistence.CascadeType.*;
 
 @Entity
 @EqualsAndHashCode(callSuper = true)
@@ -23,6 +22,6 @@ import static jakarta.persistence.CascadeType.REMOVE;
 public class Faq extends BaseEntity{
     @Id
     private String id;
-    @OneToMany(mappedBy = "faq", fetch = FetchType.EAGER, cascade = {PERSIST,REMOVE})
+    @OneToMany(mappedBy = "faq", fetch = FetchType.EAGER, cascade = {PERSIST,REMOVE,MERGE})
     private List<FaqContent> content;
 }
