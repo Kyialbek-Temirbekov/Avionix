@@ -64,9 +64,9 @@ public class CustomerServiceImpl implements ICustomerService {
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Customer customer = customerRepository.findByEmail(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Customer","email", verificationInfo.getEmail()));
-        if(!customer.getCode().equals(verificationInfo.getCode())) {
-            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
-        }
+//        if(!customer.getCode().equals(verificationInfo.getCode())) {
+//            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
+//        }
         customer.setEnabled(true);
         customer.setCode(null);
         customerRepository.save(customer);

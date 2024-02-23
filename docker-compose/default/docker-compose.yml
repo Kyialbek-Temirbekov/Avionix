@@ -1,5 +1,22 @@
 services:
 
+  rabbit:
+    image: rabbitmq:3.12-management
+    container_name: event-broker
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: rabbitmq-diagnostics check_port_connectivity
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
+
   configserver:
     image: "adpsorcerer/avionix-configserver:r1"
     container_name: configserver
@@ -11,6 +28,9 @@ services:
       timeout: 5s
       retries: 10
       start_period: 10s
+    depends_on:
+      rabbit:
+        condition: service_healthy
     extends:
       file: common-config.yml
       service: microservice-base-config
@@ -59,8 +79,11 @@ services:
     depends_on:
       discovery:
         condition: service_healthy
+      rabbit:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "client"
+      SPRING_RABBITMQ_HOST: "rabbit"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
@@ -82,6 +105,20 @@ services:
     extends:
       file: common-config.yml
       service: microservice-eureka-config
+
+  message:
+    image: "adpsorcerer/avionix-message:r1"
+    container_name: message
+    depends_on:
+      rabbit:
+        condition: service_healthy
+      configserver:
+        condition: service_healthy
+    environment:
+      SPRING_RABBITMQ_HOST: "rabbit"
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
 
   gatewayserver:
     image: "adpsorcerer/avionix-gatewayserver:r1"
