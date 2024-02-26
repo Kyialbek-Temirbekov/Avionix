@@ -5,6 +5,7 @@ import avia.cloud.discovery.dto.SkylineBenefitsDTO;
 import avia.cloud.discovery.entity.SkylineBenefits;
 import avia.cloud.discovery.repository.SkylineBenefitsRepository;
 import avia.cloud.discovery.service.ISkylineBenefitsService;
+import avia.cloud.discovery.util.ImageUtils;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -31,6 +32,7 @@ public class SkylineBenefitsServiceImpl implements ISkylineBenefitsService {
     private SkylineBenefitsDTO convertToSkylineBenefitsDTO(SkylineBenefits skylineBenefits, String lan) {
         SkylineBenefitsDTO skylineBenefitsDTO = modelMapper.map(skylineBenefits, SkylineBenefitsDTO.class);
         skylineBenefitsDTO.setContent(modelMapper.map(getField(skylineBenefits.getContent(),"lan",lan),SkylineBenefitsContentDTO.class));
+        skylineBenefitsDTO.setLogoUrl(ImageUtils.getBase64Image(skylineBenefits.getLogo()));
         return skylineBenefitsDTO;
     }
 }

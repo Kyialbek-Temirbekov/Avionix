@@ -6,6 +6,6 @@ import java.io.IOException;
 
 public interface ICustomerService {
     void createCustomer(CustomerDTO customerDTO) throws IOException;
-    CustomerDTO fetchCustomer(String email);
+    CustomerDTO fetchCustomer(String email) throws IOException;
     void createCustomerOAuth(CustomerDTO customerDTO);
 }

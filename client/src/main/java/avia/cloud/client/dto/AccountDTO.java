@@ -15,7 +15,7 @@ public class AccountDTO {
     private String email;
     private String phone;
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-    private String image;
+    private String imageUrl;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private MultipartFile multipartFile;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

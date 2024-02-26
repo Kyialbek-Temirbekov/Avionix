@@ -25,7 +25,7 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200","Verification code sent to email " + customerDTO.getAccount().getEmail()));
     }
     @GetMapping()
-    public ResponseEntity<CustomerDTO> fetchCustomer(Authentication authentication) {
+    public ResponseEntity<CustomerDTO> fetchCustomer(Authentication authentication) throws IOException {
         return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.fetchCustomer(authentication.getName()));
     }
 

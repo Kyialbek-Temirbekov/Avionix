@@ -8,6 +8,7 @@ import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.CustomerRepository;
 import avia.cloud.client.repository.AccountRepository;
 import avia.cloud.client.service.ICustomerService;
+import avia.cloud.client.util.ImageUtils;
 import avia.cloud.client.util.Messenger;
 import avia.cloud.client.util.NumericTokenGenerator;
 import jakarta.transaction.Transactional;
@@ -69,7 +70,7 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public CustomerDTO fetchCustomer(String email) {
+    public CustomerDTO fetchCustomer(String email) throws IOException {
         Customer customer = accountRepository.findByEmail(email).map(Account::getCustomer)
                 .orElseThrow(() -> new NotFoundException("Customer","email", email));
         return convertToCustomerDTO(customer);
@@ -82,8 +83,13 @@ public class CustomerServiceImpl implements ICustomerService {
         return modelMapper.map(customerDTO, Customer.class);
     }
 
-    private CustomerDTO convertToCustomerDTO(Customer customer) {
-        return modelMapper.map(customer, CustomerDTO.class);
+    private CustomerDTO convertToCustomerDTO(Customer customer) throws IOException {
+        CustomerDTO customerDTO = modelMapper.map(customer, CustomerDTO.class);
+        byte[] image = customer.getAccount().getImage();
+        if(image != null) {
+            customerDTO.getAccount().setImageUrl(ImageUtils.getBase64Image(image));
+        }
+        return customerDTO;
     }
 
 }
