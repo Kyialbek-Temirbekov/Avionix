@@ -1,12 +1,11 @@
 package avia.cloud.client.service;
 
-import avia.cloud.client.dto.ClientDetails;
 import avia.cloud.client.dto.CustomerDTO;
-import avia.cloud.client.entity.AccountBase;
 
-public interface ICustomerService extends IClientDetailsService{
-    void createCustomer(CustomerDTO customerDTO);
+import java.io.IOException;
+
+public interface ICustomerService {
+    void createCustomer(CustomerDTO customerDTO) throws IOException;
     CustomerDTO fetchCustomer(String email);
-    AccountBase fetchAccount(String email);
     void createCustomerOAuth(CustomerDTO customerDTO);
 }

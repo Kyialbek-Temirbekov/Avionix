@@ -1,29 +1,32 @@
 package avia.cloud.client.entity;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.*;
-import lombok.experimental.SuperBuilder;
+
+import static jakarta.persistence.CascadeType.REMOVE;
 
 @Entity
-@EqualsAndHashCode(callSuper = true)
-@ToString
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-@SuperBuilder(toBuilder = true)
-public class Airline extends AccountBase {
+@AllArgsConstructor
+@Builder
+public class Airline {
     /**
      * The IATA code is a three-letter code assigned by the International Air Transport Association
      * (IATA) to identify airports, airlines, and other air transport entities.
      */
-    private String IATA;
+    @Id
+    private String baseId;
+    private String iata;
     private String name;
-    private byte[] logo;
     private String address;
     private String officialWebsiteUrl;
     private String description;
     private String clientId;
     private String clientSecret;
     private int priority;
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "base_id", referencedColumnName = "id")
+    @MapsId
+    private Account account;
 }

@@ -1,20 +1,15 @@
 package avia.cloud.client.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import lombok.*;
 
-@EqualsAndHashCode(callSuper = true)
-@ToString
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class AirlineDTO extends AccountBaseDTO{
-    @JsonProperty("IATA")
-    private String IATA;
+public class AirlineDTO {
+    private String iata;
     private String name;
-    private byte[] logo;
     private String address;
     private String officialWebsiteUrl;
     private String description;
@@ -22,4 +17,6 @@ public class AirlineDTO extends AccountBaseDTO{
     private String clientId;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String clientSecret;
+    @JsonUnwrapped
+    private AccountDTO account;
 }

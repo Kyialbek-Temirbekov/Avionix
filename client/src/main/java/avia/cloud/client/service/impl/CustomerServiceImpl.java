@@ -1,27 +1,24 @@
 package avia.cloud.client.service.impl;
 
 import avia.cloud.client.dto.*;
-import avia.cloud.client.entity.AccountBase;
+import avia.cloud.client.entity.Account;
 import avia.cloud.client.entity.Customer;
 import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.exception.NotFoundException;
-import avia.cloud.client.repository.AirlineRepository;
 import avia.cloud.client.repository.CustomerRepository;
-import avia.cloud.client.security.TokenGenerator;
+import avia.cloud.client.repository.AccountRepository;
 import avia.cloud.client.service.ICustomerService;
 import avia.cloud.client.util.Messenger;
 import avia.cloud.client.util.NumericTokenGenerator;
-import avia.cloud.client.util.RoleConverter;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -29,23 +26,32 @@ import java.util.stream.Collectors;
 public class CustomerServiceImpl implements ICustomerService {
     private final Messenger messenger;
     private final CustomerRepository customerRepository;
-    private final AirlineRepository airlineRepository;
+    private final AccountRepository accountRepository;
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
-    private final TokenGenerator tokenGenerator;
 
     @Override
-    public void createCustomer(CustomerDTO customerDTO) {
+    public void createCustomer(CustomerDTO customerDTO) throws IOException {
         String code = NumericTokenGenerator.generateToken(6);
+        MultipartFile multipartFile = customerDTO.getAccount().getMultipartFile();
+        byte[] image = null;
+        if(multipartFile!=null && !multipartFile.isEmpty()) {
+            image = multipartFile.getBytes();
+        }
+
         Customer customer = convertToCustomer(customerDTO);
-        customer.setRoles(Arrays.asList(Role.CLIENT));
-        customer.setEnabled(false);
-        customer.setNonLocked(true);
-        customer.setCode(code);
-        customer.setPassword(passwordEncoder.encode(customerDTO.getPassword()));
+        Account account = convertToAccount(customerDTO.getAccount());
+        account.setRoles(Arrays.asList(Role.CLIENT));
+        account.setEnabled(false);
+        account.setNonLocked(true);
+        account.setCode(code);
+        account.setPassword(passwordEncoder.encode(account.getPassword()));
+        account.setImage(image);
+        customer.setAccount(account);
+        accountRepository.save(account);
         customerRepository.save(customer);
         messenger.sendSimpleMessage(new SimpleMailMessageDTO(
-                        customerDTO.getEmail(),
+                        account.getEmail(),
                         "Email Verification",
                         code + " - This is verification code. Use it to sign up to Avionix Airline."
                 ));
@@ -54,50 +60,26 @@ public class CustomerServiceImpl implements ICustomerService {
     @Override
     public void createCustomerOAuth(CustomerDTO customerDTO) {
         Customer customer = convertToCustomer(customerDTO);
-        customer.setRoles(Arrays.asList(Role.CLIENT));
-        customer.setEnabled(true);
-        customer.setNonLocked(true);
+        Account user = convertToAccount(customerDTO.getAccount());
+        user.setRoles(Arrays.asList(Role.CLIENT));
+        user.setEnabled(true);
+        user.setNonLocked(true);
+        customer.setAccount(user);
         customerRepository.save(customer);
-    }
-
-    @Override
-    public Authorization confirmEmail(VerificationInfo verificationInfo) {
-        Customer customer = customerRepository.findByEmail(verificationInfo.getEmail())
-                .orElseThrow(() -> new NotFoundException("Customer","email", verificationInfo.getEmail()));
-//        if(!customer.getCode().equals(verificationInfo.getCode())) {
-//            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
-//        }
-        customer.setEnabled(true);
-        customer.setCode(null);
-        customerRepository.save(customer);
-        return tokenGenerator.generate(customer.getEmail(), customer.getRoles()
-                .stream().map(Enum::toString).map(RoleConverter::convert).collect(Collectors.joining(",")));
     }
 
     @Override
     public CustomerDTO fetchCustomer(String email) {
-        Customer customer = customerRepository.findByEmail(email)
+        Customer customer = accountRepository.findByEmail(email).map(Account::getCustomer)
                 .orElseThrow(() -> new NotFoundException("Customer","email", email));
         return convertToCustomerDTO(customer);
     }
 
-    @Override
-    public AccountBase fetchAccount(String email) {
-        return  airlineRepository.findByEmail(email).map(airline -> (AccountBase)airline)
-                .or(() -> customerRepository.findByEmail(email).map(customer -> (AccountBase)customer))
-                .orElseThrow(() -> new UsernameNotFoundException("User details not found for user: " + email));
+    private Account convertToAccount(AccountDTO accountDTO) {
+        return modelMapper.map(accountDTO, Account.class);
     }
-
-    @Override
-    public void removeAll() {
-        customerRepository.deleteAll();
-    }
-
     private Customer convertToCustomer(CustomerDTO customerDTO) {
         return modelMapper.map(customerDTO, Customer.class);
-    }
-    private ClientDetails convertToClientDetails(Customer customer) {
-        return modelMapper.map(customer, ClientDetails.class);
     }
 
     private CustomerDTO convertToCustomerDTO(Customer customer) {

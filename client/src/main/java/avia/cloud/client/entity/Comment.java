@@ -14,7 +14,7 @@ public class Comment {
     @Id
     private String id;
     @ManyToOne
-    @JoinColumn(name = "customer_id", referencedColumnName = "id")
+    @JoinColumn(name = "customer_id", referencedColumnName = "base_id")
     private Customer customer;
     private String description;
     private LocalDate createdAt;

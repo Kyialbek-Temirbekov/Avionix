@@ -1,25 +1,20 @@
 package avia.cloud.client.entity;
 
 import avia.cloud.client.entity.enums.Gender;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.*;
-import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 import java.util.List;
 
+import static jakarta.persistence.CascadeType.REMOVE;
+
 @Entity
-@EqualsAndHashCode(callSuper = true)
-@ToString
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-@SuperBuilder(toBuilder = true)
-public class Customer extends AccountBase {
+public class Customer {
+    @Id
+    private String baseId;
     private String firstName;
     private String lastName;
     @Enumerated(EnumType.STRING)
@@ -28,7 +23,10 @@ public class Customer extends AccountBase {
     private String nationality;
     private String passportId;
     private LocalDate passportExpiryDate;
-    private byte[] image;
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "base_id", referencedColumnName = "id")
+    @MapsId
+    private Account account;
     @OneToMany(mappedBy = "customer")
     private List<Comment> comments;
 }

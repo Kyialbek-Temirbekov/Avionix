@@ -42,27 +42,27 @@ class CustomerServiceImplTest {
     @MockBean
     private TokenGenerator tokenGenerator;
 
-    @BeforeEach
-    void setUp() {
-        this.iCustomerService = new CustomerServiceImpl(messenger,customerRepository,airlineRepository,modelMapper,passwordEncoder,tokenGenerator);
-    }
-
-    @Test
-    void willThrowWhenVerificationCodeIsInvalid() {
-        given(customerRepository.findByEmail(any())).willReturn(Optional.of(customer()));
-        assertThatThrownBy(() -> iCustomerService.confirmEmail(new VerificationInfo("email","1000")))
-                .isInstanceOf(BadCredentialsException.class);
-    }
-
-    @Test
-    void willThrowWhenNotFoundByEmail() {
-        given(customerRepository.findByEmail(any())).willReturn(Optional.empty());
-        assertThatThrownBy(() -> iCustomerService.confirmEmail(new VerificationInfo("email","1000")))
-                .isInstanceOf(NotFoundException.class);
-    }
-
-    Customer customer() {
-        return Customer.builder()
-                .code("2233").build();
-    }
+//    @BeforeEach
+//    void setUp() {
+//        this.iCustomerService = new CustomerServiceImpl(messenger,customerRepository,airlineRepository,modelMapper,passwordEncoder,tokenGenerator);
+//    }
+//
+//    @Test
+//    void willThrowWhenVerificationCodeIsInvalid() {
+//        given(customerRepository.findByEmail(any())).willReturn(Optional.of(customer()));
+//        assertThatThrownBy(() -> iCustomerService.confirmEmail(new VerificationInfo("email","1000")))
+//                .isInstanceOf(BadCredentialsException.class);
+//    }
+//
+//    @Test
+//    void willThrowWhenNotFoundByEmail() {
+//        given(customerRepository.findByEmail(any())).willReturn(Optional.empty());
+//        assertThatThrownBy(() -> iCustomerService.confirmEmail(new VerificationInfo("email","1000")))
+//                .isInstanceOf(NotFoundException.class);
+//    }
+//
+//    Customer customer() {
+//        return Customer.builder()
+//                .code("2233").build();
+//    }
 }

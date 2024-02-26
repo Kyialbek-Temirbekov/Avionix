@@ -1,10 +1,12 @@
 package avia.cloud.gatewayserver.security;
 
+import avia.cloud.gatewayserver.filter.JWTTokenValidatorFilter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
+import org.springframework.security.config.web.server.SecurityWebFiltersOrder;
 import org.springframework.security.config.web.server.ServerHttpSecurity;
 import org.springframework.security.oauth2.jwt.ReactiveJwtDecoder;
 import org.springframework.security.oauth2.jwt.ReactiveJwtDecoders;
@@ -27,10 +29,12 @@ public class SecurityConfig {
     }
 
     @Bean
-    SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity serverHttpSecurity) {
+    SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity serverHttpSecurity, JWTTokenValidatorFilter jwtTokenValidatorFilter) {
         serverHttpSecurity
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
+                .addFilterBefore(jwtTokenValidatorFilter, SecurityWebFiltersOrder.AUTHENTICATION)
                 .authorizeExchange(exchange -> exchange
+                        .pathMatchers("/avionix/client/api/account/test").hasRole("OWNER")
                         .anyExchange().permitAll())
                 .oauth2ResourceServer(oAuth2ResourceServerSpec -> oAuth2ResourceServerSpec
                         .jwt(jwtSpec -> jwtSpec.jwtDecoder(jwtDecoder())));

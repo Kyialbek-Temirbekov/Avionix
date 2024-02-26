@@ -1,10 +1,11 @@
 package avia.cloud.client.service;
 
 import avia.cloud.client.dto.Authorization;
-import avia.cloud.client.dto.ClientDetails;
 import avia.cloud.client.dto.VerificationInfo;
+import avia.cloud.client.entity.Account;
 
-public interface IClientDetailsService {
+public interface IAccountService {
     Authorization confirmEmail(VerificationInfo verificationInfo);
     void removeAll();
+    Account fetchUser(String email);
 }

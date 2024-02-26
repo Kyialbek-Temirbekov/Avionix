@@ -8,7 +8,10 @@ import org.hibernate.annotations.UuidGenerator;
 
 import java.util.List;
 
-@MappedSuperclass
+import static jakarta.persistence.CascadeType.MERGE;
+import static jakarta.persistence.CascadeType.REMOVE;
+
+@Entity
 @EqualsAndHashCode(callSuper = true)
 @ToString
 @Getter
@@ -16,12 +19,13 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
-public class AccountBase extends BaseEntity {
+public class Account extends BaseEntity {
     @Id
     @UuidGenerator
     private String id;
     private String email;
     private String phone;
+    private byte[] image;
     private String password;
     @Enumerated(EnumType.STRING)
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
@@ -30,4 +34,8 @@ public class AccountBase extends BaseEntity {
     private boolean nonLocked;
     private boolean agreedToTermsOfUse;
     private String code;
+    @OneToOne(mappedBy = "account", cascade = {REMOVE})
+    private Airline airline;
+    @OneToOne(mappedBy = "account", cascade = {REMOVE})
+    private Customer customer;
 }

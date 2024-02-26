@@ -33,7 +33,7 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/customer/test")).hasRole("OWNER")
+//                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/customer/test")).hasRole("OWNER")
                         .anyRequest().permitAll())
                 .addFilterBefore(jwtTokenReceiverFilter, BasicAuthenticationFilter.class)
                 .addFilterBefore(idTokenReceiverFilter, BasicAuthenticationFilter.class)

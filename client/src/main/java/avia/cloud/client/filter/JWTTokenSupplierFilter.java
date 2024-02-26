@@ -35,7 +35,7 @@ public class JWTTokenSupplierFilter extends OncePerRequestFilter {
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
-        return !request.getServletPath().equals("/api/customer/signIn");
+        return !request.getServletPath().equals("/api/account/signIn");
     }
 
     @Override
