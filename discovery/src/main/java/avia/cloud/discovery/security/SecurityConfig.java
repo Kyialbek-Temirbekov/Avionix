@@ -1,7 +1,7 @@
 package avia.cloud.discovery.security;
 
-//import avia.cloud.client.filter.IdTokenReceiverFilter;
-//import avia.cloud.client.filter.JWTTokenReceiverFilter;
+import avia.cloud.discovery.filter.IdTokenReceiverFilter;
+import avia.cloud.discovery.filter.JWTTokenReceiverFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,25 +21,18 @@ import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 @Configuration
 @RequiredArgsConstructor
 public class SecurityConfig {
-//    private final IdTokenReceiverFilter idTokenReceiverFilter;
-//    private final JWTTokenReceiverFilter jwtTokenReceiverFilter;
+    private final IdTokenReceiverFilter idTokenReceiverFilter;
+    private final JWTTokenReceiverFilter jwtTokenReceiverFilter;
     @Bean
-    MvcRequestMatcher.Builder mvc(HandlerMappingIntrospector introspector) {
-        return new MvcRequestMatcher.Builder(introspector);
-    }
-    @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity, MvcRequestMatcher.Builder mvc) throws Exception {
+    SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/customer/test")).hasRole("OWNER")
                         .anyRequest().permitAll())
-//                .addFilterBefore(jwtTokenReceiverFilter, BasicAuthenticationFilter.class)
-//                .addFilterBefore(idTokenReceiverFilter, BasicAuthenticationFilter.class)
-                .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
-                .httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults());
+                .addFilterBefore(jwtTokenReceiverFilter, BasicAuthenticationFilter.class)
+                .addFilterBefore(idTokenReceiverFilter, BasicAuthenticationFilter.class)
+                .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable));
         return httpSecurity.build();
     }
     @Bean

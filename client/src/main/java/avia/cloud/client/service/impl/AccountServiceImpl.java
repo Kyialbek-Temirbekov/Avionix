@@ -7,10 +7,9 @@ import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AccountRepository;
 import avia.cloud.client.security.TokenGenerator;
 import avia.cloud.client.service.IAccountService;
-import avia.cloud.client.util.RoleConverter;
+import avia.cloud.client.util.AuthorityUtils;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +32,7 @@ public class AccountServiceImpl implements IAccountService {
         user.setCode(null);
         accountRepository.save(user);
         return tokenGenerator.generate(user.getEmail(), user.getRoles()
-                .stream().map(Enum::toString).map(RoleConverter::convert).collect(Collectors.joining(",")));
+                .stream().map(Enum::toString).map(AuthorityUtils::convert).collect(Collectors.joining(",")));
     }
     @Override
     public Account fetchUser(String email) {

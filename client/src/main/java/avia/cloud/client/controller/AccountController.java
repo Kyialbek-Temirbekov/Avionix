@@ -1,15 +1,20 @@
 package avia.cloud.client.controller;
 
+import avia.cloud.client.dto.AuthorityDTO;
 import avia.cloud.client.dto.Authorization;
 import avia.cloud.client.dto.ResponseDTO;
 import avia.cloud.client.dto.VerificationInfo;
+import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.service.IAccountService;
+import avia.cloud.client.service.IAuthorityService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/account")

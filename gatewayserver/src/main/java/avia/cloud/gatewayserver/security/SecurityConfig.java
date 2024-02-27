@@ -34,7 +34,6 @@ public class SecurityConfig {
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
                 .addFilterBefore(jwtTokenValidatorFilter, SecurityWebFiltersOrder.AUTHENTICATION)
                 .authorizeExchange(exchange -> exchange
-                        .pathMatchers("/avionix/client/api/account/test").hasRole("OWNER")
                         .anyExchange().permitAll())
                 .oauth2ResourceServer(oAuth2ResourceServerSpec -> oAuth2ResourceServerSpec
                         .jwt(jwtSpec -> jwtSpec.jwtDecoder(jwtDecoder())));

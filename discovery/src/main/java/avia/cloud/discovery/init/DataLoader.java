@@ -1,9 +1,10 @@
 package avia.cloud.discovery.init;
 
+import avia.cloud.discovery.entity.Faq;
+import avia.cloud.discovery.entity.SkylineBenefits;
 import avia.cloud.discovery.repository.FaqRepository;
 import avia.cloud.discovery.repository.SkylineBenefitsRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import jakarta.ws.rs.NotFoundException;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -27,67 +28,50 @@ import java.util.Objects;
 @Profile("default")
 @RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
+    private final ObjectMapper objectMapper;
     private final SkylineBenefitsRepository skylineBenefitsRepository;
     private final FaqRepository faqRepository;
 
     @Override
     public void run(String... args) throws IOException {
-        loadData(new TypeReference<>() {}, "/data/avionix-skyline-benefits.json", skylineBenefitsRepository, "content");
-        loadData(new TypeReference<>() {}, "/data/avionix-faq.json", faqRepository, "content");
+        loadSkylineBenefits("/data/avionix-skyline-benefits.json");
+        loadFaq("/data/avionix-faq.json");
 
-        loadFiles("classpath*:data/files/skyline-benefits/*",skylineBenefitsRepository, "logo");
+        loadFile("classpath*:data/files/skyline-benefits/*",skylineBenefitsRepository, "logo");
     }
 
-    private <T> void loadFiles(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
+    private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         Resource[] foundResources = resolver.getResources(pattern);
         for(Resource resource: foundResources) {
             try {
-                String id = resource.getFilename();
-                T entity = jpaRepository.findById(Objects.requireNonNull(Objects.requireNonNull(id).substring(0,id.lastIndexOf('.')))).orElseThrow(NotFoundException::new);
-                Field field = entity.getClass().getDeclaredField(requiredField);
-                field.setAccessible(true);
-                field.set(entity, StreamUtils.copyToByteArray(resource.getInputStream()));
-                jpaRepository.save(entity);
+            String id = resource.getFilename();
+            T entity = jpaRepository.findById(Objects.requireNonNull(Objects.requireNonNull(id).substring(0,id.lastIndexOf('.')))).orElseThrow(NotFoundException::new);
+            Field field = entity.getClass().getDeclaredField(requiredField);
+            field.setAccessible(true);
+            field.set(entity, StreamUtils.copyToByteArray(resource.getInputStream()));
+            jpaRepository.save(entity);
             } catch (Exception e) {
                 throw new RuntimeException("Error setting file " + e);
             }
         }
     }
 
-    private <T> void loadData(TypeReference<List<T>> typeReference, String path, JpaRepository<T, String> repository, String listField) {
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule());
+    private void loadSkylineBenefits(String path) throws IOException {
+        TypeReference<List<SkylineBenefits>> typeReference = new TypeReference<>(){};
         InputStream inputStream = TypeReference.class.getResourceAsStream(path);
-        try {
-            List<T> entities = objectMapper.readValue(inputStream, typeReference);
-            setOwner(entities,listField);
-            repository.saveAll(entities);
-        } catch (IOException e) {
-            throw new RuntimeException("Unable to load data from json file: " + e.getMessage());
-        }
+        List<SkylineBenefits> skylineBenefits = objectMapper.readValue(inputStream, typeReference);
+        skylineBenefits.forEach(skylineBenefit -> skylineBenefit.getContent()
+                .forEach(skylineBenefitsContent -> skylineBenefitsContent.setSkylineBenefits(skylineBenefit)));
+        skylineBenefitsRepository.saveAll(skylineBenefits);
     }
-    @SuppressWarnings("unchecked")
-    private <T> void setOwner(List<T> entities, String listFieldName) {
-        for(T entity : entities) {
-            try {
-                Field listField = entity.getClass().getDeclaredField(listFieldName);
-                listField.setAccessible(true);
-                for(T item : (List<T>)listField.get(entity)) {
-                    Field[] fields = item.getClass().getDeclaredFields();
-                    Field ownerField = null;
-                    for(Field field : fields) {
-                        if(field.getType().equals(entity.getClass())) {
-                            ownerField = field;
-                        }
-                    }
-                    Objects.requireNonNull(ownerField).setAccessible(true);
-                    ownerField.set(item,entity);
-                }
-            } catch (Exception e) {
-                throw new RuntimeException("Error setting owner " + e);
-            }
-        }
+    private void loadFaq(String path) throws IOException {
+        TypeReference<List<Faq>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<Faq> faqs = objectMapper.readValue(inputStream, typeReference);
+        faqs.forEach(faq -> faq.getContent()
+                .forEach(faqContent -> faqContent.setFaq(faq)));
+        faqRepository.saveAll(faqs);
     }
 
 }

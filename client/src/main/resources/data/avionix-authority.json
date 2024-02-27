@@ -1,0 +1,58 @@
+[
+  {
+    "role": "CLIENT",
+    "entity": "customer",
+    "create": false,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "entity": "account",
+    "create": false,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "entity": "airline",
+    "create": false,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "entity": "account",
+    "create": false,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "entity": "customer",
+    "create": true,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "entity": "account",
+    "create": true,
+    "read": false,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "entity": "airline",
+    "create": false,
+    "read": false,
+    "update": true,
+    "delete": false
+  }
+]

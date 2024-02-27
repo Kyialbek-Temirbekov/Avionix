@@ -1,3 +1,14 @@
+CREATE TABLE IF NOT EXISTS authority (
+    id VARCHAR(255) PRIMARY KEY,
+    role VARCHAR(255),
+    entity VARCHAR(255),
+    create BOOLEAN,
+    read BOOLEAN,
+    update BOOLEAN,
+    delete BOOLEAN
+);
+
+
 CREATE TABLE IF NOT EXISTS ACCOUNT (
     id VARCHAR(36) PRIMARY KEY,
     email VARCHAR(50),

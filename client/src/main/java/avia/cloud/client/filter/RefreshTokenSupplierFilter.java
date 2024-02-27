@@ -3,7 +3,7 @@ package avia.cloud.client.filter;
 import avia.cloud.client.entity.Account;
 import avia.cloud.client.security.TokenGenerator;
 import avia.cloud.client.service.IAccountService;
-import avia.cloud.client.util.RoleConverter;
+import avia.cloud.client.util.AuthorityUtils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
@@ -52,7 +52,7 @@ public class RefreshTokenSupplierFilter extends OncePerRequestFilter {
                 throw new BadCredentialsException("Required refresh token");
             }
             Account user = iUserService.fetchUser(username);
-            String roles = user.getRoles().stream().map(Enum::toString).map(RoleConverter::convert).collect(Collectors.joining(","));
+            String roles = user.getRoles().stream().map(Enum::toString).map(AuthorityUtils::convert).collect(Collectors.joining(","));
             String refreshToken = tokenGenerator.getToken(user.getEmail(),roles,"ACCESS_TOKEN",3600000);
             response.setHeader("Authorization", refreshToken);
         }

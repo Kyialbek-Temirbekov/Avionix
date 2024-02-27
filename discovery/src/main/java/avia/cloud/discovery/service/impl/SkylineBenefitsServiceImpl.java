@@ -32,7 +32,9 @@ public class SkylineBenefitsServiceImpl implements ISkylineBenefitsService {
     private SkylineBenefitsDTO convertToSkylineBenefitsDTO(SkylineBenefits skylineBenefits, String lan) {
         SkylineBenefitsDTO skylineBenefitsDTO = modelMapper.map(skylineBenefits, SkylineBenefitsDTO.class);
         skylineBenefitsDTO.setContent(modelMapper.map(getField(skylineBenefits.getContent(),"lan",lan),SkylineBenefitsContentDTO.class));
-        skylineBenefitsDTO.setLogoUrl(ImageUtils.getBase64Image(skylineBenefits.getLogo()));
+        if (skylineBenefits.getLogo() != null) {
+            skylineBenefitsDTO.setLogoUrl(ImageUtils.getBase64Image(skylineBenefits.getLogo()));
+        }
         return skylineBenefitsDTO;
     }
 }

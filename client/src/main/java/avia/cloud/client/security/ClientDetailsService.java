@@ -6,6 +6,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -24,6 +25,6 @@ public class ClientDetailsService implements UserDetailsService {
         List<GrantedAuthority> authorities = new ArrayList<>();
         Account account = iUserService.fetchUser(email);
         account.getRoles().forEach(role -> authorities.add(new SimpleGrantedAuthority(role.toString())));
-        return new org.springframework.security.core.userdetails.User(account.getEmail(), account.getPassword(), account.isEnabled(), true, true, account.isNonLocked(), authorities);
+        return new User(account.getEmail(), account.getPassword(), account.isEnabled(), true, true, account.isNonLocked(), authorities);
     }
 }
