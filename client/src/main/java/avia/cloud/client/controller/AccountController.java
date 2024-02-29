@@ -39,8 +39,4 @@ public class AccountController {
         iAccountService.removeAll();
         return ResponseEntity.ok("Account table data removed");
     }
-    @GetMapping("/test")
-    public ResponseEntity<?> test() {
-        return ResponseEntity.status(HttpStatus.OK).body("Success");
-    }
 }

@@ -30,9 +30,23 @@ public class JWTTokenValidatorFilter implements WebFilter {
     @Value("${application.jwt.key}")
     private String jwtKey;
     private final ObjectMapper objectMapper;
-    @SneakyThrows
+
     @Override
     public Mono<Void> filter(ServerWebExchange exchange,WebFilterChain  chain) {
+        Object filterAttribute = exchange.getAttribute(".FILTERED");
+        boolean filtered = filterAttribute != null && (boolean)filterAttribute;
+        exchange.getAttributes().put(".FILTERED", true);
+
+        if (filtered) {
+            return doFilterInternal(exchange, chain);
+        }
+        else {
+            return chain.filter(exchange);
+        }
+    }
+
+    @SneakyThrows
+    private Mono<Void> doFilterInternal(ServerWebExchange exchange,WebFilterChain  chain) {
         String jwt = exchange.getRequest().getHeaders().getFirst("Authorization");
         if (jwt != null && (!jwt.startsWith("Basic") && !jwt.startsWith("Bearer"))) {
             try {
