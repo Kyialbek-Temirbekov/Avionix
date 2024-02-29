@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
@@ -24,11 +23,24 @@ public class SecurityConfig {
     private final IdTokenReceiverFilter idTokenReceiverFilter;
     private final JWTTokenReceiverFilter jwtTokenReceiverFilter;
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
+    MvcRequestMatcher.Builder mvc(HandlerMappingIntrospector introspector) {
+        return new MvcRequestMatcher.Builder(introspector);
+    }
+    @Bean
+    SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity, MvcRequestMatcher.Builder mvc) throws Exception {
         httpSecurity.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((requests) -> requests
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/faq/**")).hasAuthority("faq:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/faq/**")).hasAuthority("faq:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/faq/**")).hasAuthority("faq:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/faq/**")).hasAuthority("faq:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/whyUs/**")).hasAuthority("skyline_benefits:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/whyUs/**")).hasAuthority("skyline_benefits:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/whyUs/**")).hasAuthority("skyline_benefits:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/whyUs/**")).hasAuthority("skyline_benefits:delete")
                         .anyRequest().permitAll())
                 .addFilterBefore(jwtTokenReceiverFilter, BasicAuthenticationFilter.class)
                 .addFilterBefore(idTokenReceiverFilter, BasicAuthenticationFilter.class)

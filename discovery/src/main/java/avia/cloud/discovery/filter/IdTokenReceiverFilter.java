@@ -1,5 +1,6 @@
 package avia.cloud.discovery.filter;
 
+import avia.cloud.discovery.service.client.AuthorityFeignClient;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -8,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
@@ -16,13 +18,16 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.util.Collections;
+import java.util.List;
 import java.util.Map;
+
+import static avia.cloud.discovery.util.AuthorityUtils.getAuthorities;
 
 @Component
 @RequiredArgsConstructor
 public class IdTokenReceiverFilter extends OncePerRequestFilter {
     private final JwtDecoder jwtDecoder;
+    private final AuthorityFeignClient authorityFeignClient;
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
@@ -43,9 +48,10 @@ public class IdTokenReceiverFilter extends OncePerRequestFilter {
             throw new BadCredentialsException(e.getMessage());
         }
         String username = (String) claims.get("username");
-        Authentication auth = new UsernamePasswordAuthenticationToken(username, null,
-                Collections.singletonList(new SimpleGrantedAuthority("ROLE_CLIENT")));
-        SecurityContextHolder.getContext().setAuthentication(auth);
+        List<GrantedAuthority> grantedAuthorities = getAuthorities(authorityFeignClient.fetchAuthorities("CLIENT"));
+        grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_CLIENT"));
+        Authentication authentication = new UsernamePasswordAuthenticationToken(username, null, grantedAuthorities);
+        SecurityContextHolder.getContext().setAuthentication(authentication);
     }
 
 }

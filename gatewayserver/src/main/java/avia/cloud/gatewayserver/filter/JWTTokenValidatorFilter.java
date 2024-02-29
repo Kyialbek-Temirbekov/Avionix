@@ -34,7 +34,7 @@ public class JWTTokenValidatorFilter implements WebFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange,WebFilterChain  chain) {
         String jwt = exchange.getRequest().getHeaders().getFirst("Authorization");
-        if (jwt != null) {
+        if (jwt != null && (!jwt.startsWith("Basic") && !jwt.startsWith("Bearer"))) {
             try {
                 try {
                     SecretKey key = Keys.hmacShaKeyFor(jwtKey.getBytes(StandardCharsets.UTF_8));

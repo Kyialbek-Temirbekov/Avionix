@@ -23,11 +23,4 @@ public class ClientApplication {
 		return new ModelMapper();
 	}
 
-	@Bean
-	ObjectMapper objectMapper() {
-		ObjectMapper objectMapper = new ObjectMapper();
-		objectMapper.registerModule(new JavaTimeModule());
-		return objectMapper;
-	}
-
 }

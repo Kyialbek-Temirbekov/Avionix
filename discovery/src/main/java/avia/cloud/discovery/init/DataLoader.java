@@ -5,6 +5,7 @@ import avia.cloud.discovery.entity.SkylineBenefits;
 import avia.cloud.discovery.repository.FaqRepository;
 import avia.cloud.discovery.repository.SkylineBenefitsRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import jakarta.ws.rs.NotFoundException;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -28,12 +29,15 @@ import java.util.Objects;
 @Profile("default")
 @RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
-    private final ObjectMapper objectMapper;
+    private ObjectMapper objectMapper;
     private final SkylineBenefitsRepository skylineBenefitsRepository;
     private final FaqRepository faqRepository;
 
     @Override
     public void run(String... args) throws IOException {
+        objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new JavaTimeModule());
+
         loadSkylineBenefits("/data/avionix-skyline-benefits.json");
         loadFaq("/data/avionix-faq.json");
 
@@ -73,6 +77,5 @@ public class DataLoader implements CommandLineRunner {
                 .forEach(faqContent -> faqContent.setFaq(faq)));
         faqRepository.saveAll(faqs);
     }
-
 }
 

@@ -4,6 +4,7 @@ import avia.cloud.client.entity.Authority;
 import avia.cloud.client.repository.AuthorityRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -24,11 +25,14 @@ import java.util.Objects;
 @Profile("default")
 @RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
-    private final ObjectMapper objectMapper;
+    private ObjectMapper objectMapper;
     private final AuthorityRepository authorityRepository;
 
     @Override
     public void run(String... args) throws IOException {
+        objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new JavaTimeModule());
+
         loadAuthority("/data/avionix-authority.json");
     }
 

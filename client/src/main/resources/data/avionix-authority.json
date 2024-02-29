@@ -1,24 +1,16 @@
 [
   {
-    "role": "CLIENT",
-    "entity": "customer",
-    "create": false,
-    "read": true,
-    "update": true,
-    "delete": false
-  },
-  {
-    "role": "CLIENT",
+    "role": "GUEST",
     "entity": "account",
     "create": false,
     "read": true,
     "update": true,
-    "delete": false
+    "delete": true
   },
   {
-    "role": "OWNER",
-    "entity": "airline",
-    "create": false,
+    "role": "CLIENT",
+    "entity": "account",
+    "create": true,
     "read": true,
     "update": true,
     "delete": false
@@ -26,7 +18,7 @@
   {
     "role": "OWNER",
     "entity": "account",
-    "create": false,
+    "create": true,
     "read": true,
     "update": true,
     "delete": false
@@ -40,19 +32,75 @@
     "delete": false
   },
   {
-    "role": "GUEST",
-    "entity": "account",
-    "create": true,
-    "read": false,
+    "role": "CLIENT",
+    "entity": "customer",
+    "create": false,
+    "read": true,
     "update": true,
     "delete": false
   },
   {
     "role": "GUEST",
     "entity": "airline",
-    "create": false,
+    "create": true,
     "read": false,
     "update": true,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "entity": "airline",
+    "create": false,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "entity": "faq",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "entity": "faq",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "entity": "faq",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "entity": "skyline_benefits",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "entity": "skyline_benefits",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "entity": "skyline_benefits",
+    "create": false,
+    "read": true,
+    "update": false,
     "delete": false
   }
 ]

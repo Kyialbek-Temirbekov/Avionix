@@ -55,7 +55,9 @@ public class JWTTokenSupplierFilter extends OncePerRequestFilter {
     private String populateAuthorities(Collection<? extends GrantedAuthority> authorities) {
         Set<String> authoritiesSet = new HashSet<>();
         for(GrantedAuthority authority : authorities)
-            authoritiesSet.add(AuthorityUtils.convert(authority.getAuthority()));
+            if (authority.getAuthority().startsWith("ROLE_")) {
+                authoritiesSet.add(authority.getAuthority());
+            }
         return String.join(",", authoritiesSet);
     }
 }

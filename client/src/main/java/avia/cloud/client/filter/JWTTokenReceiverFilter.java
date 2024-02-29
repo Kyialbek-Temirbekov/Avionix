@@ -2,6 +2,7 @@ package avia.cloud.client.filter;
 
 import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.service.IAuthorityService;
+import avia.cloud.client.util.AuthorityUtils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
@@ -44,21 +45,31 @@ public class JWTTokenReceiverFilter extends OncePerRequestFilter {
         String jwt = request.getHeader("Authorization");
         Authentication authentication;
         List<GrantedAuthority> grantedAuthorities;
-        if(null != jwt && !jwt.startsWith("Basic")) {
-            SecretKey key = Keys.hmacShaKeyFor(jwtKey.getBytes(StandardCharsets.UTF_8));
-            Claims claims = Jwts.parserBuilder()
-                    .setSigningKey(key)
-                    .build()
-                    .parseClaimsJws(jwt)
-                    .getBody();
-            String username = String.valueOf(claims.get("username"));
-            String jwtAuthorities = (String) claims.get("authorities");
+        if(null != jwt) {
+            if(jwt.startsWith("Basic")) {
+                Authentication basicAuthentication = SecurityContextHolder.getContext().getAuthentication();
+                List<Role> roles = basicAuthentication.getAuthorities().stream().map(GrantedAuthority::getAuthority).map(Role::valueOf).toList();
+                grantedAuthorities = getAuthorities(iAuthorityService.fetchAuthorities(roles));
+                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.convert(role.toString()))));
 
-            List<Role> roles = Arrays.stream(jwtAuthorities.split(",")).map(Role::valueOf).toList();
-            grantedAuthorities = getAuthorities(iAuthorityService.fetchAuthorities(roles));
-            roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(role.toString())));
+                authentication = new UsernamePasswordAuthenticationToken(basicAuthentication.getName(), null, grantedAuthorities);
+            }
+            else {
+                SecretKey key = Keys.hmacShaKeyFor(jwtKey.getBytes(StandardCharsets.UTF_8));
+                Claims claims = Jwts.parserBuilder()
+                        .setSigningKey(key)
+                        .build()
+                        .parseClaimsJws(jwt)
+                        .getBody();
+                String username = String.valueOf(claims.get("username"));
+                String jwtAuthorities = (String) claims.get("authorities");
 
-            authentication = new UsernamePasswordAuthenticationToken(username, null, grantedAuthorities);
+                List<Role> roles = Arrays.stream(jwtAuthorities.split(",")).map(role -> role.substring(5)).map(Role::valueOf).toList();
+                grantedAuthorities = getAuthorities(iAuthorityService.fetchAuthorities(roles));
+                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.convert(role.toString()))));
+
+                authentication = new UsernamePasswordAuthenticationToken(username, null, grantedAuthorities);
+            }
         }
         else {
             grantedAuthorities = getAuthorities(iAuthorityService.fetchAuthorities(Collections.singletonList(Role.GUEST)));
