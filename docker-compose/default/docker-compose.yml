@@ -52,21 +52,6 @@ services:
     environment:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
-  discovery:
-    image: "adpsorcerer/avionix-discovery:r1"
-    container_name: discovery
-    healthcheck:
-      test: "curl --fail --silent localhost:9000/actuator/health/readiness | grep UP || exit 1"
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 10s
-    environment:
-      SPRING_APPLICATION_NAME: "discovery"
-    extends:
-      file: common-config.yml
-      service: microservice-eureka-config
-
   client:
     image: "adpsorcerer/avionix-client:r1"
     container_name: client
@@ -77,13 +62,29 @@ services:
       retries: 10
       start_period: 10s
     depends_on:
-      discovery:
-        condition: service_healthy
       rabbit:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "client"
       SPRING_RABBITMQ_HOST: "rabbit"
+    extends:
+      file: common-config.yml
+      service: microservice-eureka-config
+
+  discovery:
+    image: "adpsorcerer/avionix-discovery:r1"
+    container_name: discovery
+    healthcheck:
+      test: "curl --fail --silent localhost:9000/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    depends_on:
+      client:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "discovery"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
@@ -98,7 +99,7 @@ services:
       retries: 10
       start_period: 10s
     depends_on:
-      client:
+      discovery:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "flight"
