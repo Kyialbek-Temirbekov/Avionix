@@ -22,7 +22,7 @@ public class AirlineController {
         return ResponseEntity.status(HttpStatus.CREATED).body(iAirlineService.createClient(name));
     }
     @PatchMapping()
-    public ResponseEntity<?> createAirline(@Valid @RequestBody AirlineDTO airlineDTO) throws IOException {
+    public ResponseEntity<ResponseDTO> createAirline(@Valid @RequestBody AirlineDTO airlineDTO) throws IOException {
         iAirlineService.createAirline(airlineDTO);
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200", "Verification code sent to email " + airlineDTO.getAccount().getEmail()));
     }

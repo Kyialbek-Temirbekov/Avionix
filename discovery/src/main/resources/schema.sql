@@ -56,3 +56,11 @@ CREATE TABLE TERMS_OF_USE_CONTENT (
     description TEXT,
     lan VARCHAR(2)
 );
+CREATE TABLE CONTACT (
+    id VARCHAR(36) PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    message TEXT,
+    created_at DATE
+);
+

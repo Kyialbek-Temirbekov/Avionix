@@ -102,5 +102,29 @@
     "read": true,
     "update": false,
     "delete": false
+  },
+  {
+    "role": "GUEST",
+    "entity": "contact",
+    "create": true,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "entity": "contact",
+    "create": true,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "entity": "contact",
+    "create": true,
+    "read": false,
+    "update": false,
+    "delete": false
   }
 ]

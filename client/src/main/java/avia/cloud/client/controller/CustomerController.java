@@ -22,7 +22,7 @@ public class CustomerController {
     @PostMapping()
     public ResponseEntity<?> createCustomer(@Valid @RequestBody CustomerDTO customerDTO) throws IOException {
         iCustomerService.createCustomer(customerDTO);
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("200","Verification code sent to email " + customerDTO.getAccount().getEmail()));
+        return ResponseEntity.status(HttpStatus.CREATED).body(new ResponseDTO("200","Verification code sent to email " + customerDTO.getAccount().getEmail()));
     }
     @GetMapping()
     public ResponseEntity<CustomerDTO> fetchCustomer(Authentication authentication) throws IOException {

@@ -24,7 +24,7 @@ public class AccountController {
     private final IAccountService iAccountService;
     @PatchMapping("/confirmEmail")
     public ResponseEntity<Authorization> confirmEmail(@Valid @RequestBody VerificationInfo verificationInfo) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(iAccountService.confirmEmail(verificationInfo));
+        return ResponseEntity.status(HttpStatus.OK).body(iAccountService.confirmEmail(verificationInfo));
     }
     @PostMapping("/signIn")
     public ResponseEntity<?> singIn() {

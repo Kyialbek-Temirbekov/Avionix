@@ -41,6 +41,11 @@ public class SecurityConfig {
                         .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/whyUs/**")).hasAuthority("skyline_benefits:read")
                         .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/whyUs/**")).hasAuthority("skyline_benefits:update")
                         .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/whyUs/**")).hasAuthority("skyline_benefits:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/contact/**")).hasAuthority("contact:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/contact/**")).hasAuthority("contact:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/contact/**")).hasAuthority("contact:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/contact/**")).hasAuthority("contact:delete")
                         .anyRequest().permitAll())
                 .addFilterBefore(jwtTokenReceiverFilter, BasicAuthenticationFilter.class)
                 .addFilterBefore(idTokenReceiverFilter, BasicAuthenticationFilter.class)
