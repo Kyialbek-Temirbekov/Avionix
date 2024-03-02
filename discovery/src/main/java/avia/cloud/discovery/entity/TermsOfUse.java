@@ -1,7 +1,7 @@
 package avia.cloud.discovery.entity;
 
+import avia.cloud.discovery.dto.enums.Role;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import lombok.*;
@@ -9,8 +9,6 @@ import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.UuidGenerator;
 
 import java.util.List;
-
-import static jakarta.persistence.CascadeType.*;
 
 @Entity
 @EqualsAndHashCode(callSuper = true)
@@ -20,10 +18,11 @@ import static jakarta.persistence.CascadeType.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
-public class Faq extends BaseEntity{
+public class TermsOfUse extends BaseEntity {
     @Id
     @UuidGenerator
     private String id;
-    @OneToMany(mappedBy = "faq", fetch = FetchType.EAGER, cascade = {PERSIST,REMOVE,MERGE})
-    private List<FaqContent> content;
+    private Role type;
+    @OneToMany(mappedBy = "termsOfUse")
+    private List<TermsOfUseContent> content;
 }

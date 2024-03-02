@@ -40,7 +40,7 @@ public class JWTTokenReceiverFilter extends OncePerRequestFilter {
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
         Optional<String> auth = Optional.ofNullable(request.getHeader("Authorization"));
-        return auth.map(s -> s.startsWith("Bearer")).orElse(false);
+        return auth.map(s -> s.startsWith("Bearer")).orElse(!request.getServletPath().startsWith("/api"));
     }
 
     @Override

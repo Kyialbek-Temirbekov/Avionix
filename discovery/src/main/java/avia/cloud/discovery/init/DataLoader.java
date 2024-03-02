@@ -49,12 +49,12 @@ public class DataLoader implements CommandLineRunner {
         Resource[] foundResources = resolver.getResources(pattern);
         for(Resource resource: foundResources) {
             try {
-            String id = resource.getFilename();
-            T entity = jpaRepository.findById(Objects.requireNonNull(Objects.requireNonNull(id).substring(0,id.lastIndexOf('.')))).orElseThrow(NotFoundException::new);
-            Field field = entity.getClass().getDeclaredField(requiredField);
-            field.setAccessible(true);
-            field.set(entity, StreamUtils.copyToByteArray(resource.getInputStream()));
-            jpaRepository.save(entity);
+                String id = resource.getFilename();
+                T entity = jpaRepository.findById(Objects.requireNonNull(Objects.requireNonNull(id).substring(0,id.lastIndexOf('.')))).orElseThrow(NotFoundException::new);
+                Field field = entity.getClass().getDeclaredField(requiredField);
+                field.setAccessible(true);
+                field.set(entity, StreamUtils.copyToByteArray(resource.getInputStream()));
+                jpaRepository.save(entity);
             } catch (Exception e) {
                 throw new RuntimeException("Error setting file " + e);
             }

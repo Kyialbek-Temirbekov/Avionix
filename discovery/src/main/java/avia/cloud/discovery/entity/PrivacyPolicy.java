@@ -20,10 +20,10 @@ import static jakarta.persistence.CascadeType.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
-public class Faq extends BaseEntity{
+public class PrivacyPolicy extends BaseEntity {
     @Id
     @UuidGenerator
     private String id;
-    @OneToMany(mappedBy = "faq", fetch = FetchType.EAGER, cascade = {PERSIST,REMOVE,MERGE})
-    private List<FaqContent> content;
+    @OneToMany(mappedBy = "privacyPolicy", fetch = FetchType.EAGER, cascade = {PERSIST,REMOVE,MERGE})
+    private List<PrivacyPolicyContent> content;
 }

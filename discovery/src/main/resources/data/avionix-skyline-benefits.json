@@ -1,32 +1,24 @@
 [
   {
-    "createdAt": "2024-02-19T12:00:00",
-    "createdBy": "avionix2024@gmail.com",
-    "updatedAt": "2024-02-19T12:00:00",
-    "updatedBy": "avionix2024@gmail.com",
-    "id": "6b4c5a9e-0a6f-4eab-aa79-0c3b12d657d8",
     "logo": null,
+    "id": "6b4c5a9e-0a6f-4eab-aa79-0c3b12d657d8",
     "content": [
       {
-        "id": "8b0ec2d1-6be1-434d-88a1-5843a635fa8b",
         "title": "Trip Planing",
         "description": "Plan the whole trip with us. Get a flight ticket, choose a hotel and rent a car.",
         "lan": "EN"
       },
       {
-        "id": "a12e619e-6c51-487c-b6d4-8ef9bb5e9b11",
         "title": "Планирование полета",
         "description": "Спланируйте всю поездку вместе с нами. Приобретите авиабилет, выберите отель и арендуйте автомобиль.",
         "lan": "RU"
       },
       {
-        "id": "ec7dc4f5-8c69-4f18-ba6f-3e3a9e0a3e20",
         "title": "Сапарды пландаштыруу",
         "description": "Бүт сапарды биз менен пландаштырыңыз. Авиабилет алыңыз, мейманкананы тандаңыз жана унааны ижарага алыңыз.",
         "lan": "KY"
       },
       {
-        "id": "f1421e5c-9b52-4c5c-b4d0-e6ef2761c8a3",
         "title": "Gezi Planlama",
         "description": "Tüm seyahatinizi bizimle planlayın. Uçak bileti alın, otel seçin ve araç kiralayın.",
         "lan": "TR"
@@ -34,33 +26,25 @@
     ]
   },
   {
-    "createdAt": "2024-02-19T12:00:00",
-    "createdBy": "avionix2024@gmail.com",
-    "updatedAt": "2024-02-19T12:00:00",
-    "updatedBy": "avionix2024@gmail.com",
-    "id": "d3b95c1e-d1b7-4ac1-8641-2752e9824eae",
     "logo": null,
+    "id": "ce26fadc-1202-40b6-b700-43724b0fa0c4",
     "content": [
       {
-        "id": "df7b0b0f-8ff7-46aa-af5d-fb6bf7435e8d",
         "title": "Honest prices",
         "description": "We offer the best prices out there in the market for flights, hotels & car rental.",
         "lan": "EN"
       },
       {
-        "id": "07a20a05-5be6-4a9d-90d6-9bdf99a00db4",
         "title": "Честные цены",
         "description": "Мы предлагаем лучшие цены на рынке на авиабилеты, отели и аренду автомобилей.",
         "lan": "RU"
       },
       {
-        "id": "09d2b1f0-6d53-41c6-aabb-282fcabf2cc5",
         "title": "Чыныгы баалар",
         "description": "Биз учактар, мейманканалар жана унааларды ижарага алуу үчүн рынокто эң мыкты бааларды сунуштайбыз.",
         "lan": "KY"
       },
       {
-        "id": "5d2b8a54-0342-43d9-8045-c870029ef145",
         "title": "Dürüst fiyatlar",
         "description": "Uçuş, otel ve araç kiralamada piyasadaki en iyi fiyatları sunuyoruz.",
         "lan": "TR"
@@ -68,33 +52,25 @@
     ]
   },
   {
-    "createdAt": "2024-02-19T12:00:00",
-    "createdBy": "avionix2024@gmail.com",
-    "updatedAt": "2024-02-19T12:00:00",
-    "updatedBy": "avionix2024@gmail.com",
-    "id": "ce26fadc-1202-40b6-b700-43724b0fa0c4",
     "logo": null,
+    "id": "d3b95c1e-d1b7-4ac1-8641-2752e9824eae",
     "content": [
       {
-        "id": "e6ad3ac7-3a45-4d13-ba17-302627d1e8e0",
         "title": "Support 24/7",
         "description": "We’re here for you. Our experienced team will provide reliable support as soon as possible.",
         "lan": "EN"
       },
       {
-        "id": "e0b2d9f0-c1f3-4876-9f3a-7922e3311cf7",
         "title": "Поддержка 24/7",
         "description": "Мы здесь для вас. Наша опытная команда окажет надежную поддержку в кратчайшие сроки.",
         "lan": "RU"
       },
       {
-        "id": "32f975e2-b8ac-484e-b0a0-0a05b3dbac25",
         "title": "24/7 колдоо",
         "description": "Биз силер үчүн бул жерде. Биздин тажрыйбалуу команда мүмкүн болушунча тез арада ишенимдүү колдоо көрсөтөт.",
         "lan": "KY"
       },
       {
-        "id": "bf44dcbc-1e82-489a-b86b-2e13ac6b425f",
         "title": "7/24 Destek",
         "description": "Biz senin için buradayız. Deneyimli ekibimiz en kısa sürede güvenilir destek sağlayacaktır.",
         "lan": "TR"
