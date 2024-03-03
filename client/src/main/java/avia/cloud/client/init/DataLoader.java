@@ -1,7 +1,11 @@
 package avia.cloud.client.init;
 
 import avia.cloud.client.entity.Authority;
+import avia.cloud.client.entity.Comment;
+import avia.cloud.client.entity.Customer;
 import avia.cloud.client.repository.AuthorityRepository;
+import avia.cloud.client.repository.CommentRepository;
+import avia.cloud.client.repository.CustomerRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -27,6 +31,8 @@ import java.util.Objects;
 public class DataLoader implements CommandLineRunner {
     private ObjectMapper objectMapper;
     private final AuthorityRepository authorityRepository;
+    private final CustomerRepository customerRepository;
+    private final CommentRepository commentRepository;
 
     @Override
     public void run(String... args) throws IOException {
@@ -34,6 +40,7 @@ public class DataLoader implements CommandLineRunner {
         objectMapper.registerModule(new JavaTimeModule());
 
         loadAuthority("/data/avionix-authority.json");
+        loadCustomer("/data/avionix-customer.json");
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
@@ -58,6 +65,18 @@ public class DataLoader implements CommandLineRunner {
         InputStream inputStream = TypeReference.class.getResourceAsStream(path);
         List<Authority> authorities = objectMapper.readValue(inputStream, typeReference);
         authorityRepository.saveAll(authorities);
+    }
+
+    private void loadCustomer(String path) throws IOException {
+        TypeReference<List<Customer>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<Customer> customers = objectMapper.readValue(inputStream, typeReference);
+        customerRepository.saveAllAndFlush(customers);
+        customers.forEach(customer -> customer.getComments()
+                .forEach(comment -> comment.setCustomer(customer)));
+        List<Comment> comments = customers.stream().map(Customer::getComments).flatMap(List::stream).toList();
+        commentRepository.saveAllAndFlush(comments);
+
     }
 
 }

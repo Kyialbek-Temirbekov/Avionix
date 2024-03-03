@@ -6,12 +6,12 @@ import java.lang.reflect.Field;
 import java.util.List;
 
 public class FieldUtils {
-    public static<T> T getField(List<T> items, String declaredField, String value) throws NoSuchFieldException, IllegalAccessException {
+    public static<T> T getField(List<T> items, Lan dialect) throws NoSuchFieldException, IllegalAccessException {
         for (T item : items) {
-            Field field = item.getClass().getDeclaredField(declaredField);
+            Field field = item.getClass().getDeclaredField("lan");
             field.setAccessible(true);
             Lan lan = (Lan) field.get(item);
-            if (lan.toString().equals(value)) {
+            if (lan.equals(dialect)) {
                 return item;
             }
         }

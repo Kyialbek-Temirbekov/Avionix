@@ -84,9 +84,6 @@ public class AirlineServiceImpl implements IAirlineService {
                 ));
     }
 
-    private Account convertToAccount(AccountDTO accountDTO) {
-        return modelMapper.map(accountDTO, Account.class);
-    }
     private Airline convertToAirline(AirlineDTO airlineDTO) {
         return modelMapper.map(airlineDTO, Airline.class);
     }

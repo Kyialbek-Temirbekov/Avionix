@@ -50,7 +50,7 @@ public class JWTTokenReceiverFilter extends OncePerRequestFilter {
                 Authentication basicAuthentication = SecurityContextHolder.getContext().getAuthentication();
                 List<Role> roles = basicAuthentication.getAuthorities().stream().map(GrantedAuthority::getAuthority).map(Role::valueOf).toList();
                 grantedAuthorities = getAuthorities(iAuthorityService.fetchAuthorities(roles));
-                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.convert(role.toString()))));
+                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.addPrefix(role.toString()))));
 
                 authentication = new UsernamePasswordAuthenticationToken(basicAuthentication.getName(), null, grantedAuthorities);
             }
@@ -66,7 +66,7 @@ public class JWTTokenReceiverFilter extends OncePerRequestFilter {
 
                 List<Role> roles = Arrays.stream(jwtAuthorities.split(",")).map(role -> role.substring(5)).map(Role::valueOf).toList();
                 grantedAuthorities = getAuthorities(iAuthorityService.fetchAuthorities(roles));
-                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.convert(role.toString()))));
+                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.addPrefix(role.toString()))));
 
                 authentication = new UsernamePasswordAuthenticationToken(username, null, grantedAuthorities);
             }

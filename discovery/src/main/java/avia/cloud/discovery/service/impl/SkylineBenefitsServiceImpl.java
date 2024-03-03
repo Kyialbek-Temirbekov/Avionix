@@ -3,6 +3,7 @@ package avia.cloud.discovery.service.impl;
 import avia.cloud.discovery.dto.SkylineBenefitsContentDTO;
 import avia.cloud.discovery.dto.SkylineBenefitsDTO;
 import avia.cloud.discovery.entity.SkylineBenefits;
+import avia.cloud.discovery.entity.enums.Lan;
 import avia.cloud.discovery.repository.SkylineBenefitsRepository;
 import avia.cloud.discovery.service.ISkylineBenefitsService;
 import avia.cloud.discovery.util.ImageUtils;
@@ -26,12 +27,12 @@ public class SkylineBenefitsServiceImpl implements ISkylineBenefitsService {
 
     @Override
     public List<SkylineBenefitsDTO> fetchSkylineBenefits(String lan) {
-        return skylineBenefitsRepository.findAll().stream().map(s -> convertToSkylineBenefitsDTO(s,lan.toUpperCase())).toList();
+        return skylineBenefitsRepository.findAll().stream().map(skylineBenefits -> convertToSkylineBenefitsDTO(skylineBenefits, Lan.of(lan))).toList();
     }
     @SneakyThrows
-    private SkylineBenefitsDTO convertToSkylineBenefitsDTO(SkylineBenefits skylineBenefits, String lan) {
+    private SkylineBenefitsDTO convertToSkylineBenefitsDTO(SkylineBenefits skylineBenefits, Lan lan) {
         SkylineBenefitsDTO skylineBenefitsDTO = modelMapper.map(skylineBenefits, SkylineBenefitsDTO.class);
-        skylineBenefitsDTO.setContent(modelMapper.map(getField(skylineBenefits.getContent(),"lan",lan),SkylineBenefitsContentDTO.class));
+        skylineBenefitsDTO.setContent(modelMapper.map(getField(skylineBenefits.getContent(), lan),SkylineBenefitsContentDTO.class));
         if (skylineBenefits.getLogo() != null) {
             skylineBenefitsDTO.setLogoUrl(ImageUtils.getBase64Image(skylineBenefits.getLogo()));
         }

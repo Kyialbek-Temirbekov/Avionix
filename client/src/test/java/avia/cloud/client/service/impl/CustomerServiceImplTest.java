@@ -1,30 +1,19 @@
 package avia.cloud.client.service.impl;
 
-import avia.cloud.client.dto.VerificationInfo;
-import avia.cloud.client.entity.Customer;
-import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AirlineRepository;
 import avia.cloud.client.repository.CustomerRepository;
-import avia.cloud.client.security.TokenGenerator;
+import avia.cloud.client.security.JwtService;
 import avia.cloud.client.service.ICustomerService;
-import avia.cloud.client.util.ClientCredentialGenerator;
 import avia.cloud.client.util.Messenger;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import java.util.Optional;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.BDDMockito.given;
 
 @ExtendWith(MockitoExtension.class)
 class CustomerServiceImplTest {
@@ -40,7 +29,7 @@ class CustomerServiceImplTest {
     @MockBean
     private PasswordEncoder passwordEncoder;
     @MockBean
-    private TokenGenerator tokenGenerator;
+    private JwtService jwtService;
 
 //    @BeforeEach
 //    void setUp() {

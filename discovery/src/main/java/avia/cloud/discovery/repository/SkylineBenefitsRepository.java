@@ -7,5 +7,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SkylineBenefitsRepository extends JpaRepository<SkylineBenefits,String> {
-    SkylineBenefits findByCreatedBy(String name);
 }

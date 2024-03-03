@@ -1,8 +1,7 @@
 package avia.cloud.client.filter;
 
 import avia.cloud.client.dto.Authorization;
-import avia.cloud.client.security.TokenGenerator;
-import avia.cloud.client.util.AuthorityUtils;
+import avia.cloud.client.security.JwtService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -24,7 +23,7 @@ import java.util.Set;
 @Component
 @RequiredArgsConstructor
 public class JWTTokenSupplierFilter extends OncePerRequestFilter {
-    private final TokenGenerator tokenGenerator;
+    private final JwtService jwtService;
     private ObjectMapper objectMapper;
 
     @Override
@@ -42,7 +41,7 @@ public class JWTTokenSupplierFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if(null != authentication) {
-            Authorization auth = tokenGenerator.generate(authentication.getName(),populateAuthorities(authentication.getAuthorities()));
+            Authorization auth = jwtService.createToken(authentication.getName(),populateAuthorities(authentication.getAuthorities()));
             String json = objectMapper.writeValueAsString(auth);
             response.setContentType("application/json");
             PrintWriter out = response.getWriter();

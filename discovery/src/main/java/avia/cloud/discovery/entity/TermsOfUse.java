@@ -1,6 +1,6 @@
 package avia.cloud.discovery.entity;
 
-import avia.cloud.discovery.dto.enums.Role;
+import avia.cloud.discovery.entity.enums.Role;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;

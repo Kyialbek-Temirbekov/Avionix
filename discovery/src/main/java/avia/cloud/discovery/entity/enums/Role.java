@@ -1,4 +1,4 @@
-package avia.cloud.discovery.dto.enums;
+package avia.cloud.discovery.entity.enums;
 
 public enum Role {
     GUEST,

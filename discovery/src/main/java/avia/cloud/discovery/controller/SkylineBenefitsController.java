@@ -2,6 +2,7 @@ package avia.cloud.discovery.controller;
 
 import avia.cloud.discovery.dto.SkylineBenefitsDTO;
 import avia.cloud.discovery.service.ISkylineBenefitsService;
+import avia.cloud.discovery.validation.constraint.SupportedLanguage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +21,7 @@ import java.util.List;
 public class SkylineBenefitsController {
     private final ISkylineBenefitsService iSkylineBenefitsService;
     @GetMapping()
-    public ResponseEntity<List<SkylineBenefitsDTO>> fetchSkylineBenefits(@RequestParam String lan) {
+    public ResponseEntity<List<SkylineBenefitsDTO>> fetchSkylineBenefits(@RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iSkylineBenefitsService.fetchSkylineBenefits(lan));
     }
 }

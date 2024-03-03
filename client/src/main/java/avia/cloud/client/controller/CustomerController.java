@@ -33,6 +33,6 @@ public class CustomerController {
     public ResponseEntity<?> createGoogleCustomer(Authentication authentication, @Valid @RequestBody CustomerDTO customerDTO) {
         customerDTO.getAccount().setEmail(authentication.getName());
         iCustomerService.createCustomerOAuth(customerDTO);
-        return ResponseEntity.ok("Customer created successfully");
+        return ResponseEntity.status(HttpStatus.CREATED).body("Customer created successfully");
     }
 }

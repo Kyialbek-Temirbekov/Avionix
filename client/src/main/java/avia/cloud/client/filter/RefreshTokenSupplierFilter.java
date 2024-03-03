@@ -1,7 +1,7 @@
 package avia.cloud.client.filter;
 
 import avia.cloud.client.entity.Account;
-import avia.cloud.client.security.TokenGenerator;
+import avia.cloud.client.security.JwtService;
 import avia.cloud.client.service.IAccountService;
 import avia.cloud.client.util.AuthorityUtils;
 import io.jsonwebtoken.Claims;
@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
 public class RefreshTokenSupplierFilter extends OncePerRequestFilter {
     @Value("${application.jwt.key}")
     private String jwtKey;
-    private final TokenGenerator tokenGenerator;
+    private final JwtService jwtService;
     private final IAccountService iUserService;
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
@@ -52,8 +52,8 @@ public class RefreshTokenSupplierFilter extends OncePerRequestFilter {
                 throw new BadCredentialsException("Required refresh token");
             }
             Account user = iUserService.fetchUser(username);
-            String roles = user.getRoles().stream().map(Enum::toString).map(AuthorityUtils::convert).collect(Collectors.joining(","));
-            String refreshToken = tokenGenerator.getToken(user.getEmail(),roles,"ACCESS_TOKEN",3600000);
+            String roles = user.getRoles().stream().map(Enum::toString).map(AuthorityUtils::addPrefix).collect(Collectors.joining(","));
+            String refreshToken = jwtService.getToken(user.getEmail(),roles,"ACCESS_TOKEN",3600000);
             response.setHeader("Authorization", refreshToken);
         }
         catch (Exception e) {

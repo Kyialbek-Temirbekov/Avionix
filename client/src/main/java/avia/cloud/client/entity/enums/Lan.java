@@ -1,8 +1,12 @@
 package avia.cloud.client.entity.enums;
 
 public enum Lan {
-    KG,
+    KY,
     TR,
     EN,
-    RU
+    RU;
+
+    public static Lan of(String lan) {
+        return Lan.valueOf(lan.toUpperCase());
+    }
 }

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AuthorityUtils {
-    public static String convert(String role) {
+    public static String addPrefix(String role) {
         return "ROLE_" + role;
     }
     public static List<GrantedAuthority> getAuthorities(List<AuthorityDTO> fetchedAuthorities) {

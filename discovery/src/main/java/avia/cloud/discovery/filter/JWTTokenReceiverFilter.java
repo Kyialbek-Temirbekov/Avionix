@@ -1,6 +1,6 @@
 package avia.cloud.discovery.filter;
 
-import avia.cloud.discovery.dto.enums.Role;
+import avia.cloud.discovery.entity.enums.Role;
 import avia.cloud.discovery.service.client.AuthorityFeignClient;
 import avia.cloud.discovery.util.AuthorityUtils;
 import io.jsonwebtoken.Claims;
@@ -53,7 +53,7 @@ public class JWTTokenReceiverFilter extends OncePerRequestFilter {
                 Authentication basicAuthentication = SecurityContextHolder.getContext().getAuthentication();
                 List<Role> roles = basicAuthentication.getAuthorities().stream().map(GrantedAuthority::getAuthority).map(Role::valueOf).toList();
                 grantedAuthorities = getAuthorities(authorityFeignClient.fetchAuthorities(roles.stream().map(Role::toString).collect(Collectors.joining(","))));
-                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.convert(role.toString()))));
+                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.addPrefix(role.toString()))));
 
                 authentication = new UsernamePasswordAuthenticationToken(basicAuthentication.getName(), null, grantedAuthorities);
             }
@@ -69,7 +69,7 @@ public class JWTTokenReceiverFilter extends OncePerRequestFilter {
 
                 List<Role> roles = Arrays.stream(jwtAuthorities.split(",")).map(role -> role.substring(5)).map(Role::valueOf).toList();
                 grantedAuthorities = getAuthorities(authorityFeignClient.fetchAuthorities(roles.stream().map(Role::toString).collect(Collectors.joining(","))));
-                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.convert(role.toString()))));
+                roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.addPrefix(role.toString()))));
 
                 authentication = new UsernamePasswordAuthenticationToken(username, null, grantedAuthorities);
             }

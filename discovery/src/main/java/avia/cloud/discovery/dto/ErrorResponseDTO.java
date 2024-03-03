@@ -1,13 +1,12 @@
-package avia.cloud.client.dto;
+package avia.cloud.discovery.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
 
-@Data @AllArgsConstructor @NoArgsConstructor
+@Data @AllArgsConstructor
 public class ErrorResponseDTO {
     private  String apiPath;
     private HttpStatus errorCode;

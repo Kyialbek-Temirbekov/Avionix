@@ -1,6 +1,6 @@
 package avia.cloud.discovery.dto;
 
-import avia.cloud.discovery.dto.enums.Role;
+import avia.cloud.discovery.entity.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

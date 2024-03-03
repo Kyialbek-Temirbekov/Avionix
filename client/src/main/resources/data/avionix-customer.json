@@ -1,0 +1,138 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "MALE",
+    "dateOfBirth": "1990-01-01",
+    "nationality": "American",
+    "passportId": "123456789",
+    "passportExpiryDate": "2025-01-01",
+    "account": {
+      "email": "johndoe@example.com",
+      "password": "$2a$10$BprprRhLk1JE1r3knqw7K.bY8cQG7XAoPyAd3xcropNTDNboXxQa.",
+      "phone": "+1234567890",
+      "roles": ["CLIENT"],
+      "enabled": true,
+      "nonLocked": true,
+      "agreedToTermsOfUse": true
+    },
+    "comments": [
+      {
+        "description": "Мен Lufthansa компаниясынын бардык кызматкерлерине ушундай жогорку класстагы кызмат көрсөткөндүгү үчүн ыраазычылык билдиргим келет. Мага учактын тамак-ашынан баштап, шайыр кызматкерлерге чейин баары жакты. Толугу менен ишенимдүү учуу өнөктөшү катары Lefthansa сунуштайбыз.",
+        "grade": 4,
+        "checked": true,
+        "lan": "KY"
+      },
+      {
+        "description": "Сапар укмуштуудай болду, биздин укмуштуудай саякатыбызда бизди колдогон Avionix кызматкерлерине рахмат.",
+        "grade": 4,
+        "checked": true,
+        "lan": "KY"
+      },
+      {
+        "description": "Мен жана менин күйөөм учуу жана жайгаштыруу кызматтарынан абдан ыраазыбыз, Ryanairди арзан, бирок сонун кызмат катары сунуштайм.",
+        "grade": 5,
+        "checked": true,
+        "lan": "KY"
+      },
+      {
+        "description": "Мен жана менин күйөөм учуу жана жайгаштыруу кызматтарынан абдан ыраазыбыз, Ryanairди арзан, бирок сонун кызмат катары сунуштайм.",
+        "grade": 5,
+        "checked": true,
+        "lan": "KY"
+      },
+      {
+        "description": "Böyle birinci sınıf bir hizmet sundukları için tüm Lufthansa çalışanlarına teşekkür etmek istiyorum. Uçak yemeklerinden başlayarak güler yüzlü personele kadar her şeyi sevdim. Güvenilir bir uçuş ortağı olarak Lefthansa'yı kesinlikle tavsiye ediyorum.",
+        "grade": 5,
+        "checked": true,
+        "lan": "TR"
+      },
+      {
+        "description": "İnanılmaz yolculuğumuz sırasında bizi destekleyen Avionix personeline teşekkürler, yolculuk muhteşemdi.",
+        "grade": 5,
+        "checked": true,
+        "lan": "TR"
+      },
+      {
+        "description": "Ben ve kocam hem uçuş hem de konaklama hizmetlerinden çok memnunuz, ucuz ama harika bir hizmet olarak Ryanair'i tavsiye ederim.",
+        "grade": 3,
+        "checked": true,
+        "lan": "TR"
+      },
+      {
+        "description": "Ben ve kocam hem uçuş hem de konaklama hizmetlerinden çok memnunuz, ucuz ama harika bir hizmet olarak Ryanair'i tavsiye ederim.",
+        "grade": 5,
+        "checked": true,
+        "lan": "TR"
+      }
+    ]
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "gender": "FEMALE",
+    "dateOfBirth": "1988-05-15",
+    "nationality": "Canadian",
+    "passportId": "987654321",
+    "passportExpiryDate": "2026-05-15",
+    "account": {
+      "email": "2004.01035@manas.edu.kg",
+      "password": "$2a$10$BprprRhLk1JE1r3knqw7K.bY8cQG7XAoPyAd3xcropNTDNboXxQa.",
+      "phone": "+1987654321",
+      "roles": ["CLIENT"],
+      "enabled": true,
+      "nonLocked": true,
+      "agreedToTermsOfUse": true
+    },
+    "comments": [
+      {
+        "description": "Я хотел бы поблагодарить весь персонал Lufthansa за предоставление такого первоклассного обслуживания. Мне понравилось все, начиная от еды в самолете и заканчивая веселым персоналом. Полностью рекомендую Lefthansa как надежного партнера по полетам.",
+        "grade": 4,
+        "checked": true,
+        "lan": "RU"
+      },
+      {
+        "description": "Поездка была потрясающей, спасибо сотрудникам Avionix за поддержку во время нашего невероятного путешествия.",
+        "grade": 4,
+        "checked": true,
+        "lan": "RU"
+      },
+      {
+        "description": "Я и мой муж очень довольны услугами как перелета, так и проживания, рекомендуем Ryanair как дешевую, но замечательную услугу.",
+        "grade": 3,
+        "checked": true,
+        "lan": "RU"
+      },
+      {
+        "description": "Я и мой муж очень довольны услугами как перелета, так и проживания, рекомендуем Ryanair как дешевую, но замечательную услугу.",
+        "grade": 5,
+        "checked": true,
+        "lan": "RU"
+      },
+      {
+        "description": "Me & my husband are very satisfied with both flight and accommodation services, would recommend Ryanair as a cheap yet wonderful service.",
+        "grade": 5,
+        "checked": true,
+        "lan": "EN"
+      },
+      {
+        "description": "Me & my husband are very satisfied with both flight and accommodation services, would recommend Ryanair as a cheap yet wonderful service.",
+        "grade": 4,
+        "checked": true,
+        "lan": "EN"
+      },
+      {
+        "description": "The trip was amazing, thanks to Avionix staff for supporting us during our incredible journey.",
+        "grade": 4,
+        "checked": true,
+        "lan": "EN"
+      },
+      {
+        "description": "I'd like to thank the whole Lufthansa staff for providing such a top class service. I loved everything starting from plane food and ending with the cheerful staff. Totally recomend Lefthansa as a reliable flight partner.",
+        "grade": 5,
+        "checked": true,
+        "lan": "EN"
+      }
+    ]
+  }
+]

@@ -5,7 +5,7 @@ import avia.cloud.client.dto.VerificationInfo;
 import avia.cloud.client.entity.Account;
 import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AccountRepository;
-import avia.cloud.client.security.TokenGenerator;
+import avia.cloud.client.security.JwtService;
 import avia.cloud.client.service.IAccountService;
 import avia.cloud.client.util.AuthorityUtils;
 import jakarta.transaction.Transactional;
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class AccountServiceImpl implements IAccountService {
     private final AccountRepository accountRepository;
-    private final TokenGenerator tokenGenerator;
+    private final JwtService jwtService;
     @Override
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Account user = accountRepository.findByEmail(verificationInfo.getEmail())
@@ -31,8 +31,8 @@ public class AccountServiceImpl implements IAccountService {
         user.setEnabled(true);
         user.setCode(null);
         accountRepository.save(user);
-        return tokenGenerator.generate(user.getEmail(), user.getRoles()
-                .stream().map(Enum::toString).map(AuthorityUtils::convert).collect(Collectors.joining(",")));
+        return jwtService.createToken(user.getEmail(), user.getRoles()
+                .stream().map(Enum::toString).map(AuthorityUtils::addPrefix).collect(Collectors.joining(",")));
     }
     @Override
     public Account fetchUser(String email) {
