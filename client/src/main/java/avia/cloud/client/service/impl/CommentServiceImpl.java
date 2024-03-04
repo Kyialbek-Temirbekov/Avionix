@@ -22,7 +22,7 @@ public class CommentServiceImpl implements ICommentService {
 
     @Override
     public List<CommentDTO> fetchComments(String lan) {
-        return commentRepository.findAllByLan(Lan.of(lan)).stream().map(this::convertToCommentDTO).toList();
+        return commentRepository.findAllByLanAndCheckedTrue(Lan.of(lan)).stream().map(this::convertToCommentDTO).toList();
     }
 
     private CommentDTO convertToCommentDTO(Comment comment) {

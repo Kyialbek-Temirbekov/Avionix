@@ -23,7 +23,7 @@ public class AccountServiceImpl implements IAccountService {
     private final JwtService jwtService;
     @Override
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
-        Account user = accountRepository.findByEmail(verificationInfo.getEmail())
+        Account user = accountRepository.findFirstByEmailOrderByCreatedAtDesc(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("User","email", verificationInfo.getEmail()));
 //        if(!user.getCode().equals(verificationInfo.getCode())) {
 //            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
