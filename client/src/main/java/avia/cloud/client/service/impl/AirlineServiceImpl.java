@@ -1,6 +1,7 @@
 package avia.cloud.client.service.impl;
 
 import avia.cloud.client.dto.*;
+import avia.cloud.client.entity.Address;
 import avia.cloud.client.entity.Airline;
 import avia.cloud.client.entity.Account;
 import avia.cloud.client.entity.enums.Role;
@@ -72,7 +73,7 @@ public class AirlineServiceImpl implements IAirlineService {
 
         airline.setIata(airlineDTO.getIata());
         airline.setName(airlineDTO.getName());
-        airline.setAddress(airlineDTO.getAddress());
+        airline.setAddress(convertToAddress(airlineDTO.getAddress()));
         airline.setOfficialWebsiteUrl(airlineDTO.getOfficialWebsiteUrl());
         airline.setDescription(airlineDTO.getDescription());
         airlineRepository.save(airline);
@@ -82,6 +83,10 @@ public class AirlineServiceImpl implements IAirlineService {
                         "Email Verification",
                         code + " - This is verification code. Use it to sign up to Avionix Airline."
                 ));
+    }
+
+    private Address convertToAddress(AddressDTO address) {
+        return modelMapper.map(address, Address.class);
     }
 
     private Airline convertToAirline(AirlineDTO airlineDTO) {

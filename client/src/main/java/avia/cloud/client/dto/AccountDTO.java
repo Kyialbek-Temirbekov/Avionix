@@ -14,8 +14,6 @@ import org.springframework.web.multipart.MultipartFile;
 public class AccountDTO {
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private String id;
-    @NotNull
-    @NotBlank
     @Email
     @Size(max = 50)
     @NotRegistered
@@ -30,8 +28,6 @@ public class AccountDTO {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private MultipartFile multipartFile;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @NotNull
-    @NotBlank
     @Size(max = 50, min = 5)
     private String password;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

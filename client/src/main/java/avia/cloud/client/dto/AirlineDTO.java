@@ -20,10 +20,8 @@ public class AirlineDTO {
     @NotBlank
     @Size(max = 50)
     private String name;
-    @NotNull
-    @NotBlank
-    @Size(max = 50)
-    private String address;
+    @Valid
+    private AddressDTO address;
     private String officialWebsiteUrl;
     @NotNull
     @NotBlank

@@ -23,6 +23,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+import static avia.cloud.client.util.AuthorityUtils.extractClaim;
 import static avia.cloud.client.util.AuthorityUtils.getAuthorities;
 
 @Component
@@ -43,17 +44,12 @@ public class IdTokenReceiverFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String jwtToken = request.getHeader("Authorization");
-        Map<String,Object> claims = null;
-        try {
-            claims = jwtDecoder.decode(jwtToken.substring(7)).getClaims();
-        } catch (JwtException e) {
-            throw new BadCredentialsException(e.getMessage());
-        }
-        String username = (String) claims.get("username");
+        String username = extractClaim(jwtToken,"email");
         List<GrantedAuthority> grantedAuthorities = getAuthorities(iAuthorityService.fetchAuthorities(Collections.singletonList(Role.CLIENT)));
         grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_CLIENT"));
         Authentication authentication = new UsernamePasswordAuthenticationToken(username, null, grantedAuthorities);
         SecurityContextHolder.getContext().setAuthentication(authentication);
+        filterChain.doFilter(request,response);
     }
 
 }

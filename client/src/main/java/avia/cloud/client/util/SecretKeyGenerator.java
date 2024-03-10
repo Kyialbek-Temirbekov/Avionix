@@ -1,8 +1,11 @@
 package avia.cloud.client.util;
 
+import lombok.NonNull;
+
 import java.security.SecureRandom;
 
 public class SecretKeyGenerator {
+
     private static final int KEY_LENGTH_BYTES = 32;
 
     public static String generateSecretKey() {

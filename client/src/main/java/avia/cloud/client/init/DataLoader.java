@@ -1,11 +1,8 @@
 package avia.cloud.client.init;
 
-import avia.cloud.client.entity.Authority;
-import avia.cloud.client.entity.Comment;
-import avia.cloud.client.entity.Customer;
-import avia.cloud.client.repository.AuthorityRepository;
-import avia.cloud.client.repository.CommentRepository;
-import avia.cloud.client.repository.CustomerRepository;
+import avia.cloud.client.entity.*;
+import avia.cloud.client.init.amadeus.AmadeusServiceImpl;
+import avia.cloud.client.repository.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -29,10 +26,12 @@ import java.util.Objects;
 @Profile("default")
 @RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
+    private final AmadeusServiceImpl amadeusService;
     private ObjectMapper objectMapper;
     private final AuthorityRepository authorityRepository;
     private final CustomerRepository customerRepository;
     private final CommentRepository commentRepository;
+    private final AccountRepository accountRepository;
 
     @Override
     public void run(String... args) throws IOException {
@@ -41,6 +40,10 @@ public class DataLoader implements CommandLineRunner {
 
         loadAuthority("/data/avionix-authority.json");
         loadCustomer("/data/avionix-customer.json");
+        loadAirlineAccount("/data/avionix-airline-account.json");
+
+        amadeusService.sendTokenRequest();
+
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
@@ -64,7 +67,7 @@ public class DataLoader implements CommandLineRunner {
         TypeReference<List<Authority>> typeReference = new TypeReference<>(){};
         InputStream inputStream = TypeReference.class.getResourceAsStream(path);
         List<Authority> authorities = objectMapper.readValue(inputStream, typeReference);
-        authorityRepository.saveAll(authorities);
+        authorityRepository.saveAllAndFlush(authorities);
     }
 
     private void loadCustomer(String path) throws IOException {
@@ -77,6 +80,13 @@ public class DataLoader implements CommandLineRunner {
         List<Comment> comments = customers.stream().map(Customer::getComments).flatMap(List::stream).toList();
         commentRepository.saveAllAndFlush(comments);
 
+    }
+
+    private void loadAirlineAccount(String path) throws IOException {
+        TypeReference<List<Account>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<Account> accounts = objectMapper.readValue(inputStream, typeReference);
+        accountRepository.saveAllAndFlush(accounts);
     }
 
 }

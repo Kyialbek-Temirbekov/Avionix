@@ -34,7 +34,7 @@
   {
     "role": "CLIENT",
     "entity": "customer",
-    "create": false,
+    "create": true,
     "read": true,
     "update": true,
     "delete": false

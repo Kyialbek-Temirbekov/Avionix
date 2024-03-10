@@ -19,7 +19,8 @@ public class Airline {
     private String baseId;
     private String iata;
     private String name;
-    private String address;
+    @Embedded
+    private Address address;
     private String officialWebsiteUrl;
     private String description;
     private String clientId;
