@@ -22,6 +22,8 @@ import java.util.Arrays;
 public class SecurityConfig {
     @Value("${spring.security.oauth2.resourceserver.jwt.issuer-uri}")
     public String issuerUri;
+    @Value("${application.security.cors.allowedOrigins}")
+    public String allowedOrigin;
 
     @Bean
     public ReactiveJwtDecoder jwtDecoder() {
@@ -42,7 +44,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
+        configuration.setAllowedOrigins(Arrays.asList(allowedOrigin));
         configuration.setAllowedMethods(Arrays.asList(
                 HttpMethod.GET.name(),
                 HttpMethod.POST.name(),
