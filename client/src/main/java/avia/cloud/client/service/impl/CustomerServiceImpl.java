@@ -7,19 +7,24 @@ import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.CustomerRepository;
 import avia.cloud.client.repository.AccountRepository;
+import avia.cloud.client.security.JwtService;
 import avia.cloud.client.service.ICustomerService;
+import avia.cloud.client.util.AuthorityUtils;
 import avia.cloud.client.util.ImageUtils;
 import avia.cloud.client.util.Messenger;
 import avia.cloud.client.util.NumericTokenGenerator;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.security.authentication.LockedException;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -30,6 +35,7 @@ public class CustomerServiceImpl implements ICustomerService {
     private final AccountRepository accountRepository;
     private final ModelMapper modelMapper;
     private final PasswordEncoder passwordEncoder;
+    private final JwtService jwtService;
 
     @Override
     public void createCustomer(CustomerDTO customerDTO) throws IOException {
@@ -59,14 +65,16 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public void createCustomerOAuth(CustomerDTO customerDTO) {
+    public Authorization recordCustomer(CustomerDTO customerDTO) {
         Customer customer = convertToCustomer(customerDTO);
-        Account user = convertToAccount(customerDTO.getAccount());
-        user.setRoles(Arrays.asList(Role.CLIENT));
-        user.setEnabled(true);
-        user.setNonLocked(true);
-        customer.setAccount(user);
+        Account account = convertToAccount(customerDTO.getAccount());
+        account.setRoles(Arrays.asList(Role.CLIENT));
+        account.setEnabled(true);
+        account.setNonLocked(true);
+        customer.setAccount(account);
         customerRepository.save(customer);
+        return jwtService.createToken(account.getEmail(), account.getRoles()
+                .stream().map(Enum::toString).map(AuthorityUtils::addPrefix).collect(Collectors.joining(",")));
     }
 
     @Override
@@ -74,6 +82,18 @@ public class CustomerServiceImpl implements ICustomerService {
         Customer customer = accountRepository.findByEmail(email).map(Account::getCustomer)
                 .orElseThrow(() -> new NotFoundException("Customer","email", email));
         return convertToCustomerDTO(customer);
+    }
+
+    @Override
+    public Authorization oauthSignIn(Authentication authentication) {
+        String email = authentication.getName();
+        Account account = accountRepository.findByEmail(email)
+                .orElseThrow(() -> new NotFoundException("Customer","email", email));
+        if (!account.isNonLocked()) {
+            throw new LockedException("Customer's account is locked");
+        }
+        return jwtService.createToken(email, account.getRoles()
+                .stream().map(Enum::toString).map(AuthorityUtils::addPrefix).collect(Collectors.joining(",")));
     }
 
     private Account convertToAccount(AccountDTO accountDTO) {

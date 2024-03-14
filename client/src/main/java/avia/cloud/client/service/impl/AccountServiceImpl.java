@@ -10,9 +10,14 @@ import avia.cloud.client.service.IAccountService;
 import avia.cloud.client.util.AuthorityUtils;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -39,8 +44,23 @@ public class AccountServiceImpl implements IAccountService {
         return  accountRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("User details not found for user: " + email));
     }
+
+    @Override
+    public Authorization signIn(Authentication authentication) {
+        return jwtService.createToken(authentication.getName(), populateAuthorities(authentication.getAuthorities()));
+    }
+
     @Override
     public void removeAll() {
         accountRepository.deleteAllInBatch();
+    }
+
+    private String populateAuthorities(Collection<? extends GrantedAuthority> authorities) {
+        Set<String> authoritiesSet = new HashSet<>();
+        for(GrantedAuthority authority : authorities)
+            if (authority.getAuthority().startsWith("ROLE_")) {
+                authoritiesSet.add(authority.getAuthority());
+            }
+        return String.join(",", authoritiesSet);
     }
 }

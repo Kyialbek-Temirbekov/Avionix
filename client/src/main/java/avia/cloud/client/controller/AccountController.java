@@ -11,6 +11,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,8 +28,8 @@ public class AccountController {
         return ResponseEntity.status(HttpStatus.OK).body(iAccountService.confirmEmail(verificationInfo));
     }
     @PostMapping("/signIn")
-    public ResponseEntity<?> singIn() {
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+    public ResponseEntity<Authorization> singIn(Authentication authentication) {
+        return ResponseEntity.status(HttpStatus.OK).body(iAccountService.signIn(authentication));
     }
     @GetMapping("/refresh")
     public ResponseEntity<ResponseDTO> refresh() {

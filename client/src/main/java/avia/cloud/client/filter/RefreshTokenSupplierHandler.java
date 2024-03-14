@@ -14,6 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.LockedException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -24,7 +25,7 @@ import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
-public class RefreshTokenSupplierFilter extends OncePerRequestFilter {
+public class RefreshTokenSupplierHandler extends OncePerRequestFilter {
     @Value("${application.jwt.key}")
     private String jwtKey;
     private final JwtService jwtService;
@@ -52,6 +53,9 @@ public class RefreshTokenSupplierFilter extends OncePerRequestFilter {
                 throw new BadCredentialsException("Required refresh token");
             }
             Account user = iUserService.fetchUser(username);
+            if(!user.isNonLocked()) {
+                throw new LockedException("Customer's account is locked");
+            }
             String roles = user.getRoles().stream().map(Enum::toString).map(AuthorityUtils::addPrefix).collect(Collectors.joining(","));
             String refreshToken = jwtService.getToken(user.getEmail(),roles,"ACCESS_TOKEN",3600000);
             response.setHeader("Authorization", refreshToken);

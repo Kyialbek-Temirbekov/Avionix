@@ -1,5 +1,6 @@
 package avia.cloud.client.controller;
 
+import avia.cloud.client.dto.Authorization;
 import avia.cloud.client.dto.CustomerDTO;
 import avia.cloud.client.dto.ResponseDTO;
 import avia.cloud.client.service.ICustomerService;
@@ -30,9 +31,13 @@ public class CustomerController {
     }
 
     @PostMapping("/google")
-    public ResponseEntity<?> createGoogleCustomer(Authentication authentication, @Valid @RequestBody CustomerDTO customerDTO) {
+    public ResponseEntity<Authorization> oauthSignUp(Authentication authentication, @Valid @RequestBody CustomerDTO customerDTO) {
         customerDTO.getAccount().setEmail(authentication.getName());
-        iCustomerService.createCustomerOAuth(customerDTO);
-        return ResponseEntity.status(HttpStatus.CREATED).body("Customer created successfully");
+        return ResponseEntity.status(HttpStatus.CREATED).body(iCustomerService.recordCustomer(customerDTO));
+    }
+
+    @PostMapping("/google/signIn")
+    public ResponseEntity<Authorization> oauthSignIn(Authentication authentication) {
+        return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.oauthSignIn(authentication));
     }
 }

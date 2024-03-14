@@ -1,7 +1,6 @@
 package avia.cloud.discovery.security;
 
-import avia.cloud.discovery.filter.IdTokenReceiverFilter;
-import avia.cloud.discovery.filter.JWTTokenReceiverFilter;
+import avia.cloud.discovery.filter.AuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,8 +19,7 @@ import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 @Configuration
 @RequiredArgsConstructor
 public class SecurityConfig {
-    private final IdTokenReceiverFilter idTokenReceiverFilter;
-    private final JWTTokenReceiverFilter jwtTokenReceiverFilter;
+    private final AuthenticationFilter authenticationFilter;
     @Bean
     MvcRequestMatcher.Builder mvc(HandlerMappingIntrospector introspector) {
         return new MvcRequestMatcher.Builder(introspector);
@@ -47,8 +45,7 @@ public class SecurityConfig {
                         .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/contact/**")).hasAuthority("contact:update")
                         .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/contact/**")).hasAuthority("contact:delete")
                         .anyRequest().permitAll())
-                .addFilterBefore(jwtTokenReceiverFilter, BasicAuthenticationFilter.class)
-                .addFilterBefore(idTokenReceiverFilter, BasicAuthenticationFilter.class)
+                .addFilterBefore(authenticationFilter, BasicAuthenticationFilter.class)
                 .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable));
         return httpSecurity.build();
     }
