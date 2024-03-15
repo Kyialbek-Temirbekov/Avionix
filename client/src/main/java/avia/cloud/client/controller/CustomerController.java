@@ -31,13 +31,13 @@ public class CustomerController {
     }
 
     @PostMapping("/google")
-    public ResponseEntity<Authorization> oauthSignUp(Authentication authentication, @Valid @RequestBody CustomerDTO customerDTO) {
+    public ResponseEntity<Authorization> oauthSignUp(Authentication authentication, @Valid @RequestBody CustomerDTO customerDTO, @RequestHeader("Authorization") String auth) {
         customerDTO.getAccount().setEmail(authentication.getName());
         return ResponseEntity.status(HttpStatus.CREATED).body(iCustomerService.recordCustomer(customerDTO));
     }
 
     @PostMapping("/google/signIn")
-    public ResponseEntity<Authorization> oauthSignIn(Authentication authentication) {
+    public ResponseEntity<Authorization> oauthSignIn(Authentication authentication, @RequestHeader("Authorization") String auth) {
         return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.oauthSignIn(authentication));
     }
 }

@@ -29,7 +29,7 @@ public class AccountController {
         return ResponseEntity.status(HttpStatus.OK).body(iAccountService.confirmEmail(verificationInfo));
     }
     @PostMapping("/signIn")
-    public ResponseEntity<Authorization> singIn(Authentication authentication) {
+    public ResponseEntity<Authorization> singIn(Authentication authentication, @RequestHeader("Authorization") String auth) {
         return ResponseEntity.status(HttpStatus.OK).body(iAccountService.signIn(authentication));
     }
     @GetMapping("/refresh")
