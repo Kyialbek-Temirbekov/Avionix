@@ -1,7 +1,7 @@
 [
   {
     "role": "GUEST",
-    "entity": "account",
+    "target": "account",
     "create": false,
     "read": true,
     "update": true,
@@ -9,7 +9,7 @@
   },
   {
     "role": "CLIENT",
-    "entity": "account",
+    "target": "account",
     "create": true,
     "read": true,
     "update": true,
@@ -17,7 +17,7 @@
   },
   {
     "role": "OWNER",
-    "entity": "account",
+    "target": "account",
     "create": true,
     "read": true,
     "update": true,
@@ -25,7 +25,7 @@
   },
   {
     "role": "GUEST",
-    "entity": "customer",
+    "target": "customer",
     "create": true,
     "read": false,
     "update": false,
@@ -33,7 +33,7 @@
   },
   {
     "role": "CLIENT",
-    "entity": "customer",
+    "target": "customer",
     "create": true,
     "read": true,
     "update": true,
@@ -41,7 +41,7 @@
   },
   {
     "role": "GUEST",
-    "entity": "airline",
+    "target": "airline",
     "create": true,
     "read": false,
     "update": true,
@@ -49,7 +49,7 @@
   },
   {
     "role": "OWNER",
-    "entity": "airline",
+    "target": "airline",
     "create": false,
     "read": true,
     "update": true,
@@ -57,7 +57,7 @@
   },
   {
     "role": "GUEST",
-    "entity": "faq",
+    "target": "faq",
     "create": false,
     "read": true,
     "update": false,
@@ -65,7 +65,7 @@
   },
   {
     "role": "CLIENT",
-    "entity": "faq",
+    "target": "faq",
     "create": false,
     "read": true,
     "update": false,
@@ -73,7 +73,7 @@
   },
   {
     "role": "OWNER",
-    "entity": "faq",
+    "target": "faq",
     "create": false,
     "read": true,
     "update": false,
@@ -81,7 +81,7 @@
   },
   {
     "role": "GUEST",
-    "entity": "skyline_benefits",
+    "target": "skyline_benefits",
     "create": false,
     "read": true,
     "update": false,
@@ -89,7 +89,7 @@
   },
   {
     "role": "CLIENT",
-    "entity": "skyline_benefits",
+    "target": "skyline_benefits",
     "create": false,
     "read": true,
     "update": false,
@@ -97,7 +97,7 @@
   },
   {
     "role": "OWNER",
-    "entity": "skyline_benefits",
+    "target": "skyline_benefits",
     "create": false,
     "read": true,
     "update": false,
@@ -105,7 +105,7 @@
   },
   {
     "role": "GUEST",
-    "entity": "contact",
+    "target": "contact",
     "create": true,
     "read": false,
     "update": false,
@@ -113,7 +113,7 @@
   },
   {
     "role": "CLIENT",
-    "entity": "contact",
+    "target": "contact",
     "create": true,
     "read": false,
     "update": false,
@@ -121,7 +121,7 @@
   },
   {
     "role": "OWNER",
-    "entity": "contact",
+    "target": "contact",
     "create": true,
     "read": false,
     "update": false,

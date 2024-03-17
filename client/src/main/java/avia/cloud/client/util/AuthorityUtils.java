@@ -18,7 +18,7 @@ public class AuthorityUtils {
     public static List<GrantedAuthority> getAuthorities(List<AuthorityDTO> fetchedAuthorities) {
         List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
         fetchedAuthorities.forEach(fetchedAuthority -> {
-            String entity = fetchedAuthority.getEntity();
+            String entity = fetchedAuthority.getTarget();
             if(fetchedAuthority.isCreate()) grantedAuthorities.add(new SimpleGrantedAuthority(entity + ":create"));
             if(fetchedAuthority.isRead()) grantedAuthorities.add(new SimpleGrantedAuthority(entity + ":read"));
             if(fetchedAuthority.isUpdate()) grantedAuthorities.add(new SimpleGrantedAuthority(entity + ":update"));

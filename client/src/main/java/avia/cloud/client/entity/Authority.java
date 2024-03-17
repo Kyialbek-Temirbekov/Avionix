@@ -15,7 +15,7 @@ public class Authority {
     private String id;
     @Enumerated(EnumType.STRING)
     private Role role;
-    private String entity;
+    private String target;
     private boolean create;
     private boolean read;
     private boolean update;
