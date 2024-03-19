@@ -9,8 +9,7 @@ import org.hibernate.annotations.UuidGenerator;
 
 import java.util.List;
 
-import static jakarta.persistence.CascadeType.MERGE;
-import static jakarta.persistence.CascadeType.REMOVE;
+import static jakarta.persistence.CascadeType.*;
 
 @Entity
 @EqualsAndHashCode(callSuper = true)
@@ -36,7 +35,7 @@ public class Account extends BaseEntity {
     private boolean nonLocked;
     private boolean agreedToTermsOfUse;
     private String code;
-    @OneToOne(mappedBy = "account", cascade = {REMOVE})
+    @OneToOne(mappedBy = "account", cascade = {REMOVE, PERSIST, MERGE})
     private Airline airline;
     @OneToOne(mappedBy = "account", cascade = {REMOVE})
     private Customer customer;

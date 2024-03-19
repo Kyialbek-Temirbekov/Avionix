@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS AIRLINE (
     iata VARCHAR(10),
     name VARCHAR(50),
     city_code VARCHAR(10),
-    official_website_url VARCHAR(50),
+    official_website_url VARCHAR(100),
     description TEXT,
     client_id VARCHAR(50) UNIQUE,
     client_secret VARCHAR(100),

@@ -1,0 +1,62 @@
+[
+  {
+    "code": "SHA",
+    "countryCode": "CN",
+    "names": [
+      {"lan": "KY", "name": "Шанхай"},
+      {"lan": "TR", "name": "Şangay"},
+      {"lan": "EN", "name": "Shanghai"},
+      {"lan": "RU", "name": "Шанхай"}
+    ]
+  },
+  {
+    "code": "CHI",
+    "countryCode": "US",
+    "names": [
+      {"lan": "KY", "name": "Чикаго"},
+      {"lan": "TR", "name": "Chicago"},
+      {"lan": "EN", "name": "Chicago"},
+      {"lan": "RU", "name": "Чикаго"}
+    ]
+  },
+  {
+    "code": "LON",
+    "countryCode": "GB",
+    "names": [
+      {"lan": "KY", "name": "Лондон"},
+      {"lan": "TR", "name": "Londra"},
+      {"lan": "EN", "name": "London"},
+      {"lan": "RU", "name": "Лондон"}
+    ]
+  },
+  {
+    "code": "IST",
+    "countryCode": "TR",
+    "names": [
+      {"lan": "KY", "name": "Стамбул"},
+      {"lan": "TR", "name": "İstanbul"},
+      {"lan": "EN", "name": "Istanbul"},
+      {"lan": "RU", "name": "Стамбул"}
+    ]
+  },
+  {
+    "code": "PAR",
+    "countryCode": "FR",
+    "names": [
+      {"lan": "KY", "name": "Париж"},
+      {"lan": "TR", "name": "Paris"},
+      {"lan": "EN", "name": "Paris"},
+      {"lan": "RU", "name": "Париж"}
+    ]
+  },
+  {
+    "code": "LAX",
+    "countryCode": "US",
+    "names": [
+      {"lan": "KY", "name": "Лос-Анжелес"},
+      {"lan": "TR", "name": "Los Angeles"},
+      {"lan": "EN", "name": "Los Angeles"},
+      {"lan": "RU", "name": "Лос-Анжелес"}
+    ]
+  }
+]

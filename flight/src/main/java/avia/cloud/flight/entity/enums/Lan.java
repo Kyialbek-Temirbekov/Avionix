@@ -1,7 +1,7 @@
 package avia.cloud.flight.entity.enums;
 
 public enum Lan {
-    KG,
+    KY,
     TR,
     EN,
     RU

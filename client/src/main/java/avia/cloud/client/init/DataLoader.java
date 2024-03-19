@@ -1,7 +1,7 @@
 package avia.cloud.client.init;
 
 import avia.cloud.client.entity.*;
-import avia.cloud.client.init.amadeus.AmadeusServiceImpl;
+import avia.cloud.client.init.gds.GdsService;
 import avia.cloud.client.repository.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -26,7 +26,7 @@ import java.util.Objects;
 @Profile("default")
 @RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
-    private final AmadeusServiceImpl amadeusService;
+    private final GdsService gdsService;
     private ObjectMapper objectMapper;
     private final AuthorityRepository authorityRepository;
     private final CustomerRepository customerRepository;
@@ -40,10 +40,7 @@ public class DataLoader implements CommandLineRunner {
 
         loadAuthority("/data/avionix-authority.json");
         loadCustomer("/data/avionix-customer.json");
-        loadAirlineAccount("/data/avionix-airline-account.json");
-
-        amadeusService.sendTokenRequest();
-
+        loadAirline("/data/avionix-airline-account.json");
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
@@ -82,10 +79,16 @@ public class DataLoader implements CommandLineRunner {
 
     }
 
-    private void loadAirlineAccount(String path) throws IOException {
+    private void loadAirline(String path) throws IOException {
         TypeReference<List<Account>> typeReference = new TypeReference<>(){};
         InputStream inputStream = TypeReference.class.getResourceAsStream(path);
         List<Account> accounts = objectMapper.readValue(inputStream, typeReference);
+        accounts.forEach(account -> {
+            Airline airline = gdsService.fetchAirport(account.getAirline().getIata());
+            airline.setPriority(account.getAirline().getPriority());
+            airline.setAccount(account);
+            account.setAirline(airline);
+        });
         accountRepository.saveAllAndFlush(accounts);
     }
 

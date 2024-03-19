@@ -1,0 +1,27 @@
+[
+  {
+    "airlineId": "623e4567-e89b-12d3-a456-556642440005",
+    "originCode": "SHA",
+    "destinationCode": "LON"
+  },
+  {
+    "airlineId": "623e4567-e89b-12d3-a456-556642440005",
+    "originCode": "SHA",
+    "destinationCode": "CHI"
+  },
+  {
+    "airlineId": "623e4567-e89b-12d3-a456-556642440005",
+    "originCode": "SHA",
+    "destinationCode": "IST"
+  },
+  {
+    "airlineId": "623e4567-e89b-12d3-a456-556642440005",
+    "originCode": "SHA",
+    "destinationCode": "PAR"
+  },
+  {
+    "airlineId": "623e4567-e89b-12d3-a456-556642440005",
+    "originCode": "SHA",
+    "destinationCode": "LAX"
+  }
+]
