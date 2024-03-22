@@ -1,7 +1,9 @@
 package avia.cloud.client.init.gds;
 
+import avia.cloud.client.entity.Account;
 import avia.cloud.client.entity.Airline;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -12,21 +14,16 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Collections;
+import java.util.List;
 
-@Component
-@RequiredArgsConstructor
 @Slf4j
 public class GdsService extends RestTemplate {
-    @Value("${application.amadeus.client.key}")
-    public String clientId;
-    @Value("${application.amadeus.client.secret}")
-    public String clientSecret;
+    private static final String airportSearchApi = "https://test.api.amadeus.com/v1/reference-data/locations";
 
-    @Value("${application.amadeus.apis.airportSearch}")
-    public String airportSearchApi;
-
-    private final GdsTokenProvider tokenProvider;
+    private final GdsTokenProvider tokenProvider = new GdsTokenProvider();
 
     public Airline fetchAirport(String iata) {
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(airportSearchApi)
@@ -37,7 +34,7 @@ public class GdsService extends RestTemplate {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-        headers.set("Authorization", "Bearer " + tokenProvider.getAccessToken());
+        headers.set("Authorization", "Bearer " + tokenProvider.fetchToken());
 
         HttpEntity<?> request = new HttpEntity<>(headers);
 
@@ -70,6 +67,22 @@ public class GdsService extends RestTemplate {
                 .cityCode(jsonNode.get("address").get("cityCode").asText())
                 .officialWebsiteUrl(jsonNode.get("self").get("href").asText())
                 .description(jsonNode.get("detailedName").asText()).build();
+    }
+
+    public static void main(String[] args) throws IOException {
+        GdsService gdsService = new GdsService();
+        ObjectMapper objectMapper = new ObjectMapper();
+        TypeReference<List<Account>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream("/data/avionix-airline.json");
+        List<Account> accounts = objectMapper.readValue(inputStream, typeReference);
+        accounts.forEach(account -> {
+            Airline airline = gdsService.fetchAirport(account.getAirline().getIata());
+            airline.setPriority(account.getAirline().getPriority());
+            airline.setAccount(account);
+            account.setAirline(airline);
+        });
+        JsonNode jsonNode = objectMapper.convertValue(accounts, JsonNode.class);
+        System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode));
     }
 
 }

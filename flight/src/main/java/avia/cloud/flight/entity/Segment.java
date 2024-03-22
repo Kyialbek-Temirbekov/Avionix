@@ -1,5 +1,7 @@
 package avia.cloud.flight.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -23,6 +25,7 @@ public class Segment {
     private String id;
     @ManyToOne
     @JoinColumn(name = "flight_id", referencedColumnName = "id")
+    @JsonIgnore
     private Flight flight;
     private String departureIata;
     private LocalDateTime departureAt;

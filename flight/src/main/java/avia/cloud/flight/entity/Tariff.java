@@ -1,6 +1,8 @@
 package avia.cloud.flight.entity;
 
 import avia.cloud.flight.entity.enums.Cabin;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,6 +21,7 @@ public class Tariff {
     private String id;
     @ManyToOne
     @JoinColumn(name = "flight_id", referencedColumnName = "id")
+    @JsonIgnore
     private Flight flight;
     @Enumerated(EnumType.STRING)
     private Cabin cabin;

@@ -13,20 +13,12 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-@Component
-@Slf4j
-@Getter
 public class GdsTokenProvider extends RestTemplate {
-    @Value("${application.amadeus.client.key}")
-    public String clientId;
-    @Value("${application.amadeus.client.secret}")
-    public String clientSecret;
-    @Value("${application.amadeus.apis.accessToken}")
-    public String accessTokenApi;
+    private static final String clientId = "RRqMkQBFEqJvHHyH6kkO3VcHV0O0oypS";
+    private static final String clientSecret = "33lL8xO4s9pGhasG";
+    private static final String accessTokenApi = "https://test.api.amadeus.com/v1/security/oauth2/token";
 
-    private String accessToken;
-    @PostConstruct
-    public void fetchToken() {
+    public String fetchToken() {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
@@ -46,6 +38,6 @@ public class GdsTokenProvider extends RestTemplate {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-        this.accessToken = jsonNode.get("access_token").asText();
+        return jsonNode.get("access_token").asText();
     }
 }

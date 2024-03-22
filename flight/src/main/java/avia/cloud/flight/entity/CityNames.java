@@ -1,6 +1,7 @@
 package avia.cloud.flight.entity;
 
 import avia.cloud.flight.entity.enums.Lan;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,7 @@ public class CityNames {
     private String id;
     @ManyToOne
     @JoinColumn(name = "city_code", referencedColumnName = "code")
+    @JsonIgnore
     private City city;
     private String name;
     @Enumerated(EnumType.STRING)

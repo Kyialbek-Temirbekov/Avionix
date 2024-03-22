@@ -1,0 +1,1635 @@
+[ {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 15, 25 ],
+    "arrivalIata" : "HAN",
+    "arrivalAt" : [ 2024, 3, 26, 18, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "HAN",
+    "departureAt" : [ 2024, 3, 27, 1, 10 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 7, 15 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1546.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 26, 14, 15 ],
+    "arrivalIata" : "STN",
+    "arrivalAt" : [ 2024, 3, 26, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 26, 14, 25 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 26, 18, 25 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 2, 50 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 27, 6, 40 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 26, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 17, 20 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 26, 14, 30 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 18, 20 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 26, 16, 5 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 20, 0 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 3, 10 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 7, 10 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 10, 30 ],
+    "arrivalIata" : "HEL",
+    "arrivalAt" : [ 2024, 3, 26, 14, 35 ]
+  }, {
+    "id" : null,
+    "departureIata" : "HEL",
+    "departureAt" : [ 2024, 3, 26, 16, 0 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 17, 0 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1797.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 10, 30 ],
+    "arrivalIata" : "HEL",
+    "arrivalAt" : [ 2024, 3, 26, 14, 35 ]
+  }, {
+    "id" : null,
+    "departureIata" : "HEL",
+    "departureAt" : [ 2024, 3, 26, 19, 30 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 20, 35 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1797.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 8, 50 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 11, 25 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 26, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A2",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 8, 0 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 10, 40 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 26, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "PREMIUM_ECONOMY",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 17, 0 ],
+    "arrivalIata" : "PKX",
+    "arrivalAt" : [ 2024, 3, 26, 19, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "PKX",
+    "departureAt" : [ 2024, 3, 27, 11, 55 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 14, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "PREMIUM_ECONOMY",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 55 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 9, 35 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 26, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A2",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 19, 45 ],
+    "arrivalIata" : "PKX",
+    "arrivalAt" : [ 2024, 3, 26, 22, 0 ]
+  }, {
+    "id" : null,
+    "departureIata" : "PKX",
+    "departureAt" : [ 2024, 3, 27, 11, 55 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 14, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 21, 50 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 27, 0, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 16, 30 ],
+    "arrivalIata" : "PKX",
+    "arrivalAt" : [ 2024, 3, 26, 18, 55 ]
+  }, {
+    "id" : null,
+    "departureIata" : "PKX",
+    "departureAt" : [ 2024, 3, 27, 11, 55 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 14, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 16, 50 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 19, 30 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 15, 50 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 18, 35 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 12, 25 ],
+    "arrivalIata" : "PKX",
+    "arrivalAt" : [ 2024, 3, 26, 14, 40 ]
+  }, {
+    "id" : null,
+    "departureIata" : "PKX",
+    "departureAt" : [ 2024, 3, 27, 11, 55 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 14, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 14, 50 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 17, 25 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 13, 50 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 16, 25 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 11, 50 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 14, 25 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "SHA",
+    "departureAt" : [ 2024, 3, 26, 10, 50 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 13, 25 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 22, 30 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 27, 1, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 11, 25 ],
+    "arrivalIata" : "PKX",
+    "arrivalAt" : [ 2024, 3, 26, 14, 0 ]
+  }, {
+    "id" : null,
+    "departureIata" : "PKX",
+    "departureAt" : [ 2024, 3, 27, 11, 55 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 14, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 18, 0 ],
+    "arrivalIata" : "CAN",
+    "arrivalAt" : [ 2024, 3, 26, 20, 45 ]
+  }, {
+    "id" : null,
+    "departureIata" : "CAN",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "PREMIUM_ECONOMY",
+    "price" : 1906.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 5 ],
+    "arrivalIata" : "IST",
+    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "IST",
+    "departureAt" : [ 2024, 3, 27, 8, 30 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 27, 10, 35 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1779.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 5 ],
+    "arrivalIata" : "IST",
+    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "IST",
+    "departureAt" : [ 2024, 3, 27, 8, 55 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 10, 55 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1779.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 5 ],
+    "arrivalIata" : "IST",
+    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "IST",
+    "departureAt" : [ 2024, 3, 27, 11, 45 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 27, 13, 55 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1779.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 5 ],
+    "arrivalIata" : "IST",
+    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "IST",
+    "departureAt" : [ 2024, 3, 27, 13, 40 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 15, 40 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1779.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 5 ],
+    "arrivalIata" : "IST",
+    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "IST",
+    "departureAt" : [ 2024, 3, 27, 15, 5 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 27, 17, 10 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1779.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 5 ],
+    "arrivalIata" : "IST",
+    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "IST",
+    "departureAt" : [ 2024, 3, 27, 15, 15 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 15 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1779.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 5 ],
+    "arrivalIata" : "IST",
+    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "IST",
+    "departureAt" : [ 2024, 3, 27, 20, 0 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 22, 5 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1779.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 5 ],
+    "arrivalIata" : "IST",
+    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
+  }, {
+    "id" : null,
+    "departureIata" : "IST",
+    "departureAt" : [ 2024, 3, 27, 21, 5 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 23, 15 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A4",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1779.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 2, 15 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 26, 6, 40 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A2",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1912.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 20, 0 ],
+    "arrivalIata" : "HKG",
+    "arrivalAt" : [ 2024, 3, 26, 22, 55 ]
+  }, {
+    "id" : null,
+    "departureIata" : "HKG",
+    "departureAt" : [ 2024, 3, 26, 23, 55 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 5, 0 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 2052.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 14, 45 ],
+    "arrivalIata" : "HKG",
+    "arrivalAt" : [ 2024, 3, 26, 17, 45 ]
+  }, {
+    "id" : null,
+    "departureIata" : "HKG",
+    "departureAt" : [ 2024, 3, 26, 19, 0 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 0, 30 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 2052.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 19, 0 ],
+    "arrivalIata" : "HKG",
+    "arrivalAt" : [ 2024, 3, 26, 21, 55 ]
+  }, {
+    "id" : null,
+    "departureIata" : "HKG",
+    "departureAt" : [ 2024, 3, 26, 23, 55 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 5, 0 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 2052.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 7, 10 ],
+    "arrivalIata" : "HKG",
+    "arrivalAt" : [ 2024, 3, 26, 10, 0 ]
+  }, {
+    "id" : null,
+    "departureIata" : "HKG",
+    "departureAt" : [ 2024, 3, 26, 12, 5 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 26, 17, 20 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 2052.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0
+  } ],
+  "currency" : "EUR",
+  "status" : "READY"
+} ]

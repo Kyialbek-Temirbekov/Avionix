@@ -1,13 +1,18 @@
 package avia.cloud.flight.init.gds;
 
+import avia.cloud.flight.entity.City;
 import avia.cloud.flight.entity.Flight;
 import avia.cloud.flight.entity.Segment;
 import avia.cloud.flight.entity.Tariff;
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
+import avia.cloud.flight.entity.enums.FlightStatus;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,27 +21,26 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 @Component
 @RequiredArgsConstructor
 @Slf4j
 public class GdsService extends RestTemplate {
-    @Value("${application.amadeus.client.key}")
-    public String clientId;
-    @Value("${application.amadeus.client.secret}")
-    public String clientSecret;
+    private static final String flightOffersSearchApi = "https://test.api.amadeus.com/v2/shopping/flight-offers";
 
-    @Value("${application.amadeus.apis.flightOffersSearch}")
-    public String flightOffersSearch;
-
-    private final GdsTokenProvider tokenProvider;
+    private final GdsTokenProvider tokenProvider = new GdsTokenProvider();
 
     public List<Flight> fetchFlights(String originLocationCode, String destinationLocationCode, String departureDate, int adults, int limit, String travelClass) {
-        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(flightOffersSearch)
+        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(flightOffersSearchApi)
                 .queryParam("originLocationCode", originLocationCode)
                 .queryParam("destinationLocationCode", destinationLocationCode)
                 .queryParam("departureDate", departureDate)
@@ -48,7 +52,7 @@ public class GdsService extends RestTemplate {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-        headers.set("Authorization", "Bearer " + tokenProvider.getAccessToken());
+        headers.set("Authorization", "Bearer " + tokenProvider.fetchToken());
 
         HttpEntity<?> request = new HttpEntity<>(headers);
 
@@ -98,6 +102,53 @@ public class GdsService extends RestTemplate {
                 .gate("A" + jsonNode.get("numberOfBookableSeats").asText())
                 .tariffs(tariffs)
                 .currency(Currency.valueOf(jsonNode.get("price").get("currency").asText())).build();
+    }
+
+    public static void main(String[] args) throws IOException {
+        GdsService gdsService = new GdsService();
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new JavaTimeModule());
+        TypeReference<List<Map<String, String>>> typeReference = new TypeReference<>() {};
+        InputStream inputStream = TypeReference.class.getResourceAsStream("/data/flight-offers.json");
+        List<Map<String, String>> flightOffers = objectMapper.readValue(inputStream, typeReference);
+        List<Flight> flights = new ArrayList<>();
+
+        flightOffers.forEach(flightOffer -> {
+            String originCode = flightOffer.get("originCode");
+            String destinationCode = flightOffer.get("destinationCode");
+            List<Flight> fetchedFlights = gdsService.fetchFlights(
+                    originCode,
+                    destinationCode,
+                    LocalDate.of(2024,3,26).toString(),
+                    1,
+                    40,
+                    Cabin.BUSINESS.toString()
+            );
+            fetchedFlights.forEach(flight -> {
+                flight.getTariffs().forEach(tariff -> tariff.setFlight(flight));
+                flight.getSegments().forEach(segment -> segment.setFlight(flight));
+                flight.setAirlineId(flightOffer.get("airlineId"));
+                City origin = new City();
+                origin.setCode(originCode);
+                flight.setOrigin(origin);
+                City destination = new City();
+                destination.setCode(destinationCode);
+                flight.setDestination(destination);
+                flight.setStatus(FlightStatus.READY);
+            });
+            flights.addAll(fetchedFlights);
+        });
+
+        JsonNode jsonNode = objectMapper.convertValue(flights, JsonNode.class);
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode));
+
+        File outputFile = new File("/home/kyialbek/Projects/spring_workspace/APIs/Avionix/flight/src/main/resources/data/avionix-flight.json");
+        try {
+            objectMapper.writeValue(outputFile, jsonNode);
+        } catch (IOException e) {
+            System.err.println("Error writing JSON to file: " + e.getMessage());
+        }
     }
 
 }

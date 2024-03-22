@@ -33,7 +33,6 @@ import java.util.Objects;
 @Profile("default")
 @RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
-    private final GdsService gdsService;
     private final CityRepository cityRepository;
     private final FlightRepository flightRepository;
     private ObjectMapper objectMapper;
@@ -45,7 +44,7 @@ public class DataLoader implements CommandLineRunner {
         objectMapper.registerModule(new JavaTimeModule());
 
         loadCity("/data/avionix-city.json");
-        loadFlight("/data/avionix-flight-offers.json");
+        loadFlight("/data/avionix-flight.json");
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
@@ -75,31 +74,14 @@ public class DataLoader implements CommandLineRunner {
     }
 
     private void loadFlight(String path) throws IOException {
-        TypeReference<List<Map<String, String>>> typeReference = new TypeReference<>() {};
+        TypeReference<List<Flight>> typeReference = new TypeReference<>() {};
         InputStream inputStream = TypeReference.class.getResourceAsStream(path);
-        List<Map<String, String>> flightOffers = objectMapper.readValue(inputStream, typeReference);
-        List<Flight> flights = new ArrayList<>();
-
-        flightOffers.forEach(flightOffer -> {
-            String originCode = flightOffer.get("originCode");
-            String destinationCode = flightOffer.get("destinationCode");
-            List<Flight> fetchedFlights = gdsService.fetchFlights(
-                    originCode,
-                    destinationCode,
-                    LocalDate.of(2024,3,26).toString(),
-                    1,
-                    6,
-                    Cabin.BUSINESS.toString()
-            );
-            fetchedFlights.forEach(flight -> {
-                flight.getTariffs().forEach(tariff -> tariff.setFlight(flight));
-                flight.getSegments().forEach(segment -> segment.setFlight(flight));
-                flight.setAirlineId(flightOffer.get("airlineId"));
-                flight.setOrigin(cityRepository.findById(originCode).get());
-                flight.setDestination(cityRepository.findById(destinationCode).get());
-                flight.setStatus(FlightStatus.READY);
-            });
-            flights.addAll(fetchedFlights);
+        List<Flight> flights = objectMapper.readValue(inputStream, typeReference);
+        flights.forEach(flight -> {
+            flight.getSegments().forEach(segment -> segment.setFlight(flight));
+            flight.getTariffs().forEach(tariff -> tariff.setFlight(flight));
+            flight.setOrigin(cityRepository.findById(flight.getOrigin().getCode()).orElseThrow());
+            flight.setDestination(cityRepository.findById(flight.getDestination().getCode()).orElseThrow());
         });
 
         flightRepository.saveAllAndFlush(flights);
