@@ -35,10 +35,14 @@
     "cabin" : "BUSINESS",
     "price" : 1546.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 950,
+  "transitDuration" : 415
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -76,10 +80,14 @@
     "cabin" : "BUSINESS",
     "price" : 1007.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 690,
+  "transitDuration" : 130
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -117,10 +125,194 @@
     "cabin" : "BUSINESS",
     "price" : 1007.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 730,
+  "transitDuration" : 140
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 7, 40 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 27, 11, 40 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 760,
+  "transitDuration" : 140
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 8, 20 ],
+    "arrivalIata" : "STN",
+    "arrivalAt" : [ 2024, 3, 27, 12, 10 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 790,
+  "transitDuration" : 180
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 14, 15 ],
+    "arrivalIata" : "STN",
+    "arrivalAt" : [ 2024, 3, 27, 17, 45 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1125,
+  "transitDuration" : 535
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 14, 25 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 27, 18, 25 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1165,
+  "transitDuration" : 545
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -158,10 +350,149 @@
     "cabin" : "BUSINESS",
     "price" : 1007.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1465,
+  "transitDuration" : 885
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 7, 40 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 27, 11, 40 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1765,
+  "transitDuration" : 1175
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 8, 20 ],
+    "arrivalIata" : "STN",
+    "arrivalAt" : [ 2024, 3, 27, 12, 10 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1795,
+  "transitDuration" : 1215
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 28, 2, 50 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 3, 28, 6, 40 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1900,
+  "transitDuration" : 1290
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -199,51 +530,14 @@
     "cabin" : "BUSINESS",
     "price" : 1007.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 6, 15 ],
-    "arrivalIata" : "DXB",
-    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
-  }, {
-    "id" : null,
-    "departureIata" : "DXB",
-    "departureAt" : [ 2024, 3, 26, 14, 30 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 26, 18, 20 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A7",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 1007.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 665,
+  "transitDuration" : 75
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -281,10 +575,14 @@
     "cabin" : "BUSINESS",
     "price" : 1007.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 825,
+  "transitDuration" : 240
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -295,15 +593,15 @@
   "segments" : [ {
     "id" : null,
     "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 6, 15 ],
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
     "arrivalIata" : "DXB",
-    "arrivalAt" : [ 2024, 3, 26, 12, 5 ]
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
   }, {
     "id" : null,
     "departureIata" : "DXB",
-    "departureAt" : [ 2024, 3, 27, 3, 10 ],
+    "departureAt" : [ 2024, 3, 27, 9, 40 ],
     "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 27, 7, 10 ]
+    "arrivalAt" : [ 2024, 3, 27, 13, 50 ]
   } ],
   "oneWay" : false,
   "origin" : {
@@ -322,10 +620,194 @@
     "cabin" : "BUSINESS",
     "price" : 1007.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 890,
+  "transitDuration" : 260
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 12, 10 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 16, 10 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1030,
+  "transitDuration" : 410
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 13, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 17, 20 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1100,
+  "transitDuration" : 480
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 14, 30 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 18, 20 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1160,
+  "transitDuration" : 550
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "segments" : [ {
+    "id" : null,
+    "departureIata" : "PVG",
+    "departureAt" : [ 2024, 3, 26, 23, 0 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 3, 27, 5, 20 ]
+  }, {
+    "id" : null,
+    "departureIata" : "DXB",
+    "departureAt" : [ 2024, 3, 27, 16, 5 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 3, 27, 20, 0 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A7",
+  "tariffs" : [ {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1007.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  } ],
+  "currency" : "EUR",
+  "status" : "READY",
+  "flightDuration" : 1260,
+  "transitDuration" : 645
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -363,10 +845,14 @@
     "cabin" : "BUSINESS",
     "price" : 1797.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 390,
+  "transitDuration" : 85
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -404,10 +890,14 @@
     "cabin" : "BUSINESS",
     "price" : 1797.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 605,
+  "transitDuration" : 295
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -445,92 +935,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 8, 0 ],
-    "arrivalIata" : "CAN",
-    "arrivalAt" : [ 2024, 3, 26, 10, 40 ]
-  }, {
-    "id" : null,
-    "departureIata" : "CAN",
-    "departureAt" : [ 2024, 3, 26, 13, 20 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 26, 17, 45 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1906.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 17, 0 ],
-    "arrivalIata" : "PKX",
-    "arrivalAt" : [ 2024, 3, 26, 19, 20 ]
-  }, {
-    "id" : null,
-    "departureIata" : "PKX",
-    "departureAt" : [ 2024, 3, 27, 11, 55 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 27, 14, 45 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1906.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 535,
+  "transitDuration" : 115
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -568,10 +980,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 650,
+  "transitDuration" : 225
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -609,10 +1025,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1140,
+  "transitDuration" : 835
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -650,10 +1070,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1195,
+  "transitDuration" : 785
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -691,10 +1115,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1335,
+  "transitDuration" : 1020
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -732,10 +1160,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1495,
+  "transitDuration" : 1070
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -773,10 +1205,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1555,
+  "transitDuration" : 1125
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -814,10 +1250,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1580,
+  "transitDuration" : 1275
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -855,10 +1295,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1615,
+  "transitDuration" : 1195
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -896,10 +1340,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1675,
+  "transitDuration" : 1255
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -937,10 +1385,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1795,
+  "transitDuration" : 1375
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -978,10 +1430,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1855,
+  "transitDuration" : 1435
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1019,10 +1475,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1155,
+  "transitDuration" : 735
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1060,10 +1520,14 @@
     "cabin" : "BUSINESS",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1640,
+  "transitDuration" : 1315
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1101,10 +1565,14 @@
     "cabin" : "PREMIUM_ECONOMY",
     "price" : 1906.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1425,
+  "transitDuration" : 995
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1142,10 +1610,14 @@
     "cabin" : "BUSINESS",
     "price" : 1779.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 690,
+  "transitDuration" : 135
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1183,10 +1655,14 @@
     "cabin" : "BUSINESS",
     "price" : 1779.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 710,
+  "transitDuration" : 160
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1224,10 +1700,14 @@
     "cabin" : "BUSINESS",
     "price" : 1779.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 890,
+  "transitDuration" : 330
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1265,10 +1745,14 @@
     "cabin" : "BUSINESS",
     "price" : 1779.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 995,
+  "transitDuration" : 445
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1306,330 +1790,12 @@
     "cabin" : "BUSINESS",
     "price" : 1779.0,
     "baggagePrice" : 0.0,
-    "discount" : 0
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
   } ],
   "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 23, 5 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
-  }, {
-    "id" : null,
-    "departureIata" : "IST",
-    "departureAt" : [ 2024, 3, 27, 15, 15 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 27, 17, 15 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 1779.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 23, 5 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
-  }, {
-    "id" : null,
-    "departureIata" : "IST",
-    "departureAt" : [ 2024, 3, 27, 20, 0 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 27, 22, 5 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 1779.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 23, 5 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 3, 27, 6, 15 ]
-  }, {
-    "id" : null,
-    "departureIata" : "IST",
-    "departureAt" : [ 2024, 3, 27, 21, 5 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 27, 23, 15 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 1779.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 2, 15 ],
-    "arrivalIata" : "LGW",
-    "arrivalAt" : [ 2024, 3, 26, 6, 40 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A2",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 1912.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 20, 0 ],
-    "arrivalIata" : "HKG",
-    "arrivalAt" : [ 2024, 3, 26, 22, 55 ]
-  }, {
-    "id" : null,
-    "departureIata" : "HKG",
-    "departureAt" : [ 2024, 3, 26, 23, 55 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 27, 5, 0 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 2052.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 14, 45 ],
-    "arrivalIata" : "HKG",
-    "arrivalAt" : [ 2024, 3, 26, 17, 45 ]
-  }, {
-    "id" : null,
-    "departureIata" : "HKG",
-    "departureAt" : [ 2024, 3, 26, 19, 0 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 27, 0, 30 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 2052.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 19, 0 ],
-    "arrivalIata" : "HKG",
-    "arrivalAt" : [ 2024, 3, 26, 21, 55 ]
-  }, {
-    "id" : null,
-    "departureIata" : "HKG",
-    "departureAt" : [ 2024, 3, 26, 23, 55 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 27, 5, 0 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 2052.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
-  "segments" : [ {
-    "id" : null,
-    "departureIata" : "PVG",
-    "departureAt" : [ 2024, 3, 26, 7, 10 ],
-    "arrivalIata" : "HKG",
-    "arrivalAt" : [ 2024, 3, 26, 10, 0 ]
-  }, {
-    "id" : null,
-    "departureIata" : "HKG",
-    "departureAt" : [ 2024, 3, 26, 12, 5 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 3, 26, 17, 20 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariffs" : [ {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 2052.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0
-  } ],
-  "currency" : "EUR",
-  "status" : "READY"
+  "status" : "READY",
+  "flightDuration" : 1085,
+  "transitDuration" : 530
 } ]

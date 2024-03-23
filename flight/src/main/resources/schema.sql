@@ -19,6 +19,8 @@ CREATE TABLE FLIGHT (
     gate VARCHAR(255),
     currency VARCHAR(255),
     status VARCHAR(255),
+    flight_duration INTEGER,
+    transit_duration INTEGER,
     created_at TIMESTAMP,
     created_by VARCHAR(255),
     updated_at TIMESTAMP,
@@ -40,5 +42,7 @@ CREATE TABLE TARIFF (
     cabin VARCHAR(255),
     price DOUBLE PRECISION,
     baggage_price DOUBLE PRECISION,
-    discount SMALLINT
+    discount SMALLINT,
+    checked_baggage_included BOOLEAN,
+    cabin_baggage_included BOOLEAN
 );

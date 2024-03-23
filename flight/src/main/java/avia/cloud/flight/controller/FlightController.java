@@ -26,7 +26,21 @@ import java.util.List;
 public class FlightController {
     private final IFlightService iFlightService;
     @GetMapping()
-    public ResponseEntity<List<FlightDTO>> searchFlights(@RequestParam String origin, @RequestParam String destination, @RequestParam boolean oneWay, @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date, @RequestParam(required = false) Cabin cabin, @RequestParam(required = false)Currency currency, @RequestParam(defaultValue = "0.0") double minPrice, @RequestParam(defaultValue = "" + Double.MAX_VALUE) double maxPrice) {
-        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, date, cabin, currency, minPrice, maxPrice));
+    public ResponseEntity<List<FlightDTO>> searchFlights(@RequestParam String origin,
+                                                         @RequestParam String destination,
+                                                         @RequestParam boolean oneWay,
+                                                         @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date,
+                                                         @RequestParam int adults, @RequestParam(required = false) Cabin cabin,
+                                                         @RequestParam(required = false)Currency currency,
+                                                         @RequestParam(defaultValue = "0.0") double minPrice,
+                                                         @RequestParam(defaultValue = "" + Double.MAX_VALUE) double maxPrice,
+                                                         @RequestParam(required = false) Integer stops,
+                                                         @RequestParam(required = false) Boolean checkedBaggageIncluded,
+                                                         @RequestParam(required = false) Boolean cabinBaggageIncluded,
+                                                         @RequestParam(defaultValue = "0") long minFlightDuration,
+                                                         @RequestParam(defaultValue = "" + Long.MAX_VALUE) long maxFlightDuration,
+                                                         @RequestParam(defaultValue = "0") long minTransitDuration,
+                                                         @RequestParam(defaultValue = "" + Long.MAX_VALUE) long maxTransitDuration) {
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, date, cabin, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration));
     }
 }

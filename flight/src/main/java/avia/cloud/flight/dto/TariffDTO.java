@@ -13,4 +13,6 @@ public class TariffDTO {
     private double price;
     private double baggagePrice;
     private short discount;
+    private boolean checkedBaggageIncluded;
+    private boolean cabinBaggageIncluded;
 }

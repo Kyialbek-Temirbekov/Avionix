@@ -43,4 +43,6 @@ public class Flight extends BaseEntity {
     private Currency currency;
     @Enumerated(EnumType.STRING)
     private FlightStatus status;
+    private long flightDuration;
+    private long transitDuration;
 }

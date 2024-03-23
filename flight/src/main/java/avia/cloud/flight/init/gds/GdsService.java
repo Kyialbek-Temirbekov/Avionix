@@ -7,6 +7,7 @@ import avia.cloud.flight.entity.Tariff;
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
 import avia.cloud.flight.entity.enums.FlightStatus;
+import avia.cloud.flight.service.impl.FlightServiceImpl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -31,13 +32,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-@Component
-@RequiredArgsConstructor
-@Slf4j
 public class GdsService extends RestTemplate {
     private static final String flightOffersSearchApi = "https://test.api.amadeus.com/v2/shopping/flight-offers";
 
     private final GdsTokenProvider tokenProvider = new GdsTokenProvider();
+    private final FlightServiceImpl flightService = new FlightServiceImpl(null,null);
 
     public List<Flight> fetchFlights(String originLocationCode, String destinationLocationCode, String departureDate, int adults, int limit, String travelClass) {
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(flightOffersSearchApi)
@@ -94,14 +93,18 @@ public class GdsService extends RestTemplate {
         }
         tariffs.add(Tariff.builder()
                 .price(jsonNode.get("price").get("base").asDouble())
-                .cabin(Cabin.valueOf(tariffNode.get("fareDetailsBySegment").get(0).get("cabin").asText())).build());
+                .cabin(Cabin.valueOf(tariffNode.get("fareDetailsBySegment").get(0).get("cabin").asText()))
+                .checkedBaggageIncluded(true)
+                .cabinBaggageIncluded(true).build());
 
         return Flight.builder()
                 .segments(segments)
                 .oneWay(jsonNode.get("oneWay").asBoolean())
                 .gate("A" + jsonNode.get("numberOfBookableSeats").asText())
                 .tariffs(tariffs)
-                .currency(Currency.valueOf(jsonNode.get("price").get("currency").asText())).build();
+                .currency(Currency.valueOf(jsonNode.get("price").get("currency").asText()))
+                .flightDuration(flightService.calculateFlightDuration(segments))
+                .transitDuration(flightService.calculateTransitDuration(segments)).build();
     }
 
     public static void main(String[] args) throws IOException {
