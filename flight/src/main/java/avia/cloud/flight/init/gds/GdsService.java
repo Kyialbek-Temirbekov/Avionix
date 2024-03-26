@@ -14,11 +14,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -83,7 +79,6 @@ public class GdsService extends RestTemplate {
         JsonNode tariffNode = jsonNode.get("travelerPricings").get(0);
 
         List<Segment> segments = new ArrayList<>();
-        List<Tariff> tariffs = new ArrayList<>();
         for(JsonNode segment: segmentNode) {
             segments.add(Segment.builder()
                     .departureIata(segment.get("departure").get("iataCode").asText())
@@ -91,23 +86,23 @@ public class GdsService extends RestTemplate {
                     .arrivalIata(segment.get("arrival").get("iataCode").asText())
                     .arrivalAt(LocalDateTime.parse(segment.get("arrival").get("at").asText())).build());
         }
-        tariffs.add(Tariff.builder()
+        Tariff tariff = Tariff.builder()
                 .price(jsonNode.get("price").get("base").asDouble())
                 .cabin(Cabin.valueOf(tariffNode.get("fareDetailsBySegment").get(0).get("cabin").asText()))
                 .checkedBaggageIncluded(true)
-                .cabinBaggageIncluded(true).build());
+                .cabinBaggageIncluded(true).build();
 
         return Flight.builder()
                 .segments(segments)
                 .oneWay(jsonNode.get("oneWay").asBoolean())
                 .gate("A" + jsonNode.get("numberOfBookableSeats").asText())
-                .tariffs(tariffs)
+                .tariff(tariff)
                 .currency(Currency.valueOf(jsonNode.get("price").get("currency").asText()))
                 .flightDuration(flightService.calculateFlightDuration(segments))
                 .transitDuration(flightService.calculateTransitDuration(segments)).build();
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void dev(String[] args) throws IOException {
         GdsService gdsService = new GdsService();
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
@@ -128,9 +123,9 @@ public class GdsService extends RestTemplate {
                     Cabin.BUSINESS.toString()
             );
             fetchedFlights.forEach(flight -> {
-                flight.getTariffs().forEach(tariff -> tariff.setFlight(flight));
+                flight.getTariff().setFlight(flight);
                 flight.getSegments().forEach(segment -> segment.setFlight(flight));
-                flight.setAirlineId(flightOffer.get("airlineId"));
+                flight.setIata(flightOffer.get("iata"));
                 City origin = new City();
                 origin.setCode(originCode);
                 flight.setOrigin(origin);

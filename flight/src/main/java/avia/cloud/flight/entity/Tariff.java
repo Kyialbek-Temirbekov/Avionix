@@ -19,7 +19,7 @@ public class Tariff {
     @Id
     @UuidGenerator
     private String id;
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "flight_id", referencedColumnName = "id")
     @JsonIgnore
     private Flight flight;

@@ -2,9 +2,6 @@ package avia.cloud.flight.init;
 
 import avia.cloud.flight.entity.City;
 import avia.cloud.flight.entity.Flight;
-import avia.cloud.flight.entity.enums.Cabin;
-import avia.cloud.flight.entity.enums.FlightStatus;
-import avia.cloud.flight.init.gds.GdsService;
 import avia.cloud.flight.repository.CityRepository;
 import avia.cloud.flight.repository.FlightRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -23,10 +20,7 @@ import org.springframework.util.StreamUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 
 @Component
@@ -79,7 +73,7 @@ public class DataLoader implements CommandLineRunner {
         List<Flight> flights = objectMapper.readValue(inputStream, typeReference);
         flights.forEach(flight -> {
             flight.getSegments().forEach(segment -> segment.setFlight(flight));
-            flight.getTariffs().forEach(tariff -> tariff.setFlight(flight));
+            flight.getTariff().setFlight(flight);
             flight.setOrigin(cityRepository.findById(flight.getOrigin().getCode()).orElseThrow());
             flight.setDestination(cityRepository.findById(flight.getDestination().getCode()).orElseThrow());
         });

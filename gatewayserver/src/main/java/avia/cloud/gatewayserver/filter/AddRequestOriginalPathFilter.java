@@ -21,6 +21,7 @@ public class AddRequestOriginalPathFilter implements GlobalFilter {
         String originalRequestUrl = Arrays.stream(requestUrlAttribute.substring(1).split(",")).findFirst().get();
         String originalRequestPath = new URI(originalRequestUrl).getPath();
         exchange.getRequest().mutate().header("Original-Path", originalRequestPath).build();
+        exchange.getRequest().mutate().header("Original-Url", originalRequestUrl).build();
         return chain.filter(exchange);
     }
 }

@@ -2,20 +2,16 @@ package avia.cloud.flight.entity;
 
 import avia.cloud.flight.entity.enums.Currency;
 import avia.cloud.flight.entity.enums.FlightStatus;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-import jakarta.persistence.CascadeType;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 import static jakarta.persistence.CascadeType.*;
 
 @Entity
-@EqualsAndHashCode(callSuper = true)
 @ToString
 @Getter
 @Setter
@@ -26,7 +22,7 @@ public class Flight extends BaseEntity {
     @Id
     @UuidGenerator
     private String id;
-    private String airlineId;
+    private String iata;
     @OneToMany(mappedBy = "flight", fetch = FetchType.EAGER, cascade = {REMOVE,PERSIST,MERGE})
     private List<Segment> segments;
     private boolean oneWay;
@@ -37,8 +33,8 @@ public class Flight extends BaseEntity {
     @JoinColumn(name = "destination", referencedColumnName = "code")
     private City destination;
     private String gate;
-    @OneToMany(mappedBy = "flight", fetch = FetchType.EAGER, cascade = {REMOVE,PERSIST,MERGE})
-    private List<Tariff> tariffs;
+    @OneToOne(mappedBy = "flight", cascade = {REMOVE,PERSIST,MERGE})
+    private Tariff tariff;
     @Enumerated(EnumType.STRING)
     private Currency currency;
     @Enumerated(EnumType.STRING)

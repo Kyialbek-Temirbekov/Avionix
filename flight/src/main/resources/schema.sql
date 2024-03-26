@@ -12,7 +12,7 @@ CREATE TABLE CITY_NAMES (
 
 CREATE TABLE FLIGHT (
     id VARCHAR(36) PRIMARY KEY,
-    airline_id VARCHAR(255),
+    iata VARCHAR(255),
     one_way BOOLEAN,
     origin VARCHAR(255) REFERENCES CITY(code),
     destination VARCHAR(255) REFERENCES CITY(code),

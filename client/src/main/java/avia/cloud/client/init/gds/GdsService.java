@@ -69,7 +69,7 @@ public class GdsService extends RestTemplate {
                 .description(jsonNode.get("detailedName").asText()).build();
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void dev(String[] args) throws IOException {
         GdsService gdsService = new GdsService();
         ObjectMapper objectMapper = new ObjectMapper();
         TypeReference<List<Account>> typeReference = new TypeReference<>(){};
