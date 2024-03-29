@@ -1,6 +1,7 @@
 package avia.cloud.client.service.impl;
 
 import avia.cloud.client.dto.*;
+import avia.cloud.client.dto.records.AirlineName;
 import avia.cloud.client.entity.Airline;
 import avia.cloud.client.entity.Account;
 import avia.cloud.client.entity.enums.Role;
@@ -20,6 +21,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 
 @Service
 @Transactional
@@ -81,6 +83,11 @@ public class AirlineServiceImpl implements IAirlineService {
                         "Email Verification",
                         code + " - This is verification code. Use it to sign up to Avionix Airline."
                 ));
+    }
+
+    @Override
+    public List<AirlineName> findAirlineNames() {
+        return airlineRepository.findAllProjectedBy();
     }
 
     private Airline convertToAirline(AirlineDTO airlineDTO) {

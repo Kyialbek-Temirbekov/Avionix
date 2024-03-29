@@ -3,7 +3,7 @@ package avia.cloud.client.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import static jakarta.persistence.CascadeType.REMOVE;
+import static jakarta.persistence.CascadeType.*;
 
 @Entity
 @Data

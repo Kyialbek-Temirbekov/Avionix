@@ -1,0 +1,80 @@
+[
+  {
+    "iata": "PVG",
+    "priority": 9,
+    "account": {
+      "id": "123e4567-e89b-12d3-a456-556642440000",
+      "email": "shanghai@email.com",
+      "phone": "+1234567890",
+      "roles": ["OWNER"],
+      "enabled": true,
+      "nonLocked": true,
+      "agreedToTermsOfUse": true
+    }
+  },
+  {
+    "iata": "ORD",
+    "priority": 6,
+    "account": {
+      "id": "223e4567-e89b-12d3-a456-556642440001",
+      "email": "chicage@email.com",
+      "phone": "+0987654321",
+      "roles": ["OWNER"],
+      "enabled": true,
+      "nonLocked": true,
+      "agreedToTermsOfUse": true
+    }
+  },
+  {
+    "iata": "LHR",
+    "priority": 3,
+    "account": {
+      "id": "323e4567-e89b-12d3-a456-556642440002",
+      "email": "london@email.com",
+      "phone": "+5555555555",
+      "roles": ["OWNER"],
+      "enabled": true,
+      "nonLocked": true,
+      "agreedToTermsOfUse": true
+    }
+  },
+  {
+    "iata": "IST",
+    "priority": 1,
+    "account": {
+      "id": "423e4567-e89b-12d3-a456-556642440003",
+      "email": "istanbul@email.com",
+      "phone": "+9999999999",
+      "roles": ["OWNER"],
+      "enabled": true,
+      "nonLocked": true,
+      "agreedToTermsOfUse": true
+    }
+  },
+  {
+    "iata": "CDG",
+    "priority": 0,
+    "account": {
+      "id": "523e4567-e89b-12d3-a456-556642440004",
+      "email": "paris@email.com",
+      "phone": "+1111111111",
+      "roles": ["OWNER"],
+      "enabled": true,
+      "nonLocked": true,
+      "agreedToTermsOfUse": true
+    }
+  },
+  {
+    "iata": "LAX",
+    "priority": 0,
+    "account": {
+      "id": "623e4567-e89b-12d3-a456-556642440005",
+      "email": "losangeles@email.com",
+      "phone": "+7777777777",
+      "roles": ["OWNER"],
+      "enabled": true,
+      "nonLocked": true,
+      "agreedToTermsOfUse": true
+    }
+  }
+]

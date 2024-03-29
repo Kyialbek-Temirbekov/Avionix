@@ -8,6 +8,8 @@ import avia.cloud.flight.entity.Segment;
 import avia.cloud.flight.entity.Tariff;
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
+import avia.cloud.flight.entity.enums.Lan;
+import avia.cloud.flight.repository.CityRepository;
 import avia.cloud.flight.repository.FlightRepository;
 import avia.cloud.flight.service.IFlightService;
 import jakarta.transaction.Transactional;
@@ -32,12 +34,13 @@ import java.util.regex.Pattern;
 @RequiredArgsConstructor
 public class FlightServiceImpl implements IFlightService {
     private final FlightRepository flightRepository;
+    private final CityRepository cityRepository;
     private final ModelMapper modelMapper;
     @Override
-    public HashMap<String, Object> searchFlights(String origin, String destination, boolean oneWay, LocalDate date, Cabin cabin, Currency currency, double minPrice, double maxPrice, Integer stops, Boolean checkedBaggageIncluded, Boolean cabinBaggageIncluded, long minFlightDuration, long maxFlightDuration, long minTransitDuration, long maxTransitDuration, String iata, int page, int pageSize, String direction, String property, String url) {
+    public HashMap<String, Object> searchFlights(String origin, String destination, boolean oneWay, LocalDate departureDate, LocalDate returnDate, List<Cabin> cabins, Currency currency, double minPrice, double maxPrice, Integer stops, Boolean checkedBaggageIncluded, Boolean cabinBaggageIncluded, long minFlightDuration, long maxFlightDuration, long minTransitDuration, long maxTransitDuration, String iata, int page, int pageSize, String direction, String property, String lan, String url) {
         Pageable pageable = PageRequest.of(page, pageSize, Sort.by(Sort.Direction.fromString(direction),property));
-        Page<Flight> flightPage = flightRepository.searchFlights(origin,destination,oneWay,date, cabin, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, iata, pageable);
-        List<FlightDTO> flights = flightPage.getContent().stream().map(this::convertToFlightDTO).toList();
+        Page<Flight> flightPage = flightRepository.searchFlights(origin,destination,oneWay,departureDate, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, iata, pageable);
+        List<FlightDTO> flights = flightPage.getContent().stream().map(flight -> convertToFlightDTO(flight,lan)).toList();
         HashMap<String, Object> meta = new HashMap<>();
         long lastPage = flightPage.getTotalElements()/pageSize;
         meta.put("total", flightPage.getTotalElements());
@@ -59,12 +62,12 @@ public class FlightServiceImpl implements IFlightService {
         return matcher.replaceAll("page=" + i);
     }
 
-    private FlightDTO convertToFlightDTO(Flight flight) {
+    private FlightDTO convertToFlightDTO(Flight flight, String lan) {
         FlightDTO flightDTO = modelMapper.map(flight, FlightDTO.class);
         flightDTO.setSegmentDTOS(flight.getSegments().stream().map(this::convertToSegmentDTO).toList());
         flightDTO.setTariffDTO(convertToTariffDTO(flight.getTariff()));
-        flightDTO.setFrom(flight.getOrigin().getCode());
-        flightDTO.setTo(flight.getDestination().getCode());
+        flightDTO.setFrom(cityRepository.findByCodeAndLan(flight.getOrigin().getCode(), Lan.of(lan)));
+        flightDTO.setTo(cityRepository.findByCodeAndLan(flight.getDestination().getCode(), Lan.of(lan)));
         return flightDTO;
     }
 

@@ -58,5 +58,146 @@
       {"lan": "EN", "name": "Los Angeles"},
       {"lan": "RU", "name": "Лос-Анжелес"}
     ]
+  },
+  {
+    "code": "NYC",
+    "countryCode": "US",
+    "names": [
+      {"lan": "KY", "name": "Нью-Йорк"},
+      {"lan": "TR", "name": "New York"},
+      {"lan": "EN", "name": "New York"},
+      {"lan": "RU", "name": "Нью-Йорк"}
+    ]
+  },
+  {
+    "code": "TKY",
+    "countryCode": "JP",
+    "names": [
+      {"lan": "KY", "name": "Токио"},
+      {"lan": "TR", "name": "Tokyo"},
+      {"lan": "EN", "name": "Tokyo"},
+      {"lan": "RU", "name": "Токио"}
+    ]
+  },
+  {
+    "code": "DXB",
+    "countryCode": "AE",
+    "names": [
+      {"lan": "KY", "name": "Дубай"},
+      {"lan": "TR", "name": "Dubai"},
+      {"lan": "EN", "name": "Dubai"},
+      {"lan": "RU", "name": "Дубай"}
+    ]
+  },
+  {
+    "code": "DEL",
+    "countryCode": "IN",
+    "names": [
+      {"lan": "KY", "name": "Дели"},
+      {"lan": "TR", "name": "Delhi"},
+      {"lan": "EN", "name": "Delhi"},
+      {"lan": "RU", "name": "Дели"}
+    ]
+  },
+  {
+    "code": "SYD",
+    "countryCode": "AU",
+    "names": [
+      {"lan": "KY", "name": "Сидней"},
+      {"lan": "TR", "name": "Sydney"},
+      {"lan": "EN", "name": "Sydney"},
+      {"lan": "RU", "name": "Сидней"}
+    ]
+  },
+  {
+    "code": "MAD",
+    "countryCode": "ES",
+    "names": [
+      {"lan": "KY", "name": "Мадрид"},
+      {"lan": "TR", "name": "Madrid"},
+      {"lan": "EN", "name": "Madrid"},
+      {"lan": "RU", "name": "Мадрид"}
+    ]
+  },
+  {
+    "code": "ROM",
+    "countryCode": "IT",
+    "names": [
+      {"lan": "KY", "name": "Рим"},
+      {"lan": "TR", "name": "Roma"},
+      {"lan": "EN", "name": "Rome"},
+      {"lan": "RU", "name": "Рим"}
+    ]
+  },
+  {
+    "code": "BER",
+    "countryCode": "DE",
+    "names": [
+      {"lan": "KY", "name": "Берлин"},
+      {"lan": "TR", "name": "Berlin"},
+      {"lan": "EN", "name": "Berlin"},
+      {"lan": "RU", "name": "Берлин"}
+    ]
+  },
+  {
+    "code": "MEX",
+    "countryCode": "MX",
+    "names": [
+      {"lan": "KY", "name": "Мехико"},
+      {"lan": "TR", "name": "Mexico City"},
+      {"lan": "EN", "name": "Mexico City"},
+      {"lan": "RU", "name": "Мехико"}
+    ]
+  },
+  {
+    "code": "SAO",
+    "countryCode": "BR",
+    "names": [
+      {"lan": "KY", "name": "Сан-Паулу"},
+      {"lan": "TR", "name": "São Paulo"},
+      {"lan": "EN", "name": "São Paulo"},
+      {"lan": "RU", "name": "Сан-Паулу"}
+    ]
+  },
+  {
+    "code": "BKK",
+    "countryCode": "TH",
+    "names": [
+      {"lan": "KY", "name": "Бангкок"},
+      {"lan": "TR", "name": "Bangkok"},
+      {"lan": "EN", "name": "Bangkok"},
+      {"lan": "RU", "name": "Бангкок"}
+    ]
+  },
+  {
+    "code": "CPT",
+    "countryCode": "ZA",
+    "names": [
+      {"lan": "KY", "name": "Кейптаун"},
+      {"lan": "TR", "name": "Cape Town"},
+      {"lan": "EN", "name": "Cape Town"},
+      {"lan": "RU", "name": "Кейптаун"}
+    ]
+  },
+  {
+    "code": "HKG",
+    "countryCode": "HK",
+    "names": [
+      {"lan": "KY", "name": "Гонконг"},
+      {"lan": "TR", "name": "Hong Kong"},
+      {"lan": "EN", "name": "Hong Kong"},
+      {"lan": "RU", "name": "Гонконг"}
+    ]
+  },
+  {
+    "code": "JKT",
+    "countryCode": "ID",
+    "names": [
+      {"lan": "KY", "name": "Джакарта"},
+      {"lan": "TR", "name": "Jakarta"},
+      {"lan": "EN", "name": "Jakarta"},
+      {"lan": "RU", "name": "Джакарта"}
+    ]
   }
 ]
+

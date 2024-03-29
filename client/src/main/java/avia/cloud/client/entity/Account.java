@@ -1,6 +1,7 @@
 package avia.cloud.client.entity;
 
 import avia.cloud.client.entity.enums.Role;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
@@ -36,7 +37,9 @@ public class Account extends BaseEntity {
     private boolean agreedToTermsOfUse;
     private String code;
     @OneToOne(mappedBy = "account", cascade = {REMOVE, PERSIST, MERGE})
+    @JsonIgnore
     private Airline airline;
     @OneToOne(mappedBy = "account", cascade = {REMOVE})
+    @JsonIgnore
     private Customer customer;
 }

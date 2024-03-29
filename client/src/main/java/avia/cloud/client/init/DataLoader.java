@@ -6,6 +6,8 @@ import avia.cloud.client.repository.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import jakarta.persistence.EntityManager;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -25,12 +27,15 @@ import java.util.Objects;
 @Component
 @Profile("default")
 @RequiredArgsConstructor
+@Transactional
 public class DataLoader implements CommandLineRunner {
     private ObjectMapper objectMapper;
     private final AuthorityRepository authorityRepository;
     private final CustomerRepository customerRepository;
     private final CommentRepository commentRepository;
+    private final AirlineRepository airlineRepository;
     private final AccountRepository accountRepository;
+    private final EntityManager entityManager;
 
     @Override
     public void run(String... args) throws IOException {
@@ -39,7 +44,7 @@ public class DataLoader implements CommandLineRunner {
 
         loadAuthority("/data/avionix-authority.json");
         loadCustomer("/data/avionix-customer.json");
-//        loadAirline("/data/avionix-airline.json");
+        loadAirline("/data/avionix-airline.json");
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
@@ -79,16 +84,15 @@ public class DataLoader implements CommandLineRunner {
     }
 
     private void loadAirline(String path) throws IOException {
-//        TypeReference<List<Account>> typeReference = new TypeReference<>(){};
-//        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
-//        List<Account> accounts = objectMapper.readValue(inputStream, typeReference);
-//        accounts.forEach(account -> {
-//            Airline airline = gdsService.fetchAirport(account.getAirline().getIata());
-//            airline.setPriority(account.getAirline().getPriority());
-//            airline.setAccount(account);
-//            account.setAirline(airline);
-//        });
-//        accountRepository.saveAllAndFlush(accounts);
+        TypeReference<List<Airline>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<Airline> airlines = objectMapper.readValue(inputStream, typeReference);
+        airlines.forEach(airline -> {
+            Account account = airline.getAccount();
+            account = entityManager.merge(account);
+            airline.setAccount(account);
+        });
+        airlineRepository.saveAllAndFlush(airlines);
     }
 
 }

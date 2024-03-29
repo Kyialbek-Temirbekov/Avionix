@@ -4,5 +4,8 @@ public enum Lan {
     KY,
     TR,
     EN,
-    RU
+    RU;
+    public static Lan of(String lan) {
+        return Lan.valueOf(lan.toUpperCase());
+    }
 }

@@ -1,80 +1,157 @@
-[
-  {
-    "id": "123e4567-e89b-12d3-a456-556642440000",
-    "email": "shanghai@email.com",
-    "phone": "+1234567890",
-    "roles": ["OWNER"],
-    "enabled": true,
-    "nonLocked": true,
-    "agreedToTermsOfUse": true,
-    "airline": {
-      "iata": "PVG",
-      "priority": 9
-    }
-  },
-  {
-    "id": "223e4567-e89b-12d3-a456-556642440001",
-    "email": "chicage@email.com",
-    "phone": "+0987654321",
-    "roles": ["OWNER"],
-    "enabled": true,
-    "nonLocked": true,
-    "agreedToTermsOfUse": true,
-    "airline": {
-      "iata": "ORD",
-      "priority": 6
-    }
-  },
-  {
-    "id": "323e4567-e89b-12d3-a456-556642440002",
-    "email": "london@email.com",
-    "phone": "+5555555555",
-    "roles": ["OWNER"],
-    "enabled": true,
-    "nonLocked": true,
-    "agreedToTermsOfUse": true,
-    "airline": {
-      "iata": "LHR",
-      "priority": 3
-    }
-  },
-  {
-    "id": "423e4567-e89b-12d3-a456-556642440003",
-    "email": "istanbul@email.com",
-    "phone": "+9999999999",
-    "roles": ["OWNER"],
-    "enabled": true,
-    "nonLocked": true,
-    "agreedToTermsOfUse": true,
-    "airline": {
-      "iata": "IST",
-      "priority": 1
-    }
-  },
-  {
-    "id": "523e4567-e89b-12d3-a456-556642440004",
-    "email": "paris@email.com",
-    "phone": "+1111111111",
-    "roles": ["OWNER"],
-    "enabled": true,
-    "nonLocked": true,
-    "agreedToTermsOfUse": true,
-    "airline": {
-      "iata": "CDG",
-      "priority": 0
-    }
-  },
-  {
-    "id": "623e4567-e89b-12d3-a456-556642440005",
-    "email": "losangeles@email.com",
-    "phone": "+7777777777",
-    "roles": ["OWNER"],
-    "enabled": true,
-    "nonLocked": true,
-    "agreedToTermsOfUse": true,
-    "airline": {
-      "iata": "LAX",
-      "priority": 0
-    }
+[ {
+  "baseId" : null,
+  "iata" : "PVG",
+  "name" : "PUDONG INTL",
+  "cityCode" : "SHA",
+  "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/APVG",
+  "description" : "SHANGHAI/CN:PUDONG INTL",
+  "clientId" : null,
+  "clientSecret" : null,
+  "priority" : 9,
+  "account" : {
+    "createdAt" : null,
+    "createdBy" : null,
+    "updatedAt" : null,
+    "updatedBy" : null,
+    "id" : "123e4567-e89b-12d3-a456-556642440000",
+    "email" : "shanghai@email.com",
+    "phone" : "+1234567890",
+    "image" : null,
+    "password" : null,
+    "roles" : [ "OWNER" ],
+    "enabled" : true,
+    "nonLocked" : true,
+    "agreedToTermsOfUse" : true,
+    "code" : null
   }
-]
+}, {
+  "baseId" : null,
+  "iata" : "ORD",
+  "name" : "O HARE INTERNATIONAL",
+  "cityCode" : "CHI",
+  "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/AORD",
+  "description" : "CHICAGO/IL/US:O HARE INTERNATI",
+  "clientId" : null,
+  "clientSecret" : null,
+  "priority" : 6,
+  "account" : {
+    "createdAt" : null,
+    "createdBy" : null,
+    "updatedAt" : null,
+    "updatedBy" : null,
+    "id" : "223e4567-e89b-12d3-a456-556642440001",
+    "email" : "chicage@email.com",
+    "phone" : "+0987654321",
+    "image" : null,
+    "password" : null,
+    "roles" : [ "OWNER" ],
+    "enabled" : true,
+    "nonLocked" : true,
+    "agreedToTermsOfUse" : true,
+    "code" : null
+  }
+}, {
+  "baseId" : null,
+  "iata" : "LHR",
+  "name" : "HEATHROW",
+  "cityCode" : "LON",
+  "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/ALHR",
+  "description" : "LONDON/GB:HEATHROW",
+  "clientId" : null,
+  "clientSecret" : null,
+  "priority" : 3,
+  "account" : {
+    "createdAt" : null,
+    "createdBy" : null,
+    "updatedAt" : null,
+    "updatedBy" : null,
+    "id" : "323e4567-e89b-12d3-a456-556642440002",
+    "email" : "london@email.com",
+    "phone" : "+5555555555",
+    "image" : null,
+    "password" : null,
+    "roles" : [ "OWNER" ],
+    "enabled" : true,
+    "nonLocked" : true,
+    "agreedToTermsOfUse" : true,
+    "code" : null
+  }
+}, {
+  "baseId" : null,
+  "iata" : "IST",
+  "name" : "ISTANBUL AIRPORT",
+  "cityCode" : "IST",
+  "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/AIST",
+  "description" : "ISTANBUL/TR:ISTANBUL AIRPORT",
+  "clientId" : null,
+  "clientSecret" : null,
+  "priority" : 1,
+  "account" : {
+    "createdAt" : null,
+    "createdBy" : null,
+    "updatedAt" : null,
+    "updatedBy" : null,
+    "id" : "423e4567-e89b-12d3-a456-556642440003",
+    "email" : "istanbul@email.com",
+    "phone" : "+9999999999",
+    "image" : null,
+    "password" : null,
+    "roles" : [ "OWNER" ],
+    "enabled" : true,
+    "nonLocked" : true,
+    "agreedToTermsOfUse" : true,
+    "code" : null
+  }
+}, {
+  "baseId" : null,
+  "iata" : "CDG",
+  "name" : "CHARLES DE GAULLE",
+  "cityCode" : "PAR",
+  "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/ACDG",
+  "description" : "PARIS/FR:CHARLES DE GAULLE",
+  "clientId" : null,
+  "clientSecret" : null,
+  "priority" : 0,
+  "account" : {
+    "createdAt" : null,
+    "createdBy" : null,
+    "updatedAt" : null,
+    "updatedBy" : null,
+    "id" : "523e4567-e89b-12d3-a456-556642440004",
+    "email" : "paris@email.com",
+    "phone" : "+1111111111",
+    "image" : null,
+    "password" : null,
+    "roles" : [ "OWNER" ],
+    "enabled" : true,
+    "nonLocked" : true,
+    "agreedToTermsOfUse" : true,
+    "code" : null
+  }
+}, {
+  "baseId" : null,
+  "iata" : "LAX",
+  "name" : "LOS ANGELES INTL",
+  "cityCode" : "LAX",
+  "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/ALAX",
+  "description" : "LOS ANGELES/CA/US:LOS ANGELES",
+  "clientId" : null,
+  "clientSecret" : null,
+  "priority" : 0,
+  "account" : {
+    "createdAt" : null,
+    "createdBy" : null,
+    "updatedAt" : null,
+    "updatedBy" : null,
+    "id" : "623e4567-e89b-12d3-a456-556642440005",
+    "email" : "losangeles@email.com",
+    "phone" : "+7777777777",
+    "image" : null,
+    "password" : null,
+    "roles" : [ "OWNER" ],
+    "enabled" : true,
+    "nonLocked" : true,
+    "agreedToTermsOfUse" : true,
+    "code" : null
+  }
+} ]

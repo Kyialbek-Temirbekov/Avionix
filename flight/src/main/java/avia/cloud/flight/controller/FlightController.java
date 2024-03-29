@@ -1,10 +1,7 @@
 package avia.cloud.flight.controller;
 
-import avia.cloud.flight.dto.FlightDTO;
-import avia.cloud.flight.entity.Flight;
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
-import avia.cloud.flight.repository.FlightRepository;
 import avia.cloud.flight.service.IFlightService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.constraints.Pattern;
@@ -21,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 import java.util.HashMap;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/trip")
@@ -32,8 +30,10 @@ public class FlightController {
     public ResponseEntity<HashMap<String, Object>> searchFlights(@RequestParam String origin,
                                                                  @RequestParam String destination,
                                                                  @RequestParam boolean oneWay,
-                                                                 @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date,
-                                                                 @RequestParam int adults, @RequestParam(required = false) Cabin cabin,
+                                                                 @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate departureDate,
+                                                                 @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate returnDate,
+                                                                 @RequestParam int adults,
+                                                                 @RequestParam(defaultValue = "ECONOMY,PREMIUM_ECONOMY,BUSINESS,FIRST") List<Cabin> cabins,
                                                                  @RequestParam(required = false) Currency currency,
                                                                  @RequestParam(defaultValue = "0.0") @PositiveOrZero double minPrice,
                                                                  @RequestParam(defaultValue = "" + Double.MAX_VALUE) @PositiveOrZero double maxPrice,
@@ -49,7 +49,8 @@ public class FlightController {
                                                                  @RequestParam(defaultValue = "8") @PositiveOrZero int pageSize,
                                                                  @RequestParam(defaultValue = "ASC")@Pattern(regexp = "(ASC|DESC)", message = "Invalid input. Allowed values: ASC, DESC") String direction,
                                                                  @RequestParam(defaultValue = "flightDuration") @Pattern(regexp = "(flightDuration|transitDuration|tariff\\.price)", message = "Invalid input. Allowed values: flightDuration, transitDuration, tariff.price") String property,
+                                                                 @RequestParam(defaultValue = "en") String lan,
                                                                  HttpServletRequest request) {
-        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, date, cabin, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, iata, page, pageSize, direction, property, request.getHeader("Original-Url")));
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, departureDate, returnDate, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, iata, page, pageSize, direction, property, lan, request.getHeader("Original-Url")));
     }
 }
