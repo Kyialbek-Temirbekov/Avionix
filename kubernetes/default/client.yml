@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: client
-        image: "adpsorcerer/avionix-client:r1"
+        image: "adpsorcerer/avionix-client:r1.f"
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

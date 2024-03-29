@@ -115,7 +115,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>adpsorcerer/avionix-${project.artifactId}:r1.1</image>
+						<image>adpsorcerer/avionix-${project.artifactId}:r1.f</image>
 					</to>
 				</configuration>
 			</plugin>

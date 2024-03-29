@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: gatewayserver
-        image: "adpsorcerer/avionix-gatewayserver:r1.1"
+        image: "adpsorcerer/avionix-gatewayserver:r1.f"
         imagePullPolicy: Always
         ports:
         - containerPort: 8072
