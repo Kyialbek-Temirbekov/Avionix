@@ -11,10 +11,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -26,6 +23,10 @@ import java.util.List;
 @Validated
 public class FlightController {
     private final IFlightService iFlightService;
+    @GetMapping("/seatDetails/{flightId}")
+    public ResponseEntity<HashMap<String, Object>> findPlaneSeatDetails(@PathVariable("flightId") String flightId) {
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.findPlaneSeatDetails(flightId));
+    }
     @GetMapping()
     public ResponseEntity<HashMap<String, Object>> searchFlights(@RequestParam String origin,
                                                                  @RequestParam String destination,
@@ -51,6 +52,6 @@ public class FlightController {
                                                                  @RequestParam(defaultValue = "flightDuration") @Pattern(regexp = "(flightDuration|transitDuration|tariff\\.price)", message = "Invalid input. Allowed values: flightDuration, transitDuration, tariff.price") String property,
                                                                  @RequestParam(defaultValue = "en") String lan,
                                                                  HttpServletRequest request) {
-        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, departureDate, returnDate, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, iata, page, pageSize, direction, property, lan, request.getHeader("Original-Url")));
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, departureDate, returnDate, adults, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, iata, page, pageSize, direction, property, lan, request.getHeader("Original-Url")));
     }
 }

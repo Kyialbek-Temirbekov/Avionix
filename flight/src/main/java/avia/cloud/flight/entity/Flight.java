@@ -23,6 +23,9 @@ public class Flight extends BaseEntity {
     @UuidGenerator
     private String id;
     private String iata;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "airplane_id", referencedColumnName = "id")
+    private Airplane airplane;
     @OneToMany(mappedBy = "flight", fetch = FetchType.EAGER, cascade = {REMOVE,PERSIST,MERGE})
     private List<Segment> segments;
     private boolean oneWay;
@@ -41,4 +44,6 @@ public class Flight extends BaseEntity {
     private FlightStatus status;
     private long flightDuration;
     private long transitDuration;
+    @OneToMany(mappedBy = "flight")
+    private List<Ticket> tickets;
 }

@@ -1,5 +1,6 @@
 package avia.cloud.flight.repository;
 
+import avia.cloud.flight.dto.PlaneSeatDetail;
 import avia.cloud.flight.entity.Flight;
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
@@ -11,11 +12,14 @@ import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface FlightRepository extends JpaRepository<Flight,String> {
-    @Query("SELECT f FROM Flight f JOIN Segment s ON f = s.flight JOIN Tariff t ON f = t.flight WHERE f.status = 'READY' AND f.origin.code = :origin AND f.destination.code = :destination AND f.oneWay = :oneWay AND CAST(s.departureAt as date) = :date AND s.departureAt = (SELECT MIN(ds.departureAt) FROM Flight df JOIN df.segments ds WHERE df.id = f.id) AND t.cabin IN :cabins AND (:currency IS NULL OR f.currency = :currency) AND t.price BETWEEN :minPrice AND :maxPrice AND (:stops IS NULL OR :stops + 1 = (SELECT COUNT(cs.id) FROM Segment cs WHERE cs.flight = f)) AND (:checkedBaggageIncluded IS NULL OR t.checkedBaggageIncluded = :checkedBaggageIncluded) AND (:cabinBaggageIncluded IS NULL OR t.cabinBaggageIncluded = :cabinBaggageIncluded) AND f.flightDuration BETWEEN :minFlightDuration AND :maxFlightDuration AND f.transitDuration BETWEEN :minTransitDuration AND :maxTransitDuration AND (:iata IS NULL OR f.iata = :iata)")
-    Page<Flight> searchFlights(String origin, String destination, boolean oneWay, LocalDate date, List<Cabin> cabins, Currency currency, double minPrice, double maxPrice, Integer stops, Boolean checkedBaggageIncluded, Boolean cabinBaggageIncluded, long minFlightDuration, long maxFlightDuration, long minTransitDuration, long maxTransitDuration, String iata, Pageable pageable);
+    @Query("SELECT new avia.cloud.flight.dto.PlaneSeatDetail(a.make, a.model, c.cabin, c.seatRow, c.seatCol) FROM Flight f JOIN Airplane a ON f.airplane = a JOIN Class c ON c.airplane = a WHERE f.id = :flightId")
+    Optional<PlaneSeatDetail> findPlaneSeatDetails(String flightId);
+    @Query("SELECT f FROM Flight f JOIN Segment s ON f = s.flight JOIN Tariff t ON f = t.flight JOIN Class c ON f.airplane = c.airplane WHERE f.status = 'READY' AND f.origin.code = :origin AND f.destination.code = :destination AND f.oneWay = :oneWay AND CAST(s.departureAt as date) = :date AND s.departureAt = (SELECT MIN(ds.departureAt) FROM Flight df JOIN df.segments ds WHERE df.id = f.id) AND t.cabin IN :cabins AND (:currency IS NULL OR f.currency = :currency) AND t.price BETWEEN :minPrice AND :maxPrice AND (:stops IS NULL OR :stops + 1 = (SELECT COUNT(cs.id) FROM Segment cs WHERE cs.flight = f)) AND (:checkedBaggageIncluded IS NULL OR t.checkedBaggageIncluded = :checkedBaggageIncluded) AND (:cabinBaggageIncluded IS NULL OR t.cabinBaggageIncluded = :cabinBaggageIncluded) AND f.flightDuration BETWEEN :minFlightDuration AND :maxFlightDuration AND f.transitDuration BETWEEN :minTransitDuration AND :maxTransitDuration AND (:iata IS NULL OR f.iata = :iata) AND c.seatCol * c.seatRow - SIZE(f.tickets) >= :adults")
+    Page<Flight> searchFlights(String origin, String destination, boolean oneWay, LocalDate date, int adults, List<Cabin> cabins, Currency currency, double minPrice, double maxPrice, Integer stops, Boolean checkedBaggageIncluded, Boolean cabinBaggageIncluded, long minFlightDuration, long maxFlightDuration, long minTransitDuration, long maxTransitDuration, String iata, Pageable pageable);
     /**
      * origin >
      * destination >

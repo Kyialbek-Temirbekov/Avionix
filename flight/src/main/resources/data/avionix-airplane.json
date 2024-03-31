@@ -1,0 +1,50 @@
+[
+  {
+    "id": "a8650421-20d5-4f3d-9d0a-58e632b4fe3a",
+    "make": "Airbus",
+    "model": "A380",
+    "cabins": [
+      {
+        "cabin": "ECONOMY",
+        "seatRow": 45,
+        "seatCol": 6
+      }
+    ]
+  },
+  {
+    "id": "1087349f-af2d-4376-8d5c-d5a9b0c19411",
+    "make": "Boeing",
+    "model": "787",
+    "cabins": [
+      {
+        "cabin": "PREMIUM_ECONOMY",
+        "seatRow": 25,
+        "seatCol": 4
+      }
+    ]
+  },
+  {
+    "id": "b05380d3-17d0-4986-8e5e-8011b6df98d4",
+    "make": "Embraer",
+    "model": "E175",
+    "cabins": [
+      {
+        "cabin": "FIRST",
+        "seatRow": 18,
+        "seatCol": 5
+      }
+    ]
+  },
+  {
+    "id": "bd121b07-6369-4e69-9a3c-24c5cdd37219",
+    "make": "Airbus",
+    "model": "A330",
+    "cabins": [
+      {
+        "cabin": "BUSINESS",
+        "seatRow": 10,
+        "seatCol": 4
+      }
+    ]
+  }
+]

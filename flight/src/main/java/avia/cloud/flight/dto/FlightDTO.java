@@ -1,9 +1,6 @@
 package avia.cloud.flight.dto;
 
-import avia.cloud.flight.entity.Segment;
-import avia.cloud.flight.entity.Tariff;
 import avia.cloud.flight.entity.enums.Currency;
-import avia.cloud.flight.entity.enums.FlightStatus;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,6 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class FlightDTO {
+    private String id;
     @JsonProperty("segments")
     private List<SegmentDTO> segmentDTOS;
     private boolean oneWay;

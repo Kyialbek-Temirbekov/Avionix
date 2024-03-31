@@ -1,9 +1,14 @@
 package avia.cloud.flight.init;
 
+import avia.cloud.flight.entity.Airplane;
 import avia.cloud.flight.entity.City;
 import avia.cloud.flight.entity.Flight;
+import avia.cloud.flight.entity.Ticket;
+import avia.cloud.flight.entity.enums.TicketStatus;
+import avia.cloud.flight.repository.AirplaneRepository;
 import avia.cloud.flight.repository.CityRepository;
 import avia.cloud.flight.repository.FlightRepository;
+import avia.cloud.flight.repository.TicketRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -20,6 +25,7 @@ import org.springframework.util.StreamUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -29,6 +35,8 @@ import java.util.Objects;
 public class DataLoader implements CommandLineRunner {
     private final CityRepository cityRepository;
     private final FlightRepository flightRepository;
+    private final AirplaneRepository airplaneRepository;
+    private final TicketRepository ticketRepository;
     private ObjectMapper objectMapper;
 
 
@@ -38,6 +46,7 @@ public class DataLoader implements CommandLineRunner {
         objectMapper.registerModule(new JavaTimeModule());
 
         loadCity("/data/avionix-city.json");
+        loadAirplane("/data/avionix-airplane.json");
         loadFlight("/data/avionix-flight.json");
     }
 
@@ -67,6 +76,14 @@ public class DataLoader implements CommandLineRunner {
         cityRepository.saveAllAndFlush(cities);
     }
 
+    private void loadAirplane(String path) throws IOException {
+        TypeReference<List<Airplane>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<Airplane> airplanes = objectMapper.readValue(inputStream, typeReference);
+        airplanes.forEach(airplane -> airplane.getCabins().forEach(cabin -> cabin.setAirplane(airplane)));
+        airplaneRepository.saveAllAndFlush(airplanes);
+    }
+
     private void loadFlight(String path) throws IOException {
         TypeReference<List<Flight>> typeReference = new TypeReference<>() {};
         InputStream inputStream = TypeReference.class.getResourceAsStream(path);
@@ -76,9 +93,67 @@ public class DataLoader implements CommandLineRunner {
             flight.getTariff().setFlight(flight);
             flight.setOrigin(cityRepository.findById(flight.getOrigin().getCode()).orElseThrow());
             flight.setDestination(cityRepository.findById(flight.getDestination().getCode()).orElseThrow());
+            flight.setAirplane(airplaneRepository.findFirstByCabinsCabin(flight.getTariff().getCabin()));
+            flight.setTickets(createSimpleTickets());
         });
 
         flightRepository.saveAllAndFlush(flights);
+        flights.forEach(flight -> {
+            flight.getTickets().forEach(ticket -> ticket.setFlight(flight));
+            ticketRepository.saveAllAndFlush(flight.getTickets());
+        });
+    }
+
+    private List<Ticket> createSimpleTickets() {
+        Ticket ticket1 = Ticket.builder()
+                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .seat("A1")
+                .checkedBaggageIncluded(true)
+                .price(100.0)
+                .status(TicketStatus.BOOKED)
+                .build();
+
+        Ticket ticket2 = Ticket.builder()
+                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .seat("A3")
+                .checkedBaggageIncluded(false)
+                .price(200.0)
+                .status(TicketStatus.BOOKED)
+                .build();
+
+        Ticket ticket3 = Ticket.builder()
+                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .seat("B3")
+                .checkedBaggageIncluded(true)
+                .price(150.0)
+                .status(TicketStatus.BOOKED)
+                .build();
+
+        Ticket ticket4 = Ticket.builder()
+                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .seat("A5")
+                .checkedBaggageIncluded(false)
+                .price(120.0)
+                .status(TicketStatus.BOOKED)
+                .build();
+
+        Ticket ticket5 = Ticket.builder()
+                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .seat("A7")
+                .checkedBaggageIncluded(true)
+                .price(250.0)
+                .status(TicketStatus.BOOKED)
+                .build();
+
+        Ticket ticket6 = Ticket.builder()
+                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .seat("D8")
+                .checkedBaggageIncluded(false)
+                .price(110.0)
+                .status(TicketStatus.BOOKED)
+                .build();
+
+        return Arrays.asList(ticket1, ticket2, ticket3, ticket4, ticket5, ticket6);
     }
 
 }
