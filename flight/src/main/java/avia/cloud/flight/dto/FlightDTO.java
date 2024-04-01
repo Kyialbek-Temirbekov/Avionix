@@ -13,19 +13,13 @@ import java.util.List;
 @NoArgsConstructor
 public class FlightDTO {
     private String id;
-    @JsonProperty("departureSegment")
-    private List<SegmentDTO> departureSegmentDTOS;
-    @JsonProperty("returnSegment")
-    private List<SegmentDTO> returnSegmentDTOS;
     private boolean oneWay;
     private String from;
     private String to;
     private String gate;
+    private Itinerary departureItinerary;
+    private Itinerary returnItinerary;
     @JsonProperty("tariff")
     private TariffDTO tariffDTO;
     private Currency currency;
-    private long departureFlightDuration;
-    private long departureTransitDuration;
-    private long returnFlightDuration;
-    private long returnTransitDuration;
 }

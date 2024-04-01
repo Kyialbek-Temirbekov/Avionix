@@ -10,8 +10,11 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.util.Currency;
 import java.util.HashMap;
 import java.util.Map;
+
+import static avia.cloud.flight.util.CurrencyUtils.convertToSmallestUnit;
 
 @Service
 @Transactional
@@ -24,21 +27,14 @@ public class StripePaymentService {
     public void init() {
         Stripe.apiKey = secretKey;
     }
-    public Charge charge(ChargeRequest chargeRequest)
+    public String charge(ChargeRequest chargeRequest)
             throws StripeException {
         Map<String, Object> chargeParams = new HashMap<>();
-        chargeParams.put("amount", (int) (chargeRequest.getAmount() * 100));
+        chargeParams.put("amount", convertToSmallestUnit(chargeRequest.getAmount(), Currency.getInstance(chargeRequest.getCurrency())));
         chargeParams.put("currency", chargeRequest.getCurrency());
         chargeParams.put("description", chargeRequest.getDescription());
         chargeParams.put("source", chargeRequest.getStripeToken());
-        try {
-            Charge charge = Charge.create(chargeParams);
-            System.out.println("Status: " + charge.getStatus());
-        } catch (StripeException e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-            throw e;
-        }
-        return null;
+        Charge charge = Charge.create(chargeParams);
+        return charge.getStatus();
     }
 }

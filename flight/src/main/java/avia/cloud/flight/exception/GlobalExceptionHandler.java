@@ -1,8 +1,13 @@
 package avia.cloud.flight.exception;
 
+import avia.cloud.flight.dto.CardErrorResponseDTO;
 import avia.cloud.flight.dto.ConstraintErrorResponseDTO;
 import avia.cloud.flight.dto.ErrorResponseDTO;
+import com.stripe.exception.CardException;
+import com.stripe.exception.InvalidRequestException;
+import com.stripe.exception.StripeException;
 import jakarta.validation.ConstraintViolationException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -22,6 +27,7 @@ import java.util.List;
 import java.util.Map;
 
 @ControllerAdvice
+@Slf4j
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
@@ -65,6 +71,25 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     public ResponseEntity<ErrorResponseDTO> handleGlobalException(AuthenticationException exception,
                                                                   WebRequest webRequest) {
         return new ResponseEntity<>(createResponse(exception, webRequest, HttpStatus.UNAUTHORIZED), HttpStatus.UNAUTHORIZED);
+    }
+
+    @ExceptionHandler(StripeException.class)
+    public ResponseEntity<ErrorResponseDTO> handleGlobalException(StripeException exception,
+                                                                  WebRequest webRequest) {
+        if(exception instanceof CardException || exception instanceof InvalidRequestException) {
+            CardErrorResponseDTO response = new CardErrorResponseDTO(
+                    webRequest.getHeader("Original-Path"),
+                    HttpStatus.PAYMENT_REQUIRED,
+                    exception.getMessage(),
+                    LocalDateTime.now(),
+                    exception.getStripeError().getCode(),
+                    exception.getStripeError().getDeclineCode()
+            );
+            return new ResponseEntity<>(response, HttpStatus.PAYMENT_REQUIRED);
+        } else {
+            log.error(exception.getStripeError().toString());
+            return new ResponseEntity<>(createResponse(exception, webRequest, HttpStatus.INTERNAL_SERVER_ERROR), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     private ErrorResponseDTO createResponse(Exception exception, WebRequest webRequest, HttpStatus httpStatus) {

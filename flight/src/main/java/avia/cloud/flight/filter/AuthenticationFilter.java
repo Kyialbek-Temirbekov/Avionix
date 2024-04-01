@@ -1,7 +1,7 @@
 package avia.cloud.flight.filter;
 
 import avia.cloud.flight.entity.enums.Role;
-import avia.cloud.flight.service.client.AuthorityFeignClient;
+import avia.cloud.flight.service.client.UserFeignClient;
 import avia.cloud.flight.util.AuthorityUtils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -34,7 +34,7 @@ import static avia.cloud.flight.util.AuthorityUtils.getAuthorities;
 public class AuthenticationFilter extends OncePerRequestFilter {
     @Value("${application.jwt.key}")
     private String jwtKey;
-    private final AuthorityFeignClient authorityFeignClient;
+    private final UserFeignClient userFeignClient;
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
@@ -50,7 +50,7 @@ public class AuthenticationFilter extends OncePerRequestFilter {
             if(token.startsWith("Basic")) {
                 Authentication basicAuth = SecurityContextHolder.getContext().getAuthentication();
                 List<Role> roles = basicAuth.getAuthorities().stream().map(GrantedAuthority::getAuthority).map(Role::valueOf).toList();
-                List<GrantedAuthority> grantedAuthorities = getAuthorities(authorityFeignClient.fetchAuthorities(roles.stream().map(Enum::toString).collect(Collectors.joining(","))));
+                List<GrantedAuthority> grantedAuthorities = getAuthorities(userFeignClient.fetchAuthorities(roles.stream().map(Enum::toString).collect(Collectors.joining(","))));
                 roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.addPrefix(role.toString()))));
 
                 authentication = new UsernamePasswordAuthenticationToken(basicAuth.getName(), null, grantedAuthorities);
@@ -66,14 +66,14 @@ public class AuthenticationFilter extends OncePerRequestFilter {
                 String jwtAuthorities = (String) claims.get("authorities");
 
                 List<Role> roles = Arrays.stream(jwtAuthorities.split(",")).map(role -> role.substring(5)).map(Role::valueOf).toList();
-                List<GrantedAuthority> grantedAuthorities = getAuthorities(authorityFeignClient.fetchAuthorities(roles.stream().map(Enum::toString).collect(Collectors.joining(","))));
+                List<GrantedAuthority> grantedAuthorities = getAuthorities(userFeignClient.fetchAuthorities(roles.stream().map(Enum::toString).collect(Collectors.joining(","))));
                 roles.forEach(role -> grantedAuthorities.add(new SimpleGrantedAuthority(AuthorityUtils.addPrefix(role.toString()))));
 
                 authentication = new UsernamePasswordAuthenticationToken(username, null, grantedAuthorities);
             }
         }
         else {
-            List<GrantedAuthority> grantedAuthorities = getAuthorities(authorityFeignClient.fetchAuthorities("GUEST"));
+            List<GrantedAuthority> grantedAuthorities = getAuthorities(userFeignClient.fetchAuthorities("GUEST"));
             grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_GUEST"));
             authentication = new UsernamePasswordAuthenticationToken("guest", null, grantedAuthorities);
         }

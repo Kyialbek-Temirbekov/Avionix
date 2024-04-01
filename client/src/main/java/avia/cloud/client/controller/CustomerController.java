@@ -29,6 +29,10 @@ public class CustomerController {
     public ResponseEntity<CustomerDTO> fetchCustomer(Authentication authentication) throws IOException {
         return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.fetchCustomer(authentication.getName()));
     }
+    @GetMapping("/id")
+    public ResponseEntity<String> findCustomerId(Authentication authentication) throws IOException {
+        return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.findCustomerId(authentication.getName()));
+    }
 
     @PostMapping("/google")
     public ResponseEntity<Authorization> oauthSignUp(Authentication authentication, @Valid @RequestBody CustomerDTO customerDTO, @RequestHeader("Authorization") String auth) {

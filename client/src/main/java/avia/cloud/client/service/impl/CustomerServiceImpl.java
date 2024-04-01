@@ -96,6 +96,13 @@ public class CustomerServiceImpl implements ICustomerService {
                 .stream().map(Enum::toString).map(AuthorityUtils::addPrefix).collect(Collectors.joining(",")));
     }
 
+    @Override
+    public String findCustomerId(String email) {
+        Customer customer = accountRepository.findByEmail(email).map(Account::getCustomer)
+                .orElseThrow(() -> new NotFoundException("Customer","email", email));
+        return customer.getBaseId();
+    }
+
     private Account convertToAccount(AccountDTO accountDTO) {
         return modelMapper.map(accountDTO, Account.class);
     }

@@ -1,9 +1,6 @@
 package avia.cloud.flight.service.impl;
 
-import avia.cloud.flight.dto.FlightDTO;
-import avia.cloud.flight.dto.PlaneSeatDetail;
-import avia.cloud.flight.dto.SegmentDTO;
-import avia.cloud.flight.dto.TariffDTO;
+import avia.cloud.flight.dto.*;
 import avia.cloud.flight.entity.Flight;
 import avia.cloud.flight.entity.Segment;
 import avia.cloud.flight.entity.Tariff;
@@ -81,8 +78,14 @@ public class FlightServiceImpl implements IFlightService {
 
     private FlightDTO convertToFlightDTO(Flight flight, String lan) {
         FlightDTO flightDTO = modelMapper.map(flight, FlightDTO.class);
-        flightDTO.setDepartureSegmentDTOS(flight.getDepartureSegment().stream().map(this::convertToSegmentDTO).toList());
-        flightDTO.setReturnSegmentDTOS(flight.getReturnSegment().stream().map(this::convertToSegmentDTO).toList());
+        flightDTO.setDepartureItinerary(new Itinerary(
+                flight.getDepartureFlightDuration(),
+                flight.getDepartureTransitDuration(),
+                flight.getDepartureSegment().stream().map(segment -> modelMapper.map(segment,SegmentDTO.class)).toList()));
+        flightDTO.setReturnItinerary(new Itinerary(
+                flight.getReturnFlightDuration(),
+                flight.getReturnTransitDuration(),
+                flight.getReturnSegment().stream().map(segment -> modelMapper.map(segment,SegmentDTO.class)).toList()));
         flightDTO.setTariffDTO(convertToTariffDTO(flight.getTariff()));
         flightDTO.setFrom(cityRepository.findByCodeAndLan(flight.getOrigin().getCode(), Lan.of(lan)));
         flightDTO.setTo(cityRepository.findByCodeAndLan(flight.getDestination().getCode(), Lan.of(lan)));
