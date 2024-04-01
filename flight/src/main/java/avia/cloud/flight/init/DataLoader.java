@@ -89,7 +89,8 @@ public class DataLoader implements CommandLineRunner {
         InputStream inputStream = TypeReference.class.getResourceAsStream(path);
         List<Flight> flights = objectMapper.readValue(inputStream, typeReference);
         flights.forEach(flight -> {
-            flight.getSegments().forEach(segment -> segment.setFlight(flight));
+            flight.getDepartureSegment().forEach(segment -> segment.setDepartureFlight(flight));
+            flight.getReturnSegment().forEach(segment -> segment.setReturnFlight(flight));
             flight.getTariff().setFlight(flight);
             flight.setOrigin(cityRepository.findById(flight.getOrigin().getCode()).orElseThrow());
             flight.setDestination(cityRepository.findById(flight.getDestination().getCode()).orElseThrow());

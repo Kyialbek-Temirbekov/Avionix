@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SegmentDTO {
-    private String departureIata;
-    private LocalDateTime departureAt;
+    private String takeoffIata;
+    private LocalDateTime takeoffAt;
     private String arrivalIata;
     private LocalDateTime arrivalAt;
 }

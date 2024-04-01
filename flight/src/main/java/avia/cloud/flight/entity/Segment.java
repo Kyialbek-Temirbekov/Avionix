@@ -21,12 +21,16 @@ public class Segment {
     @UuidGenerator
     private String id;
     @ManyToOne
-    @JoinColumn(name = "flight_id", referencedColumnName = "id")
+    @JoinColumn(name = "departure_flight_id", referencedColumnName = "id")
     @JsonIgnore
-    private Flight flight;
-    private String departureIata;
+    private Flight departureFlight;
+    @ManyToOne
+    @JoinColumn(name = "return_flight_id", referencedColumnName = "id")
+    @JsonIgnore
+    private Flight returnFlight;
+    private String takeoffIata;
     @Temporal(TemporalType.TIMESTAMP)
-    private LocalDateTime departureAt;
+    private LocalDateTime takeoffAt;
     private String arrivalIata;
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime arrivalAt;

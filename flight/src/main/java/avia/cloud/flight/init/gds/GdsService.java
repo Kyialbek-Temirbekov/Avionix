@@ -34,11 +34,12 @@ public class GdsService extends RestTemplate {
     private final GdsTokenProvider tokenProvider = new GdsTokenProvider();
     private final FlightServiceImpl flightService = new FlightServiceImpl(null,null,null, null);
 
-    public List<Flight> fetchFlights(String originLocationCode, String destinationLocationCode, String departureDate, int adults, int limit, String travelClass) {
+    public List<Flight> fetchFlights(String originLocationCode, String destinationLocationCode, String departureDate, String returnDate, int adults, int limit, String travelClass) {
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(flightOffersSearchApi)
                 .queryParam("originLocationCode", originLocationCode)
                 .queryParam("destinationLocationCode", destinationLocationCode)
                 .queryParam("departureDate", departureDate)
+                .queryParam("returnDate", returnDate)
                 .queryParam("adults", adults)
                 .queryParam("max", limit)
                 .queryParam("travelClass", travelClass);
@@ -75,14 +76,23 @@ public class GdsService extends RestTemplate {
     }
 
     private Flight convertToFlight(JsonNode jsonNode) {
-        JsonNode segmentNode = jsonNode.get("itineraries").get(0).get("segments");
+        JsonNode departureSegmentNode = jsonNode.get("itineraries").get(0).get("segments");
+        JsonNode returnSegmentNode = jsonNode.get("itineraries").get(1).get("segments");
         JsonNode tariffNode = jsonNode.get("travelerPricings").get(0);
 
-        List<Segment> segments = new ArrayList<>();
-        for(JsonNode segment: segmentNode) {
-            segments.add(Segment.builder()
-                    .departureIata(segment.get("departure").get("iataCode").asText())
-                    .departureAt(LocalDateTime.parse(segment.get("departure").get("at").asText()))
+        List<Segment> departureSegment = new ArrayList<>();
+        for(JsonNode segment: departureSegmentNode) {
+            departureSegment.add(Segment.builder()
+                    .takeoffIata(segment.get("departure").get("iataCode").asText())
+                    .takeoffAt(LocalDateTime.parse(segment.get("departure").get("at").asText()))
+                    .arrivalIata(segment.get("arrival").get("iataCode").asText())
+                    .arrivalAt(LocalDateTime.parse(segment.get("arrival").get("at").asText())).build());
+        }
+        List<Segment> returnSegment = new ArrayList<>();
+        for(JsonNode segment: returnSegmentNode) {
+            returnSegment.add(Segment.builder()
+                    .takeoffIata(segment.get("departure").get("iataCode").asText())
+                    .takeoffAt(LocalDateTime.parse(segment.get("departure").get("at").asText()))
                     .arrivalIata(segment.get("arrival").get("iataCode").asText())
                     .arrivalAt(LocalDateTime.parse(segment.get("arrival").get("at").asText())).build());
         }
@@ -93,13 +103,16 @@ public class GdsService extends RestTemplate {
                 .cabinBaggageIncluded(true).build();
 
         return Flight.builder()
-                .segments(segments)
+                .departureSegment(departureSegment)
+                .returnSegment(returnSegment)
                 .oneWay(jsonNode.get("oneWay").asBoolean())
                 .gate("A" + jsonNode.get("numberOfBookableSeats").asText())
                 .tariff(tariff)
                 .currency(Currency.valueOf(jsonNode.get("price").get("currency").asText()))
-                .flightDuration(flightService.calculateFlightDuration(segments))
-                .transitDuration(flightService.calculateTransitDuration(segments)).build();
+                .departureFlightDuration(flightService.calculateFlightDuration(departureSegment))
+                .departureTransitDuration(flightService.calculateTransitDuration(departureSegment))
+                .returnFlightDuration(flightService.calculateFlightDuration(returnSegment))
+                .returnTransitDuration(flightService.calculateTransitDuration(returnSegment)).build();
     }
 
     public static void dev(String[] args) throws IOException {
@@ -117,14 +130,16 @@ public class GdsService extends RestTemplate {
             List<Flight> fetchedFlights = gdsService.fetchFlights(
                     originCode,
                     destinationCode,
-                    LocalDate.of(2024,3,26).toString(),
+                    LocalDate.of(2024,4,10).toString(),
+                    LocalDate.of(2024,4,14).toString(),
                     1,
                     40,
                     Cabin.BUSINESS.toString()
             );
             fetchedFlights.forEach(flight -> {
                 flight.getTariff().setFlight(flight);
-                flight.getSegments().forEach(segment -> segment.setFlight(flight));
+                flight.getDepartureSegment().forEach(segment -> segment.setDepartureFlight(flight));
+                flight.getReturnSegment().forEach(segment -> segment.setReturnFlight(flight));
                 flight.setIata(flightOffer.get("iata"));
                 City origin = new City();
                 origin.setCode(originCode);

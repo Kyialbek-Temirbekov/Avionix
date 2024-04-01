@@ -13,8 +13,10 @@ import java.util.List;
 @NoArgsConstructor
 public class FlightDTO {
     private String id;
-    @JsonProperty("segments")
-    private List<SegmentDTO> segmentDTOS;
+    @JsonProperty("departureSegment")
+    private List<SegmentDTO> departureSegmentDTOS;
+    @JsonProperty("returnSegment")
+    private List<SegmentDTO> returnSegmentDTOS;
     private boolean oneWay;
     private String from;
     private String to;
@@ -22,6 +24,8 @@ public class FlightDTO {
     @JsonProperty("tariff")
     private TariffDTO tariffDTO;
     private Currency currency;
-    private long flightDuration;
-    private long transitDuration;
+    private long departureFlightDuration;
+    private long departureTransitDuration;
+    private long returnFlightDuration;
+    private long returnTransitDuration;
 }

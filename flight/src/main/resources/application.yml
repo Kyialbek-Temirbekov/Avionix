@@ -42,4 +42,5 @@ logging:
       cloud:
         booking: DEBUG
 
-
+stripe:
+  secret_key: "sk_test_51P0N25HNHJlsfXUE4645pCTuNcVPG2TgPYOMEWZTggtLviyY3SwiFUROMz357c8XrerbcZsFSYlSTFLesRR5519h00wvDfj979"

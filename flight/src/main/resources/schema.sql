@@ -34,8 +34,10 @@ CREATE TABLE FLIGHT (
     gate VARCHAR(255),
     currency VARCHAR(255),
     status VARCHAR(255),
-    flight_duration INTEGER,
-    transit_duration INTEGER,
+    departure_flight_duration INTEGER,
+    departure_transit_duration INTEGER,
+    return_flight_duration INTEGER,
+    return_transit_duration INTEGER,
     created_at TIMESTAMP,
     created_by VARCHAR(255),
     updated_at TIMESTAMP,
@@ -44,9 +46,10 @@ CREATE TABLE FLIGHT (
 
 CREATE TABLE SEGMENT (
     id VARCHAR(36) PRIMARY KEY,
-    flight_id VARCHAR(36) REFERENCES FLIGHT(id),
-    departure_iata VARCHAR(255),
-    departure_at TIMESTAMP,
+    departure_flight_id VARCHAR(36) REFERENCES FLIGHT(id),
+    return_flight_id VARCHAR(36) REFERENCES FLIGHT(id),
+    takeoff_iata VARCHAR(255),
+    takeoff_at TIMESTAMP,
     arrival_iata VARCHAR(255),
     arrival_at TIMESTAMP
 );

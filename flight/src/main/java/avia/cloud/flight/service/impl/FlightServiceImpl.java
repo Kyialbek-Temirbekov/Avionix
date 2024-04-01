@@ -81,7 +81,8 @@ public class FlightServiceImpl implements IFlightService {
 
     private FlightDTO convertToFlightDTO(Flight flight, String lan) {
         FlightDTO flightDTO = modelMapper.map(flight, FlightDTO.class);
-        flightDTO.setSegmentDTOS(flight.getSegments().stream().map(this::convertToSegmentDTO).toList());
+        flightDTO.setDepartureSegmentDTOS(flight.getDepartureSegment().stream().map(this::convertToSegmentDTO).toList());
+        flightDTO.setReturnSegmentDTOS(flight.getReturnSegment().stream().map(this::convertToSegmentDTO).toList());
         flightDTO.setTariffDTO(convertToTariffDTO(flight.getTariff()));
         flightDTO.setFrom(cityRepository.findByCodeAndLan(flight.getOrigin().getCode(), Lan.of(lan)));
         flightDTO.setTo(cityRepository.findByCodeAndLan(flight.getDestination().getCode(), Lan.of(lan)));
@@ -97,7 +98,7 @@ public class FlightServiceImpl implements IFlightService {
     }
 
     public long calculateFlightDuration(List<Segment> segments) {
-        LocalDateTime firstDeparture = segments.get(0).getDepartureAt();
+        LocalDateTime firstDeparture = segments.get(0).getTakeoffAt();
         LocalDateTime lastArrival = segments.get(segments.size() - 1).getArrivalAt();
         return ChronoUnit.MINUTES.between(firstDeparture, lastArrival);
     }
@@ -109,7 +110,7 @@ public class FlightServiceImpl implements IFlightService {
         long transitDuration = 0;
         for (int i = 0; i < segments.size() - 1; i++) {
             LocalDateTime currentArrival = segments.get(i).getArrivalAt();
-            LocalDateTime nextDeparture = segments.get(i + 1).getDepartureAt();
+            LocalDateTime nextDeparture = segments.get(i + 1).getTakeoffAt();
             transitDuration += ChronoUnit.MINUTES.between(currentArrival, nextDeparture);
         }
         return transitDuration;

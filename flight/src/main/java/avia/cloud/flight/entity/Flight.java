@@ -26,8 +26,10 @@ public class Flight extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "airplane_id", referencedColumnName = "id")
     private Airplane airplane;
-    @OneToMany(mappedBy = "flight", fetch = FetchType.EAGER, cascade = {REMOVE,PERSIST,MERGE})
-    private List<Segment> segments;
+    @OneToMany(mappedBy = "departureFlight", fetch = FetchType.EAGER, cascade = {REMOVE,PERSIST,MERGE})
+    private List<Segment> departureSegment;
+    @OneToMany(mappedBy = "returnFlight", fetch = FetchType.EAGER, cascade = {REMOVE,PERSIST,MERGE})
+    private List<Segment> returnSegment;
     private boolean oneWay;
     @ManyToOne
     @JoinColumn(name = "origin", referencedColumnName = "code")
@@ -42,8 +44,10 @@ public class Flight extends BaseEntity {
     private Currency currency;
     @Enumerated(EnumType.STRING)
     private FlightStatus status;
-    private long flightDuration;
-    private long transitDuration;
+    private long departureFlightDuration;
+    private long departureTransitDuration;
+    private long returnFlightDuration;
+    private long returnTransitDuration;
     @OneToMany(mappedBy = "flight")
     private List<Ticket> tickets;
 }
