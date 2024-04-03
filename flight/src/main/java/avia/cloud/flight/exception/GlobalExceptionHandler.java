@@ -1,6 +1,6 @@
 package avia.cloud.flight.exception;
 
-import avia.cloud.flight.dto.CardErrorResponseDTO;
+import avia.cloud.flight.dto.PaymentErrorResponseDTO;
 import avia.cloud.flight.dto.ConstraintErrorResponseDTO;
 import avia.cloud.flight.dto.ErrorResponseDTO;
 import com.stripe.exception.CardException;
@@ -76,8 +76,9 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(StripeException.class)
     public ResponseEntity<ErrorResponseDTO> handleGlobalException(StripeException exception,
                                                                   WebRequest webRequest) {
-        if(exception instanceof CardException || exception instanceof InvalidRequestException) {
-            CardErrorResponseDTO response = new CardErrorResponseDTO(
+
+        if(exception instanceof CardException) {
+            PaymentErrorResponseDTO response = new PaymentErrorResponseDTO(
                     webRequest.getHeader("Original-Path"),
                     HttpStatus.PAYMENT_REQUIRED,
                     exception.getMessage(),
@@ -86,6 +87,16 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                     exception.getStripeError().getDeclineCode()
             );
             return new ResponseEntity<>(response, HttpStatus.PAYMENT_REQUIRED);
+        } else if (exception instanceof InvalidRequestException) {
+            PaymentErrorResponseDTO response = new PaymentErrorResponseDTO(
+                    webRequest.getHeader("Original-Path"),
+                    HttpStatus.BAD_REQUEST,
+                    exception.getMessage(),
+                    LocalDateTime.now(),
+                    exception.getStripeError().getCode(),
+                    exception.getStripeError().getDeclineCode()
+            );
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         } else {
             log.error(exception.getStripeError().toString());
             return new ResponseEntity<>(createResponse(exception, webRequest, HttpStatus.INTERNAL_SERVER_ERROR), HttpStatus.INTERNAL_SERVER_ERROR);

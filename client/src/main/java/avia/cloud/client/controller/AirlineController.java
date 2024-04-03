@@ -2,6 +2,7 @@ package avia.cloud.client.controller;
 
 import avia.cloud.client.dto.*;
 import avia.cloud.client.dto.records.AirlineName;
+import avia.cloud.client.dto.records.AirlineRatingRecord;
 import avia.cloud.client.service.IAirlineService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -31,5 +32,9 @@ public class AirlineController {
     @GetMapping("/names")
     public ResponseEntity<List<AirlineName>> findAirlineNames() {
         return ResponseEntity.status(HttpStatus.OK).body(iAirlineService.findAirlineNames());
+    }
+    @GetMapping("/rating")
+    public ResponseEntity<List<AirlineRatingRecord>> findAirlineRatings() {
+        return ResponseEntity.status(HttpStatus.OK).body(iAirlineService.findAirlineRatings());
     }
 }

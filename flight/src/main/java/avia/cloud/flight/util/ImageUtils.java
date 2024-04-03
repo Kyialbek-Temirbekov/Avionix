@@ -1,6 +1,4 @@
-package avia.cloud.client.util;
-
-import lombok.SneakyThrows;
+package avia.cloud.flight.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -8,8 +6,7 @@ import java.net.URLConnection;
 import java.util.Base64;
 
 public class ImageUtils {
-    @SneakyThrows
-    public static String getBase64Image(byte[] image) {
+    public static String getBase64Image(byte[] image) throws IOException {
         if(image == null) {
             return null;
         }

@@ -8,13 +8,13 @@ import java.time.LocalDateTime;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class CardErrorResponseDTO extends ErrorResponseDTO {
-    private String cardErrorCode;
+public class PaymentErrorResponseDTO extends ErrorResponseDTO {
+    private String paymentErrorCode;
     private String declineCode;
 
-    public CardErrorResponseDTO(String apiPath, HttpStatus errorCode, String errorMessage, LocalDateTime errorTime, String cardErrorCode, String declineCode) {
+    public PaymentErrorResponseDTO(String apiPath, HttpStatus errorCode, String errorMessage, LocalDateTime errorTime, String paymentErrorCode, String declineCode) {
         super(apiPath, errorCode, errorMessage, errorTime);
-        this.cardErrorCode = cardErrorCode;
+        this.paymentErrorCode = paymentErrorCode;
         this.declineCode = declineCode;
     }
 }

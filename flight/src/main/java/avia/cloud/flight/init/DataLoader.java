@@ -1,14 +1,8 @@
 package avia.cloud.flight.init;
 
-import avia.cloud.flight.entity.Airplane;
-import avia.cloud.flight.entity.City;
-import avia.cloud.flight.entity.Flight;
-import avia.cloud.flight.entity.Ticket;
+import avia.cloud.flight.entity.*;
 import avia.cloud.flight.entity.enums.TicketStatus;
-import avia.cloud.flight.repository.AirplaneRepository;
-import avia.cloud.flight.repository.CityRepository;
-import avia.cloud.flight.repository.FlightRepository;
-import avia.cloud.flight.repository.TicketRepository;
+import avia.cloud.flight.repository.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -28,6 +22,7 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 @Component
 @Profile("default")
@@ -37,6 +32,8 @@ public class DataLoader implements CommandLineRunner {
     private final FlightRepository flightRepository;
     private final AirplaneRepository airplaneRepository;
     private final TicketRepository ticketRepository;
+    private final ArticleRepository articleRepository;
+    private final SpecialDealRepository specialDealRepository;
     private ObjectMapper objectMapper;
 
 
@@ -48,6 +45,8 @@ public class DataLoader implements CommandLineRunner {
         loadCity("/data/avionix-city.json");
         loadAirplane("/data/avionix-airplane.json");
         loadFlight("/data/avionix-flight.json");
+        loadArticle("/data/avionix-article.json");
+        loadSpecialDeal("/data/avionix-special-deal.json");
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
@@ -102,6 +101,44 @@ public class DataLoader implements CommandLineRunner {
         flights.forEach(flight -> {
             flight.getTickets().forEach(ticket -> ticket.setFlight(flight));
             ticketRepository.saveAllAndFlush(flight.getTickets());
+        });
+    }
+
+    private void loadArticle(String path) throws IOException {
+        TypeReference<List<Article>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<Article> articles = objectMapper.readValue(inputStream, typeReference);
+        articles.forEach(article -> {
+            article.getContent().forEach(content -> content.setArticle(article));
+        });
+        articleRepository.saveAllAndFlush(articles);
+        articles.forEach(article -> {
+            Optional<Flight> optionalFlight = flightRepository.findTopByIataAndDestinationCode(article.getIata(), article.getCityCode());
+            if (optionalFlight.isPresent()) {
+                Flight flight = optionalFlight.get();
+                flight.setArticle(article);
+                article.setFlight(flight);
+                flightRepository.saveAndFlush(flight);
+            }
+        });
+    }
+
+    private void loadSpecialDeal(String path) throws IOException {
+        TypeReference<List<SpecialDeal>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<SpecialDeal> specialDeals = objectMapper.readValue(inputStream, typeReference);
+        specialDeals.forEach(specialDeal -> {
+            specialDeal.getContent().forEach(content -> content.setSpecialDeal(specialDeal));
+        });
+        specialDealRepository.saveAllAndFlush(specialDeals);
+        specialDeals.forEach(specialDeal -> {
+            Optional<Flight> optionalFlight = flightRepository.findTopByIataAndDestinationCode(specialDeal.getIata(), specialDeal.getCityCode());
+            if (optionalFlight.isPresent()) {
+                Flight flight = optionalFlight.get();
+                flight.setSpecialDeal(specialDeal);
+                specialDeal.setFlight(flight);
+                flightRepository.saveAndFlush(flight);
+            }
         });
     }
 

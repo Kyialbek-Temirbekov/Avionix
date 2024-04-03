@@ -24,10 +24,47 @@ CREATE TABLE CITY_NAMES (
     lan VARCHAR(255)
 );
 
+CREATE TABLE IF NOT EXISTS SPECIAL_DEAL (
+    id VARCHAR(255) PRIMARY KEY,
+    iata VARCHAR(255),
+    image BYTEA,
+    created_at TIMESTAMP,
+    created_by VARCHAR(255),
+    updated_at TIMESTAMP,
+    updated_by VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS SPECIAL_DEAL_CONTENT (
+    id VARCHAR(255) PRIMARY KEY,
+    special_deal_id VARCHAR(255) REFERENCES SPECIAL_DEAL(id),
+    description TEXT,
+    lan VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS ARTICLE (
+    id VARCHAR(255) PRIMARY KEY,
+    iata VARCHAR(255),
+    image BYTEA,
+    created_at TIMESTAMP,
+    created_by VARCHAR(255),
+    updated_at TIMESTAMP,
+    updated_by VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS ARTICLE_CONTENT (
+    id VARCHAR(255) PRIMARY KEY,
+    article_id VARCHAR(255) REFERENCES ARTICLE(id),
+    description TEXT,
+    lan VARCHAR(255)
+);
+
+
 CREATE TABLE FLIGHT (
     id VARCHAR(36) PRIMARY KEY,
     iata VARCHAR(255),
     airplane_id VARCHAR(255) REFERENCES AIRPLANE(id),
+    article_id VARCHAR(255) REFERENCES ARTICLE(id),
+    special_deal_id VARCHAR(255) REFERENCES SPECIAL_DEAL(id),
     one_way BOOLEAN,
     origin VARCHAR(255) REFERENCES CITY(code),
     destination VARCHAR(255) REFERENCES CITY(code),

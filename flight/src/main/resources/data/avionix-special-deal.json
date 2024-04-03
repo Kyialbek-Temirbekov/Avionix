@@ -1,0 +1,90 @@
+[
+  {
+    "iata": "LAX",
+    "cityCode": "TKY",
+    "content": [
+      {
+        "description": "%.2f %s үчүн Токиодогу салт менен заманбаптын динамикалык айкалышын изилдеңиз! Азыр ээлеп коюу!",
+        "lan": "KY"
+      },
+      {
+        "description": "%.2f %s için Tokyo'nun gelenek ve modernliğin dinamik karışımını keşfedin! Şimdi rezervasyon yapın!",
+        "lan": "TR"
+      },
+      {
+        "description": "Explore Tokyo's dynamic blend of tradition and modernity for %.2f %s! Book now!",
+        "lan": "EN"
+      },
+      {
+        "description": "Исследуйте динамичное сочетание традиций и современности Токио за %.2f %s! Забронируйте сейчас!",
+        "lan": "RU"
+      }
+    ]
+  },
+  {
+    "iata": "LAX",
+    "cityCode": "LON",
+    "content": [
+      {
+        "description": "%.2f %s үчүн Лондондун түбөлүктүү кооздугун сезиңиз! Орунуңузду бүгүн ээлеп алыңыз!",
+        "lan": "KY"
+      },
+      {
+        "description": "%.2f %s karşılığında Londra'nın eskimeyen cazibesini deneyimleyin! Bugün yerinizi ayırtın!",
+        "lan": "TR"
+      },
+      {
+        "description": "Experience London's timeless charm for %.2f %s! Reserve your spot today!",
+        "lan": "EN"
+      },
+      {
+        "description": "Испытайте вечное очарование Лондона за %.2f %s! Забронируйте место сегодня!",
+        "lan": "RU"
+      }
+    ]
+  },
+  {
+    "iata": "LAX",
+    "cityCode": "IST",
+    "content": [
+      {
+        "description": "%.2f %s үчүн экзотикалык Стамбулду табыңыз! Өткөрүп жибербеңиз, азыр заказ кылыңыз!",
+        "lan": "KY"
+      },
+      {
+        "description": "Egzotik İstanbul'u %.2f %s karşılığında keşfedin! Fırsatı kaçırmayın, hemen rezervasyon yapın!",
+        "lan": "TR"
+      },
+      {
+        "description": "Discover exotic Istanbul for %.2f %s! Don't miss out, book now!",
+        "lan": "EN"
+      },
+      {
+        "description": "Откройте для себя экзотический Стамбул за %.2f %s! Не пропустите, бронируйте сейчас!",
+        "lan": "RU"
+      }
+    ]
+  },
+  {
+    "iata": "LAX",
+    "cityCode": "PAR",
+    "content": [
+      {
+        "description": "%.2f %s үчүн Парижди сүйүп калыңыз! Билетиңизди бүгүн камсыздаңыз!",
+        "lan": "KY"
+      },
+      {
+        "description": "%.2f %s için Paris'e aşık olun! Biletinizi bugün güvence altına alın!",
+        "lan": "TR"
+      },
+      {
+        "description": "Fall in love with Paris for %.2f %s! Secure your ticket today!",
+        "lan": "EN"
+      },
+      {
+        "description": "Влюбитесь в Париж за %.2f %s! Защитите свой билет сегодня!",
+        "lan": "RU"
+      }
+    ]
+  }
+]

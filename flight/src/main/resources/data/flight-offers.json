@@ -3,5 +3,20 @@
     "iata": "LAX",
     "originCode": "SHA",
     "destinationCode": "LON"
-  }
+  },
+  {
+    "iata": "LAX",
+    "originCode": "SHA",
+    "destinationCode": "TKY"
+  },
+  {
+  "iata": "LAX",
+  "originCode": "SHA",
+  "destinationCode": "IST"
+},
+  {
+  "iata": "LAX",
+  "originCode": "SHA",
+  "destinationCode": "PAR"
+}
 ]

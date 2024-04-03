@@ -50,4 +50,10 @@ public class Flight extends BaseEntity {
     private long returnTransitDuration;
     @OneToMany(mappedBy = "flight")
     private List<Ticket> tickets;
+    @OneToOne
+    @JoinColumn(name = "article_id", referencedColumnName = "id")
+    private Article article;
+    @OneToOne
+    @JoinColumn(name = "special_deal_id", referencedColumnName = "id")
+    private SpecialDeal specialDeal;
 }

@@ -78,7 +78,7 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public CustomerDTO fetchCustomer(String email) throws IOException {
+    public CustomerDTO fetchCustomer(String email) {
         Customer customer = accountRepository.findByEmail(email).map(Account::getCustomer)
                 .orElseThrow(() -> new NotFoundException("Customer","email", email));
         return convertToCustomerDTO(customer);
@@ -110,7 +110,7 @@ public class CustomerServiceImpl implements ICustomerService {
         return modelMapper.map(customerDTO, Customer.class);
     }
 
-    private CustomerDTO convertToCustomerDTO(Customer customer) throws IOException {
+    private CustomerDTO convertToCustomerDTO(Customer customer) {
         CustomerDTO customerDTO = modelMapper.map(customer, CustomerDTO.class);
         byte[] image = customer.getAccount().getImage();
         if(image != null) {

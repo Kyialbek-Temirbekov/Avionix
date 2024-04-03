@@ -1,0 +1,122 @@
+[
+  {
+    "customer": {
+      "baseId": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    "airline": {
+      "baseId": "123e4567-e89b-12d3-a456-556642440000"
+    },
+    "grade": 5,
+    "feedback": "Excellent service"
+  },
+  {
+    "customer": {
+      "baseId": "38400000-8cf0-11bd-b23e-10b96e4ef00d"
+    },
+    "airline": {
+      "baseId": "123e4567-e89b-12d3-a456-556642440000"
+    },
+    "grade": 3,
+    "feedback": "Satisfactory experience"
+  },
+  {
+    "customer": {
+      "baseId": "38400000-8cf0-11bd-b23e-10b96e4ef00d"
+    },
+    "airline": {
+      "baseId": "223e4567-e89b-12d3-a456-556642440001"
+    },
+    "grade": 5,
+    "feedback": "Top-notch service!"
+  },
+  {
+    "customer": {
+      "baseId": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    "airline": {
+      "baseId": "223e4567-e89b-12d3-a456-556642440001"
+    },
+    "grade": 4,
+    "feedback": "Good experience overall"
+  },
+  {
+    "customer": {
+      "baseId": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    "airline": {
+      "baseId": "323e4567-e89b-12d3-a456-556642440002"
+    },
+    "grade": 3,
+    "feedback": "Average service"
+  },
+  {
+    "customer": {
+      "baseId": "38400000-8cf0-11bd-b23e-10b96e4ef00d"
+    },
+    "airline": {
+      "baseId": "323e4567-e89b-12d3-a456-556642440002"
+    },
+    "grade": 4,
+    "feedback": "Could have been better"
+  },
+  {
+    "customer": {
+      "baseId": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    "airline": {
+      "baseId": "423e4567-e89b-12d3-a456-556642440003"
+    },
+    "grade": 5,
+    "feedback": "Could be improved"
+  },
+  {
+    "customer": {
+      "baseId": "38400000-8cf0-11bd-b23e-10b96e4ef00d"
+    },
+    "airline": {
+      "baseId": "423e4567-e89b-12d3-a456-556642440003"
+    },
+    "grade": 2,
+    "feedback": "Great flight!"
+  },
+  {
+    "customer": {
+      "baseId": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    "airline": {
+      "baseId": "523e4567-e89b-12d3-a456-556642440004"
+    },
+    "grade": 4,
+    "feedback": "Absolutely amazing!"
+  },
+  {
+    "customer": {
+      "baseId": "38400000-8cf0-11bd-b23e-10b96e4ef00d"
+    },
+    "airline": {
+      "baseId": "523e4567-e89b-12d3-a456-556642440004"
+    },
+    "grade": 2,
+    "feedback": "Below expectations"
+  },
+  {
+    "customer": {
+      "baseId": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    "airline": {
+      "baseId": "623e4567-e89b-12d3-a456-556642440005"
+    },
+    "grade": 1,
+    "feedback": "Very satisfied"
+  },
+  {
+    "customer": {
+      "baseId": "38400000-8cf0-11bd-b23e-10b96e4ef00d"
+    },
+    "airline": {
+      "baseId": "623e4567-e89b-12d3-a456-556642440005"
+    },
+    "grade": 4,
+    "feedback": "Decent service"
+  }
+]

@@ -62,3 +62,12 @@ CREATE TABLE IF NOT EXISTS COMMENT (
     checked BOOLEAN,
     lan VARCHAR(2)
 );
+
+CREATE TABLE AIRLINE_RATING (
+    id VARCHAR(50) PRIMARY KEY,
+    customer_id VARCHAR(50) REFERENCES CUSTOMER(base_id),
+    airline_id VARCHAR(50) REFERENCES AIRLINE(base_id),
+    grade SMALLINT,
+    feedback TEXT
+);
+

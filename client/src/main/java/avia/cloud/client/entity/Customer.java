@@ -7,8 +7,6 @@ import lombok.*;
 import java.time.LocalDate;
 import java.util.List;
 
-import static jakarta.persistence.CascadeType.REMOVE;
-
 @Entity
 @Data
 @NoArgsConstructor
@@ -29,4 +27,6 @@ public class Customer {
     private Account account;
     @OneToMany(mappedBy = "customer")
     private List<Comment> comments;
+    @OneToMany(mappedBy = "customer")
+    private List<AirlineRating> airlineRatings;
 }

@@ -16,6 +16,7 @@ import java.util.Optional;
 
 @Repository
 public interface FlightRepository extends JpaRepository<Flight,String> {
+    Optional<Flight> findTopByIataAndDestinationCode(String iata, String destination);
     @Query("SELECT new avia.cloud.flight.dto.PlaneSeatDetail(a.make, a.model, c.cabin, c.seatRow, c.seatCol) FROM Flight f JOIN Airplane a ON f.airplane = a JOIN Class c ON c.airplane = a WHERE f.id = :flightId")
     Optional<PlaneSeatDetail> findPlaneSeatDetails(String flightId);
     @Query("SELECT f FROM Flight f JOIN Segment s ON f = s.departureFlight JOIN Tariff t ON f = t.flight JOIN Class c ON f.airplane = c.airplane WHERE f.status = 'READY' AND f.origin.code = :origin AND f.destination.code = :destination AND f.oneWay = :oneWay AND CAST(s.takeoffAt as date) = :departureDate AND s.takeoffAt = (SELECT MIN(ds.takeoffAt) FROM Flight df JOIN df.departureSegment ds WHERE df.id = f.id) AND t.cabin IN :cabins AND (:currency IS NULL OR f.currency = :currency) AND t.price BETWEEN :minPrice AND :maxPrice AND (:stops IS NULL OR :stops + 1 = (SELECT COUNT(cs.id) FROM Segment cs WHERE cs.departureFlight = f)) AND (:checkedBaggageIncluded IS NULL OR t.checkedBaggageIncluded = :checkedBaggageIncluded) AND (:cabinBaggageIncluded IS NULL OR t.cabinBaggageIncluded = :cabinBaggageIncluded) AND f.departureFlightDuration BETWEEN :minFlightDuration AND :maxFlightDuration AND f.departureTransitDuration BETWEEN :minTransitDuration AND :maxTransitDuration AND (:iata IS NULL OR f.iata = :iata) AND c.seatCol * c.seatRow - SIZE(f.tickets) >= :adults")

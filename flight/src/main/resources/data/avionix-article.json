@@ -1,0 +1,90 @@
+[
+  {
+    "iata": "LAX",
+    "cityCode": "LON",
+    "content": [
+      {
+        "description": "Лондонду кымбат бааларсыз көрүңүз. Биздин арзандатылган каттамдарыбыз менен көрүнүктүү жерлерди жана жандуу маданиятты изилдеңиз. Жеңилгис сунуштарды алуу үчүн азыр заказ кылыңыз жана бортто бекер тамактан жана шампандан ырахат алыңыз.",
+        "lan": "KY"
+      },
+      {
+        "description": "Yüksek fiyat etiketi olmadan Londra'yı deneyimleyin. İndirimli uçuşlarımızla simgesel yerleri ve canlı kültürü keşfedin. Rakipsiz fırsatlar için şimdi rezervasyon yapın ve gemide ücretsiz yemeklerin ve şampanyanın keyfini çıkarın.",
+        "lan": "TR"
+      },
+      {
+        "description": "Experience London without the hefty price tag. With our discounted flights, explore iconic landmarks and vibrant culture. Book now for unbeatable deals and enjoy complimentary meals and champagne onboard.",
+        "lan": "EN"
+      },
+      {
+        "description": "Познакомьтесь с Лондоном без огромных затрат. С нашими рейсами со скидкой вы сможете исследовать знаковые достопримечательности и яркую культуру. Забронируйте сейчас, чтобы воспользоваться выгодными предложениями и насладиться бесплатным питанием и шампанским на борту.",
+        "lan": "RU"
+      }
+    ]
+  },
+  {
+    "iata": "LAX",
+    "cityCode": "IST",
+    "content": [
+      {
+        "description": "Стамбулга арзан баада саякатка барыңыз. Тарыхый байлыктардан баштап, ызы-чуу базарларга чейин Чыгыш менен Батыш кошулган шаарды табыңыз. Үнөмдөө үчүн азыр заказ кылыңыз жана учакта бекер тамактан жана шампандан ырахат алыңыз.",
+        "lan": "KY"
+      },
+      {
+        "description": "Uygun fiyatlı bir İstanbul macerasına atılın. Tarihi hazinelerden hareketli pazarlara kadar Doğu'nun Batı ile buluştuğu şehri keşfedin. Tasarruf için şimdi rezervasyon yapın ve gemide ücretsiz yemeklerin ve şampanyanın keyfini çıkarın.",
+        "lan": "TR"
+      },
+      {
+        "description": "Embark on an affordable adventure to Istanbul. Discover the city where East meets West, from historic treasures to bustling markets. Book now for savings and enjoy complimentary meals and champagne onboard.",
+        "lan": "EN"
+      },
+      {
+        "description": "Отправьтесь в доступное приключение в Стамбул. Откройте для себя город, где Восток встречается с Западом: от исторических сокровищ до шумных рынков. Забронируйте сейчас, чтобы сэкономить и насладиться бесплатным питанием и шампанским на борту.",
+        "lan": "RU"
+      }
+    ]
+  },
+  {
+    "iata": "LAX",
+    "cityCode": "PAR",
+    "content": [
+      {
+        "description": "Биздин арзан авиакаттамдар менен Париждин романтикасына ээ болуңуз. Банкты бузбастан, көрүнүктүү жерлерди жана кооз көчөлөрдү изилдеңиз. Фантастикалык сунуштарды алуу үчүн азыр заказ кылыңыз жана бортто бекер тамактан жана шампандан ырахат алыңыз.",
+        "lan": "KY"
+      },
+      {
+        "description": "Uygun fiyatlı uçuşlarımızla Paris romantizminin keyfini çıkarın. Bütçenizi zorlamadan ikonik simge yapıları ve büyüleyici sokakları keşfedin. Harika fırsatlar için şimdi rezervasyon yapın ve gemide ücretsiz yemeklerin ve şampanyanın keyfini çıkarın.",
+        "lan": "TR"
+      },
+      {
+        "description": "Indulge in the romance of Paris with our affordable flights. Explore iconic landmarks and charming streets without breaking the bank. Book now for fantastic deals and enjoy complimentary meals and champagne onboard.",
+        "lan": "EN"
+      },
+      {
+        "description": "Окунитесь в романтику Парижа с нашими доступными рейсами. Исследуйте знаковые достопримечательности и очаровательные улицы, не тратя денег. Забронируйте сейчас, чтобы воспользоваться фантастическими предложениями и насладиться бесплатным питанием и шампанским на борту.",
+        "lan": "RU"
+      }
+    ]
+  },
+  {
+    "iata": "LAX",
+    "cityCode": "TKY",
+    "content": [
+      {
+        "description": "Биздин бюджетке ылайыктуу тарифтер менен Токионун кооздугун ачыңыз. Шибуянын жандуу көчөлөрүнөн Асакусанын тынч храмдарына чейин жапон маданиятына чөмүлүңүз. Үнөмдөө үчүн азыр заказ кылыңыз жана учакта бекер тамактан жана шампандан ырахат алыңыз.",
+        "lan": "KY"
+      },
+      {
+        "description": "Bütçe dostu fiyatlarımızla Tokyo'nun güzelliğini keşfedin. Shibuya'nın hareketli sokaklarından Asakusa'nın sakin tapınaklarına kadar kendinizi Japon kültürüne kaptırın. Tasarruf için şimdi rezervasyon yapın ve gemide ücretsiz yemeklerin ve şampanyanın keyfini çıkarın.",
+        "lan": "TR"
+      },
+      {
+        "description": "Discover the beauty of Tokyo with our budget-friendly fares. From the bustling streets of Shibuya to the serene temples of Asakusa, immerse yourself in Japanese culture. Book now for savings and enjoy complimentary meals and champagne onboard.",
+        "lan": "EN"
+      },
+      {
+        "description": "Откройте для себя красоту Токио с нашими недорогими тарифами. От шумных улиц Сибуи до безмятежных храмов Асакуса — погрузитесь в японскую культуру. Забронируйте сейчас, чтобы сэкономить и насладиться бесплатным питанием и шампанским на борту.",
+        "lan": "RU"
+      }
+    ]
+  }
+]

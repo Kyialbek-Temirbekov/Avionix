@@ -1,7 +1,6 @@
 package avia.cloud.client.init;
 
 import avia.cloud.client.entity.*;
-import avia.cloud.client.init.gds.GdsService;
 import avia.cloud.client.repository.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -34,6 +33,7 @@ public class DataLoader implements CommandLineRunner {
     private final CustomerRepository customerRepository;
     private final CommentRepository commentRepository;
     private final AirlineRepository airlineRepository;
+    private final AirlineRatingRepository ratingRepository;
     private final AccountRepository accountRepository;
     private final EntityManager entityManager;
 
@@ -45,6 +45,7 @@ public class DataLoader implements CommandLineRunner {
         loadAuthority("/data/avionix-authority.json");
         loadCustomer("/data/avionix-customer.json");
         loadAirline("/data/avionix-airline.json");
+        loadRating("/data/avionix-airline-rating.json");
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
@@ -75,6 +76,11 @@ public class DataLoader implements CommandLineRunner {
         TypeReference<List<Customer>> typeReference = new TypeReference<>(){};
         InputStream inputStream = TypeReference.class.getResourceAsStream(path);
         List<Customer> customers = objectMapper.readValue(inputStream, typeReference);
+        customers.forEach(customer -> {
+            Account account = customer.getAccount();
+            account = entityManager.merge(account);
+            customer.setAccount(account);
+        });
         customerRepository.saveAllAndFlush(customers);
         customers.forEach(customer -> customer.getComments()
                 .forEach(comment -> comment.setCustomer(customer)));
@@ -93,6 +99,17 @@ public class DataLoader implements CommandLineRunner {
             airline.setAccount(account);
         });
         airlineRepository.saveAllAndFlush(airlines);
+    }
+
+    private void loadRating(String path) throws IOException {
+        TypeReference<List<AirlineRating>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<AirlineRating> ratings = objectMapper.readValue(inputStream, typeReference);
+        ratings.forEach(rating -> {
+            rating.setAirline(airlineRepository.findById(rating.getAirline().getBaseId()).orElseThrow());
+            rating.setCustomer(customerRepository.findById(rating.getCustomer().getBaseId()).orElseThrow());
+        });
+        ratingRepository.saveAllAndFlush(ratings);
     }
 
 }

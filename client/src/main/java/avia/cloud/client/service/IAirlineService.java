@@ -3,6 +3,7 @@ package avia.cloud.client.service;
 import avia.cloud.client.dto.AirlineDTO;
 import avia.cloud.client.dto.ClientCredentials;
 import avia.cloud.client.dto.records.AirlineName;
+import avia.cloud.client.dto.records.AirlineRatingRecord;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -12,4 +13,5 @@ public interface IAirlineService {
     ClientCredentials createClient(String name);
     void createAirline(AirlineDTO airlineDTO) throws IOException;
     List<AirlineName> findAirlineNames();
+    List<AirlineRatingRecord> findAirlineRatings();
 }

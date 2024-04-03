@@ -3,7 +3,7 @@ package avia.cloud.client.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import static jakarta.persistence.CascadeType.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -29,4 +29,6 @@ public class Airline {
     @JoinColumn(name = "base_id", referencedColumnName = "id")
     @MapsId
     private Account account;
+    @OneToMany(mappedBy = "airline")
+    private List<AirlineRating> airlineRatings;
 }
