@@ -3,6 +3,7 @@ package avia.cloud.flight.entity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UuidGenerator;
 
 import java.util.List;
@@ -19,14 +20,12 @@ import static jakarta.persistence.CascadeType.*;
 @SuperBuilder(toBuilder = true)
 public class SpecialDeal extends BaseEntity {
     @Id
-    @UuidGenerator
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "avia.cloud.flight.util.CustomUuidGenerator")
     private String id;
     private String iata;
     private byte[] image;
     @OneToMany(mappedBy = "specialDeal", fetch = FetchType.EAGER, cascade = {PERSIST,REMOVE,MERGE})
     private List<SpecialDealContent> content;
-    @OneToOne(mappedBy = "specialDeal", fetch = FetchType.EAGER)
-    private Flight flight;
-    @Transient
     private String cityCode;
 }

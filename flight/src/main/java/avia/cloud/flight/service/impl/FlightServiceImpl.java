@@ -76,7 +76,7 @@ public class FlightServiceImpl implements IFlightService {
         return matcher.replaceAll("page=" + i);
     }
 
-    private FlightDTO convertToFlightDTO(Flight flight, String lan) {
+    public FlightDTO convertToFlightDTO(Flight flight, String lan) {
         FlightDTO flightDTO = modelMapper.map(flight, FlightDTO.class);
         flightDTO.setDepartureItinerary(new Itinerary(
                 flight.getDepartureFlightDuration(),

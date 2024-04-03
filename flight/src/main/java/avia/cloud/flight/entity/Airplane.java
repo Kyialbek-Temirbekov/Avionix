@@ -1,10 +1,7 @@
 package avia.cloud.flight.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.List;
@@ -12,9 +9,10 @@ import java.util.List;
 import static jakarta.persistence.CascadeType.*;
 
 @Entity
-@Data
-@NoArgsConstructor
+@Getter
+@Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class Airplane {
     @Id

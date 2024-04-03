@@ -13,7 +13,9 @@ import java.util.List;
 import static jakarta.persistence.CascadeType.*;
 
 @Entity
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
 @NoArgsConstructor
 public class City {
     @Id

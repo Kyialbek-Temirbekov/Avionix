@@ -47,6 +47,9 @@ public class DataLoader implements CommandLineRunner {
         loadFlight("/data/avionix-flight.json");
         loadArticle("/data/avionix-article.json");
         loadSpecialDeal("/data/avionix-special-deal.json");
+
+        loadFile("/data/files/top-flights/*", articleRepository, "image");
+        loadFile("/data/files/special-deals/*", specialDealRepository, "image");
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {
@@ -112,15 +115,6 @@ public class DataLoader implements CommandLineRunner {
             article.getContent().forEach(content -> content.setArticle(article));
         });
         articleRepository.saveAllAndFlush(articles);
-        articles.forEach(article -> {
-            Optional<Flight> optionalFlight = flightRepository.findTopByIataAndDestinationCode(article.getIata(), article.getCityCode());
-            if (optionalFlight.isPresent()) {
-                Flight flight = optionalFlight.get();
-                flight.setArticle(article);
-                article.setFlight(flight);
-                flightRepository.saveAndFlush(flight);
-            }
-        });
     }
 
     private void loadSpecialDeal(String path) throws IOException {
@@ -131,15 +125,6 @@ public class DataLoader implements CommandLineRunner {
             specialDeal.getContent().forEach(content -> content.setSpecialDeal(specialDeal));
         });
         specialDealRepository.saveAllAndFlush(specialDeals);
-        specialDeals.forEach(specialDeal -> {
-            Optional<Flight> optionalFlight = flightRepository.findTopByIataAndDestinationCode(specialDeal.getIata(), specialDeal.getCityCode());
-            if (optionalFlight.isPresent()) {
-                Flight flight = optionalFlight.get();
-                flight.setSpecialDeal(specialDeal);
-                specialDeal.setFlight(flight);
-                flightRepository.saveAndFlush(flight);
-            }
-        });
     }
 
     private List<Ticket> createSimpleTickets() {

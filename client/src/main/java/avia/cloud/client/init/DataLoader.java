@@ -46,6 +46,8 @@ public class DataLoader implements CommandLineRunner {
         loadCustomer("/data/avionix-customer.json");
         loadAirline("/data/avionix-airline.json");
         loadRating("/data/avionix-airline-rating.json");
+
+        loadFile("/data/files/airline/*", accountRepository, "image");
     }
 
     private <T> void loadFile(String pattern, JpaRepository<T, String> jpaRepository, String requiredField) throws IOException {

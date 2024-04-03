@@ -1,27 +1,6 @@
 [
   {
-    "iata": "LAX",
-    "cityCode": "TKY",
-    "content": [
-      {
-        "description": "%.2f %s үчүн Токиодогу салт менен заманбаптын динамикалык айкалышын изилдеңиз! Азыр ээлеп коюу!",
-        "lan": "KY"
-      },
-      {
-        "description": "%.2f %s için Tokyo'nun gelenek ve modernliğin dinamik karışımını keşfedin! Şimdi rezervasyon yapın!",
-        "lan": "TR"
-      },
-      {
-        "description": "Explore Tokyo's dynamic blend of tradition and modernity for %.2f %s! Book now!",
-        "lan": "EN"
-      },
-      {
-        "description": "Исследуйте динамичное сочетание традиций и современности Токио за %.2f %s! Забронируйте сейчас!",
-        "lan": "RU"
-      }
-    ]
-  },
-  {
+    "id": "d27b340e-5f90-426f-a218-775cd862d85e",
     "iata": "LAX",
     "cityCode": "LON",
     "content": [
@@ -44,6 +23,7 @@
     ]
   },
   {
+    "id": "75f30a88-20b5-4e50-aaae-3c4e47627ff3",
     "iata": "LAX",
     "cityCode": "IST",
     "content": [
@@ -66,6 +46,7 @@
     ]
   },
   {
+    "id": "3d7cb0d2-7e64-4bc5-9c1f-3d83c68e7eac",
     "iata": "LAX",
     "cityCode": "PAR",
     "content": [

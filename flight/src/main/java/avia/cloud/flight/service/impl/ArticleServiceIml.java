@@ -8,8 +8,10 @@ import avia.cloud.flight.entity.Tariff;
 import avia.cloud.flight.entity.enums.Lan;
 import avia.cloud.flight.repository.ArticleRepository;
 import avia.cloud.flight.repository.CityRepository;
+import avia.cloud.flight.repository.FlightRepository;
 import avia.cloud.flight.repository.SpecialDealRepository;
 import avia.cloud.flight.service.IArticleService;
+import avia.cloud.flight.service.IFlightService;
 import avia.cloud.flight.util.ImageUtils;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -23,10 +25,10 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class ArticleServiceIml implements IArticleService {
-    private final ModelMapper modelMapper;
-    private final CityRepository cityRepository;
     private final ArticleRepository articleRepository;
     private final SpecialDealRepository specialDealRepository;
+    private final FlightRepository flightRepository;
+    private final IFlightService flightService;
 
     @Override
     public List<ArticleDTO> findTopFlights(String lan) {
@@ -35,9 +37,12 @@ public class ArticleServiceIml implements IArticleService {
 
     @SneakyThrows
     private ArticleDTO convertToArticleDTO(Article article, String lan) {
+        Flight flight = flightRepository.findTopByIataAndDestinationCode("LAX", article.getCityCode()).orElseThrow();
+        System.out.println(flight.getId());
         return new ArticleDTO(ImageUtils.getBase64Image(article.getImage()),
                 article.getContent().stream().filter(content -> content.getLan().equals(Lan.of(lan))).findFirst().get().getDescription(),
-                convertToFlightDTO(article.getFlight(),lan));
+                null,
+                flightService.convertToFlightDTO(flight,lan));
     }
 
     @Override
@@ -47,28 +52,10 @@ public class ArticleServiceIml implements IArticleService {
 
     @SneakyThrows
     private ArticleDTO convertToArticleDTO(SpecialDeal specialDeal, String lan) {
+        Flight flight = flightRepository.findTopByIataAndDestinationCode("LAX", specialDeal.getCityCode()).orElseThrow();
         return new ArticleDTO(ImageUtils.getBase64Image(specialDeal.getImage()),
-                specialDeal.getContent().stream().filter(content -> content.getLan().equals(Lan.of(lan))).findFirst().get().getDescription(),
-                convertToFlightDTO(specialDeal.getFlight(),lan));
+                String.format(specialDeal.getContent().stream().filter(content -> content.getLan().equals(Lan.of(lan))).findFirst().get().getDescription(), flight.getTariff().getPrice(), flight.getCurrency()),
+                "10.0",
+                flightService.convertToFlightDTO(flight,lan));
     }
-
-    private FlightDTO convertToFlightDTO(Flight flight, String lan) {
-        FlightDTO flightDTO = modelMapper.map(flight, FlightDTO.class);
-        flightDTO.setDepartureItinerary(new Itinerary(
-                flight.getDepartureFlightDuration(),
-                flight.getDepartureTransitDuration(),
-                flight.getDepartureSegment().stream().map(segment -> modelMapper.map(segment, SegmentDTO.class)).toList()));
-        flightDTO.setReturnItinerary(new Itinerary(
-                flight.getReturnFlightDuration(),
-                flight.getReturnTransitDuration(),
-                flight.getReturnSegment().stream().map(segment -> modelMapper.map(segment,SegmentDTO.class)).toList()));
-        flightDTO.setTariffDTO(convertToTariffDTO(flight.getTariff()));
-        flightDTO.setFrom(cityRepository.findByCodeAndLan(flight.getOrigin().getCode(), Lan.of(lan)));
-        flightDTO.setTo(cityRepository.findByCodeAndLan(flight.getDestination().getCode(), Lan.of(lan)));
-        return flightDTO;
-    }
-    private TariffDTO convertToTariffDTO(Tariff tariff) {
-        return modelMapper.map(tariff, TariffDTO.class);
-    }
-
 }

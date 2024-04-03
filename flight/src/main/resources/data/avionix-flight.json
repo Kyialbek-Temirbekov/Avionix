@@ -47,7 +47,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -59,9 +59,7 @@
   "departureTransitDuration" : 155,
   "returnFlightDuration" : 1425,
   "returnTransitDuration" : 150,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -111,7 +109,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -123,9 +121,7 @@
   "departureTransitDuration" : 160,
   "returnFlightDuration" : 1425,
   "returnTransitDuration" : 150,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -175,7 +171,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -187,9 +183,7 @@
   "departureTransitDuration" : 155,
   "returnFlightDuration" : 1595,
   "returnTransitDuration" : 325,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -239,7 +233,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -251,9 +245,7 @@
   "departureTransitDuration" : 320,
   "returnFlightDuration" : 1425,
   "returnTransitDuration" : 150,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -303,7 +295,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -315,9 +307,7 @@
   "departureTransitDuration" : 160,
   "returnFlightDuration" : 1595,
   "returnTransitDuration" : 325,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -367,7 +357,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -379,9 +369,7 @@
   "departureTransitDuration" : 475,
   "returnFlightDuration" : 1425,
   "returnTransitDuration" : 150,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -431,7 +419,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -443,9 +431,7 @@
   "departureTransitDuration" : 320,
   "returnFlightDuration" : 1595,
   "returnTransitDuration" : 325,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -495,7 +481,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -507,9 +493,7 @@
   "departureTransitDuration" : 475,
   "returnFlightDuration" : 1595,
   "returnTransitDuration" : 325,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -559,7 +543,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -571,9 +555,7 @@
   "departureTransitDuration" : 155,
   "returnFlightDuration" : 1335,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -623,7 +605,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -635,9 +617,7 @@
   "departureTransitDuration" : 160,
   "returnFlightDuration" : 1335,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -687,7 +667,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -699,9 +679,7 @@
   "departureTransitDuration" : 155,
   "returnFlightDuration" : 1445,
   "returnTransitDuration" : 175,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -751,7 +729,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -763,9 +741,7 @@
   "departureTransitDuration" : 160,
   "returnFlightDuration" : 1445,
   "returnTransitDuration" : 175,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -815,7 +791,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -827,9 +803,7 @@
   "departureTransitDuration" : 320,
   "returnFlightDuration" : 1335,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -879,7 +853,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -891,9 +865,7 @@
   "departureTransitDuration" : 320,
   "returnFlightDuration" : 1445,
   "returnTransitDuration" : 175,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -943,7 +915,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -955,9 +927,7 @@
   "departureTransitDuration" : 155,
   "returnFlightDuration" : 1640,
   "returnTransitDuration" : 370,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1007,7 +977,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1019,9 +989,7 @@
   "departureTransitDuration" : 160,
   "returnFlightDuration" : 1640,
   "returnTransitDuration" : 370,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1071,7 +1039,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1083,73 +1051,7 @@
   "departureTransitDuration" : 475,
   "returnFlightDuration" : 1335,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 22, 25 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 4, 11, 5, 15 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "IST",
-    "takeoffAt" : [ 2024, 4, 11, 7, 50 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 4, 11, 9, 50 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "LHR",
-    "takeoffAt" : [ 2024, 4, 14, 11, 25 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 4, 14, 17, 5 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "IST",
-    "takeoffAt" : [ 2024, 4, 15, 1, 25 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 16, 45 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 2191.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 685,
-  "departureTransitDuration" : 155,
-  "returnFlightDuration" : 1760,
-  "returnTransitDuration" : 500,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1199,7 +1101,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1211,73 +1113,7 @@
   "departureTransitDuration" : 475,
   "returnFlightDuration" : 1445,
   "returnTransitDuration" : 175,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 22, 25 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 4, 11, 5, 15 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "IST",
-    "takeoffAt" : [ 2024, 4, 11, 7, 55 ],
-    "arrivalIata" : "LGW",
-    "arrivalAt" : [ 2024, 4, 11, 9, 55 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "LHR",
-    "takeoffAt" : [ 2024, 4, 14, 11, 25 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 4, 14, 17, 5 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "IST",
-    "takeoffAt" : [ 2024, 4, 15, 1, 25 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 16, 45 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 2191.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 690,
-  "departureTransitDuration" : 160,
-  "returnFlightDuration" : 1760,
-  "returnTransitDuration" : 500,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1327,7 +1163,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1339,73 +1175,7 @@
   "departureTransitDuration" : 320,
   "returnFlightDuration" : 1640,
   "returnTransitDuration" : 370,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 22, 25 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 4, 11, 5, 15 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "IST",
-    "takeoffAt" : [ 2024, 4, 11, 10, 35 ],
-    "arrivalIata" : "LGW",
-    "arrivalAt" : [ 2024, 4, 11, 12, 40 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "LHR",
-    "takeoffAt" : [ 2024, 4, 14, 11, 25 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 4, 14, 17, 5 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "IST",
-    "takeoffAt" : [ 2024, 4, 15, 1, 25 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 16, 45 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 2191.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 855,
-  "departureTransitDuration" : 320,
-  "returnFlightDuration" : 1760,
-  "returnTransitDuration" : 500,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1455,7 +1225,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 2202.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1467,9 +1237,7 @@
   "departureTransitDuration" : 475,
   "returnFlightDuration" : 1640,
   "returnTransitDuration" : 370,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1481,28 +1249,28 @@
   "departureSegment" : [ {
     "id" : null,
     "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 22, 25 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 4, 11, 5, 15 ]
+    "takeoffAt" : [ 2024, 4, 10, 0, 5 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 10, 5, 35 ]
   }, {
     "id" : null,
-    "takeoffIata" : "IST",
-    "takeoffAt" : [ 2024, 4, 11, 13, 10 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 4, 11, 15, 5 ]
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 10, 8, 0 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 4, 10, 12, 35 ]
   } ],
   "returnSegment" : [ {
     "id" : null,
-    "takeoffIata" : "LHR",
-    "takeoffAt" : [ 2024, 4, 14, 11, 25 ],
-    "arrivalIata" : "IST",
-    "arrivalAt" : [ 2024, 4, 14, 17, 5 ]
+    "takeoffIata" : "STN",
+    "takeoffAt" : [ 2024, 4, 14, 14, 55 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 15, 1, 0 ]
   }, {
     "id" : null,
-    "takeoffIata" : "IST",
-    "takeoffAt" : [ 2024, 4, 15, 1, 25 ],
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 15, 3, 15 ],
     "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 16, 45 ]
+    "arrivalAt" : [ 2024, 4, 15, 15, 30 ]
   } ],
   "oneWay" : false,
   "origin" : {
@@ -1515,11 +1283,11 @@
     "countryCode" : null,
     "names" : null
   },
-  "gate" : "A4",
+  "gate" : "A6",
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2191.0,
+    "price" : 1859.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1527,13 +1295,321 @@
   },
   "currency" : "EUR",
   "status" : "READY",
-  "departureFlightDuration" : 1000,
-  "departureTransitDuration" : 475,
-  "returnFlightDuration" : 1760,
-  "returnTransitDuration" : 500,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "departureFlightDuration" : 750,
+  "departureTransitDuration" : 145,
+  "returnFlightDuration" : 1475,
+  "returnTransitDuration" : 135,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 0, 5 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 10, 5, 35 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 10, 8, 0 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 4, 10, 12, 35 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "LGW",
+    "takeoffAt" : [ 2024, 4, 14, 14, 35 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 15, 0, 40 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 15, 3, 15 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 15, 30 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A6",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1859.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 750,
+  "departureTransitDuration" : 145,
+  "returnFlightDuration" : 1495,
+  "returnTransitDuration" : 155,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 0, 5 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 10, 5, 35 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 10, 8, 0 ],
+    "arrivalIata" : "LGW",
+    "arrivalAt" : [ 2024, 4, 10, 12, 35 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "LGW",
+    "takeoffAt" : [ 2024, 4, 14, 10, 5 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 14, 20, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 15, 3, 15 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 15, 30 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A6",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1859.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 750,
+  "departureTransitDuration" : 145,
+  "returnFlightDuration" : 1765,
+  "returnTransitDuration" : 435,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 0, 5 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 10, 5, 35 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 10, 10, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 4, 10, 15, 5 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "STN",
+    "takeoffAt" : [ 2024, 4, 14, 14, 55 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 15, 1, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 15, 3, 15 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 15, 30 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A5",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1859.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 900,
+  "departureTransitDuration" : 285,
+  "returnFlightDuration" : 1475,
+  "returnTransitDuration" : 135,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 0, 5 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 10, 5, 35 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 10, 10, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 4, 10, 15, 5 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "LGW",
+    "takeoffAt" : [ 2024, 4, 14, 14, 35 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 15, 0, 40 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 15, 3, 15 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 15, 30 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A5",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1859.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 900,
+  "departureTransitDuration" : 285,
+  "returnFlightDuration" : 1495,
+  "returnTransitDuration" : 155,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 0, 5 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 10, 5, 35 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 10, 10, 20 ],
+    "arrivalIata" : "LHR",
+    "arrivalAt" : [ 2024, 4, 10, 15, 5 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "LGW",
+    "takeoffAt" : [ 2024, 4, 14, 10, 5 ],
+    "arrivalIata" : "DXB",
+    "arrivalAt" : [ 2024, 4, 14, 20, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "DXB",
+    "takeoffAt" : [ 2024, 4, 15, 3, 15 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 15, 30 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "LON",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A5",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 1859.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 900,
+  "departureTransitDuration" : 285,
+  "returnFlightDuration" : 1765,
+  "returnTransitDuration" : 435,
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1583,7 +1659,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1595,9 +1671,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1430,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1647,7 +1721,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1659,9 +1733,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1435,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1711,7 +1783,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1723,9 +1795,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1435,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1775,7 +1845,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1787,9 +1857,7 @@
   "departureTransitDuration" : 125,
   "returnFlightDuration" : 1430,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1839,7 +1907,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1851,9 +1919,7 @@
   "departureTransitDuration" : 125,
   "returnFlightDuration" : 1435,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1903,7 +1969,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1915,9 +1981,7 @@
   "departureTransitDuration" : 125,
   "returnFlightDuration" : 1435,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -1967,7 +2031,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1979,9 +2043,7 @@
   "departureTransitDuration" : 160,
   "returnFlightDuration" : 1430,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2031,7 +2093,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2043,9 +2105,7 @@
   "departureTransitDuration" : 75,
   "returnFlightDuration" : 1430,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2095,7 +2155,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2107,9 +2167,7 @@
   "departureTransitDuration" : 160,
   "returnFlightDuration" : 1435,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2159,7 +2217,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2171,9 +2229,7 @@
   "departureTransitDuration" : 160,
   "returnFlightDuration" : 1435,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2223,7 +2279,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2235,9 +2291,7 @@
   "departureTransitDuration" : 75,
   "returnFlightDuration" : 1435,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2287,7 +2341,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2299,9 +2353,7 @@
   "departureTransitDuration" : 75,
   "returnFlightDuration" : 1435,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2351,7 +2403,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2363,9 +2415,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1480,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2415,7 +2465,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3061.0,
+    "price" : 3076.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2427,137 +2477,7 @@
   "departureTransitDuration" : 125,
   "returnFlightDuration" : 1480,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 19, 0 ],
-    "arrivalIata" : "HKG",
-    "arrivalAt" : [ 2024, 4, 10, 21, 55 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "HKG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 55 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 4, 11, 6, 0 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "LHR",
-    "takeoffAt" : [ 2024, 4, 14, 17, 50 ],
-    "arrivalIata" : "HKG",
-    "arrivalAt" : [ 2024, 4, 15, 13, 55 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "HKG",
-    "takeoffAt" : [ 2024, 4, 15, 15, 0 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 17, 40 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3061.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 660,
-  "departureTransitDuration" : 120,
-  "returnFlightDuration" : 1430,
-  "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 20, 0 ],
-    "arrivalIata" : "HKG",
-    "arrivalAt" : [ 2024, 4, 10, 22, 55 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "HKG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 55 ],
-    "arrivalIata" : "LHR",
-    "arrivalAt" : [ 2024, 4, 11, 6, 0 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "LHR",
-    "takeoffAt" : [ 2024, 4, 14, 16, 50 ],
-    "arrivalIata" : "HKG",
-    "arrivalAt" : [ 2024, 4, 15, 12, 50 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "HKG",
-    "takeoffAt" : [ 2024, 4, 15, 15, 0 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 17, 40 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "LON",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3061.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 600,
-  "departureTransitDuration" : 60,
-  "returnFlightDuration" : 1490,
-  "returnTransitDuration" : 130,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2607,7 +2527,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2619,9 +2539,7 @@
   "departureTransitDuration" : 380,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2671,7 +2589,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2683,9 +2601,7 @@
   "departureTransitDuration" : 380,
   "returnFlightDuration" : 1410,
   "returnTransitDuration" : 205,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2735,7 +2651,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2747,9 +2663,7 @@
   "departureTransitDuration" : 380,
   "returnFlightDuration" : 1470,
   "returnTransitDuration" : 295,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2799,7 +2713,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2811,9 +2725,7 @@
   "departureTransitDuration" : 380,
   "returnFlightDuration" : 1635,
   "returnTransitDuration" : 425,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2863,7 +2775,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2875,9 +2787,7 @@
   "departureTransitDuration" : 380,
   "returnFlightDuration" : 1650,
   "returnTransitDuration" : 505,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2927,7 +2837,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2939,9 +2849,7 @@
   "departureTransitDuration" : 380,
   "returnFlightDuration" : 1705,
   "returnTransitDuration" : 475,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -2991,7 +2899,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3003,9 +2911,7 @@
   "departureTransitDuration" : 380,
   "returnFlightDuration" : 1930,
   "returnTransitDuration" : 695,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3055,7 +2961,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3067,9 +2973,7 @@
   "departureTransitDuration" : 380,
   "returnFlightDuration" : 1945,
   "returnTransitDuration" : 775,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3119,7 +3023,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3131,9 +3035,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3183,7 +3085,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3195,9 +3097,7 @@
   "departureTransitDuration" : 70,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3247,7 +3147,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3259,9 +3159,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1410,
   "returnTransitDuration" : 205,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3311,7 +3209,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3323,9 +3221,7 @@
   "departureTransitDuration" : 70,
   "returnFlightDuration" : 1410,
   "returnTransitDuration" : 205,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3375,7 +3271,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3387,9 +3283,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1470,
   "returnTransitDuration" : 295,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3439,7 +3333,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3451,9 +3345,7 @@
   "departureTransitDuration" : 70,
   "returnFlightDuration" : 1470,
   "returnTransitDuration" : 295,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3503,7 +3395,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3515,9 +3407,7 @@
   "departureTransitDuration" : 305,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3567,7 +3457,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3579,9 +3469,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1635,
   "returnTransitDuration" : 425,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3631,7 +3519,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3643,9 +3531,7 @@
   "departureTransitDuration" : 70,
   "returnFlightDuration" : 1635,
   "returnTransitDuration" : 425,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3695,7 +3581,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3707,9 +3593,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1650,
   "returnTransitDuration" : 505,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3759,7 +3643,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3771,9 +3655,7 @@
   "departureTransitDuration" : 305,
   "returnFlightDuration" : 1410,
   "returnTransitDuration" : 205,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3823,7 +3705,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3835,9 +3717,7 @@
   "departureTransitDuration" : 70,
   "returnFlightDuration" : 1650,
   "returnTransitDuration" : 505,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3887,7 +3767,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3899,9 +3779,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1705,
   "returnTransitDuration" : 475,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -3951,7 +3829,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3963,9 +3841,7 @@
   "departureTransitDuration" : 70,
   "returnFlightDuration" : 1705,
   "returnTransitDuration" : 475,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4015,7 +3891,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4027,9 +3903,7 @@
   "departureTransitDuration" : 305,
   "returnFlightDuration" : 1470,
   "returnTransitDuration" : 295,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4079,7 +3953,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4091,9 +3965,7 @@
   "departureTransitDuration" : 560,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4143,7 +4015,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4155,9 +4027,7 @@
   "departureTransitDuration" : 305,
   "returnFlightDuration" : 1635,
   "returnTransitDuration" : 425,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4207,7 +4077,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4219,9 +4089,7 @@
   "departureTransitDuration" : 305,
   "returnFlightDuration" : 1650,
   "returnTransitDuration" : 505,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4271,7 +4139,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4283,9 +4151,7 @@
   "departureTransitDuration" : 560,
   "returnFlightDuration" : 1410,
   "returnTransitDuration" : 205,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4335,7 +4201,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4347,9 +4213,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1930,
   "returnTransitDuration" : 695,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4399,7 +4263,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4411,9 +4275,7 @@
   "departureTransitDuration" : 70,
   "returnFlightDuration" : 1930,
   "returnTransitDuration" : 695,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4463,7 +4325,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4475,9 +4337,7 @@
   "departureTransitDuration" : 60,
   "returnFlightDuration" : 1945,
   "returnTransitDuration" : 775,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4527,7 +4387,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4539,9 +4399,7 @@
   "departureTransitDuration" : 305,
   "returnFlightDuration" : 1705,
   "returnTransitDuration" : 475,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4591,7 +4449,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4603,9 +4461,7 @@
   "departureTransitDuration" : 70,
   "returnFlightDuration" : 1945,
   "returnTransitDuration" : 775,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4655,7 +4511,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4667,9 +4523,7 @@
   "departureTransitDuration" : 560,
   "returnFlightDuration" : 1470,
   "returnTransitDuration" : 295,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4719,7 +4573,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4731,9 +4585,7 @@
   "departureTransitDuration" : 540,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4783,7 +4635,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4795,9 +4647,7 @@
   "departureTransitDuration" : 540,
   "returnFlightDuration" : 1410,
   "returnTransitDuration" : 205,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4847,7 +4697,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4859,9 +4709,7 @@
   "departureTransitDuration" : 540,
   "returnFlightDuration" : 1470,
   "returnTransitDuration" : 295,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4911,7 +4759,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4923,9 +4771,7 @@
   "departureTransitDuration" : 560,
   "returnFlightDuration" : 1635,
   "returnTransitDuration" : 425,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -4975,7 +4821,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4987,9 +4833,7 @@
   "departureTransitDuration" : 560,
   "returnFlightDuration" : 1650,
   "returnTransitDuration" : 505,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5039,7 +4883,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5051,9 +4895,7 @@
   "departureTransitDuration" : 305,
   "returnFlightDuration" : 1930,
   "returnTransitDuration" : 695,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5103,7 +4945,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2681.0,
+    "price" : 2694.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5115,9 +4957,7 @@
   "departureTransitDuration" : 305,
   "returnFlightDuration" : 1945,
   "returnTransitDuration" : 775,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5167,7 +5007,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5179,9 +5019,7 @@
   "departureTransitDuration" : 105,
   "returnFlightDuration" : 1250,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5231,7 +5069,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5243,9 +5081,7 @@
   "departureTransitDuration" : 185,
   "returnFlightDuration" : 1250,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5295,7 +5131,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5307,9 +5143,7 @@
   "departureTransitDuration" : 105,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 180,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5359,7 +5193,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5371,9 +5205,7 @@
   "departureTransitDuration" : 290,
   "returnFlightDuration" : 1250,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5423,7 +5255,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5435,9 +5267,7 @@
   "departureTransitDuration" : 185,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 180,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5487,7 +5317,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5499,9 +5329,7 @@
   "departureTransitDuration" : 105,
   "returnFlightDuration" : 1475,
   "returnTransitDuration" : 280,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5551,7 +5379,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5563,9 +5391,7 @@
   "departureTransitDuration" : 290,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 180,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5615,7 +5441,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5627,9 +5453,7 @@
   "departureTransitDuration" : 185,
   "returnFlightDuration" : 1475,
   "returnTransitDuration" : 280,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5679,7 +5503,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5691,9 +5515,7 @@
   "departureTransitDuration" : 440,
   "returnFlightDuration" : 1250,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5743,7 +5565,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5755,9 +5577,7 @@
   "departureTransitDuration" : 105,
   "returnFlightDuration" : 1595,
   "returnTransitDuration" : 405,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5807,7 +5627,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5819,9 +5639,7 @@
   "departureTransitDuration" : 290,
   "returnFlightDuration" : 1475,
   "returnTransitDuration" : 280,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5871,7 +5689,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5883,9 +5701,7 @@
   "departureTransitDuration" : 185,
   "returnFlightDuration" : 1595,
   "returnTransitDuration" : 405,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5935,7 +5751,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5947,9 +5763,7 @@
   "departureTransitDuration" : 545,
   "returnFlightDuration" : 1250,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -5999,7 +5813,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6011,9 +5825,7 @@
   "departureTransitDuration" : 440,
   "returnFlightDuration" : 1370,
   "returnTransitDuration" : 180,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -6063,7 +5875,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 1898.0,
+    "price" : 1907.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6075,9 +5887,7 @@
   "departureTransitDuration" : 105,
   "returnFlightDuration" : 1780,
   "returnTransitDuration" : 590,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -6127,7 +5937,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 2517.0,
+    "price" : 2529.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6139,9 +5949,7 @@
   "departureTransitDuration" : 280,
   "returnFlightDuration" : 1455,
   "returnTransitDuration" : 225,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -6191,7 +5999,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3252.0,
+    "price" : 3268.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6203,9 +6011,7 @@
   "departureTransitDuration" : 85,
   "returnFlightDuration" : 1405,
   "returnTransitDuration" : 115,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -6255,7 +6061,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3110.0,
+    "price" : 3125.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6267,457 +6073,7 @@
   "departureTransitDuration" : 180,
   "returnFlightDuration" : 1280,
   "returnTransitDuration" : 115,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 50 ],
-    "arrivalIata" : "FRA",
-    "arrivalAt" : [ 2024, 4, 11, 8, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "FRA",
-    "takeoffAt" : [ 2024, 4, 11, 9, 30 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 10, 45 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "ORY",
-    "takeoffAt" : [ 2024, 4, 14, 19, 15 ],
-    "arrivalIata" : "MUC",
-    "arrivalAt" : [ 2024, 4, 14, 20, 40 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "MUC",
-    "takeoffAt" : [ 2024, 4, 14, 21, 55 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 15, 20 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3106.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 655,
-  "departureTransitDuration" : 90,
-  "returnFlightDuration" : 1205,
-  "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 50 ],
-    "arrivalIata" : "FRA",
-    "arrivalAt" : [ 2024, 4, 11, 8, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "FRA",
-    "takeoffAt" : [ 2024, 4, 11, 9, 30 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 10, 45 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "ORY",
-    "takeoffAt" : [ 2024, 4, 14, 9, 35 ],
-    "arrivalIata" : "MUC",
-    "arrivalAt" : [ 2024, 4, 14, 11, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "MUC",
-    "takeoffAt" : [ 2024, 4, 14, 14, 0 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 6, 0 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3106.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 655,
-  "departureTransitDuration" : 90,
-  "returnFlightDuration" : 1225,
-  "returnTransitDuration" : 180,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 50 ],
-    "arrivalIata" : "FRA",
-    "arrivalAt" : [ 2024, 4, 11, 8, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "FRA",
-    "takeoffAt" : [ 2024, 4, 11, 9, 30 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 10, 45 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "CDG",
-    "takeoffAt" : [ 2024, 4, 14, 9, 50 ],
-    "arrivalIata" : "ZRH",
-    "arrivalAt" : [ 2024, 4, 14, 11, 10 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "ZRH",
-    "takeoffAt" : [ 2024, 4, 14, 13, 5 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 7, 10 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3108.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 655,
-  "departureTransitDuration" : 90,
-  "returnFlightDuration" : 1280,
-  "returnTransitDuration" : 115,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 50 ],
-    "arrivalIata" : "FRA",
-    "arrivalAt" : [ 2024, 4, 11, 8, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "FRA",
-    "takeoffAt" : [ 2024, 4, 11, 9, 30 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 10, 45 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "CDG",
-    "takeoffAt" : [ 2024, 4, 14, 14, 35 ],
-    "arrivalIata" : "MUC",
-    "arrivalAt" : [ 2024, 4, 14, 16, 5 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "MUC",
-    "takeoffAt" : [ 2024, 4, 14, 18, 0 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 10, 0 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3106.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 655,
-  "departureTransitDuration" : 90,
-  "returnFlightDuration" : 1165,
-  "returnTransitDuration" : 115,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 50 ],
-    "arrivalIata" : "FRA",
-    "arrivalAt" : [ 2024, 4, 11, 8, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "FRA",
-    "takeoffAt" : [ 2024, 4, 11, 9, 30 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 10, 45 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "CDG",
-    "takeoffAt" : [ 2024, 4, 14, 17, 55 ],
-    "arrivalIata" : "MUC",
-    "arrivalAt" : [ 2024, 4, 14, 19, 25 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "MUC",
-    "takeoffAt" : [ 2024, 4, 14, 21, 55 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 15, 20 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3106.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 655,
-  "departureTransitDuration" : 90,
-  "returnFlightDuration" : 1285,
-  "returnTransitDuration" : 150,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 50 ],
-    "arrivalIata" : "FRA",
-    "arrivalAt" : [ 2024, 4, 11, 8, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "FRA",
-    "takeoffAt" : [ 2024, 4, 11, 9, 30 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 10, 45 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "CDG",
-    "takeoffAt" : [ 2024, 4, 14, 12, 10 ],
-    "arrivalIata" : "MUC",
-    "arrivalAt" : [ 2024, 4, 14, 13, 40 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "MUC",
-    "takeoffAt" : [ 2024, 4, 14, 18, 0 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 10, 0 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3106.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 655,
-  "departureTransitDuration" : 90,
-  "returnFlightDuration" : 1310,
-  "returnTransitDuration" : 260,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 50 ],
-    "arrivalIata" : "FRA",
-    "arrivalAt" : [ 2024, 4, 11, 8, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "FRA",
-    "takeoffAt" : [ 2024, 4, 11, 9, 30 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 10, 45 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "CDG",
-    "takeoffAt" : [ 2024, 4, 14, 8, 0 ],
-    "arrivalIata" : "MUC",
-    "arrivalAt" : [ 2024, 4, 14, 9, 30 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "MUC",
-    "takeoffAt" : [ 2024, 4, 14, 14, 0 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 6, 0 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A4",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3106.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 655,
-  "departureTransitDuration" : 90,
-  "returnFlightDuration" : 1320,
-  "returnTransitDuration" : 270,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -6767,7 +6123,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6779,9 +6135,7 @@
   "departureTransitDuration" : 165,
   "returnFlightDuration" : 1205,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -6831,7 +6185,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6843,9 +6197,7 @@
   "departureTransitDuration" : 120,
   "returnFlightDuration" : 1205,
   "returnTransitDuration" : 75,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -6895,7 +6247,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6907,9 +6259,7 @@
   "departureTransitDuration" : 165,
   "returnFlightDuration" : 1225,
   "returnTransitDuration" : 180,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -6959,7 +6309,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6971,137 +6321,7 @@
   "departureTransitDuration" : 120,
   "returnFlightDuration" : 1225,
   "returnTransitDuration" : 180,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
-    "arrivalIata" : "MUC",
-    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "MUC",
-    "takeoffAt" : [ 2024, 4, 11, 9, 45 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 11, 25 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "CDG",
-    "takeoffAt" : [ 2024, 4, 14, 9, 50 ],
-    "arrivalIata" : "ZRH",
-    "arrivalAt" : [ 2024, 4, 14, 11, 10 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "ZRH",
-    "takeoffAt" : [ 2024, 4, 14, 13, 5 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 7, 10 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3108.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 710,
-  "departureTransitDuration" : 165,
-  "returnFlightDuration" : 1280,
-  "returnTransitDuration" : 115,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
-}, {
-  "createdAt" : null,
-  "createdBy" : null,
-  "updatedAt" : null,
-  "updatedBy" : null,
-  "id" : null,
-  "iata" : "LAX",
-  "airplane" : null,
-  "departureSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
-    "arrivalIata" : "MUC",
-    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "MUC",
-    "takeoffAt" : [ 2024, 4, 11, 9, 0 ],
-    "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 11, 30 ]
-  } ],
-  "returnSegment" : [ {
-    "id" : null,
-    "takeoffIata" : "CDG",
-    "takeoffAt" : [ 2024, 4, 14, 9, 50 ],
-    "arrivalIata" : "ZRH",
-    "arrivalAt" : [ 2024, 4, 14, 11, 10 ]
-  }, {
-    "id" : null,
-    "takeoffIata" : "ZRH",
-    "takeoffAt" : [ 2024, 4, 14, 13, 5 ],
-    "arrivalIata" : "PVG",
-    "arrivalAt" : [ 2024, 4, 15, 7, 10 ]
-  } ],
-  "oneWay" : false,
-  "origin" : {
-    "code" : "SHA",
-    "countryCode" : null,
-    "names" : null
-  },
-  "destination" : {
-    "code" : "PAR",
-    "countryCode" : null,
-    "names" : null
-  },
-  "gate" : "A9",
-  "tariff" : {
-    "id" : null,
-    "cabin" : "BUSINESS",
-    "price" : 3108.0,
-    "baggagePrice" : 0.0,
-    "discount" : 0,
-    "checkedBaggageIncluded" : true,
-    "cabinBaggageIncluded" : true
-  },
-  "currency" : "EUR",
-  "status" : "READY",
-  "departureFlightDuration" : 715,
-  "departureTransitDuration" : 120,
-  "returnFlightDuration" : 1280,
-  "returnTransitDuration" : 115,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7151,7 +6371,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7163,9 +6383,7 @@
   "departureTransitDuration" : 165,
   "returnFlightDuration" : 1165,
   "returnTransitDuration" : 115,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7215,7 +6433,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7227,9 +6445,7 @@
   "departureTransitDuration" : 120,
   "returnFlightDuration" : 1165,
   "returnTransitDuration" : 115,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7279,7 +6495,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7291,9 +6507,7 @@
   "departureTransitDuration" : 165,
   "returnFlightDuration" : 1285,
   "returnTransitDuration" : 150,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7343,7 +6557,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7355,9 +6569,7 @@
   "departureTransitDuration" : 120,
   "returnFlightDuration" : 1285,
   "returnTransitDuration" : 150,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7407,7 +6619,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7419,9 +6631,7 @@
   "departureTransitDuration" : 165,
   "returnFlightDuration" : 1310,
   "returnTransitDuration" : 260,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7471,7 +6681,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7483,9 +6693,7 @@
   "departureTransitDuration" : 120,
   "returnFlightDuration" : 1310,
   "returnTransitDuration" : 260,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7535,7 +6743,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7547,9 +6755,7 @@
   "departureTransitDuration" : 165,
   "returnFlightDuration" : 1320,
   "returnTransitDuration" : 270,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7599,7 +6805,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7611,9 +6817,7 @@
   "departureTransitDuration" : 120,
   "returnFlightDuration" : 1320,
   "returnTransitDuration" : 270,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
 }, {
   "createdAt" : null,
   "createdBy" : null,
@@ -7625,15 +6829,139 @@
   "departureSegment" : [ {
     "id" : null,
     "takeoffIata" : "PVG",
-    "takeoffAt" : [ 2024, 4, 10, 23, 50 ],
-    "arrivalIata" : "FRA",
-    "arrivalAt" : [ 2024, 4, 11, 8, 0 ]
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
   }, {
     "id" : null,
-    "takeoffIata" : "FRA",
-    "takeoffAt" : [ 2024, 4, 11, 9, 30 ],
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 45 ],
     "arrivalIata" : "CDG",
-    "arrivalAt" : [ 2024, 4, 11, 10, 45 ]
+    "arrivalAt" : [ 2024, 4, 11, 11, 25 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 9, 50 ],
+    "arrivalIata" : "ZRH",
+    "arrivalAt" : [ 2024, 4, 14, 11, 10 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "ZRH",
+    "takeoffAt" : [ 2024, 4, 14, 13, 5 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 7, 10 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3124.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 710,
+  "departureTransitDuration" : 165,
+  "returnFlightDuration" : 1280,
+  "returnTransitDuration" : 115,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 0 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 30 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 9, 50 ],
+    "arrivalIata" : "ZRH",
+    "arrivalAt" : [ 2024, 4, 14, 11, 10 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "ZRH",
+    "takeoffAt" : [ 2024, 4, 14, 13, 5 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 7, 10 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3124.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 715,
+  "departureTransitDuration" : 120,
+  "returnFlightDuration" : 1280,
+  "returnTransitDuration" : 115,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 45 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 25 ]
   } ],
   "returnSegment" : [ {
     "id" : null,
@@ -7659,11 +6987,11 @@
     "countryCode" : null,
     "names" : null
   },
-  "gate" : "A4",
+  "gate" : "A9",
   "tariff" : {
     "id" : null,
     "cabin" : "BUSINESS",
-    "price" : 3106.0,
+    "price" : 3121.0,
     "baggagePrice" : 0.0,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7671,11 +6999,443 @@
   },
   "currency" : "EUR",
   "status" : "READY",
-  "departureFlightDuration" : 655,
-  "departureTransitDuration" : 90,
+  "departureFlightDuration" : 710,
+  "departureTransitDuration" : 165,
   "returnFlightDuration" : 1235,
   "returnTransitDuration" : 65,
-  "tickets" : null,
-  "article" : null,
-  "specialDeal" : null
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 0 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 30 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 18, 15 ],
+    "arrivalIata" : "FRA",
+    "arrivalAt" : [ 2024, 4, 14, 19, 30 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "FRA",
+    "takeoffAt" : [ 2024, 4, 14, 20, 35 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 14, 50 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3121.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 715,
+  "departureTransitDuration" : 120,
+  "returnFlightDuration" : 1235,
+  "returnTransitDuration" : 65,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 45 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 25 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 12, 0 ],
+    "arrivalIata" : "FRA",
+    "arrivalAt" : [ 2024, 4, 14, 13, 15 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "FRA",
+    "takeoffAt" : [ 2024, 4, 14, 16, 5 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 9, 55 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3121.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 710,
+  "departureTransitDuration" : 165,
+  "returnFlightDuration" : 1315,
+  "returnTransitDuration" : 170,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 0 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 30 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 12, 0 ],
+    "arrivalIata" : "FRA",
+    "arrivalAt" : [ 2024, 4, 14, 13, 15 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "FRA",
+    "takeoffAt" : [ 2024, 4, 14, 16, 5 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 9, 55 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3121.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 715,
+  "departureTransitDuration" : 120,
+  "returnFlightDuration" : 1315,
+  "returnTransitDuration" : 170,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 45 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 25 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 11, 35 ],
+    "arrivalIata" : "FRA",
+    "arrivalAt" : [ 2024, 4, 14, 12, 50 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "FRA",
+    "takeoffAt" : [ 2024, 4, 14, 16, 5 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 9, 55 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3121.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 710,
+  "departureTransitDuration" : 165,
+  "returnFlightDuration" : 1340,
+  "returnTransitDuration" : 195,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 0 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 30 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 11, 35 ],
+    "arrivalIata" : "FRA",
+    "arrivalAt" : [ 2024, 4, 14, 12, 50 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "FRA",
+    "takeoffAt" : [ 2024, 4, 14, 16, 5 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 9, 55 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3121.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 715,
+  "departureTransitDuration" : 120,
+  "returnFlightDuration" : 1340,
+  "returnTransitDuration" : 195,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 45 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 25 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 16, 0 ],
+    "arrivalIata" : "FRA",
+    "arrivalAt" : [ 2024, 4, 14, 18, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "FRA",
+    "takeoffAt" : [ 2024, 4, 14, 20, 35 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 14, 50 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3121.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 710,
+  "departureTransitDuration" : 165,
+  "returnFlightDuration" : 1370,
+  "returnTransitDuration" : 155,
+  "tickets" : null
+}, {
+  "createdAt" : null,
+  "createdBy" : null,
+  "updatedAt" : null,
+  "updatedBy" : null,
+  "id" : null,
+  "iata" : "LAX",
+  "airplane" : null,
+  "departureSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "PVG",
+    "takeoffAt" : [ 2024, 4, 10, 23, 35 ],
+    "arrivalIata" : "MUC",
+    "arrivalAt" : [ 2024, 4, 11, 7, 0 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "MUC",
+    "takeoffAt" : [ 2024, 4, 11, 9, 45 ],
+    "arrivalIata" : "CDG",
+    "arrivalAt" : [ 2024, 4, 11, 11, 25 ]
+  } ],
+  "returnSegment" : [ {
+    "id" : null,
+    "takeoffIata" : "CDG",
+    "takeoffAt" : [ 2024, 4, 14, 11, 0 ],
+    "arrivalIata" : "FRA",
+    "arrivalAt" : [ 2024, 4, 14, 12, 20 ]
+  }, {
+    "id" : null,
+    "takeoffIata" : "FRA",
+    "takeoffAt" : [ 2024, 4, 14, 16, 5 ],
+    "arrivalIata" : "PVG",
+    "arrivalAt" : [ 2024, 4, 15, 9, 55 ]
+  } ],
+  "oneWay" : false,
+  "origin" : {
+    "code" : "SHA",
+    "countryCode" : null,
+    "names" : null
+  },
+  "destination" : {
+    "code" : "PAR",
+    "countryCode" : null,
+    "names" : null
+  },
+  "gate" : "A9",
+  "tariff" : {
+    "id" : null,
+    "cabin" : "BUSINESS",
+    "price" : 3121.0,
+    "baggagePrice" : 0.0,
+    "discount" : 0,
+    "checkedBaggageIncluded" : true,
+    "cabinBaggageIncluded" : true
+  },
+  "currency" : "EUR",
+  "status" : "READY",
+  "departureFlightDuration" : 710,
+  "departureTransitDuration" : 165,
+  "returnFlightDuration" : 1375,
+  "returnTransitDuration" : 225,
+  "tickets" : null
 } ]
