@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class FaqDTO {
-    private String id;
-    @JsonUnwrapped
-    private FaqContentDTO content;
+    private String question;
+    private String answer;
 }

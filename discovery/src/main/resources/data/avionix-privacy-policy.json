@@ -1,0 +1,122 @@
+[
+  {
+    "content": [
+      {
+        "title": "Information Collection",
+        "description": "We collect information from users to improve our services.",
+        "lan": "EN"
+      },
+      {
+        "title": "Сбор информации",
+        "description": "Мы собираем информацию от пользователей для улучшения наших услуг.",
+        "lan": "RU"
+      },
+      {
+        "title": "Маалыматтарды жинау",
+        "description": "Біз пайдаланушылардан қызметтерімізді жақсарту үшін мәліметтерді жинаеміз.",
+        "lan": "KY"
+      },
+      {
+        "title": "Bilgi Toplama",
+        "description": "Hizmetlerimizi iyileştirmek için kullanıcılardan bilgi topluyoruz.",
+        "lan": "TR"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "title": "Data Protection",
+        "description": "We ensure the protection of user data through encryption.",
+        "lan": "EN"
+      },
+      {
+        "title": "Защита данных",
+        "description": "Мы обеспечиваем защиту данных пользователей с помощью шифрования.",
+        "lan": "RU"
+      },
+      {
+        "title": "Деректерді қорғау",
+        "description": "Мүшелердің деректерді қорғау шифрлау арқылы камтитіледі.",
+        "lan": "KY"
+      },
+      {
+        "title": "Veri Koruma",
+        "description": "Kullanıcı verilerinin korunmasını şifreleme yöntemiyle sağlıyoruz.",
+        "lan": "TR"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "title": "Privacy Policy",
+        "description": "Our privacy policy ensures user privacy and data security.",
+        "lan": "EN"
+      },
+      {
+        "title": "Политика конфиденциальности",
+        "description": "Наша политика конфиденциальности обеспечивает конфиденциальность пользователей и безопасность данных.",
+        "lan": "RU"
+      },
+      {
+        "title": "Жеке мәліметтер және деректердің қауіпсіздігі",
+        "description": "Біздің жеке мәліметтер және деректердің қауіпсіздігі пайдаланушылардың құпиялылығы мен деректердің қауіпсіздігін кепілдейді.",
+        "lan": "KY"
+      },
+      {
+        "title": "Gizlilik Politikası",
+        "description": "Gizlilik politikamız kullanıcı gizliliğini ve veri güvenliğini sağlar.",
+        "lan": "TR"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "title": "Cookie Policy",
+        "description": "We use cookies to enhance user experience on our website.",
+        "lan": "EN"
+      },
+      {
+        "title": "Политика использования файлов cookie",
+        "description": "Мы используем файлы cookie для улучшения пользовательского опыта на нашем сайте.",
+        "lan": "RU"
+      },
+      {
+        "title": "Cookie саясаты",
+        "description": "Біз пайдаланушылардың веб-сайттағы пайдалануын жетекшілеу үшін cookie-лерді қолданамыз.",
+        "lan": "KY"
+      },
+      {
+        "title": "Çerez Politikası",
+        "description": "Web sitemizde kullanıcı deneyimini artırmak için çerezleri kullanıyoruz.",
+        "lan": "TR"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "title": "Website Usage",
+        "description": "By accessing this website, you agree to be bound by these terms of use, all applicable laws, and regulations, and agree that you are responsible for compliance with any applicable local laws.",
+        "lan": "EN"
+      },
+      {
+        "title": "Использование веб-сайта",
+        "description": "Посещая этот веб-сайт, вы соглашаетесь быть связанным этими условиями использования, всеми применимыми законами и правилами и соглашаетесь с тем, что вы несете ответственность за соблюдение любых применимых местных законов.",
+        "lan": "RU"
+      },
+      {
+        "title": "Веб-сайтты пайдалану",
+        "description": "Бұл веб-сайтына кіріспесіз, сіз бұл пайдалану шарттарымен, барлық қолдану тәртібі мен заңнамалармен байланысты, және сәйкес жергілікті заңнамаларды сақтау үшін жауапкершілікті аласыз.",
+        "lan": "KY"
+      },
+      {
+        "title": "Web Sitesi Kullanımı",
+        "description": "Bu web sitesine erişerek, bu kullanım koşullarına, tüm geçerli yasalara ve düzenlemelere bağlı olduğunuzu kabul edersiniz ve herhangi bir geçerli yerel yasa hükümlerine uymanızdan sorumlu olduğunuzu kabul edersiniz.",
+        "lan": "TR"
+      }
+    ]
+  }
+]

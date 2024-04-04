@@ -1,9 +1,13 @@
 package avia.cloud.discovery.init;
 
 import avia.cloud.discovery.entity.Faq;
+import avia.cloud.discovery.entity.PrivacyPolicy;
 import avia.cloud.discovery.entity.SkylineBenefits;
+import avia.cloud.discovery.entity.TermsOfUse;
 import avia.cloud.discovery.repository.FaqRepository;
+import avia.cloud.discovery.repository.PrivacyPolicyRepository;
 import avia.cloud.discovery.repository.SkylineBenefitsRepository;
+import avia.cloud.discovery.repository.TermsOfUseRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import jakarta.ws.rs.NotFoundException;
@@ -32,6 +36,8 @@ public class DataLoader implements CommandLineRunner {
     private ObjectMapper objectMapper;
     private final SkylineBenefitsRepository skylineBenefitsRepository;
     private final FaqRepository faqRepository;
+    private final PrivacyPolicyRepository privacyPolicyRepository;
+    private final TermsOfUseRepository termsOfUseRepository;
 
     @Override
     public void run(String... args) throws IOException {
@@ -40,6 +46,8 @@ public class DataLoader implements CommandLineRunner {
 
         loadSkylineBenefits("/data/avionix-skyline-benefits.json");
         loadFaq("/data/avionix-faq.json");
+        loadPrivacyPolicy("/data/avionix-privacy-policy.json");
+        loadTermsOfUse("/data/avionix-terms-of-use.json");
 
         loadFile("classpath*:data/files/skyline-benefits/*",skylineBenefitsRepository, "logo");
     }
@@ -76,6 +84,22 @@ public class DataLoader implements CommandLineRunner {
         faqs.forEach(faq -> faq.getContent()
                 .forEach(faqContent -> faqContent.setFaq(faq)));
         faqRepository.saveAll(faqs);
+    }
+    private void loadPrivacyPolicy(String path) throws IOException {
+        TypeReference<List<PrivacyPolicy>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<PrivacyPolicy> privacyPolicies = objectMapper.readValue(inputStream, typeReference);
+        privacyPolicies.forEach(privacyPolicy -> privacyPolicy.getContent()
+                .forEach(privacyPolicyContent -> privacyPolicyContent.setPrivacyPolicy(privacyPolicy)));
+        privacyPolicyRepository.saveAll(privacyPolicies);
+    }
+    private void loadTermsOfUse(String path) throws IOException {
+        TypeReference<List<TermsOfUse>> typeReference = new TypeReference<>(){};
+        InputStream inputStream = TypeReference.class.getResourceAsStream(path);
+        List<TermsOfUse> termsOfUses = objectMapper.readValue(inputStream, typeReference);
+        termsOfUses.forEach(termsOfUse -> termsOfUse.getContent()
+                .forEach(termsOfUseContent -> termsOfUseContent.setTermsOfUse(termsOfUse)));
+        termsOfUseRepository.saveAll(termsOfUses);
     }
 }
 

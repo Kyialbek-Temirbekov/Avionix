@@ -1,0 +1,177 @@
+[
+  {
+    "type": "OWNER",
+    "content": [
+      {
+        "title": "Flight Publication Agreement",
+        "description": "By using our platform to publish your flights, you agree to adhere to all terms and conditions outlined in this agreement.",
+        "lan": "EN"
+      },
+      {
+        "title": "Uçuş Yayınlama Anlaşması",
+        "description": "Uçuşlarınızı yayınlamak için platformumuzu kullandığınızda, bu anlaşmada belirtilen tüm şartlara ve koşullara uymayı kabul edersiniz.",
+        "lan": "TR"
+      },
+      {
+        "title": "Соглашение о публикации рейсов",
+        "description": "Используя нашу платформу для публикации своих рейсов, вы соглашаетесь соблюдать все условия, изложенные в этом соглашении.",
+        "lan": "RU"
+      },
+      {
+        "title": "Ұшуларды жариялау келісімі",
+        "description": "Платформамыздан өзіңіздің ұшуларыңызды жариялау арқылы пайдаланғанда, сіз осы келісімнің барлық шарттарын орындауға келісесіз.",
+        "lan": "KY"
+      }
+    ]
+  },
+  {
+    "type": "OWNER",
+    "content": [
+      {
+        "title": "Data Security Agreement",
+        "description": "You agree to ensure the security of data related to your flights and customers when using our platform.",
+        "lan": "EN"
+      },
+      {
+        "title": "Veri Güvenliği Anlaşması",
+        "description": "Platformumuzu kullanırken, uçuşlarınız ve müşterilerinizle ilgili verilerin güvenliğini sağlama konusunda anlaşmayı kabul edersiniz.",
+        "lan": "TR"
+      },
+      {
+        "title": "Соглашение о защите данных",
+        "description": "Вы соглашаетесь обеспечить безопасность данных, связанных с вашими рейсами и клиентами при использовании нашей платформы.",
+        "lan": "RU"
+      },
+      {
+        "title": "Деректерді қорғау келісімі",
+        "description": "Платформамыздан пайдаланғанда, өзіңіздің ұшуларыңыз мен клиенттеріңізге байланысты деректердің қауіпсіздігін кепілдейтіндігіңізге келісесіз.",
+        "lan": "KY"
+      }
+    ]
+  },
+  {
+    "type": "OWNER",
+    "content": [
+      {
+        "title": "Fair Usage Policy",
+        "description": "We expect owners to use our platform responsibly and fairly, avoiding any misuse or abuse of our services.",
+        "lan": "EN"
+      },
+      {
+        "title": "Adil Kullanım Politikası",
+        "description": "Sahiplerden platformumuzu sorumlu ve adil bir şekilde kullanmalarını, hizmetlerimizi yanlış kullanmaktan veya kötüye kullanmaktan kaçınmalarını bekliyoruz.",
+        "lan": "TR"
+      },
+      {
+        "title": "Политика справедливого использования",
+        "description": "Мы ожидаем, что владельцы будут использовать нашу платформу ответственно и справедливо, избегая любого неправильного использования или злоупотребления нашими услугами.",
+        "lan": "RU"
+      },
+      {
+        "title": "Қолдану саясатын әділ қолдау",
+        "description": "Біз платформамызды қолдаушылықпен және әділдікпен пайдаланатындарды күтеміз, кейбір қызметтерімізді қолдануға келіп тұрып барлық қолдану немесе злоупотреблениеге мүмкіншіліксіз күшейту.",
+        "lan": "KY"
+      }
+    ]
+  },
+  {
+    "type": "OWNER",
+    "content": [
+      {
+        "title": "Flight Modification Agreement",
+        "description": "You agree to abide by the terms and conditions for modifying flights as outlined in this agreement.",
+        "lan": "EN"
+      },
+      {
+        "title": "Uçuş Değişiklik Anlaşması",
+        "description": "Bu anlaşmada belirtilen uçuşları değiştirme koşullarına uymayı kabul edersiniz.",
+        "lan": "TR"
+      },
+      {
+        "title": "Соглашение о модификации рейсов",
+        "description": "Вы соглашаетесь соблюдать условия модификации рейсов, изложенные в этом соглашении.",
+        "lan": "RU"
+      },
+      {
+        "title": "Ұшуларды өзгерту келісімі",
+        "description": "Сіз осы келісімнің белгіленген шарттары бойынша ұшуларды өзгертуге келісесіз.",
+        "lan": "KY"
+      }
+    ]
+  },
+  {
+    "type": "CLIENT",
+    "content": [
+      {
+        "title": "Ticket Purchase Agreement",
+        "description": "By purchasing aviation tickets through our platform, you agree to abide by all terms and conditions set forth in this agreement.",
+        "lan": "EN"
+      },
+      {
+        "title": "Bilet Satın Alma Anlaşması",
+        "description": "Platformumuz aracılığıyla havacılık biletleri satın alarak, bu anlaşmada belirtilen tüm şartlara ve koşullara uymayı kabul edersiniz.",
+        "lan": "TR"
+      },
+      {
+        "title": "Соглашение о покупке билетов",
+        "description": "При покупке авиабилетов через нашу платформу, вы соглашаетесь соблюдать все условия, изложенные в этом соглашении.",
+        "lan": "RU"
+      },
+      {
+        "title": "Билет сатып алу келісімі",
+        "description": "Біздің платформамен авиабилеттерді сатып алу арқылы, сіз осы келісімде көрсетілген барлық шарттарды орындауға келісесіз.",
+        "lan": "KY"
+      }
+    ]
+  },
+  {
+    "type": "CLIENT",
+    "content": [
+      {
+        "title": "Cancellation Policy",
+        "description": "Our cancellation policy outlines the terms and conditions for canceling booked flights through our platform.",
+        "lan": "EN"
+      },
+      {
+        "title": "İptal Politikası",
+        "description": "İptal politikamız, platformumuz aracılığıyla rezerve edilen uçuşların iptal edilmesi için belirlenen şartları ve koşulları belirler.",
+        "lan": "TR"
+      },
+      {
+        "title": "Политика отмены",
+        "description": "Наша политика отмены определяет условия отмены забронированных рейсов через нашу платформу.",
+        "lan": "RU"
+      },
+      {
+        "title": "Күшін басу саясаты",
+        "description": "Біздің күшін басу саясаты платформамыз арқылы брондалған ұшуларды болдырмау шарттары мен нормаларын анықтайды.",
+        "lan": "KY"
+      }
+    ]
+  },
+  {
+    "type": "CLIENT",
+    "content": [
+      {
+        "title": "Refund Policy",
+        "description": "By purchasing aviation tickets through our platform, you agree to abide by our refund policy outlined in this agreement.",
+        "lan": "EN"
+      },
+      {
+        "title": "İade Politikası",
+        "description": "Platformumuz aracılığıyla havacılık biletleri satın alarak, bu anlaşmada belirtilen iade politikamıza uymayı kabul edersiniz.",
+        "lan": "TR"
+      },
+      {
+        "title": "Политика возврата",
+        "description": "При покупке авиабилетов через нашу платформу, вы соглашаетесь соблюдать нашу политику возврата, изложенную в этом соглашении.",
+        "lan": "RU"
+      },
+      {
+        "title": "Төлем қайтару саясаты",
+        "description": "Біздің платформамен авиабилеттерді сатып алу арқылы, сіз осы келісімде көрсетілген төлем қайтару саясатын орындауға келісесіз.",
+        "lan": "KY"
+      }
+    ]
+  }
+]

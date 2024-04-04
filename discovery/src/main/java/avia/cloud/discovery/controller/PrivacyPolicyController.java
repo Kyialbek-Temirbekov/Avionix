@@ -1,8 +1,8 @@
 package avia.cloud.discovery.controller;
 
-import avia.cloud.discovery.dto.FaqDTO;
-import avia.cloud.discovery.service.IFaqService;
-import avia.cloud.discovery.validation.constraint.SupportedLanguage;
+import avia.cloud.discovery.dto.UserAgreementDTO;
+import avia.cloud.discovery.service.IPrivacyPolicyService;
+import avia.cloud.discovery.service.ITermsOfUseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/faq")
+@RequestMapping("/api/privacyPolicy")
 @RequiredArgsConstructor
 @Validated
-public class FaqController {
-    private final IFaqService iFaqService;
+public class PrivacyPolicyController {
+    private final IPrivacyPolicyService iPrivacyPolicyService;
     @GetMapping()
-    public ResponseEntity<List<FaqDTO>> fetchFaq(@RequestParam @SupportedLanguage String lan) {
-        return ResponseEntity.status(HttpStatus.OK).body(iFaqService.fetchFaq(lan));
+    public ResponseEntity<List<UserAgreementDTO>> findPrivacyPolicy(@RequestParam String lan) {
+        return ResponseEntity.status(HttpStatus.OK).body(iPrivacyPolicyService.fetchPrivacyPolicy(lan));
     }
 }

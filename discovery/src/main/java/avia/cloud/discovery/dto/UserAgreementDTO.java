@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SkylineBenefitsContentDTO {
+public class UserAgreementDTO {
     private String title;
     private String description;
 }
