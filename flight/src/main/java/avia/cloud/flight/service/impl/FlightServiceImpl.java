@@ -7,6 +7,7 @@ import avia.cloud.flight.entity.Tariff;
 import avia.cloud.flight.entity.Ticket;
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
+import avia.cloud.flight.entity.enums.FlightStatus;
 import avia.cloud.flight.entity.enums.Lan;
 import avia.cloud.flight.exception.NotFoundException;
 import avia.cloud.flight.repository.CityRepository;
@@ -69,6 +70,14 @@ public class FlightServiceImpl implements IFlightService {
         return response;
     }
 
+    @Override
+    public void updateStatus(String flightId, FlightStatus status) {
+        Flight flight = flightRepository.findById(flightId).orElseThrow(() ->
+                new NotFoundException("Flight", "id", flightId));
+        flight.setStatus(status);
+        flightRepository.save(flight);
+    }
+
     private String getPageUrl(int i, String url) {
         String regex = "(?<=(\\?|&))page=\\d+";
         Pattern pattern = Pattern.compile(regex);
@@ -94,10 +103,6 @@ public class FlightServiceImpl implements IFlightService {
 
     private TariffDTO convertToTariffDTO(Tariff tariff) {
         return modelMapper.map(tariff, TariffDTO.class);
-    }
-
-    private SegmentDTO convertToSegmentDTO(Segment segment) {
-        return modelMapper.map(segment, SegmentDTO.class);
     }
 
     public long calculateFlightDuration(List<Segment> segments) {

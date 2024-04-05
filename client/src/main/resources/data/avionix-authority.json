@@ -27,7 +27,7 @@
     "role": "GUEST",
     "target": "customer",
     "create": true,
-    "read": false,
+    "read": true,
     "update": false,
     "delete": false
   },
@@ -37,6 +37,14 @@
     "create": true,
     "read": true,
     "update": true,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "customer",
+    "create": false,
+    "read": true,
+    "update": false,
     "delete": false
   },
   {

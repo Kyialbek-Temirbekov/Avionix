@@ -22,7 +22,6 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 
 @Component
 @Profile("default")
@@ -129,51 +128,51 @@ public class DataLoader implements CommandLineRunner {
 
     private List<Ticket> createSimpleTickets() {
         Ticket ticket1 = Ticket.builder()
-                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
                 .seat("A1")
                 .checkedBaggageIncluded(true)
                 .price(100.0)
-                .status(TicketStatus.BOOKED)
+                .status(TicketStatus.RESERVED)
                 .build();
 
         Ticket ticket2 = Ticket.builder()
-                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
                 .seat("A3")
                 .checkedBaggageIncluded(false)
                 .price(200.0)
-                .status(TicketStatus.BOOKED)
+                .status(TicketStatus.RESERVED)
                 .build();
 
         Ticket ticket3 = Ticket.builder()
-                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
                 .seat("B3")
                 .checkedBaggageIncluded(true)
                 .price(150.0)
-                .status(TicketStatus.BOOKED)
+                .status(TicketStatus.RESERVED)
                 .build();
 
         Ticket ticket4 = Ticket.builder()
-                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
                 .seat("A5")
                 .checkedBaggageIncluded(false)
                 .price(120.0)
-                .status(TicketStatus.BOOKED)
+                .status(TicketStatus.RESERVED)
                 .build();
 
         Ticket ticket5 = Ticket.builder()
-                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
                 .seat("A7")
                 .checkedBaggageIncluded(true)
                 .price(250.0)
-                .status(TicketStatus.BOOKED)
+                .status(TicketStatus.RESERVED)
                 .build();
 
         Ticket ticket6 = Ticket.builder()
-                .customerId("550e8400-e29b-41d4-a716-446655440000")
+                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
                 .seat("D8")
                 .checkedBaggageIncluded(false)
                 .price(110.0)
-                .status(TicketStatus.BOOKED)
+                .status(TicketStatus.RESERVED)
                 .build();
 
         return Arrays.asList(ticket1, ticket2, ticket3, ticket4, ticket5, ticket6);

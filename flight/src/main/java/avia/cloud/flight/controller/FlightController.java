@@ -2,6 +2,7 @@ package avia.cloud.flight.controller;
 
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
+import avia.cloud.flight.entity.enums.FlightStatus;
 import avia.cloud.flight.service.IFlightService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.constraints.Pattern;
@@ -26,6 +27,11 @@ public class FlightController {
     @GetMapping("/seatDetails/{flightId}")
     public ResponseEntity<HashMap<String, Object>> findPlaneSeatDetails(@PathVariable("flightId") String flightId) {
         return ResponseEntity.status(HttpStatus.OK).body(iFlightService.findPlaneSeatDetails(flightId));
+    }
+    @PatchMapping("/status/{flightId}")
+    public ResponseEntity<Void> updateStatus(@PathVariable String flightId, @RequestParam FlightStatus status) {
+        iFlightService.updateStatus(flightId, status);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
     @GetMapping()
     public ResponseEntity<HashMap<String, Object>> searchFlights(@RequestParam String origin,

@@ -115,7 +115,7 @@ public class GdsService extends RestTemplate {
                 .returnTransitDuration(flightService.calculateTransitDuration(returnSegment)).build();
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void dev(String[] args) throws IOException {
         GdsService gdsService = new GdsService();
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());

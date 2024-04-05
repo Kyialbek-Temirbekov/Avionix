@@ -9,6 +9,7 @@ import java.io.IOException;
 public interface ICustomerService {
     void createCustomer(CustomerDTO customerDTO) throws IOException;
     CustomerDTO fetchCustomer(String email) throws IOException;
+    CustomerDTO fetchCustomerById(String id);
     Authorization recordCustomer(CustomerDTO customerDTO);
     Authorization oauthSignIn(Authentication authentication);
     String findCustomerId(String email);

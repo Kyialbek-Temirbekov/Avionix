@@ -1,6 +1,7 @@
 package avia.cloud.flight.dto;
 
 import avia.cloud.flight.entity.enums.Currency;
+import avia.cloud.flight.entity.enums.FlightStatus;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,4 +23,5 @@ public class FlightDTO {
     @JsonProperty("tariff")
     private TariffDTO tariffDTO;
     private Currency currency;
+    private FlightStatus status;
 }

@@ -85,6 +85,13 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
+    public CustomerDTO fetchCustomerById(String id) {
+        Customer customer = accountRepository.findById(id).map(Account::getCustomer)
+                .orElseThrow(() -> new NotFoundException("Customer","id", id));
+        return convertToCustomerDTO(customer);
+    }
+
+    @Override
     public Authorization oauthSignIn(Authentication authentication) {
         String email = authentication.getName();
         Account account = accountRepository.findByEmail(email)

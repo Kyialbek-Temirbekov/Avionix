@@ -29,8 +29,13 @@ public class CustomerController {
     public ResponseEntity<CustomerDTO> fetchCustomer(Authentication authentication) throws IOException {
         return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.fetchCustomer(authentication.getName()));
     }
+
+    @GetMapping("/{customerId}")
+    public ResponseEntity<CustomerDTO> fetchCustomer(@PathVariable String customerId) {
+        return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.fetchCustomerById(customerId));
+    }
     @GetMapping("/id")
-    public ResponseEntity<String> findCustomerId(Authentication authentication) throws IOException {
+    public ResponseEntity<String> findCustomerId(Authentication authentication) {
         return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.findCustomerId(authentication.getName()));
     }
 
