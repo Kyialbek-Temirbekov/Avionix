@@ -5,6 +5,7 @@ import avia.cloud.flight.dto.FlightDTO;
 import avia.cloud.flight.dto.TicketBookRequest;
 import avia.cloud.flight.dto.TicketDTO;
 import avia.cloud.flight.entity.Ticket;
+import avia.cloud.flight.entity.enums.FlightStatus;
 import avia.cloud.flight.entity.enums.TicketStatus;
 import avia.cloud.flight.exception.BadRequestException;
 import avia.cloud.flight.exception.NotFoundException;
@@ -18,8 +19,6 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
-import javax.swing.*;
 
 @Service
 @Transactional
@@ -53,7 +52,9 @@ public class TicketServiceImpl implements ITicketService {
     public void board(String ticketId) {
         Ticket ticket = ticketRepository.findById(ticketId).orElseThrow(() ->
                 new NotFoundException("Ticket", "id", ticketId));
-        if(ticket.getStatus().equals(TicketStatus.RESERVED)) {
+        if(ticket.getFlight().getStatus().equals(FlightStatus.BOARDING)) {
+           throw new BadRequestException("Flight is already boarding");
+        } else if(ticket.getStatus().equals(TicketStatus.RESERVED)) {
             ticket.setStatus(TicketStatus.BOARDED);
             ticketRepository.save(ticket);
         } else if (ticket.getStatus().equals(TicketStatus.BOARDED)) {

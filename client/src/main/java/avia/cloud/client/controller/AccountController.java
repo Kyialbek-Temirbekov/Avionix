@@ -1,9 +1,6 @@
 package avia.cloud.client.controller;
 
-import avia.cloud.client.dto.AuthorityDTO;
-import avia.cloud.client.dto.Authorization;
-import avia.cloud.client.dto.ResponseDTO;
-import avia.cloud.client.dto.VerificationInfo;
+import avia.cloud.client.dto.*;
 import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.service.IAccountService;
 import avia.cloud.client.service.IAuthorityService;
@@ -45,5 +42,15 @@ public class AccountController {
     public ResponseEntity<?> removeAll() {
         iAccountService.removeAll();
         return ResponseEntity.ok("Account table data removed");
+    }
+    @PatchMapping("/forgotPassword")
+    public ResponseEntity<?> forgotPassword(@RequestParam String email) {
+        iAccountService.forgotPassword(email);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+    }
+    @PatchMapping("/resetPassword")
+    public ResponseEntity<?> resetPassword(@RequestBody PasswordResetInfo passwordResetInfo) {
+        iAccountService.resetPassword(passwordResetInfo);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
 }
