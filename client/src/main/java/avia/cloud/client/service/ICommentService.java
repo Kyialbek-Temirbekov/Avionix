@@ -6,4 +6,9 @@ import java.util.List;
 
 public interface ICommentService {
     List<CommentDTO> fetchComments(String lan);
+    List<CommentDTO> fetchCommentsByText(String text);
+    List<CommentDTO> findCustomerComments(String email);
+    void createComment(CommentDTO comment, String email);
+    void deleteComment(String commentId);
+
 }

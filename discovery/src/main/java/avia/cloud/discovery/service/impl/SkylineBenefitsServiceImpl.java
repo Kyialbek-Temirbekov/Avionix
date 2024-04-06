@@ -24,6 +24,12 @@ public class SkylineBenefitsServiceImpl implements ISkylineBenefitsService {
     public List<SkylineBenefitsDTO> fetchSkylineBenefits(String lan) {
         return skylineBenefitsRepository.findAll().stream().map(skylineBenefits -> convertToSkylineBenefitsDTO(skylineBenefits, Lan.of(lan))).toList();
     }
+
+    @Override
+    public List<SkylineBenefitsDTO> fetchSkylineBenefits(String lan, String text) {
+        return skylineBenefitsRepository.findSkylineBenefitsByText(text).stream().map(skylineBenefits -> convertToSkylineBenefitsDTO(skylineBenefits, Lan.of(lan))).toList();
+    }
+
     @SneakyThrows
     private SkylineBenefitsDTO convertToSkylineBenefitsDTO(SkylineBenefits skylineBenefits, Lan lan) {
         SkylineBenefitsContent skylineBenefitsContent = skylineBenefits.getContent().stream().filter(content -> content.getLan().equals(lan)).findFirst().get();

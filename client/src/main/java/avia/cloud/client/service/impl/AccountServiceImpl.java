@@ -5,6 +5,7 @@ import avia.cloud.client.dto.PasswordResetInfo;
 import avia.cloud.client.dto.SimpleMailMessageDTO;
 import avia.cloud.client.dto.VerificationInfo;
 import avia.cloud.client.entity.Account;
+import avia.cloud.client.entity.Customer;
 import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AccountRepository;
 import avia.cloud.client.security.JwtService;
@@ -70,6 +71,13 @@ public class AccountServiceImpl implements IAccountService {
                 authoritiesSet.add(authority.getAuthority());
             }
         return String.join(",", authoritiesSet);
+    }
+
+    @Override
+    public String findAccountId(String email) {
+        Account account = accountRepository.findByEmail(email)
+                .orElseThrow(() -> new NotFoundException("Account","email", email));
+        return account.getId();
     }
 
     @Override

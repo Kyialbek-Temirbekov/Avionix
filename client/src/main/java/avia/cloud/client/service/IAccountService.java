@@ -14,4 +14,5 @@ public interface IAccountService {
     Authorization signIn(Authentication authentication);
     void forgotPassword(String email);
     void resetPassword(PasswordResetInfo passwordResetInfo);
+    String findAccountId(String email);
 }

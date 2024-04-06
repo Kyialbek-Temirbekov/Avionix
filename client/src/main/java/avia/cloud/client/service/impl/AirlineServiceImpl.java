@@ -6,6 +6,7 @@ import avia.cloud.client.dto.records.AirlineRatingRecord;
 import avia.cloud.client.entity.Airline;
 import avia.cloud.client.entity.Account;
 import avia.cloud.client.entity.AirlineRating;
+import avia.cloud.client.entity.Customer;
 import avia.cloud.client.entity.enums.Role;
 import avia.cloud.client.exception.NotFoundException;
 import avia.cloud.client.repository.AccountRepository;
@@ -92,8 +93,21 @@ public class AirlineServiceImpl implements IAirlineService {
     }
 
     @Override
+    public AirlineDTO fetchAirline(String email) {
+        Airline airline = accountRepository.findByEmail(email).map(Account::getAirline)
+                .orElseThrow(() -> new NotFoundException("Airline","email", email));
+        return convertToAirlineDTO(airline);
+    }
+
+    @Override
     public List<AirlineName> findAirlineNames() {
         return airlineRepository.findAllProjectedBy();
+    }
+
+    @Override
+    public String findAirlineName(String id) {
+        return airlineRepository.findById(id).map(Airline::getName).orElseThrow(() ->
+                new NotFoundException("Airline","id", id));
     }
 
     @Override
@@ -112,8 +126,16 @@ public class AirlineServiceImpl implements IAirlineService {
         return ratingRecords;
     }
 
+    @Override
+    public List<String> findIdsByText(String text) {
+        return airlineRepository.findIdsByText(text);
+    }
+
     private double getRating(short grade, short maxGrade) {
         return ((double) 10 / maxGrade) * grade;
+    }
+    private AirlineDTO convertToAirlineDTO(Airline airline) {
+        return modelMapper.map(airline, AirlineDTO.class);
     }
 
     private Airline convertToAirline(AirlineDTO airlineDTO) {

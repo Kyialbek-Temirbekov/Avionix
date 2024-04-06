@@ -32,7 +32,7 @@ public class GdsService extends RestTemplate {
     private static final String flightOffersSearchApi = "https://test.api.amadeus.com/v2/shopping/flight-offers";
 
     private final GdsTokenProvider tokenProvider = new GdsTokenProvider();
-    private final FlightServiceImpl flightService = new FlightServiceImpl(null,null,null, null);
+    private final FlightServiceImpl flightService = new FlightServiceImpl(null,null,null,null,null,null,null, null);
 
     public List<Flight> fetchFlights(String originLocationCode, String destinationLocationCode, String departureDate, String returnDate, int adults, int limit, String travelClass) {
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(flightOffersSearchApi)
@@ -115,7 +115,7 @@ public class GdsService extends RestTemplate {
                 .returnTransitDuration(flightService.calculateTransitDuration(returnSegment)).build();
     }
 
-    public static void dev(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         GdsService gdsService = new GdsService();
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
@@ -140,7 +140,7 @@ public class GdsService extends RestTemplate {
                 flight.getTariff().setFlight(flight);
                 flight.getDepartureSegment().forEach(segment -> segment.setDepartureFlight(flight));
                 flight.getReturnSegment().forEach(segment -> segment.setReturnFlight(flight));
-                flight.setIata(flightOffer.get("iata"));
+                flight.setAirlineId(flightOffer.get("airlineId"));
                 City origin = new City();
                 origin.setCode(originCode);
                 flight.setOrigin(origin);

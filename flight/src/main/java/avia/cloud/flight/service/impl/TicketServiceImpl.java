@@ -20,6 +20,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -64,8 +66,18 @@ public class TicketServiceImpl implements ITicketService {
         }
     }
 
+    @Override
+    public List<TicketDTO> fetchCustomerTickets(String token, String lan) {
+        String customerId = userFeignClient.findAccountId(token).getBody();
+        List<Ticket> tickets = ticketRepository.findAllByCustomerId(customerId);
+        return tickets.stream().map(ticket -> {
+            FlightDTO flight = flightService.convertToFlightDTO(ticket.getFlight(), lan);
+            return new TicketDTO(null, ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight);
+        }).toList();
+    }
+
     protected String createTicket(TicketBookRequest ticketBookRequest, String token) {
-        ResponseEntity<String> customerResponseEntity = userFeignClient.findCustomerId(token);
+        ResponseEntity<String> customerResponseEntity = userFeignClient.findAccountId(token);
         Ticket ticket = Ticket.builder()
                 .flight(flightRepository.findById(ticketBookRequest.getFlightId()).orElseThrow( () ->
                         new NotFoundException("Flight", "id", ticketBookRequest.getFlightId())))

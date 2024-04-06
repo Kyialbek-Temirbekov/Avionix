@@ -7,19 +7,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class FlightDTO {
     private String id;
+    private String airline;
     private boolean oneWay;
     private String from;
     private String to;
     private String gate;
-    private Itinerary departureItinerary;
-    private Itinerary returnItinerary;
+    private Itinerary departureTrip;
+    private Itinerary returnTrip;
     @JsonProperty("tariff")
     private TariffDTO tariffDTO;
     private Currency currency;

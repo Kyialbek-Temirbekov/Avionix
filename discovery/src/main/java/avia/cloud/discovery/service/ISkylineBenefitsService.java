@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface ISkylineBenefitsService {
     List<SkylineBenefitsDTO> fetchSkylineBenefits(String lan);
+    List<SkylineBenefitsDTO> fetchSkylineBenefits(String lan, String text);
 }

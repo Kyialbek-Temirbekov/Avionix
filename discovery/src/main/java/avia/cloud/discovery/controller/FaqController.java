@@ -24,4 +24,8 @@ public class FaqController {
     public ResponseEntity<List<FaqDTO>> fetchFaq(@RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iFaqService.fetchFaq(lan));
     }
+    @GetMapping("/global")
+    public ResponseEntity<List<FaqDTO>> fetchFaq(@RequestParam @SupportedLanguage String lan, @RequestParam String text) {
+        return ResponseEntity.status(HttpStatus.OK).body(iFaqService.fetchFaq(lan,text));
+    }
 }

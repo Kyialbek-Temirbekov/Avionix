@@ -10,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/ticket")
 @RequiredArgsConstructor
@@ -19,6 +21,10 @@ public class TicketController {
     @GetMapping("/{ticketId}")
     public ResponseEntity<TicketDTO> fetchTicket(@PathVariable String ticketId, @RequestHeader(name = "Authorization", required = false) String authToken, @RequestParam String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iTicketService.fetchTicket(ticketId, authToken, lan));
+    }
+    @GetMapping("/customer")
+    public ResponseEntity<List<TicketDTO>> fetchCustomerTickets(@RequestHeader(name = "Authorization") String authToken, @RequestParam String lan) {
+        return ResponseEntity.status(HttpStatus.OK).body(iTicketService.fetchCustomerTickets(authToken, lan));
     }
     @PostMapping("/book")
     public ResponseEntity<Object> bookTicket(@RequestBody TicketBookRequest ticketBookRequest, @RequestHeader("Authorization") String token) throws StripeException {

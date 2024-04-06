@@ -38,10 +38,9 @@ public class AccountController {
     public ResponseEntity<?> checkEmail(@RequestParam @NotRegistered String email) {
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
-    @DeleteMapping("/removeAll")
-    public ResponseEntity<?> removeAll() {
-        iAccountService.removeAll();
-        return ResponseEntity.ok("Account table data removed");
+    @GetMapping("/id")
+    public ResponseEntity<String> findAccountId(Authentication authentication) {
+        return ResponseEntity.status(HttpStatus.OK).body(iAccountService.findAccountId(authentication.getName()));
     }
     @PatchMapping("/forgotPassword")
     public ResponseEntity<?> forgotPassword(@RequestParam String email) {

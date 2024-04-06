@@ -1,6 +1,7 @@
 package avia.cloud.flight.service.client;
 
 import avia.cloud.flight.dto.AuthorityDTO;
+import avia.cloud.flight.dto.CommentDTO;
 import avia.cloud.flight.dto.CustomerDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +18,12 @@ public interface UserFeignClient {
     List<AuthorityDTO> fetchAuthorities(@RequestParam String authorities);
     @GetMapping("/api/customer/{customerId}")
     ResponseEntity<CustomerDTO> fetchCustomer(@PathVariable String customerId, @RequestHeader("Authorization") String token);
-    @GetMapping("/api/customer/id")
-    ResponseEntity<String> findCustomerId(@RequestHeader("Authorization") String token);
+    @GetMapping("/api/account/id")
+    ResponseEntity<String> findAccountId(@RequestHeader("Authorization") String token);
+    @GetMapping("/api/airline/name/{airlineId}")
+    ResponseEntity<String> findAirlineName(@PathVariable String airlineId);
+    @GetMapping("/api/airline/ids")
+    ResponseEntity<List<String>> findAirlineIds(@RequestParam String text);
+    @GetMapping("/api/comment/global")
+    public ResponseEntity<List<CommentDTO>> fetchCommentsByText(@RequestParam String text);
 }

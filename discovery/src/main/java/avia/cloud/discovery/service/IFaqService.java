@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IFaqService {
     List<FaqDTO> fetchFaq(String lan);
+    List<FaqDTO> fetchFaq(String lan, String text);
 }

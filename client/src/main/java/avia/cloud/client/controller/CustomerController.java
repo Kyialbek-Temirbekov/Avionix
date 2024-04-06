@@ -34,10 +34,6 @@ public class CustomerController {
     public ResponseEntity<CustomerDTO> fetchCustomer(@PathVariable String customerId) {
         return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.fetchCustomerById(customerId));
     }
-    @GetMapping("/id")
-    public ResponseEntity<String> findCustomerId(Authentication authentication) {
-        return ResponseEntity.status(HttpStatus.OK).body(iCustomerService.findCustomerId(authentication.getName()));
-    }
 
     @PostMapping("/google")
     public ResponseEntity<Authorization> oauthSignUp(Authentication authentication, @Valid @RequestBody CustomerDTO customerDTO, @RequestHeader("Authorization") String auth) {

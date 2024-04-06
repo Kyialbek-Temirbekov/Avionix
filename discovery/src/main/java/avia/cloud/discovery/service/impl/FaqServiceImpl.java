@@ -1,6 +1,7 @@
 package avia.cloud.discovery.service.impl;
 
 import avia.cloud.discovery.dto.FaqDTO;
+import avia.cloud.discovery.entity.Faq;
 import avia.cloud.discovery.entity.enums.Lan;
 import avia.cloud.discovery.repository.FaqRepository;
 import avia.cloud.discovery.service.IFaqService;
@@ -23,4 +24,10 @@ public class FaqServiceImpl implements IFaqService {
         return faqRepository.findFaqsBy(Lan.of(lan));
     }
 
+    @Override
+    public List<FaqDTO> fetchFaq(String lan, String text) {
+        return faqRepository.findFaqsByText(text).stream()
+                .flatMap(faq -> faq.getContent().stream())
+                .map(content -> new FaqDTO(content.getQuestion(),content.getAnswer())).toList();
+    }
 }

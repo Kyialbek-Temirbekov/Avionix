@@ -1,6 +1,6 @@
-package avia.cloud.client.dto;
+package avia.cloud.flight.dto;
 
-import avia.cloud.client.entity.enums.Lan;
+import avia.cloud.flight.entity.enums.Lan;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotBlank;

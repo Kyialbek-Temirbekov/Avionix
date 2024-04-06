@@ -24,4 +24,8 @@ public class SkylineBenefitsController {
     public ResponseEntity<List<SkylineBenefitsDTO>> fetchSkylineBenefits(@RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iSkylineBenefitsService.fetchSkylineBenefits(lan));
     }
+    @GetMapping("/global")
+    public ResponseEntity<List<SkylineBenefitsDTO>> fetchSkylineBenefits(@RequestParam @SupportedLanguage String lan, @RequestParam String text) {
+        return ResponseEntity.status(HttpStatus.OK).body(iSkylineBenefitsService.fetchSkylineBenefits(lan,text));
+    }
 }

@@ -13,4 +13,6 @@ import java.util.List;
 public interface FaqRepository extends JpaRepository<Faq,String> {
     @Query("SELECT new avia.cloud.discovery.dto.FaqDTO(c.question,c.answer) FROM Faq f JOIN f.content c WHERE c.lan = :lan")
     List<FaqDTO> findFaqsBy(Lan lan);
+    @Query("SELECT f FROM Faq f JOIN f.content c WHERE LOWER(c.question) LIKE LOWER(CONCAT('%',:text,'%')) OR LOWER(c.answer) LIKE LOWER(CONCAT('%',:text,'%'))")
+    List<Faq> findFaqsByText(String text);
 }

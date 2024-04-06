@@ -12,6 +12,9 @@ import java.util.List;
 public interface IAirlineService {
     ClientCredentials createClient(String name);
     void createAirline(AirlineDTO airlineDTO) throws IOException;
+    AirlineDTO fetchAirline(String email);
     List<AirlineName> findAirlineNames();
     List<AirlineRatingRecord> findAirlineRatings();
+    String findAirlineName(String id);
+    List<String> findIdsByText(String text);
 }

@@ -128,7 +128,7 @@ public class DataLoader implements CommandLineRunner {
 
     private List<Ticket> createSimpleTickets() {
         Ticket ticket1 = Ticket.builder()
-                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
+                .customerId("00000000-0000-0000-0000-000000000000")
                 .seat("A1")
                 .checkedBaggageIncluded(true)
                 .price(100.0)
@@ -136,7 +136,7 @@ public class DataLoader implements CommandLineRunner {
                 .build();
 
         Ticket ticket2 = Ticket.builder()
-                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
+                .customerId("00000000-0000-0000-0000-000000000000")
                 .seat("A3")
                 .checkedBaggageIncluded(false)
                 .price(200.0)
@@ -144,7 +144,7 @@ public class DataLoader implements CommandLineRunner {
                 .build();
 
         Ticket ticket3 = Ticket.builder()
-                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
+                .customerId("00000000-0000-0000-0000-000000000000")
                 .seat("B3")
                 .checkedBaggageIncluded(true)
                 .price(150.0)
@@ -152,7 +152,7 @@ public class DataLoader implements CommandLineRunner {
                 .build();
 
         Ticket ticket4 = Ticket.builder()
-                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
+                .customerId("00000000-0000-0000-0000-000000000000")
                 .seat("A5")
                 .checkedBaggageIncluded(false)
                 .price(120.0)
@@ -160,7 +160,7 @@ public class DataLoader implements CommandLineRunner {
                 .build();
 
         Ticket ticket5 = Ticket.builder()
-                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
+                .customerId("00000000-0000-0000-0000-000000000000")
                 .seat("A7")
                 .checkedBaggageIncluded(true)
                 .price(250.0)
@@ -168,7 +168,7 @@ public class DataLoader implements CommandLineRunner {
                 .build();
 
         Ticket ticket6 = Ticket.builder()
-                .customerId("38400000-8cf0-11bd-b23e-10b96e4ef00d")
+                .customerId("00000000-0000-0000-0000-000000000000")
                 .seat("D8")
                 .checkedBaggageIncluded(false)
                 .price(110.0)

@@ -12,6 +12,6 @@ public interface ICustomerService {
     CustomerDTO fetchCustomerById(String id);
     Authorization recordCustomer(CustomerDTO customerDTO);
     Authorization oauthSignIn(Authentication authentication);
-    String findCustomerId(String email);
+
 }
 

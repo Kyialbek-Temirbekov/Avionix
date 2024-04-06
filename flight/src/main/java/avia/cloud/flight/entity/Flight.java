@@ -2,6 +2,8 @@ package avia.cloud.flight.entity;
 
 import avia.cloud.flight.entity.enums.Currency;
 import avia.cloud.flight.entity.enums.FlightStatus;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
@@ -20,10 +22,12 @@ import static jakarta.persistence.CascadeType.*;
 public class Flight extends BaseEntity {
     @Id
     @UuidGenerator
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private String id;
-    private String iata;
+    private String airlineId;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "airplane_id", referencedColumnName = "id")
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Airplane airplane;
     @OneToMany(mappedBy = "departureFlight", fetch = FetchType.EAGER, cascade = {REMOVE,PERSIST,MERGE})
     private List<Segment> departureSegment;
@@ -47,6 +51,7 @@ public class Flight extends BaseEntity {
     private long departureTransitDuration;
     private long returnFlightDuration;
     private long returnTransitDuration;
+    @JsonIgnore
     @OneToMany(mappedBy = "flight")
     private List<Ticket> tickets;
 }

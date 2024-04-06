@@ -1,21 +1,21 @@
 [
   {
-    "iata": "LAX",
+    "airlineId": "623e4567-e89b-12d3-a456-556642440005",
     "originCode": "SHA",
     "destinationCode": "LON"
   },
   {
-    "iata": "LAX",
+    "airlineId": "623e4567-e89b-12d3-a456-556642440005",
     "originCode": "SHA",
     "destinationCode": "TKY"
   },
   {
-  "iata": "LAX",
+  "airlineId": "623e4567-e89b-12d3-a456-556642440005",
   "originCode": "SHA",
   "destinationCode": "IST"
 },
   {
-  "iata": "LAX",
+  "airlineId": "623e4567-e89b-12d3-a456-556642440005",
   "originCode": "SHA",
   "destinationCode": "PAR"
 }

@@ -13,5 +13,5 @@ public class ArticleDTO {
     private String imageUrl;
     private String description;
     private String discount;
-    private FlightDTO flight;
+    private String flightId;
 }

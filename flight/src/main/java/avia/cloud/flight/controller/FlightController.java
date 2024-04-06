@@ -1,10 +1,13 @@
 package avia.cloud.flight.controller;
 
+import avia.cloud.flight.dto.FlightDTO;
+import avia.cloud.flight.entity.Flight;
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
 import avia.cloud.flight.entity.enums.FlightStatus;
 import avia.cloud.flight.service.IFlightService;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.PositiveOrZero;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/trip")
@@ -24,6 +28,24 @@ import java.util.List;
 @Validated
 public class FlightController {
     private final IFlightService iFlightService;
+
+    @GetMapping("/{flightId}")
+    public ResponseEntity<FlightDTO> fetchFlight(@PathVariable String flightId, @RequestParam String lan) {
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.fetchFlight(flightId,lan));
+    }
+    @GetMapping("/global")
+    public ResponseEntity<Map<String,Object>> globalSearch(@RequestParam String text, @RequestParam String lan) {
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.globalSearch(text,lan));
+    }
+    @PostMapping()
+    public ResponseEntity<Void> createFlight(@Valid @RequestBody Flight flight, @RequestHeader("Authorization") String token) {
+        iFlightService.createFlight(flight,token);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+    @GetMapping("/owner")
+    public ResponseEntity<List<FlightDTO>> fetchOwnerFlights(@RequestHeader("Authorization") String token, @RequestParam String lan) {
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.fetchOwnerFlights(token, lan));
+    }
     @GetMapping("/seatDetails/{flightId}")
     public ResponseEntity<HashMap<String, Object>> findPlaneSeatDetails(@PathVariable("flightId") String flightId) {
         return ResponseEntity.status(HttpStatus.OK).body(iFlightService.findPlaneSeatDetails(flightId));
@@ -51,13 +73,13 @@ public class FlightController {
                                                                  @RequestParam(defaultValue = "" + Long.MAX_VALUE) @PositiveOrZero long maxFlightDuration,
                                                                  @RequestParam(defaultValue = "0") @PositiveOrZero long minTransitDuration,
                                                                  @RequestParam(defaultValue = "" + Long.MAX_VALUE) @PositiveOrZero long maxTransitDuration,
-                                                                 @RequestParam(required = false) String iata,
+                                                                 @RequestParam(required = false) String airlineId,
                                                                  @RequestParam(defaultValue = "0") @PositiveOrZero int page,
                                                                  @RequestParam(defaultValue = "8") @PositiveOrZero int pageSize,
                                                                  @RequestParam(defaultValue = "ASC")@Pattern(regexp = "(ASC|DESC)", message = "Invalid input. Allowed values: ASC, DESC") String direction,
-                                                                 @RequestParam(defaultValue = "flightDuration") @Pattern(regexp = "(flightDuration|transitDuration|tariff\\.price)", message = "Invalid input. Allowed values: flightDuration, transitDuration, tariff.price") String property,
+                                                                 @RequestParam(defaultValue = "departureFlightDuration") @Pattern(regexp = "(departureFlightDuration|departureTransitDuration|tariff\\.price)", message = "Invalid input. Allowed values: flightDuration, transitDuration, tariff.price") String property,
                                                                  @RequestParam(defaultValue = "en") String lan,
                                                                  HttpServletRequest request) {
-        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, departureDate, returnDate, adults, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, iata, page, pageSize, direction, property, lan, request.getHeader("Original-Url")));
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, departureDate, returnDate, adults, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, airlineId, page, pageSize, direction, property, lan, request.getHeader("Original-Url")));
     }
 }
