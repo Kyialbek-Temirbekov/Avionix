@@ -1,6 +1,7 @@
 package avia.cloud.flight.service;
 
 import avia.cloud.flight.dto.FlightDTO;
+import avia.cloud.flight.dto.FlightRequestDTO;
 import avia.cloud.flight.entity.Flight;
 import avia.cloud.flight.entity.Ticket;
 import avia.cloud.flight.entity.enums.Cabin;
@@ -13,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface IFlightService {
-    void createFlight(Flight flight, String token);
+    void createFlight(FlightRequestDTO flight, String token);
     void updateStatus(String flightId, FlightStatus status);
     FlightDTO convertToFlightDTO(Flight flight, String lan);
     HashMap<String, Object> findPlaneSeatDetails(String flightId);

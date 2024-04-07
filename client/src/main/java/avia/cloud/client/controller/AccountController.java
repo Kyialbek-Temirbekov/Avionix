@@ -36,7 +36,7 @@ public class AccountController {
 
     @GetMapping("/checkEmail")
     public ResponseEntity<?> checkEmail(@RequestParam @NotRegistered String email) {
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
     @GetMapping("/id")
     public ResponseEntity<String> findAccountId(Authentication authentication) {
@@ -45,11 +45,11 @@ public class AccountController {
     @PatchMapping("/forgotPassword")
     public ResponseEntity<?> forgotPassword(@RequestParam String email) {
         iAccountService.forgotPassword(email);
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
     @PatchMapping("/resetPassword")
-    public ResponseEntity<?> resetPassword(@RequestBody PasswordResetInfo passwordResetInfo) {
+    public ResponseEntity<?> resetPassword(@Valid @RequestBody PasswordResetInfo passwordResetInfo) {
         iAccountService.resetPassword(passwordResetInfo);
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

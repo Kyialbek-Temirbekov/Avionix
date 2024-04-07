@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Pattern;
 import lombok.*;
 import org.hibernate.annotations.UuidGenerator;
 
@@ -28,9 +29,11 @@ public class Segment {
     @JoinColumn(name = "return_flight_id", referencedColumnName = "id")
     @JsonIgnore
     private Flight returnFlight;
+    @Pattern(regexp = "^[A-Z]{3}$", message = "Invalid IATA code")
     private String takeoffIata;
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime takeoffAt;
+    @Pattern(regexp = "^[A-Z]{3}$", message = "Invalid IATA code")
     private String arrivalIata;
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime arrivalAt;

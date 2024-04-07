@@ -52,12 +52,13 @@ public class FlightServiceImpl implements IFlightService {
     private final ModelMapper modelMapper;
 
     @Override
-    public void createFlight(Flight flight, String token) {
+    public void createFlight(FlightRequestDTO flightRequestDTO, String token) {
+        Flight flight = modelMapper.map(flightRequestDTO, Flight.class);
         String airlineId = userFeignClient.findAccountId(token).getBody();
         flight.setAirlineId(airlineId);
         flight.setAirplane(airplaneRepository.findFirstByCabinsCabin(flight.getTariff().getCabin()));
-        flight.setOrigin(cityRepository.findById(flight.getOrigin().getCode()).get());
-        flight.setDestination(cityRepository.findById(flight.getDestination().getCode()).get());
+        flight.setOrigin(cityRepository.findById(flightRequestDTO.getOriginCity().getCode()).get());
+        flight.setDestination(cityRepository.findById(flightRequestDTO.getDestinationCity().getCode()).get());
         flight.setStatus(FlightStatus.READY);
         flight.setDepartureFlightDuration(calculateFlightDuration(flight.getDepartureSegment()));
         flight.setReturnFlightDuration(calculateFlightDuration(flight.getReturnSegment()));

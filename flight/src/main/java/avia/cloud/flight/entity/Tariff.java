@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.PositiveOrZero;
 import lombok.*;
 import org.hibernate.annotations.UuidGenerator;
 
@@ -25,8 +27,11 @@ public class Tariff {
     private Flight flight;
     @Enumerated(EnumType.STRING)
     private Cabin cabin;
+    @Positive
     private double price;
+    @PositiveOrZero
     private double baggagePrice;
+    @PositiveOrZero
     private short discount;
     private boolean checkedBaggageIncluded;
     private boolean cabinBaggageIncluded;

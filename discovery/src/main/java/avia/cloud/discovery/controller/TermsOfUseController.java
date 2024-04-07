@@ -4,6 +4,7 @@ import avia.cloud.discovery.dto.UserAgreementDTO;
 import avia.cloud.discovery.entity.enums.Role;
 import avia.cloud.discovery.service.IPrivacyPolicyService;
 import avia.cloud.discovery.service.ITermsOfUseService;
+import avia.cloud.discovery.validation.constraint.SupportedLanguage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,7 @@ import java.util.List;
 public class TermsOfUseController {
     private final ITermsOfUseService iTermsOfUseService;
     @GetMapping()
-    public ResponseEntity<List<UserAgreementDTO>> fetchTermsOfUse(@RequestParam String lan, @RequestParam Role type) {
+    public ResponseEntity<List<UserAgreementDTO>> fetchTermsOfUse(@RequestParam @SupportedLanguage String lan, @RequestParam Role type) {
         return ResponseEntity.status(HttpStatus.OK).body(iTermsOfUseService.fetchTermsOfUse(lan, type));
     }
 }

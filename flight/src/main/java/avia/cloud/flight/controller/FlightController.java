@@ -1,11 +1,13 @@
 package avia.cloud.flight.controller;
 
 import avia.cloud.flight.dto.FlightDTO;
+import avia.cloud.flight.dto.FlightRequestDTO;
 import avia.cloud.flight.entity.Flight;
 import avia.cloud.flight.entity.enums.Cabin;
 import avia.cloud.flight.entity.enums.Currency;
 import avia.cloud.flight.entity.enums.FlightStatus;
 import avia.cloud.flight.service.IFlightService;
+import avia.cloud.flight.validation.constraint.SupportedLanguage;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
@@ -30,20 +32,20 @@ public class FlightController {
     private final IFlightService iFlightService;
 
     @GetMapping("/{flightId}")
-    public ResponseEntity<FlightDTO> fetchFlight(@PathVariable String flightId, @RequestParam String lan) {
+    public ResponseEntity<FlightDTO> fetchFlight(@PathVariable String flightId, @RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iFlightService.fetchFlight(flightId,lan));
     }
     @GetMapping("/global")
-    public ResponseEntity<Map<String,Object>> globalSearch(@RequestParam String text, @RequestParam String lan) {
+    public ResponseEntity<Map<String,Object>> globalSearch(@RequestParam String text, @RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iFlightService.globalSearch(text,lan));
     }
     @PostMapping()
-    public ResponseEntity<Void> createFlight(@Valid @RequestBody Flight flight, @RequestHeader("Authorization") String token) {
+    public ResponseEntity<Void> createFlight(@Valid @RequestBody FlightRequestDTO flight, @RequestHeader("Authorization") String token) {
         iFlightService.createFlight(flight,token);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
     @GetMapping("/owner")
-    public ResponseEntity<List<FlightDTO>> fetchOwnerFlights(@RequestHeader("Authorization") String token, @RequestParam String lan) {
+    public ResponseEntity<List<FlightDTO>> fetchOwnerFlights(@RequestHeader("Authorization") String token, @RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iFlightService.fetchOwnerFlights(token, lan));
     }
     @GetMapping("/seatDetails/{flightId}")
@@ -77,7 +79,7 @@ public class FlightController {
                                                                  @RequestParam(defaultValue = "0") @PositiveOrZero int page,
                                                                  @RequestParam(defaultValue = "8") @PositiveOrZero int pageSize,
                                                                  @RequestParam(defaultValue = "ASC")@Pattern(regexp = "(ASC|DESC)", message = "Invalid input. Allowed values: ASC, DESC") String direction,
-                                                                 @RequestParam(defaultValue = "departureFlightDuration") @Pattern(regexp = "(departureFlightDuration|departureTransitDuration|tariff\\.price)", message = "Invalid input. Allowed values: flightDuration, transitDuration, tariff.price") String property,
+                                                                 @RequestParam(defaultValue = "departureFlightDuration") @Pattern(regexp = "(departureFlightDuration|departureTransitDuration|tariff\\.price)", message = "Invalid input. Allowed values: departureFlightDuration, departureTransitDuration, tariff.price") String property,
                                                                  @RequestParam(defaultValue = "en") String lan,
                                                                  HttpServletRequest request) {
         return ResponseEntity.status(HttpStatus.OK).body(iFlightService.searchFlights(origin, destination, oneWay, departureDate, returnDate, adults, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, airlineId, page, pageSize, direction, property, lan, request.getHeader("Original-Url")));

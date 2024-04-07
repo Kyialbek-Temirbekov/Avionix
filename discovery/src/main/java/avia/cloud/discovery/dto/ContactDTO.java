@@ -1,5 +1,6 @@
 package avia.cloud.discovery.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -16,6 +17,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder
 public class ContactDTO {
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private String id;
     @NotNull
     @NotBlank
@@ -29,5 +31,6 @@ public class ContactDTO {
     @NotNull
     @NotBlank
     private String message;
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private LocalDate createdAt;
 }

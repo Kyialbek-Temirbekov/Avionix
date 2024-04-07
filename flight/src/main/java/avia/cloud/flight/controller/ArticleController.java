@@ -2,6 +2,7 @@ package avia.cloud.flight.controller;
 
 import avia.cloud.flight.dto.ArticleDTO;
 import avia.cloud.flight.service.IArticleService;
+import avia.cloud.flight.validation.constraint.SupportedLanguage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -19,11 +20,11 @@ import java.util.List;
 public class ArticleController {
     private final IArticleService iArticleService;
     @GetMapping("/topFlight")
-    ResponseEntity<List<ArticleDTO>> findTopFlights(@RequestParam String lan) {
+    ResponseEntity<List<ArticleDTO>> findTopFlights(@RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.ok().body(iArticleService.findTopFlights(lan));
     }
     @GetMapping("/specialDeal")
-    ResponseEntity<List<ArticleDTO>> findTopSpecialDeals(@RequestParam String lan) {
+    ResponseEntity<List<ArticleDTO>> findTopSpecialDeals(@RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.ok().body(iArticleService.findSpecialDeals(lan));
     }
 }

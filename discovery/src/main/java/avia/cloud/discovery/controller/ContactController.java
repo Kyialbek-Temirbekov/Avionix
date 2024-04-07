@@ -2,6 +2,7 @@ package avia.cloud.discovery.controller;
 
 import avia.cloud.discovery.dto.ContactDTO;
 import avia.cloud.discovery.service.IContactService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 public class ContactController {
     private final IContactService iContactService;
     @PostMapping()
-    public ResponseEntity<?> createContact(@RequestBody ContactDTO contactDTO) {
+    public ResponseEntity<?> createContact(@Valid @RequestBody ContactDTO contactDTO) {
         iContactService.createContact(contactDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(null);
     }

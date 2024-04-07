@@ -2,6 +2,7 @@ package avia.cloud.flight.controller;
 
 import avia.cloud.flight.dto.CityDTO;
 import avia.cloud.flight.service.ICityService;
+import avia.cloud.flight.validation.constraint.SupportedLanguage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +21,7 @@ import java.util.List;
 public class CityController {
     private final ICityService iCityService;
     @GetMapping()
-    public ResponseEntity<List<CityDTO>> findCities(@RequestParam(defaultValue = "en") String lan) {
+    public ResponseEntity<List<CityDTO>> findCities(@RequestParam(defaultValue = "en")  @SupportedLanguage String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iCityService.findCities(lan));
     }
 }
