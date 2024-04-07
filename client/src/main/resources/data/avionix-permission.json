@@ -1,0 +1,467 @@
+[
+  {
+    "role": "ADMIN",
+    "target": "account",
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "customer",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "airline",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "comment",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "management",
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": true
+  },
+
+  {
+    "role": "ADMIN",
+    "target": "article",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "city",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "flight",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "ticket",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+
+  {
+    "role": "ADMIN",
+    "target": "faq",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "skyline_benefits",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "contact",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "terms_of_use",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "ADMIN",
+    "target": "privacy_policy",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+
+
+
+  {
+    "role": "OWNER",
+    "target": "account",
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "customer",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "airline",
+    "create": false,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "comment",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "management",
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+
+  {
+    "role": "OWNER",
+    "target": "article",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "city",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "flight",
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "ticket",
+    "create": false,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+
+  {
+    "role": "OWNER",
+    "target": "faq",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "skyline_benefits",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "contact",
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "terms_of_use",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "OWNER",
+    "target": "privacy_policy",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+
+
+
+  {
+    "role": "CLIENT",
+    "target": "account",
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "customer",
+    "create": true,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "airline",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "comment",
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": true
+  },
+  {
+    "role": "CLIENT",
+    "target": "management",
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+
+  {
+    "role": "CLIENT",
+    "target": "article",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "city",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "flight",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "ticket",
+    "create": true,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+
+  {
+    "role": "CLIENT",
+    "target": "faq",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "skyline_benefits",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "contact",
+    "create": true,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "terms_of_use",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "CLIENT",
+    "target": "privacy_policy",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+
+
+
+  {
+    "role": "GUEST",
+    "target": "account",
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": true
+  },
+  {
+    "role": "GUEST",
+    "target": "customer",
+    "create": true,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "airline",
+    "create": false,
+    "read": true,
+    "update": true,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "comment",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "management",
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+
+  {
+    "role": "GUEST",
+    "target": "article",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "city",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "flight",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "ticket",
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+
+  {
+    "role": "GUEST",
+    "target": "faq",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "skyline_benefits",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "contact",
+    "create": true,
+    "read": false,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "terms_of_use",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  },
+  {
+    "role": "GUEST",
+    "target": "privacy_policy",
+    "create": false,
+    "read": true,
+    "update": false,
+    "delete": false
+  }
+]

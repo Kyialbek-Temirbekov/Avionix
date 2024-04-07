@@ -4,6 +4,7 @@ import avia.cloud.flight.filter.AuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -30,6 +31,25 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((requests) -> requests
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/article/**")).hasAuthority("article:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/article/**")).hasAuthority("article:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/article/**")).hasAuthority("article:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/article/**")).hasAuthority("article:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/city/**")).hasAuthority("city:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/city/**")).hasAuthority("city:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/city/**")).hasAuthority("city:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/city/**")).hasAuthority("city:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/trip/**")).hasAuthority("flight:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/trip/**")).hasAuthority("flight:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/trip/**")).hasAuthority("flight:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/trip/**")).hasAuthority("flight:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/ticket/**")).hasAuthority("ticket:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/ticket/**")).hasAuthority("ticket:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/ticket/**")).hasAuthority("ticket:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/ticket/**")).hasAuthority("ticket:delete")
                         .anyRequest().permitAll())
                 .addFilterAfter(authenticationFilter, BasicAuthenticationFilter.class)
                 .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))

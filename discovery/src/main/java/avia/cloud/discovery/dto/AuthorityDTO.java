@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 public class AuthorityDTO {
     private String id;
     private Role role;
-    private String entity;
+    private String target;
     private boolean create;
     private boolean read;
     private boolean update;

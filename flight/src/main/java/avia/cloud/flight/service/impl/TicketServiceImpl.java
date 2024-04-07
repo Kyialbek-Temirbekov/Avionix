@@ -54,9 +54,7 @@ public class TicketServiceImpl implements ITicketService {
     public void board(String ticketId) {
         Ticket ticket = ticketRepository.findById(ticketId).orElseThrow(() ->
                 new NotFoundException("Ticket", "id", ticketId));
-        if(ticket.getFlight().getStatus().equals(FlightStatus.BOARDING)) {
-           throw new BadRequestException("Flight is already boarding");
-        } else if(ticket.getStatus().equals(TicketStatus.RESERVED)) {
+        if(ticket.getStatus().equals(TicketStatus.RESERVED)) {
             ticket.setStatus(TicketStatus.BOARDED);
             ticketRepository.save(ticket);
         } else if (ticket.getStatus().equals(TicketStatus.BOARDED)) {

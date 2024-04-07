@@ -1,5 +1,6 @@
 package avia.cloud.client.controller;
 
+import avia.cloud.client.dto.ClientCredentials;
 import avia.cloud.client.dto.CommentDTO;
 import avia.cloud.client.dto.management.AccountMDTO;
 import avia.cloud.client.dto.management.AirlineMDTO;
@@ -8,6 +9,7 @@ import avia.cloud.client.service.IAccountService;
 import avia.cloud.client.service.IAirlineService;
 import avia.cloud.client.service.ICommentService;
 import avia.cloud.client.service.ICustomerService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +27,10 @@ public class ManagementController {
     private final IAccountService iAccountService;
     private final ICustomerService iCustomerService;
     private final IAirlineService iAirlineService;
+    @PostMapping()
+    public ResponseEntity<ClientCredentials> createClient(@Valid @RequestBody String name) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(iAirlineService.createClient(name));
+    }
     @GetMapping("/accounts")
     public ResponseEntity<List<AccountMDTO>> fetchCustomer() {
         return ResponseEntity.status(HttpStatus.OK).body(iAccountService.fetchAllAccounts());

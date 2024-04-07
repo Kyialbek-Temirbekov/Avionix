@@ -21,10 +21,6 @@ import java.util.List;
 @Validated
 public class AirlineController {
     private final IAirlineService iAirlineService;
-    @PostMapping()
-    public ResponseEntity<ClientCredentials> createClient(@Valid @RequestBody String name) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(iAirlineService.createClient(name));
-    }
     @PatchMapping()
     public ResponseEntity<ResponseDTO> createAirline(@Valid @RequestBody AirlineDTO airlineDTO) throws IOException {
         iAirlineService.createAirline(airlineDTO);

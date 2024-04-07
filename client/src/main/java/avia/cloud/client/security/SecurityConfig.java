@@ -46,6 +46,16 @@ public class SecurityConfig {
                         .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/airline/**")).hasAuthority("airline:read")
                         .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/airline/**")).hasAuthority("airline:update")
                         .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/airline/**")).hasAuthority("airline:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/comment/**")).hasAuthority("comment:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/comment/**")).hasAuthority("comment:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/comment/**")).hasAuthority("comment:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/comment/**")).hasAuthority("comment:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/management/**")).hasAuthority("management:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/management/**")).hasAuthority("management:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/management/**")).hasAuthority("management:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/management/**")).hasAuthority("management:delete")
                         .anyRequest().permitAll())
                 .addFilterAfter(authenticationFilter, BasicAuthenticationFilter.class)
                 .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))

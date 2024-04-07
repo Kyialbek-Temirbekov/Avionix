@@ -30,20 +30,30 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((requests) -> requests
-//                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/faq/**")).hasAuthority("faq:create")
-//                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/faq/**")).hasAuthority("faq:read")
-//                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/faq/**")).hasAuthority("faq:update")
-//                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/faq/**")).hasAuthority("faq:delete")
-//
-//                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/whyUs/**")).hasAuthority("skyline_benefits:create")
-//                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/whyUs/**")).hasAuthority("skyline_benefits:read")
-//                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/whyUs/**")).hasAuthority("skyline_benefits:update")
-//                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/whyUs/**")).hasAuthority("skyline_benefits:delete")
-//
-//                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/contact/**")).hasAuthority("contact:create")
-//                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/contact/**")).hasAuthority("contact:read")
-//                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/contact/**")).hasAuthority("contact:update")
-//                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/contact/**")).hasAuthority("contact:delete")
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/faq/**")).hasAuthority("faq:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/faq/**")).hasAuthority("faq:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/faq/**")).hasAuthority("faq:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/faq/**")).hasAuthority("faq:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/whyUs/**")).hasAuthority("skyline_benefits:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/whyUs/**")).hasAuthority("skyline_benefits:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/whyUs/**")).hasAuthority("skyline_benefits:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/whyUs/**")).hasAuthority("skyline_benefits:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/contact/**")).hasAuthority("contact:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/contact/**")).hasAuthority("contact:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/contact/**")).hasAuthority("contact:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/contact/**")).hasAuthority("contact:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/termsOfUse/**")).hasAuthority("terms_of_use:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/termsOfUse/**")).hasAuthority("terms_of_use:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/termsOfUse/**")).hasAuthority("terms_of_use:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/termsOfUse/**")).hasAuthority("terms_of_use:delete")
+
+                        .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/privacyPolicy/**")).hasAuthority("privacy_policy:create")
+                        .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/privacyPolicy/**")).hasAuthority("privacy_policy:read")
+                        .requestMatchers(mvc.pattern(HttpMethod.PATCH, "/api/privacyPolicy/**")).hasAuthority("privacy_policy:update")
+                        .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/privacyPolicy/**")).hasAuthority("privacy_policy:delete")
                         .anyRequest().permitAll())
                 .addFilterBefore(authenticationFilter, BasicAuthenticationFilter.class)
                 .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable));

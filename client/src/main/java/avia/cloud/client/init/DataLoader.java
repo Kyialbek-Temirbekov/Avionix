@@ -42,7 +42,7 @@ public class DataLoader implements CommandLineRunner {
         objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
 
-        loadAuthority("/data/avionix-authority.json");
+        loadAuthority("/data/avionix-permission.json");
         loadCustomer("/data/avionix-customer.json");
         loadAirline("/data/avionix-airline.json");
         loadRating("/data/avionix-airline-rating.json");
