@@ -9,6 +9,8 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -19,6 +21,11 @@ public class ContactServiceImpl implements IContactService {
     @Override
     public void createContact(ContactDTO contactDTO) {
         contactRepository.save(convertToContact(contactDTO));
+    }
+
+    @Override
+    public List<Contact> getContacts() {
+        return contactRepository.findAll();
     }
 
     private Contact convertToContact(ContactDTO contactDTO) {

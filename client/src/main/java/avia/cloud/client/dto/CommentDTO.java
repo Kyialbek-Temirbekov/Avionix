@@ -26,7 +26,6 @@ public class CommentDTO {
     @NotNull
     @Max(5)
     private int grade;
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private boolean checked;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @NotNull

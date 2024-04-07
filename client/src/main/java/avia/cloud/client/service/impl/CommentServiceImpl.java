@@ -55,6 +55,19 @@ public class CommentServiceImpl implements ICommentService {
         commentRepository.deleteById(commentId);
     }
 
+    @Override
+    public List<CommentDTO> fetchAllComments() {
+        return commentRepository.findAll().stream().map(this::convertToCommentDTO).toList();
+    }
+
+    @Override
+    public void checkComment(String commentId) {
+        Comment comment = commentRepository.findById(commentId).orElseThrow(() ->
+                new NotFoundException("Comment", "id", commentId));
+        comment.setChecked(true);
+        commentRepository.save(comment);
+    }
+
     private Comment convertToComment(CommentDTO comment) {
         return modelMapper.map(comment, Comment.class);
     }

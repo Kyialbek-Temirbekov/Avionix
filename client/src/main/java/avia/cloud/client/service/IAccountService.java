@@ -4,8 +4,11 @@ import avia.cloud.client.dto.Authorization;
 import avia.cloud.client.dto.PasswordResetInfo;
 import avia.cloud.client.dto.ResponseDTO;
 import avia.cloud.client.dto.VerificationInfo;
+import avia.cloud.client.dto.management.AccountMDTO;
 import avia.cloud.client.entity.Account;
 import org.springframework.security.core.Authentication;
+
+import java.util.List;
 
 public interface IAccountService {
     Authorization confirmEmail(VerificationInfo verificationInfo);
@@ -15,4 +18,7 @@ public interface IAccountService {
     void forgotPassword(String email);
     void resetPassword(PasswordResetInfo passwordResetInfo);
     String findAccountId(String email);
+    List<AccountMDTO> fetchAllAccounts();
+    void lockAccount(String id);
+    void unlockAccount(String id);
 }

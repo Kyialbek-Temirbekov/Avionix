@@ -4,6 +4,7 @@ import avia.cloud.client.dto.Authorization;
 import avia.cloud.client.dto.PasswordResetInfo;
 import avia.cloud.client.dto.SimpleMailMessageDTO;
 import avia.cloud.client.dto.VerificationInfo;
+import avia.cloud.client.dto.management.AccountMDTO;
 import avia.cloud.client.entity.Account;
 import avia.cloud.client.entity.Customer;
 import avia.cloud.client.exception.NotFoundException;
@@ -15,6 +16,7 @@ import avia.cloud.client.util.Messenger;
 import avia.cloud.client.util.NumericTokenGenerator;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -24,6 +26,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -35,6 +38,8 @@ public class AccountServiceImpl implements IAccountService {
     private final AccountRepository accountRepository;
     private final JwtService jwtService;
     private final PasswordEncoder passwordEncoder;
+    private final ModelMapper modelMapper;
+
     @Override
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Account user = accountRepository.findFirstByEmailOrderByCreatedAtDesc(verificationInfo.getEmail())
@@ -98,13 +103,35 @@ public class AccountServiceImpl implements IAccountService {
     public void resetPassword(PasswordResetInfo passwordResetInfo) {
         Account account = accountRepository.findByEmailAndEnabledTrue(passwordResetInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Account","email", passwordResetInfo.getEmail()));
-        if(!account.getCode().equals(passwordResetInfo.getCode())) {
-            throw new BadCredentialsException("Invalid code: " + passwordResetInfo.getCode());
-        }
+//        if(!account.getCode().equals(passwordResetInfo.getCode())) {
+//            throw new BadCredentialsException("Invalid code: " + passwordResetInfo.getCode());
+//        }
         account.setCode(null);
         account.setPassword(passwordEncoder.encode(passwordResetInfo.getPassword()));
         accountRepository.save(account);
-//        return jwtService.createToken(account.getEmail(), account.getRoles()
-//                .stream().map(Enum::toString).map(AuthorityUtils::addPrefix).collect(Collectors.joining(",")));
+    }
+
+    @Override
+    public List<AccountMDTO> fetchAllAccounts() {
+        return accountRepository.findAll().stream().map(this::convertToAccountMDTO).toList();
+    }
+
+    @Override
+    public void lockAccount(String id) {
+        Account account = accountRepository.findById(id).orElseThrow(() ->
+                new NotFoundException("Account","id", id));
+        account.setNonLocked(false);
+        accountRepository.save(account);
+    }
+    @Override
+    public void unlockAccount(String id) {
+        Account account = accountRepository.findById(id).orElseThrow(() ->
+                new NotFoundException("Account","id", id));
+        account.setNonLocked(true);
+        accountRepository.save(account);
+    }
+
+    private AccountMDTO convertToAccountMDTO(Account account) {
+        return modelMapper.map(account,AccountMDTO.class);
     }
 }

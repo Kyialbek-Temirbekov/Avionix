@@ -1,6 +1,7 @@
 package avia.cloud.client.service.impl;
 
 import avia.cloud.client.dto.*;
+import avia.cloud.client.dto.management.CustomerMDTO;
 import avia.cloud.client.entity.Account;
 import avia.cloud.client.entity.Customer;
 import avia.cloud.client.entity.enums.Role;
@@ -101,6 +102,18 @@ public class CustomerServiceImpl implements ICustomerService {
         }
         return jwtService.createToken(email, account.getRoles()
                 .stream().map(Enum::toString).map(AuthorityUtils::addPrefix).collect(Collectors.joining(",")));
+    }
+
+    @Override
+    public CustomerMDTO fetchCustomerM(String id) {
+        return customerRepository.findById(id).map(this::convertToCustomerMDTO).orElseThrow(() ->
+                new NotFoundException("Customer", "id", id));
+    }
+
+    private CustomerMDTO convertToCustomerMDTO(Customer customer) {
+        CustomerMDTO customerMDTO = modelMapper.map(customer, CustomerMDTO.class);
+        customerMDTO.setImageUrl(ImageUtils.getBase64Image(customer.getAccount().getImage()));
+        return customerMDTO;
     }
 
     private Account convertToAccount(AccountDTO accountDTO) {

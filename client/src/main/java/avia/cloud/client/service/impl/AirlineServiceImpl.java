@@ -1,6 +1,7 @@
 package avia.cloud.client.service.impl;
 
 import avia.cloud.client.dto.*;
+import avia.cloud.client.dto.management.AirlineMDTO;
 import avia.cloud.client.dto.records.AirlineName;
 import avia.cloud.client.dto.records.AirlineRatingRecord;
 import avia.cloud.client.entity.Airline;
@@ -129,6 +130,18 @@ public class AirlineServiceImpl implements IAirlineService {
     @Override
     public List<String> findIdsByText(String text) {
         return airlineRepository.findIdsByText(text);
+    }
+
+    @Override
+    public AirlineMDTO fetchAirlineM(String id) {
+        return airlineRepository.findById(id).map(this::convertToAirlineMDTO).orElseThrow(() ->
+                new NotFoundException("Airline","id", id));
+    }
+
+    private AirlineMDTO convertToAirlineMDTO(Airline airline) {
+        AirlineMDTO airlineMDTO = modelMapper.map(airline, AirlineMDTO.class);
+        airlineMDTO.setImageUrl(ImageUtils.getBase64Image(airline.getAccount().getImage()));
+        return airlineMDTO;
     }
 
     private double getRating(short grade, short maxGrade) {

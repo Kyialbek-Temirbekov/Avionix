@@ -10,5 +10,6 @@ public interface ICommentService {
     List<CommentDTO> findCustomerComments(String email);
     void createComment(CommentDTO comment, String email);
     void deleteComment(String commentId);
-
+    List<CommentDTO> fetchAllComments();
+    void checkComment(String commentId);
 }

@@ -2,6 +2,7 @@ package avia.cloud.client.service;
 
 import avia.cloud.client.dto.AirlineDTO;
 import avia.cloud.client.dto.ClientCredentials;
+import avia.cloud.client.dto.management.AirlineMDTO;
 import avia.cloud.client.dto.records.AirlineName;
 import avia.cloud.client.dto.records.AirlineRatingRecord;
 
@@ -17,4 +18,5 @@ public interface IAirlineService {
     List<AirlineRatingRecord> findAirlineRatings();
     String findAirlineName(String id);
     List<String> findIdsByText(String text);
+    AirlineMDTO fetchAirlineM(String id);
 }
