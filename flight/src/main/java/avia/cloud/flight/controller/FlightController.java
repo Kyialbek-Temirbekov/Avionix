@@ -45,8 +45,12 @@ public class FlightController {
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
     @GetMapping("/owner")
-    public ResponseEntity<List<FlightDTO>> fetchOwnerFlights(@RequestHeader("Authorization") String token, @RequestParam @SupportedLanguage String lan) {
-        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.fetchOwnerFlights(token, lan));
+    public ResponseEntity<HashMap<String,Object>> fetchOwnerFlights(@RequestHeader("Authorization") String token,
+                                                             @RequestParam @SupportedLanguage String lan,
+                                                             @RequestParam(defaultValue = "0") @PositiveOrZero int page,
+                                                             @RequestParam(defaultValue = "8") @PositiveOrZero int pageSize,
+                                                             HttpServletRequest request) {
+        return ResponseEntity.status(HttpStatus.OK).body(iFlightService.fetchOwnerFlights(token, lan, page, pageSize,request.getHeader("Original-Url")));
     }
     @GetMapping("/seatDetails/{flightId}")
     public ResponseEntity<HashMap<String, Object>> findPlaneSeatDetails(@PathVariable("flightId") String flightId) {

@@ -44,6 +44,9 @@ public class DataLoader implements CommandLineRunner {
         loadCity("/data/avionix-city.json");
         loadAirplane("/data/avionix-airplane.json");
         loadFlight("/data/avionix-flight.json");
+        loadFlight("/data/avionix-flight-b.json");
+        loadFlight("/data/avionix-flight-f.json");
+        loadFlight("/data/avionix-flight-p.json");
         loadArticle("/data/avionix-article.json");
         loadSpecialDeal("/data/avionix-special-deal.json");
 

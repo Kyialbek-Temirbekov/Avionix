@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cards
-        image: "adpsorcerer/avionix-discovery:r1.4a"
+        image: "adpsorcerer/avionix-discovery:r1.7a"
         imagePullPolicy: Always
         ports:
         - containerPort: 9000

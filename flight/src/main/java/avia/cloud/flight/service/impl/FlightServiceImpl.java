@@ -86,12 +86,23 @@ public class FlightServiceImpl implements IFlightService {
         Pageable pageable = PageRequest.of(page, pageSize, Sort.by(Sort.Direction.fromString(direction),property));
         Page<Flight> flightPage = flightRepository.searchFlights(origin,destination,oneWay,departureDate, adults, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, airlineId, pageable);
         List<FlightDTO> flights = flightPage.getContent().stream().map(flight -> convertToFlightDTO(flight,lan)).toList();
+        return createPagination(flights,page,pageSize,flightPage,url);
+    }
+
+    @Override
+    public HashMap<String, Object> fetchOwnerFlights(String token, String lan, int page, int pageSize, String url) {
+        String customerId = userFeignClient.findAccountId(token).getBody();
+        Page<Flight> flightPage = flightRepository.findByAirlineId(customerId, PageRequest.of(page,pageSize));
+        List<FlightDTO> flights = flightPage.getContent().stream().map(flight -> convertToFlightDTO(flight,lan)).toList();
+        return createPagination(flights, page, pageSize, flightPage, url);
+    }
+
+    private HashMap<String, Object> createPagination(List<FlightDTO> flights, int page, int pageSize, Page<Flight> flightPage, String url) {
         HashMap<String, Object> meta = new HashMap<>();
-        long lastPage = flightPage.getTotalElements()/pageSize;
+        long lastPage = flightPage.getTotalElements()/pageSize - 1;
         meta.put("total", flightPage.getTotalElements());
         meta.put("page", page);
         meta.put("pageSize", pageSize);
-        meta.put("sortType", property);
         meta.put("next", page != lastPage ? getPageUrl(page + 1, url) : null);
         meta.put("prev", page != 0 ? getPageUrl(page -1, url) : null);
         HashMap<String, Object> response = new HashMap<>();
@@ -112,12 +123,6 @@ public class FlightServiceImpl implements IFlightService {
     public FlightDTO fetchFlight(String flightId, String lan) {
         return convertToFlightDTO(flightRepository.findById(flightId).orElseThrow(() ->
                 new NotFoundException("Flight", "id", flightId)),lan);
-    }
-
-    @Override
-    public List<FlightDTO> fetchOwnerFlights(String token, String lan) {
-        String customerId = userFeignClient.findAccountId(token).getBody();
-        return flightRepository.findByAirlineId(customerId).stream().map(flight -> convertToFlightDTO(flight,lan)).toList();
     }
 
     @Override

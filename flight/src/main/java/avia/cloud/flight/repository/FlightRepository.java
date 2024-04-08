@@ -18,7 +18,7 @@ import java.util.Optional;
 public interface FlightRepository extends JpaRepository<Flight,String> {
     @Query("SELECT f FROM Flight f JOIN f.origin.names o JOIN f.destination.names d WHERE f.status = 'READY' AND (LOWER(o.name) LIKE LOWER(concat('%',:text,'%')) OR LOWER(d.name) LIKE LOWER(concat('%',:text,'%'))) OR f.airlineId IN :airlineIds")
     List<Flight> findAllByText(String text, List<String> airlineIds, Pageable pageable);
-    List<Flight> findByAirlineId(String customerId);
+    Page<Flight> findByAirlineId(String customerId, Pageable pageable);
     Optional<Flight> findTopByAirlineIdAndDestinationCode(String airlineId, String destination);
     @Query("SELECT new avia.cloud.flight.dto.PlaneSeatDetail(a.make, a.model, c.cabin, c.seatRow, c.seatCol) FROM Flight f JOIN Airplane a ON f.airplane = a JOIN Class c ON c.airplane = a WHERE f.id = :flightId")
     Optional<PlaneSeatDetail> findPlaneSeatDetails(String flightId);

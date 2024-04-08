@@ -98,6 +98,7 @@ public class GdsService extends RestTemplate {
         }
         Tariff tariff = Tariff.builder()
                 .price(jsonNode.get("price").get("base").asDouble())
+                .baggagePrice(3.22)
                 .cabin(Cabin.valueOf(tariffNode.get("fareDetailsBySegment").get(0).get("cabin").asText()))
                 .checkedBaggageIncluded(true)
                 .cabinBaggageIncluded(true).build();
@@ -115,7 +116,7 @@ public class GdsService extends RestTemplate {
                 .returnTransitDuration(flightService.calculateTransitDuration(returnSegment)).build();
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void dev(String[] args) throws IOException {
         GdsService gdsService = new GdsService();
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
@@ -124,17 +125,36 @@ public class GdsService extends RestTemplate {
         List<Map<String, String>> flightOffers = objectMapper.readValue(inputStream, typeReference);
         List<Flight> flights = new ArrayList<>();
 
+        loadFlights(flights, flightOffers, gdsService, Cabin.ECONOMY.toString());
+        loadFlights(flights, flightOffers, gdsService, Cabin.BUSINESS.toString());
+        loadFlights(flights, flightOffers, gdsService, Cabin.FIRST.toString());
+        loadFlights(flights, flightOffers, gdsService, Cabin.PREMIUM_ECONOMY.toString());
+
+        JsonNode jsonNode = objectMapper.convertValue(flights, JsonNode.class);
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode));
+
+        File outputFile = new File("/home/kyialbek/Projects/spring_workspace/APIs/Avionix/flight/src/main/resources/data/avionix-flight-p.json");
+        try {
+            objectMapper.writeValue(outputFile, jsonNode);
+        } catch (IOException e) {
+            System.err.println("Error writing JSON to file: " + e.getMessage());
+        }
+    }
+
+    private static void loadFlights(List<Flight> flights, List<Map<String, String>> flightOffers, GdsService gdsService, String cabin) {
         flightOffers.forEach(flightOffer -> {
+            System.out.println("To " + flightOffer.get("destinationCode"));
             String originCode = flightOffer.get("originCode");
             String destinationCode = flightOffer.get("destinationCode");
             List<Flight> fetchedFlights = gdsService.fetchFlights(
                     originCode,
                     destinationCode,
-                    LocalDate.of(2024,4,10).toString(),
-                    LocalDate.of(2024,4,14).toString(),
+                    LocalDate.of(2024,4,20).toString(),
+                    LocalDate.of(2024,4,24).toString(),
                     1,
-                    40,
-                    Cabin.BUSINESS.toString()
+                    20,
+                    cabin
             );
             fetchedFlights.forEach(flight -> {
                 flight.getTariff().setFlight(flight);
@@ -151,17 +171,6 @@ public class GdsService extends RestTemplate {
             });
             flights.addAll(fetchedFlights);
         });
-
-        JsonNode jsonNode = objectMapper.convertValue(flights, JsonNode.class);
-        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-        System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode));
-
-        File outputFile = new File("/home/kyialbek/Projects/spring_workspace/APIs/Avionix/flight/src/main/resources/data/avionix-flight.json");
-        try {
-            objectMapper.writeValue(outputFile, jsonNode);
-        } catch (IOException e) {
-            System.err.println("Error writing JSON to file: " + e.getMessage());
-        }
     }
 
 }
