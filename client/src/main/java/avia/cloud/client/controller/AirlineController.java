@@ -34,9 +34,9 @@ public class AirlineController {
     public ResponseEntity<List<AirlineName>> findAirlineNames() {
         return ResponseEntity.status(HttpStatus.OK).body(iAirlineService.findAirlineNames());
     }
-    @GetMapping("/name/{airlineId}")
-    public ResponseEntity<String> findAirlineName(@PathVariable String airlineId) {
-        return ResponseEntity.status(HttpStatus.OK).body(iAirlineService.findAirlineName(airlineId));
+    @GetMapping("/{airlineId}")
+    public ResponseEntity<AirlineDTO> findAirlineName(@PathVariable String airlineId) {
+        return ResponseEntity.status(HttpStatus.OK).body(iAirlineService.findAirlineById(airlineId));
     }
     @GetMapping("/rating")
     public ResponseEntity<List<AirlineRatingRecord>> findAirlineRatings() {

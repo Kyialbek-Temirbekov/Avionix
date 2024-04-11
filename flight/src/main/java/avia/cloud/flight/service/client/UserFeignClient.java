@@ -1,5 +1,6 @@
 package avia.cloud.flight.service.client;
 
+import avia.cloud.flight.dto.AirlineDTO;
 import avia.cloud.flight.dto.AuthorityDTO;
 import avia.cloud.flight.dto.CommentDTO;
 import avia.cloud.flight.dto.CustomerDTO;
@@ -20,10 +21,10 @@ public interface UserFeignClient {
     ResponseEntity<CustomerDTO> fetchCustomer(@PathVariable String customerId, @RequestHeader("Authorization") String token);
     @GetMapping("/api/account/id")
     ResponseEntity<String> findAccountId(@RequestHeader("Authorization") String token);
-    @GetMapping("/api/airline/name/{airlineId}")
-    ResponseEntity<String> findAirlineName(@PathVariable String airlineId);
+    @GetMapping("/api/airline/{airlineId}")
+    ResponseEntity<AirlineDTO> findAirline(@PathVariable String airlineId);
     @GetMapping("/api/airline/ids")
     ResponseEntity<List<String>> findAirlineIds(@RequestParam String text);
     @GetMapping("/api/comment/global")
-    public ResponseEntity<List<CommentDTO>> fetchCommentsByText(@RequestParam String text);
+    ResponseEntity<List<CommentDTO>> fetchCommentsByText(@RequestParam String text);
 }

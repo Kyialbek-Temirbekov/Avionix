@@ -21,7 +21,6 @@ public class AccountDTO {
     @Size(max = 50)
     @Pattern(regexp="\\+\\d+", message="Phone number must start with '+' and contain only digits")
     private String phone;
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private String imageUrl;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private MultipartFile multipartFile;

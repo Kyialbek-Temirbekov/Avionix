@@ -5,7 +5,6 @@ import avia.cloud.flight.dto.FlightDTO;
 import avia.cloud.flight.dto.TicketBookRequest;
 import avia.cloud.flight.dto.TicketDTO;
 import avia.cloud.flight.entity.Ticket;
-import avia.cloud.flight.entity.enums.FlightStatus;
 import avia.cloud.flight.entity.enums.TicketStatus;
 import avia.cloud.flight.exception.BadRequestException;
 import avia.cloud.flight.exception.NotFoundException;

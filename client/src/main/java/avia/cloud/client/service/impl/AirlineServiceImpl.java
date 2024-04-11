@@ -106,8 +106,8 @@ public class AirlineServiceImpl implements IAirlineService {
     }
 
     @Override
-    public String findAirlineName(String id) {
-        return airlineRepository.findById(id).map(Airline::getName).orElseThrow(() ->
+    public AirlineDTO findAirlineById(String id) {
+        return airlineRepository.findById(id).map(this::convertToAirlineDTO).orElseThrow(() ->
                 new NotFoundException("Airline","id", id));
     }
 
@@ -148,7 +148,9 @@ public class AirlineServiceImpl implements IAirlineService {
         return ((double) 10 / maxGrade) * grade;
     }
     private AirlineDTO convertToAirlineDTO(Airline airline) {
-        return modelMapper.map(airline, AirlineDTO.class);
+        AirlineDTO airlineDTO = modelMapper.map(airline, AirlineDTO.class);
+        airlineDTO.getAccount().setImageUrl(ImageUtils.getBase64Image(airline.getAccount().getImage()));
+        return airlineDTO;
     }
 
     private Airline convertToAirline(AirlineDTO airlineDTO) {

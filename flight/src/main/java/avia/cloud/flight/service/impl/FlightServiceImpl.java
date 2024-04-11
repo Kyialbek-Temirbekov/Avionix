@@ -169,7 +169,9 @@ public class FlightServiceImpl implements IFlightService {
 
     public FlightDTO convertToFlightDTO(Flight flight, String lan) {
         FlightDTO flightDTO = modelMapper.map(flight, FlightDTO.class);
-        flightDTO.setAirline(userFeignClient.findAirlineName(flight.getAirlineId()).getBody());
+        AirlineDTO airlineDTO = userFeignClient.findAirline(flight.getAirlineId()).getBody();
+        flightDTO.setAirline(airlineDTO.getName());
+        flightDTO.setAirlineImageUrl(airlineDTO.getAccount().getImageUrl());
         flightDTO.setDepartureTrip(new Itinerary(
                 flight.getDepartureFlightDuration(),
                 flight.getDepartureTransitDuration(),
