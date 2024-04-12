@@ -30,6 +30,7 @@ import java.util.Map;
 
 public class GdsService extends RestTemplate {
     private static final String flightOffersSearchApi = "https://test.api.amadeus.com/v2/shopping/flight-offers";
+    public static int number = 599;
 
     private final GdsTokenProvider tokenProvider = new GdsTokenProvider();
     private final FlightServiceImpl flightService = new FlightServiceImpl(null, null, null,null,null,null,null,null);
@@ -125,9 +126,9 @@ public class GdsService extends RestTemplate {
         List<Map<String, String>> flightOffers = objectMapper.readValue(inputStream, typeReference);
         List<Flight> flights = new ArrayList<>();
 
-        loadFlights(flights, flightOffers, gdsService, Cabin.ECONOMY.toString());
-        loadFlights(flights, flightOffers, gdsService, Cabin.BUSINESS.toString());
-        loadFlights(flights, flightOffers, gdsService, Cabin.FIRST.toString());
+//        loadFlights(flights, flightOffers, gdsService, Cabin.ECONOMY.toString());
+//        loadFlights(flights, flightOffers, gdsService, Cabin.BUSINESS.toString());
+//        loadFlights(flights, flightOffers, gdsService, Cabin.FIRST.toString());
         loadFlights(flights, flightOffers, gdsService, Cabin.PREMIUM_ECONOMY.toString());
 
         JsonNode jsonNode = objectMapper.convertValue(flights, JsonNode.class);
@@ -161,6 +162,7 @@ public class GdsService extends RestTemplate {
                 flight.getDepartureSegment().forEach(segment -> segment.setDepartureFlight(flight));
                 flight.getReturnSegment().forEach(segment -> segment.setReturnFlight(flight));
                 flight.setAirlineId(flightOffer.get("airlineId"));
+                flight.setNumber(flightOffer.get("iata") + GdsService.number++);
                 City origin = new City();
                 origin.setCode(originCode);
                 flight.setOrigin(origin);

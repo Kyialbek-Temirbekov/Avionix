@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flight
-        image: "adpsorcerer/avionix-flight:r1.8a"
+        image: "adpsorcerer/avionix-flight:r1.11a"
         imagePullPolicy: Always
         ports:
         - containerPort: 8090

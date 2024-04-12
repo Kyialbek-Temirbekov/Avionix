@@ -25,6 +25,7 @@ public class Flight extends BaseEntity {
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private String id;
     private String airlineId;
+    private String number;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "airplane_id", referencedColumnName = "id")
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)

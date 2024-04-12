@@ -5,6 +5,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG599",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -47,7 +48,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -66,6 +67,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG600",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -108,7 +110,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -127,6 +129,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG601",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -169,7 +172,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -188,6 +191,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG602",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -230,7 +234,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -249,6 +253,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG603",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -291,7 +296,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -310,6 +315,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG604",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -352,7 +358,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -371,6 +377,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG605",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -413,7 +420,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -432,6 +439,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG606",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -474,7 +482,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -493,6 +501,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG607",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -535,7 +544,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -554,6 +563,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG608",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -596,7 +606,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -615,6 +625,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG609",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -657,7 +668,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -676,6 +687,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG610",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -718,7 +730,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -737,6 +749,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG611",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -779,7 +792,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -798,6 +811,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG612",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -840,7 +854,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -859,6 +873,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG613",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -901,7 +916,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -920,6 +935,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG614",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -962,7 +978,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -981,6 +997,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG615",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1023,7 +1040,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1042,6 +1059,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG616",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1084,7 +1102,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1103,6 +1121,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG617",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1145,7 +1164,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1164,6 +1183,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG618",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1206,7 +1226,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1225,6 +1245,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG619",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1267,7 +1288,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1286,6 +1307,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG620",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1328,7 +1350,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1347,6 +1369,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG621",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1389,7 +1412,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1408,6 +1431,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG622",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1450,7 +1474,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1469,6 +1493,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG623",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1511,7 +1536,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1530,6 +1555,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG624",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1572,7 +1598,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1591,6 +1617,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG625",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1633,7 +1660,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1652,6 +1679,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG626",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1694,7 +1722,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1713,6 +1741,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG627",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1755,7 +1784,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1774,6 +1803,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG628",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1816,7 +1846,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1835,6 +1865,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG629",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1877,7 +1908,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1896,6 +1927,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG630",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1938,7 +1970,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -1957,6 +1989,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG631",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -1999,7 +2032,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2018,6 +2051,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG632",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2060,7 +2094,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2079,6 +2113,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG633",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2121,7 +2156,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2140,6 +2175,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG634",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2182,7 +2218,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2201,6 +2237,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG635",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2243,7 +2280,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2262,6 +2299,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG636",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2304,7 +2342,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2323,6 +2361,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG637",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2365,7 +2404,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2384,6 +2423,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG638",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2426,7 +2466,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2445,6 +2485,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG639",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2487,7 +2528,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2506,6 +2547,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG640",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2548,7 +2590,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2567,6 +2609,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG641",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2609,7 +2652,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2628,6 +2671,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG642",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2670,7 +2714,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2689,6 +2733,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG643",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2731,7 +2776,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2750,6 +2795,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG644",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2792,7 +2838,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2811,6 +2857,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG645",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2853,7 +2900,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2872,6 +2919,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG646",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2914,7 +2962,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2933,6 +2981,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG647",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -2975,7 +3024,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -2994,6 +3043,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG648",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3036,7 +3086,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3055,6 +3105,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG649",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3097,7 +3148,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3116,6 +3167,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG650",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3158,7 +3210,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3177,6 +3229,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG651",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3219,7 +3272,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3238,6 +3291,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG652",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3280,7 +3334,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3299,6 +3353,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG653",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3341,7 +3396,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3360,6 +3415,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG654",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3402,7 +3458,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3421,6 +3477,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG655",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3463,7 +3520,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3482,6 +3539,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG656",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3524,7 +3582,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3543,6 +3601,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG657",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3585,7 +3644,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3604,6 +3663,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "623e4567-e89b-12d3-a456-556642440005",
+  "number" : "AG658",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3646,7 +3706,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3665,6 +3725,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR659",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3707,7 +3768,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3726,6 +3787,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR660",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3768,7 +3830,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3787,6 +3849,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR661",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3829,7 +3892,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3848,6 +3911,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR662",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3890,7 +3954,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3909,6 +3973,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR663",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -3951,7 +4016,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -3970,6 +4035,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR664",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4012,7 +4078,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4031,6 +4097,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR665",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4073,7 +4140,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4092,6 +4159,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR666",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4134,7 +4202,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4153,6 +4221,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR667",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4195,7 +4264,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4214,6 +4283,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR668",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4256,7 +4326,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4275,6 +4345,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR669",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4317,7 +4388,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4336,6 +4407,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR670",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4378,7 +4450,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4397,6 +4469,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR671",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4439,7 +4512,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4458,6 +4531,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR672",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4500,7 +4574,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4519,6 +4593,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR673",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4561,7 +4636,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4580,6 +4655,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR674",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4622,7 +4698,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4641,6 +4717,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR675",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4683,7 +4760,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4702,6 +4779,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR676",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4744,7 +4822,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4763,6 +4841,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR677",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4805,7 +4884,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4824,6 +4903,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR678",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4866,7 +4946,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4885,6 +4965,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR679",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4927,7 +5008,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -4946,6 +5027,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR680",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -4988,7 +5070,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5007,6 +5089,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR681",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5049,7 +5132,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5068,6 +5151,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR682",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5110,7 +5194,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5129,6 +5213,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR683",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5171,7 +5256,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5190,6 +5275,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR684",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5232,7 +5318,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5251,6 +5337,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR685",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5293,7 +5380,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5312,6 +5399,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR686",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5354,7 +5442,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5373,6 +5461,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR687",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5415,7 +5504,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5434,6 +5523,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR688",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5476,7 +5566,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5495,6 +5585,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR689",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5537,7 +5628,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5556,6 +5647,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR690",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5598,7 +5690,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5617,6 +5709,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR691",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5659,7 +5752,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5678,6 +5771,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR692",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5720,7 +5814,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5739,6 +5833,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR693",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5781,7 +5876,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5800,6 +5895,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR694",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5842,7 +5938,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5861,6 +5957,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR695",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5903,7 +6000,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5922,6 +6019,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR696",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -5964,7 +6062,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -5983,6 +6081,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR697",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6025,7 +6124,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6044,6 +6143,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR698",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6086,7 +6186,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6105,6 +6205,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR699",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6147,7 +6248,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6166,6 +6267,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR700",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6208,7 +6310,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6227,6 +6329,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR701",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6269,7 +6372,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6288,6 +6391,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR702",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6330,7 +6434,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6349,6 +6453,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR703",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6391,7 +6496,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6410,6 +6515,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR704",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6452,7 +6558,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6471,6 +6577,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR705",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6513,7 +6620,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6532,6 +6639,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR706",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6574,7 +6682,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6593,6 +6701,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR707",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6635,7 +6744,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6654,6 +6763,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR708",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6696,7 +6806,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6715,6 +6825,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR709",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6757,7 +6868,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6776,6 +6887,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR710",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6818,7 +6930,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6837,6 +6949,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR711",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6879,7 +6992,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6898,6 +7011,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR712",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -6940,7 +7054,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -6959,6 +7073,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR713",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7001,7 +7116,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7020,6 +7135,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR714",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7062,7 +7178,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7081,6 +7197,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR715",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7123,7 +7240,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7142,6 +7259,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR716",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7184,7 +7302,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7203,6 +7321,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR717",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7245,7 +7364,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7264,6 +7383,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "523e4567-e89b-12d3-a456-556642440004",
+  "number" : "QR718",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7306,7 +7426,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7325,6 +7445,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY719",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7367,7 +7488,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7386,6 +7507,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY720",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7428,7 +7550,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7447,6 +7569,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY721",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7489,7 +7612,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7508,6 +7631,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY722",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7550,7 +7674,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7569,6 +7693,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY723",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7611,7 +7736,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7630,6 +7755,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY724",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7672,7 +7798,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7691,6 +7817,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY725",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7733,7 +7860,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7752,6 +7879,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY726",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7794,7 +7922,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7813,6 +7941,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY727",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7855,7 +7984,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7874,6 +8003,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY728",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7916,7 +8046,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7935,6 +8065,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY729",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -7977,7 +8108,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -7996,6 +8127,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY730",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8038,7 +8170,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8057,6 +8189,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY731",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8099,7 +8232,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8118,6 +8251,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY732",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8160,7 +8294,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8179,6 +8313,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY733",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8221,7 +8356,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8240,6 +8375,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY734",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8282,7 +8418,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8301,6 +8437,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY735",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8343,7 +8480,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8362,6 +8499,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY736",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8404,7 +8542,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8423,6 +8561,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY737",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8465,7 +8604,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8484,6 +8623,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY738",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8526,7 +8666,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8545,6 +8685,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY739",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8587,7 +8728,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8606,6 +8747,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY740",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8648,7 +8790,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8667,6 +8809,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY741",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8709,7 +8852,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8728,6 +8871,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY742",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8770,7 +8914,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8789,6 +8933,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY743",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8831,7 +8976,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8850,6 +8995,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY744",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8892,7 +9038,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8911,6 +9057,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY745",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -8953,7 +9100,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -8972,6 +9119,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY746",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9014,7 +9162,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9033,6 +9181,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY747",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9075,7 +9224,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9094,6 +9243,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY748",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9136,7 +9286,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9155,6 +9305,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY749",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9197,7 +9348,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9216,6 +9367,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY750",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9258,7 +9410,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9277,6 +9429,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY751",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9319,7 +9472,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9338,6 +9491,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY752",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9380,7 +9534,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9399,6 +9553,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY753",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9441,7 +9596,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9460,6 +9615,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY754",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9502,7 +9658,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9521,6 +9677,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY755",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9563,7 +9720,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9582,6 +9739,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY756",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9624,7 +9782,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9643,6 +9801,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY757",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9685,7 +9844,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9704,6 +9863,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY758",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9746,7 +9906,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9765,6 +9925,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY759",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9807,7 +9968,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9826,6 +9987,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY760",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9868,7 +10030,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9887,6 +10049,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY761",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9929,7 +10092,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -9948,6 +10111,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY762",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -9990,7 +10154,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10009,6 +10173,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY763",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10051,7 +10216,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10070,6 +10235,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY764",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10112,7 +10278,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10131,6 +10297,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY765",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10173,7 +10340,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10192,6 +10359,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY766",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10234,7 +10402,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10253,6 +10421,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY767",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10295,7 +10464,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10314,6 +10483,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY768",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10356,7 +10526,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10375,6 +10545,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY769",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10417,7 +10588,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10436,6 +10607,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY770",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10478,7 +10650,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10497,6 +10669,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY771",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10539,7 +10712,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10558,6 +10731,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY772",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10600,7 +10774,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10619,6 +10793,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY773",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10661,7 +10836,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10680,6 +10855,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY774",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10722,7 +10898,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10741,6 +10917,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY775",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10783,7 +10960,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10802,6 +10979,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY776",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10844,7 +11022,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10863,6 +11041,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY777",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10905,7 +11084,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10924,6 +11103,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "423e4567-e89b-12d3-a456-556642440003",
+  "number" : "EY778",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -10966,7 +11146,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -10985,6 +11165,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW779",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11027,7 +11208,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11046,6 +11227,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW780",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11088,7 +11270,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11107,6 +11289,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW781",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11149,7 +11332,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11168,6 +11351,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW782",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11210,7 +11394,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11229,6 +11413,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW783",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11271,7 +11456,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11290,6 +11475,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW784",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11332,7 +11518,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11351,6 +11537,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW785",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11393,7 +11580,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11412,6 +11599,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW786",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11454,7 +11642,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11473,6 +11661,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW787",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11515,7 +11704,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11534,6 +11723,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW788",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11576,7 +11766,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11595,6 +11785,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW789",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11637,7 +11828,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11656,6 +11847,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW790",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11698,7 +11890,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11717,6 +11909,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW791",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11759,7 +11952,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11778,6 +11971,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW792",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11820,7 +12014,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11839,6 +12033,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW793",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11881,7 +12076,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11900,6 +12095,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW794",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -11942,7 +12138,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -11961,6 +12157,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW795",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12003,7 +12200,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12022,6 +12219,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW796",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12064,7 +12262,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12083,6 +12281,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW797",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12125,7 +12324,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12144,6 +12343,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW798",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12186,7 +12386,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12205,6 +12405,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW799",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12247,7 +12448,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12266,6 +12467,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW800",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12308,7 +12510,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12327,6 +12529,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW801",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12369,7 +12572,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12388,6 +12591,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW802",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12430,7 +12634,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12449,6 +12653,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW803",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12491,7 +12696,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12510,6 +12715,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW804",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12552,7 +12758,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12571,6 +12777,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW805",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12613,7 +12820,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12632,6 +12839,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW806",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12674,7 +12882,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12693,6 +12901,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW807",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12735,7 +12944,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12754,6 +12963,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW808",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12796,7 +13006,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12815,6 +13025,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW809",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12857,7 +13068,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12876,6 +13087,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW810",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12918,7 +13130,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12937,6 +13149,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW811",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -12979,7 +13192,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -12998,6 +13211,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW812",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13040,7 +13254,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13059,6 +13273,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW813",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13101,7 +13316,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13120,6 +13335,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW814",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13162,7 +13378,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13181,6 +13397,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW815",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13223,7 +13440,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13242,6 +13459,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW816",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13284,7 +13502,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13303,6 +13521,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW817",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13345,7 +13564,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13364,6 +13583,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW818",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13406,7 +13626,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13425,6 +13645,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW819",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13467,7 +13688,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13486,6 +13707,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW820",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13528,7 +13750,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13547,6 +13769,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW821",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13589,7 +13812,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13608,6 +13831,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW822",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13650,7 +13874,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13669,6 +13893,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW823",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13711,7 +13936,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13730,6 +13955,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW824",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13772,7 +13998,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13791,6 +14017,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW825",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13833,7 +14060,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13852,6 +14079,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW826",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13894,7 +14122,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13913,6 +14141,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW827",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -13955,7 +14184,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -13974,6 +14203,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW828",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14016,7 +14246,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14035,6 +14265,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW829",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14077,7 +14308,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14096,6 +14327,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW830",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14138,7 +14370,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14157,6 +14389,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW831",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14199,7 +14432,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14218,6 +14451,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW832",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14260,7 +14494,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14279,6 +14513,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW833",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14321,7 +14556,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14340,6 +14575,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW834",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14382,7 +14618,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14401,6 +14637,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW835",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14443,7 +14680,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14462,6 +14699,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW836",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14504,7 +14742,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14523,6 +14761,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW837",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14565,7 +14804,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14584,6 +14823,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "323e4567-e89b-12d3-a456-556642440002",
+  "number" : "EW838",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14626,7 +14866,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14645,6 +14885,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH839",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14687,7 +14928,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14706,6 +14947,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH840",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14748,7 +14990,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14767,6 +15009,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH841",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14809,7 +15052,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14828,6 +15071,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH842",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14870,7 +15114,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14889,6 +15133,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH843",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14931,7 +15176,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -14950,6 +15195,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH844",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -14992,7 +15238,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15011,6 +15257,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH845",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15053,7 +15300,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15072,6 +15319,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH846",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15114,7 +15362,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15133,6 +15381,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH847",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15175,7 +15424,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15194,6 +15443,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH848",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15236,7 +15486,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15255,6 +15505,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH849",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15297,7 +15548,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15316,6 +15567,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH850",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15358,7 +15610,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15377,6 +15629,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH851",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15419,7 +15672,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15438,6 +15691,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH852",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15480,7 +15734,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15499,6 +15753,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH853",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15541,7 +15796,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15560,6 +15815,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH854",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15602,7 +15858,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15621,6 +15877,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH855",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15663,7 +15920,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15682,6 +15939,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH856",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15724,7 +15982,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15743,6 +16001,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH857",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15785,7 +16044,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15804,6 +16063,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH858",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15846,7 +16106,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15865,6 +16125,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH859",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15907,7 +16168,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15926,6 +16187,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH860",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -15968,7 +16230,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -15987,6 +16249,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH861",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16029,7 +16292,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16048,6 +16311,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH862",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16090,7 +16354,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16109,6 +16373,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH863",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16151,7 +16416,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16170,6 +16435,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH864",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16212,7 +16478,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16231,6 +16497,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH865",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16273,7 +16540,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16292,6 +16559,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH866",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16334,7 +16602,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16353,6 +16621,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH867",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16395,7 +16664,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16414,6 +16683,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH868",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16456,7 +16726,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16475,6 +16745,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH869",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16517,7 +16788,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16536,6 +16807,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH870",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16578,7 +16850,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16597,6 +16869,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH871",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16639,7 +16912,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16658,6 +16931,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH872",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16700,7 +16974,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16719,6 +16993,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH873",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16761,7 +17036,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16780,6 +17055,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH874",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16822,7 +17098,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16841,6 +17117,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH875",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16883,7 +17160,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16902,6 +17179,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH876",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -16944,7 +17222,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -16963,6 +17241,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH877",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17005,7 +17284,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17024,6 +17303,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH878",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17066,7 +17346,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17085,6 +17365,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH879",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17127,7 +17408,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17146,6 +17427,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH880",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17188,7 +17470,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17207,6 +17489,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH881",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17249,7 +17532,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17268,6 +17551,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH882",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17310,7 +17594,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17329,6 +17613,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH883",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17371,7 +17656,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17390,6 +17675,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH884",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17432,7 +17718,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17451,6 +17737,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH885",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17493,7 +17780,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17512,6 +17799,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH886",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17554,7 +17842,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17573,6 +17861,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH887",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17615,7 +17904,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17634,6 +17923,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH888",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17676,7 +17966,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17695,6 +17985,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH889",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17737,7 +18028,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17756,6 +18047,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH890",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17798,7 +18090,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17817,6 +18109,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH891",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17859,7 +18152,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17878,6 +18171,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH892",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17920,7 +18214,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -17939,6 +18233,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH893",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -17981,7 +18276,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18000,6 +18295,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH894",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18042,7 +18338,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18061,6 +18357,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH895",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18103,7 +18400,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18122,6 +18419,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH896",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18164,7 +18462,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18183,6 +18481,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH897",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18225,7 +18524,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18244,6 +18543,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "223e4567-e89b-12d3-a456-556642440001",
+  "number" : "NH898",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18286,7 +18586,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18305,6 +18605,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO899",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18347,7 +18648,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18366,6 +18667,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO900",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18408,7 +18710,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18427,6 +18729,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO901",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18469,7 +18772,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18488,6 +18791,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO902",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18530,7 +18834,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18549,6 +18853,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO903",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18591,7 +18896,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18610,6 +18915,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO904",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18652,7 +18958,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18671,6 +18977,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO905",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18713,7 +19020,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18732,6 +19039,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO906",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18774,7 +19082,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18793,6 +19101,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO907",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18835,7 +19144,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18854,6 +19163,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO908",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18896,7 +19206,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18915,6 +19225,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO909",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -18957,7 +19268,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -18976,6 +19287,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO910",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19018,7 +19330,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19037,6 +19349,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO911",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19079,7 +19392,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19098,6 +19411,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO912",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19140,7 +19454,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 818.0,
+    "price" : 813.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19159,6 +19473,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO913",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19201,7 +19516,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19220,6 +19535,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO914",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19262,7 +19578,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19281,6 +19597,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO915",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19323,7 +19640,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19342,6 +19659,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO916",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19384,7 +19702,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19403,6 +19721,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO917",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19445,7 +19764,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19464,6 +19783,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO918",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19506,7 +19826,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1345.0,
+    "price" : 1337.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19525,6 +19845,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO919",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19567,7 +19888,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19586,6 +19907,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO920",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19628,7 +19950,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19647,6 +19969,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO921",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19689,7 +20012,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19708,6 +20031,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO922",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19750,7 +20074,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19769,6 +20093,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO923",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19811,7 +20136,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19830,6 +20155,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO924",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19872,7 +20198,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19891,6 +20217,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO925",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19933,7 +20260,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -19952,6 +20279,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO926",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -19994,7 +20322,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20013,6 +20341,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO927",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20055,7 +20384,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20074,6 +20403,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO928",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20116,7 +20446,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20135,6 +20465,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO929",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20177,7 +20508,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20196,6 +20527,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO930",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20238,7 +20570,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20257,6 +20589,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO931",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20299,7 +20632,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20318,6 +20651,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO932",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20360,7 +20694,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20379,6 +20713,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO933",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20421,7 +20756,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20440,6 +20775,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO934",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20482,7 +20818,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20501,6 +20837,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO935",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20543,7 +20880,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20562,6 +20899,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO936",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20604,7 +20942,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20623,6 +20961,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO937",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20665,7 +21004,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20684,6 +21023,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO938",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20726,7 +21066,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1775.0,
+    "price" : 1765.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20745,6 +21085,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO939",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20787,7 +21128,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20806,6 +21147,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO940",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20848,7 +21190,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20867,6 +21209,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO941",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20909,7 +21252,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20928,6 +21271,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO942",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -20970,7 +21314,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -20989,6 +21333,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO943",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21031,7 +21376,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21050,6 +21395,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO944",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21092,7 +21438,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21111,6 +21457,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO945",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21153,7 +21500,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21172,6 +21519,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO946",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21214,7 +21562,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21233,6 +21581,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO947",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21275,7 +21624,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21294,6 +21643,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO948",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21336,7 +21686,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21355,6 +21705,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO949",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21397,7 +21748,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 962.0,
+    "price" : 956.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21416,6 +21767,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO950",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21458,7 +21810,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21477,6 +21829,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO951",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21519,7 +21872,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21538,6 +21891,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO952",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21580,7 +21934,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21599,6 +21953,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO953",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21641,7 +21996,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21660,6 +22015,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO954",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21702,7 +22058,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21721,6 +22077,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO955",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21763,7 +22120,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21782,6 +22139,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO956",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21824,7 +22182,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21843,6 +22201,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO957",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21885,7 +22244,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,
@@ -21904,6 +22263,7 @@
   "updatedBy" : null,
   "id" : null,
   "airlineId" : "123e4567-e89b-12d3-a456-556642440000",
+  "number" : "LO958",
   "airplane" : null,
   "departureSegment" : [ {
     "id" : null,
@@ -21946,7 +22306,7 @@
   "tariff" : {
     "id" : null,
     "cabin" : "PREMIUM_ECONOMY",
-    "price" : 1419.0,
+    "price" : 1411.0,
     "baggagePrice" : 3.22,
     "discount" : 0,
     "checkedBaggageIncluded" : true,

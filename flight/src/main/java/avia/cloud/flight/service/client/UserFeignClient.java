@@ -27,4 +27,6 @@ public interface UserFeignClient {
     ResponseEntity<List<String>> findAirlineIds(@RequestParam String text);
     @GetMapping("/api/comment/global")
     ResponseEntity<List<CommentDTO>> fetchCommentsByText(@RequestParam String text);
+    @GetMapping("/api/airline")
+    ResponseEntity<AirlineDTO> fetchCustomer(@RequestHeader("Authorization") String token);
 }

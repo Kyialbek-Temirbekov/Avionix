@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 public class FlightDTO {
     private String id;
     private String airline;
+    private String number;
     private String airlineImageUrl;
     private boolean oneWay;
     private String from;

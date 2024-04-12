@@ -11,7 +11,6 @@ import org.springframework.web.multipart.MultipartFile;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AccountDTO {
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private String id;
     @Email
     @Size(max = 50)

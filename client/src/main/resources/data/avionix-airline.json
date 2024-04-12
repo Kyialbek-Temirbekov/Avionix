@@ -1,7 +1,7 @@
 [ {
   "baseId" : null,
-  "iata" : "PVG",
-  "name" : "PUDONG INTL",
+  "iata" : "LO",
+  "name" : "POLISH AIRLINES",
   "cityCode" : "SHA",
   "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/APVG",
   "description" : "SHANGHAI/CN:PUDONG INTL",
@@ -26,8 +26,8 @@
   }
 }, {
   "baseId" : null,
-  "iata" : "ORD",
-  "name" : "O HARE INTERNATIONAL",
+  "iata" : "NH",
+  "name" : "INSPIRATION OF JAPAN",
   "cityCode" : "CHI",
   "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/AORD",
   "description" : "CHICAGO/IL/US:O HARE INTERNATI",
@@ -52,8 +52,8 @@
   }
 }, {
   "baseId" : null,
-  "iata" : "LHR",
-  "name" : "HEATHROW",
+  "iata" : "EW",
+  "name" : "EUROWINGS",
   "cityCode" : "LON",
   "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/ALHR",
   "description" : "LONDON/GB:HEATHROW",
@@ -78,8 +78,8 @@
   }
 }, {
   "baseId" : null,
-  "iata" : "IST",
-  "name" : "ISTANBUL AIRPORT",
+  "iata" : "EY",
+  "name" : "ETIHAD",
   "cityCode" : "IST",
   "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/AIST",
   "description" : "ISTANBUL/TR:ISTANBUL AIRPORT",
@@ -104,8 +104,8 @@
   }
 }, {
   "baseId" : null,
-  "iata" : "CDG",
-  "name" : "CHARLES DE GAULLE",
+  "iata" : "QR",
+  "name" : "QATAR AIRWAYS",
   "cityCode" : "PAR",
   "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/ACDG",
   "description" : "PARIS/FR:CHARLES DE GAULLE",
@@ -130,8 +130,8 @@
   }
 }, {
   "baseId" : null,
-  "iata" : "LAX",
-  "name" : "LOS ANGELES INTL",
+  "iata" : "AG",
+  "name" : "AUSTRIAN",
   "cityCode" : "LAX",
   "officialWebsiteUrl" : "https://test.api.amadeus.com/v1/reference-data/locations/ALAX",
   "description" : "LOS ANGELES/CA/US:LOS ANGELES",

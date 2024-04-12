@@ -14,7 +14,7 @@ import lombok.*;
 public class AirlineDTO {
     @NotNull
     @NotBlank
-    @Size(min = 3, max = 3)
+    @Size(min = 2, max = 2)
     private String iata;
     @NotNull
     @NotBlank

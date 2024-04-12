@@ -1,16 +1,19 @@
 [
   {
     "airlineId": "623e4567-e89b-12d3-a456-556642440005",
+    "iata": "AG",
     "originCode": "SHA",
     "destinationCode": "LON"
   },
   {
     "airlineId": "623e4567-e89b-12d3-a456-556642440005",
+    "iata": "AG",
     "originCode": "SHA",
     "destinationCode": "IST"
   },
   {
     "airlineId": "623e4567-e89b-12d3-a456-556642440005",
+    "iata": "AG",
     "originCode": "SHA",
     "destinationCode": "PAR"
   },
@@ -19,16 +22,19 @@
 
   {
     "airlineId": "523e4567-e89b-12d3-a456-556642440004",
+    "iata": "QR",
     "originCode": "SHA",
     "destinationCode": "LON"
   },
   {
     "airlineId": "523e4567-e89b-12d3-a456-556642440004",
+    "iata": "QR",
     "originCode": "SHA",
     "destinationCode": "IST"
   },
   {
     "airlineId": "523e4567-e89b-12d3-a456-556642440004",
+    "iata": "QR",
     "originCode": "SHA",
     "destinationCode": "PAR"
   },
@@ -37,16 +43,19 @@
 
   {
     "airlineId": "423e4567-e89b-12d3-a456-556642440003",
+    "iata": "EY",
     "originCode": "SHA",
     "destinationCode": "LON"
   },
   {
     "airlineId": "423e4567-e89b-12d3-a456-556642440003",
+    "iata": "EY",
     "originCode": "SHA",
     "destinationCode": "IST"
   },
   {
     "airlineId": "423e4567-e89b-12d3-a456-556642440003",
+    "iata": "EY",
     "originCode": "SHA",
     "destinationCode": "PAR"
   },
@@ -55,16 +64,19 @@
 
   {
     "airlineId": "323e4567-e89b-12d3-a456-556642440002",
+    "iata": "EW",
     "originCode": "SHA",
     "destinationCode": "LON"
   },
   {
     "airlineId": "323e4567-e89b-12d3-a456-556642440002",
+    "iata": "EW",
     "originCode": "SHA",
     "destinationCode": "IST"
   },
   {
     "airlineId": "323e4567-e89b-12d3-a456-556642440002",
+    "iata": "EW",
     "originCode": "SHA",
     "destinationCode": "PAR"
   },
@@ -73,16 +85,19 @@
 
   {
     "airlineId": "223e4567-e89b-12d3-a456-556642440001",
+    "iata": "NH",
     "originCode": "SHA",
     "destinationCode": "LON"
   },
   {
     "airlineId": "223e4567-e89b-12d3-a456-556642440001",
+    "iata": "NH",
     "originCode": "SHA",
     "destinationCode": "IST"
   },
   {
     "airlineId": "223e4567-e89b-12d3-a456-556642440001",
+    "iata": "NH",
     "originCode": "SHA",
     "destinationCode": "PAR"
   },
@@ -91,16 +106,19 @@
 
   {
     "airlineId": "123e4567-e89b-12d3-a456-556642440000",
+    "iata": "LO",
     "originCode": "SHA",
     "destinationCode": "LON"
   },
   {
     "airlineId": "123e4567-e89b-12d3-a456-556642440000",
+    "iata": "LO",
     "originCode": "SHA",
     "destinationCode": "IST"
   },
   {
     "airlineId": "123e4567-e89b-12d3-a456-556642440000",
+    "iata": "LO",
     "originCode": "SHA",
     "destinationCode": "PAR"
   }
