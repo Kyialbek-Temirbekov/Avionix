@@ -132,7 +132,7 @@ public class DataLoader implements CommandLineRunner {
     private List<Ticket> createSimpleTickets() {
         Ticket ticket1 = Ticket.builder()
                 .customerId("00000000-0000-0000-0000-000000000000")
-                .seat("A1")
+                .seat("1A")
                 .checkedBaggageIncluded(true)
                 .price(100.0)
                 .status(TicketStatus.RESERVED)
@@ -140,7 +140,7 @@ public class DataLoader implements CommandLineRunner {
 
         Ticket ticket2 = Ticket.builder()
                 .customerId("00000000-0000-0000-0000-000000000000")
-                .seat("A3")
+                .seat("3A")
                 .checkedBaggageIncluded(false)
                 .price(200.0)
                 .status(TicketStatus.RESERVED)
@@ -148,7 +148,7 @@ public class DataLoader implements CommandLineRunner {
 
         Ticket ticket3 = Ticket.builder()
                 .customerId("00000000-0000-0000-0000-000000000000")
-                .seat("B3")
+                .seat("3B")
                 .checkedBaggageIncluded(true)
                 .price(150.0)
                 .status(TicketStatus.RESERVED)
@@ -156,7 +156,7 @@ public class DataLoader implements CommandLineRunner {
 
         Ticket ticket4 = Ticket.builder()
                 .customerId("00000000-0000-0000-0000-000000000000")
-                .seat("A5")
+                .seat("5A")
                 .checkedBaggageIncluded(false)
                 .price(120.0)
                 .status(TicketStatus.RESERVED)
@@ -164,7 +164,7 @@ public class DataLoader implements CommandLineRunner {
 
         Ticket ticket5 = Ticket.builder()
                 .customerId("00000000-0000-0000-0000-000000000000")
-                .seat("A7")
+                .seat("7A")
                 .checkedBaggageIncluded(true)
                 .price(250.0)
                 .status(TicketStatus.RESERVED)
@@ -172,7 +172,7 @@ public class DataLoader implements CommandLineRunner {
 
         Ticket ticket6 = Ticket.builder()
                 .customerId("00000000-0000-0000-0000-000000000000")
-                .seat("D8")
+                .seat("8D")
                 .checkedBaggageIncluded(false)
                 .price(110.0)
                 .status(TicketStatus.RESERVED)

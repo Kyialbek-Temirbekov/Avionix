@@ -6,6 +6,7 @@ import avia.cloud.flight.dto.CommentDTO;
 import avia.cloud.flight.dto.CustomerDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -18,7 +19,7 @@ public interface UserFeignClient {
     @GetMapping("/api/authority")
     List<AuthorityDTO> fetchAuthorities(@RequestParam String authorities);
     @GetMapping("/api/customer/{customerId}")
-    ResponseEntity<CustomerDTO> fetchCustomer(@PathVariable String customerId, @RequestHeader("Authorization") String token);
+    ResponseEntity<CustomerDTO> fetchAirline(@PathVariable String customerId, @RequestHeader("Authorization") String token);
     @GetMapping("/api/account/id")
     ResponseEntity<String> findAccountId(@RequestHeader("Authorization") String token);
     @GetMapping("/api/airline/{airlineId}")
@@ -28,5 +29,7 @@ public interface UserFeignClient {
     @GetMapping("/api/comment/global")
     ResponseEntity<List<CommentDTO>> fetchCommentsByText(@RequestParam String text);
     @GetMapping("/api/airline")
-    ResponseEntity<AirlineDTO> fetchCustomer(@RequestHeader("Authorization") String token);
+    ResponseEntity<AirlineDTO> fetchAirline(@RequestHeader("Authorization") String token);
+    @GetMapping("/api/customer")
+    ResponseEntity<CustomerDTO> fetchCustomer(@RequestHeader("Authorization") String token);
 }

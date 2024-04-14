@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Boarding Pass</title>
+		<style>
+			body {
+				box-sizing: border-box;
+				margin: 0;
+				font-family: 'IBM Plex Mono', monospace;
+				background-color: #0e1036;
+				height: 100vh;
+				display: flex;
+				align-items: center;
+			}
+			.boarding {
+				width: 400px;
+				margin: 0 auto;
+				background-color: #f0ebe4;
+				color: #0e1036;
+				padding: 20px;
+				border-radius: 10px;
+			}
+			.boarding__head {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.boarding__head h1 {
+				font-size: 24px;
+				font-weight: 500;
+			}
+			.boarding__content__label {
+				font-size: 15px;
+				font-weight: 500;
+				text-transform: uppercase;
+				color: #97a4ba;
+			}
+			.boarding__content__seat span:first-child {
+				font-size: 24px;
+			}
+			.boarding__content__seat span:last-child {
+				font-size: 36px;
+				font-weight: 600;
+			}
+			.boarding__content__name {
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+			.boarding__content__info {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 10px;
+			}
+			.boarding__content__info__item {
+				width: 50%;
+			}
+			.boarding__content__text {
+				font-weight: 600;
+				line-height: 19.5px;
+			}
+			.boarding__content__info__destination {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.boarding__content__info__destination__item {
+				width: 50%;
+				font-size: 16px;
+			}
+			.boarding__content__info__destination__item span:last-child {
+				font-size: 24px;
+				font-weight: 600;
+			}
+			.qr-code {
+				margin-top: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.qr-code__label {
+				width: 100%;
+				font-size: 15px;
+				font-weight: 500;
+				text-transform: uppercase;
+				color: #97a4ba;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="boarding">
+			<div class="boarding__head">
+				<h1>BOARDING PASS</h1>
+				<img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAeCAYAAABjTz27AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVbSURBVHgBzVgxUNxGFP0rHUHMYFCaxIZMLLqkCgScofPRke7oksrQuTOUqTg6d7506Xx0SQXu6DhmUmAD40uXDnkm49BlIc3hgDbvn6Q7SegLwRwzfjNw0u7f3f9X//39+xUJcN1p95KsmiI1jb/HRMYlUl5fwmi8+3jwDQV7FgXbWrf95Bxj7mwDY58JS2hFFzPZMUVw3W+XDVkvpX5FlSlFOYYEVHmmyKxCxKWbYRtKriWVHHfndvFTFeRbp/pwgUoAenmG7LeSTjBkQ+vDup1svOd+9wQdO9jVRYg4dHN8RWStDjsTdN55v8cNI86X+A2W8Zg3n5eULcKwM8nG3M/rM6Sa2Jg1fu4ZNObOrVtkGrc0JAVsSjVWtNP5S484E6/RvCzJoh9y731pPuj2Itzk3Bl8i+wVXoff7GjAKiZ+TgNEUlH+G3YefAql5vOlDWQ/f9XpnOhsD/MGsz2X11ELWr/5s/fOnIFvHhfwReOTvsKibRC/u2BAFgcIBAvzhAph/FN9NBW/gU9wG5oWhK/wqSxvMm088NG0IdqCAl5KHTI/W3SvrnVL503ouvNY8GKrQEleADt42ErIs1G5CkKHtTN92Ijfx93Z43RkTWEbG7CUbbT4n9YHbUX2QhSGI0XUypk+WpWMCcft+wiVPKkoE5CppeXNConobyhzWjZG8bpreT1WejE2imAcIfQeNKkEeBy+5KYskVZK66Nt/vKUq4zV5F/mDXSokzQjNoXXzeurUEY5/MzQDYHo2DakhMXp4VX5y7qhCg7rpKsqnz0l5I1aJwERb1ok6jIAXJDly73mCl9w8Oqsq4I/rfDX3i3gzV42CGQxEINug9DF1VpfEbNZgjfLdA0qVAIOopNNl67K2e1QmWD6NnvDPEW+x7kiwn/gKbLqkiwbL/EmiVyDRt25KnasFiWlHpzqmpzu9h864tPD63nzZptKIGUQG4LUgSeuUo/kiu4SzCccuF6Bq7WJ/mtSSfS2lv0XxhRlxneCkDfSwcy8sZeQ/TdcbDaVgIonLYr7fZh3wjTjJJz+2fQnCdedrcHVtkhUzlpiV8MX/IfvX4ou+f4kHuKMShj3C43ZC40dbUtZQ+Squ3QDROu+kPpj3oyGX4ZzR+ScFTa+8P5UCciuF7AkN18aBKAc3zy9/N7uIVvnJwSn5QSPq3wzSOZ7WViIZN9InejboDtAxJtqfq+KU7BIB3qc6sVX5WSaBHBQEDs5FaEBg12oiK9B19XC8yZ0N+VlZVDD2OJrT974gWQK0oGbBfPGJiMWOThp/TeRFFuJTD2zohe57BWwQWLU4AyBSgA7XivoTeRrrITyBDmfryuUUm6oUaBfjfmUbWSDfGEAfUIXUgmqhzDkK/HmitC7EcuRfMbpJG96jd18jzbkuWk9yycbd/2vpbs+Bsyj3xtyJk8/JIoY7L8V54t51Axeqn7xg/l2PzMefDj4BfKc6/1KsmI/IUTv5PWhHrFfUI9AQccsoh6xiXpEpztXdC0+pmvBhcX48ysv1YMyEv7/oVLnimqf6oOZqC4gXgmYN1lXyyKsewy9zZYI+nNQ4ywuY3H5p7gi01PQCYsVVwsWFu42ij7s4+kpdXetG3q/D+eeZN4Ic3MJavTHTsfvUAF490ecyT08/kA59b3QkyZOUTbb75axzjt/74w4D6a4kkM3BNce4C6tcNGJczQtgjdoe70f8eupPLaCVOb3kzLrwPVO4vnz5yJQ4LPfUkkCEkCk8rRO5Uzxw7t9+jrMSWTcNuY+akqjEY1aZesWSWCT6nKkNH5ObXveC+iiFoViziISLmbegS+oz5kmFzvoI8T/taAq3cwFH/YAAAAASUVORK5CYII=" alt="aX logo" />
+			</div>
+			<div class="boarding__content">
+				<div class="boarding__content__seat">
+					<span class="boarding__content__label">SEAT:</span>
+					<br />
+					<span>${seat}</span>
+				</div>
+				<div class="boarding__content__name">
+					<span class="boarding__content__label">NAME OF PASSENGER:</span>
+					<br />
+					<span class="boarding__content__text">${customer}</span>
+				</div>
+				<div class="boarding__content__info">
+					<div class="boarding__content__info__item">
+						<span class="boarding__content__label">FLIGHT:</span>
+						<span class="boarding__content__text">${flight}</span>
+					</div>
+					<div class="boarding__content__info__item">
+						<span class="boarding__content__label">GATE:</span>
+						<span class="boarding__content__text">${gate}</span>
+					</div>
+				</div>
+				<div class="boarding__content__info">
+					<div class="boarding__content__info__item">
+						<span class="boarding__content__label">TIME:</span>
+						<span class="boarding__content__text">${time}</span>
+					</div>
+					<div class="boarding__content__info__item">
+						<span class="boarding__content__label">DATE:</span>
+						<span class="boarding__content__text">${date}</span>
+					</div>
+				</div>
+				<div class="boarding__content__info__destination">
+					<div class="boarding__content__info__destination__item">
+						<span class="boarding__content__label">DESTINATION:</span>
+						<br />
+						<span class="boarding__content__text">${destination}</span>
+					</div>
+					<div class="boarding__content__info__destination__item">
+						<span class="boarding__content__label">ORIGIN:</span>
+						<br />
+						<span class="boarding__content__text">${origin}</span>
+					</div>
+				</div>
+			</div>
+			<div class="qr-code">
+				<p class="qr-code__label">BOARDING PASS QR CODE</p>
+				<img src="${qr}" alt="QR Code" /><br />
+			</div>
+		</div>
+	</body>
+</html>
