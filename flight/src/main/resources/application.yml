@@ -5,6 +5,17 @@ spring:
     active: "default"
   config:
     import: "optional:configserver:http://localhost:8071/"
+  cloud:
+    stream:
+      bindings:
+        sendHtmlMessage-out-0:
+          destination: send-html-message
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
 
 management:
   endpoints:

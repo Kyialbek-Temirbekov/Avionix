@@ -53,7 +53,7 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
   client:
-    image: "adpsorcerer/avionix-client:r1"
+    image: "adpsorcerer/avionix-client:r1.12a"
     container_name: client
     healthcheck:
       test: "curl --fail --silent localhost:8080/actuator/health/readiness | grep UP || exit 1"
@@ -72,7 +72,7 @@ services:
       service: microservice-eureka-config
 
   discovery:
-    image: "adpsorcerer/avionix-discovery:r1"
+    image: "adpsorcerer/avionix-discovery:r1.7a"
     container_name: discovery
     healthcheck:
       test: "curl --fail --silent localhost:9000/actuator/health/readiness | grep UP || exit 1"
@@ -90,7 +90,7 @@ services:
       service: microservice-eureka-config
 
   flight:
-    image: "adpsorcerer/avionix-flight:r1"
+    image: "adpsorcerer/avionix-flight:r1.15a"
     container_name: flight
     healthcheck:
       test: "curl --fail --silent localhost:8090/actuator/health/readiness | grep UP || exit 1"
@@ -101,14 +101,17 @@ services:
     depends_on:
       discovery:
         condition: service_healthy
+      rabbit:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "flight"
+      SPRING_RABBITMQ_HOST: "rabbit"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
 
   message:
-    image: "adpsorcerer/avionix-message:r1"
+    image: "adpsorcerer/avionix-message:r1.15a"
     container_name: message
     depends_on:
       rabbit:
@@ -122,7 +125,7 @@ services:
       service: microservice-configserver-config
 
   gatewayserver:
-    image: "adpsorcerer/avionix-gatewayserver:r1"
+    image: "adpsorcerer/avionix-gatewayserver:r1.f"
     container_name: gatewayserver
     ports:
       - "8072:8072"

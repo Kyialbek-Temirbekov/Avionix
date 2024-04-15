@@ -50,6 +50,14 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api -->
 		<dependency>
@@ -161,7 +169,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>adpsorcerer/avionix-${project.artifactId}:r1.8a</image>
+						<image>adpsorcerer/avionix-${project.artifactId}:r1.15a</image>
 					</to>
 				</configuration>
 			</plugin>

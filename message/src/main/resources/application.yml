@@ -7,11 +7,14 @@ spring:
     import: "optional:configserver:http://localhost:8071/"
   cloud:
     function:
-      definition: sendSimpleMailMessage
+      definition: sendSimpleMailMessage;sendHtmlMailMessage
     stream:
       bindings:
         sendSimpleMailMessage-in-0:
           destination: send-simple-message
+          group: ${spring.application.name}
+        sendHtmlMailMessage-in-0:
+          destination: send-html-message
           group: ${spring.application.name}
   rabbitmq:
     host: localhost

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: message
-        image: "adpsorcerer/avionix-message:r1"
+        image: "adpsorcerer/avionix-message:r1.15a"
         imagePullPolicy: Always
         ports:
         - containerPort: 9010

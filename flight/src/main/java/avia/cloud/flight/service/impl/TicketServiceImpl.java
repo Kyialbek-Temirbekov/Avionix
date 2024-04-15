@@ -1,9 +1,6 @@
 package avia.cloud.flight.service.impl;
 
-import avia.cloud.flight.dto.CustomerDTO;
-import avia.cloud.flight.dto.FlightDTO;
-import avia.cloud.flight.dto.TicketBookRequest;
-import avia.cloud.flight.dto.TicketDTO;
+import avia.cloud.flight.dto.*;
 import avia.cloud.flight.entity.Flight;
 import avia.cloud.flight.entity.Segment;
 import avia.cloud.flight.entity.Ticket;
@@ -16,12 +13,12 @@ import avia.cloud.flight.service.IFlightService;
 import avia.cloud.flight.service.ITicketService;
 import avia.cloud.flight.service.client.UserFeignClient;
 import avia.cloud.flight.util.ImageUtils;
+import avia.cloud.flight.util.Messenger;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Writer;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
-import com.itextpdf.html2pdf.ConverterProperties;
 import com.itextpdf.html2pdf.HtmlConverter;
 import com.stripe.exception.StripeException;
 import freemarker.template.Configuration;
@@ -30,6 +27,7 @@ import freemarker.template.TemplateException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 
@@ -37,7 +35,6 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -56,10 +53,49 @@ public class TicketServiceImpl implements ITicketService {
     private final FlightRepository flightRepository;
     private final TicketRepository ticketRepository;
     private final Configuration freemarkerConfig;
+    private final Messenger messenger;
+
     @Override
-    public Object bookTicket(TicketBookRequest ticketBookRequest, String token) throws StripeException, IOException, TemplateException, WriterException {
+    public HashMap<String, Object> bookTicket(TicketBookRequest ticketBookRequest, String token) throws StripeException, IOException, TemplateException, WriterException {
         String status = paymentService.charge(ticketBookRequest.getChargeRequest());
         HashMap<String,Object> ticketDetails = createTicket(ticketBookRequest,token);
+        sendTicketToEmail(ticketDetails);
+
+        HashMap<String, Object> response = new HashMap<>();
+        FlightDTO flight = flightService.convertToFlightDTO(((Ticket)ticketDetails.get("ticket")).getFlight(), "en");
+        Ticket ticket = (Ticket) ticketDetails.get("ticket");
+        response.put("paymentStatus", status);
+        response.put("ticket", new TicketDTO((CustomerDTO) ticketDetails.get("customer"), ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight));
+
+        return response;
+    }
+
+    @Override
+    public byte[] downloadTicket(String ticketId, String authToken) throws TemplateException, IOException, WriterException {
+        Ticket ticket = ticketRepository.findById(ticketId).orElseThrow(() ->
+                new NotFoundException("Ticket", "id", ticketId));
+        CustomerDTO customer = userFeignClient.fetchAirline(ticket.getCustomerId(), authToken).getBody();
+        HashMap<String,Object> ticketDetails = new HashMap<>();
+        ticketDetails.put("ticket", ticket);
+        ticketDetails.put("customer", customer);
+
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        HtmlConverter.convertToPdf(generateTemplate(ticketDetails),outputStream);
+        return outputStream.toByteArray();
+    }
+
+    @Async
+    protected void sendTicketToEmail(HashMap<String, Object> ticketDetails) throws TemplateException, IOException, WriterException {
+        CustomerDTO customer = (CustomerDTO) ticketDetails.get("customer");
+        String html = generateTemplate(ticketDetails);
+        messenger.sendAttachmentMessage(new SimpleMailMessageDTO(
+                customer.getAccount().getEmail(),
+                "Avionix avia ticket",
+                html
+        ));
+    }
+
+    private String generateTemplate(HashMap<String, Object> ticketDetails) throws IOException, WriterException, TemplateException {
         Ticket savedTicket = (Ticket)ticketDetails.get("ticket");
         CustomerDTO customer = (CustomerDTO) ticketDetails.get("customer");
         Flight flight = savedTicket.getFlight();
@@ -86,18 +122,7 @@ public class TicketServiceImpl implements ITicketService {
 
         Template template = freemarkerConfig.getTemplate("ticket.html");
         String html = FreeMarkerTemplateUtils.processTemplateIntoString(template,model);
-        System.out.println(html);
-        // create pdf ticket
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        ConverterProperties converterProperties = new ConverterProperties();
-        converterProperties.setCreateAcroForm(false);
-        HtmlConverter.convertToPdf(html,outputStream, converterProperties);
-        try (FileOutputStream fos = new FileOutputStream("/home/kyialbek/template.pdf")) {
-            fos.write(outputStream.toByteArray());
-        }
-        // send pdf to email
-        // send pdf as response
-        return "STATUS: " + status + "\nTICKET ID: " + savedTicket.getId();
+        return html;
     }
 
     private String generateQr(String id) throws WriterException, IOException {
