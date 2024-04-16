@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class TicketDTO {
+    private String id;
     private CustomerDTO customer;
     private String seat;
     private boolean checkedBaggageIncluded;

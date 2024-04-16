@@ -65,7 +65,7 @@ public class TicketServiceImpl implements ITicketService {
         FlightDTO flight = flightService.convertToFlightDTO(((Ticket)ticketDetails.get("ticket")).getFlight(), "en");
         Ticket ticket = (Ticket) ticketDetails.get("ticket");
         response.put("paymentStatus", status);
-        response.put("ticket", new TicketDTO((CustomerDTO) ticketDetails.get("customer"), ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight));
+        response.put("ticket", new TicketDTO(ticket.getId(), (CustomerDTO) ticketDetails.get("customer"), ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight));
 
         return response;
     }
@@ -152,7 +152,7 @@ public class TicketServiceImpl implements ITicketService {
                 new NotFoundException("Ticket", "id", ticketId));
         CustomerDTO customer = userFeignClient.fetchAirline(ticket.getCustomerId(), authToken).getBody();
         FlightDTO flight = flightService.convertToFlightDTO(ticket.getFlight(), lan);
-        return new TicketDTO(customer, ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight);
+        return new TicketDTO(ticket.getId(), customer, ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight);
     }
 
     @Override
@@ -175,7 +175,7 @@ public class TicketServiceImpl implements ITicketService {
         List<Ticket> tickets = ticketRepository.findAllByCustomerId(customerId);
         return tickets.stream().map(ticket -> {
             FlightDTO flight = flightService.convertToFlightDTO(ticket.getFlight(), lan);
-            return new TicketDTO(null, ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight);
+            return new TicketDTO(ticket.getId(), null, ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight);
         }).toList();
     }
 
