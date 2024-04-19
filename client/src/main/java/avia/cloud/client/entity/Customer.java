@@ -10,6 +10,8 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Customer {
     @Id
     private String baseId;
