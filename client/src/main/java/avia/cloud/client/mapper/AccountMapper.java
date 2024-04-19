@@ -11,7 +11,9 @@ import org.mapstruct.Named;
 
 @Mapper
 public interface AccountMapper {
-    @Mapping(source = "account", target = "account", qualifiedByName = "accountToAccountDTO")
+//    @Mapping(source = "account", target = "account", qualifiedByName = "accountToAccountDTO")
+    @Mapping(source = "account.image", target = "account.imageUrl", qualifiedByName = "encodeImage")
+    @Mapping(target = "account.phone", ignore = true)
     CustomerDTO customerToCustomerDTO(Customer customer);
     @Named("accountToAccountDTO")
     @Mapping(source = "image", target = "imageUrl", qualifiedByName = "encodeImage")

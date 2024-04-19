@@ -5,7 +5,6 @@ import avia.cloud.client.dto.CustomerDTO;
 import avia.cloud.client.entity.Account;
 import avia.cloud.client.entity.Customer;
 import avia.cloud.client.entity.enums.Gender;
-import avia.cloud.client.entity.enums.Role;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
 
