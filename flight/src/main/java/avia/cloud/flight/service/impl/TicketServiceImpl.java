@@ -20,12 +20,18 @@ import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 import com.itextpdf.html2pdf.HtmlConverter;
+import com.stripe.exception.CardException;
 import com.stripe.exception.StripeException;
+import com.stripe.model.PaymentLink;
+import com.stripe.model.Price;
+import com.stripe.param.PaymentLinkCreateParams;
+import com.stripe.param.PriceCreateParams;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -38,10 +44,10 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+
+import static avia.cloud.flight.util.CurrencyUtils.convertToSmallestUnit;
 
 @Service
 @Transactional
@@ -56,18 +62,27 @@ public class TicketServiceImpl implements ITicketService {
     private final Messenger messenger;
 
     @Override
+    public HashMap<String, Object> createPaymentLink(String flightId, boolean checkedBaggageIncluded) throws StripeException {
+        Flight flight = flightRepository.findById(flightId).orElseThrow( () ->
+                new NotFoundException("Flight", "id", flightId));
+        PaymentLink paymentLink = paymentService.createPaymentLink(flight, checkedBaggageIncluded);
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("paymentLink", paymentLink.getUrl());
+        result.put("paymentLinkId", paymentLink.getId());
+        return result;
+    }
+
+    @Override
     public HashMap<String, Object> bookTicket(TicketBookRequest ticketBookRequest, String token) throws StripeException, IOException, TemplateException, WriterException {
-        String status = paymentService.charge(ticketBookRequest.getChargeRequest());
         HashMap<String,Object> ticketDetails = createTicket(ticketBookRequest,token);
         sendTicketToEmail(ticketDetails);
 
-        HashMap<String, Object> response = new HashMap<>();
+        HashMap<String, Object> result = new HashMap<>();
         FlightDTO flight = flightService.convertToFlightDTO(((Ticket)ticketDetails.get("ticket")).getFlight(), "en");
         Ticket ticket = (Ticket) ticketDetails.get("ticket");
-        response.put("paymentStatus", status);
-        response.put("ticket", new TicketDTO(ticket.getId(), (CustomerDTO) ticketDetails.get("customer"), ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight));
-
-        return response;
+        result.put("ticket", new TicketDTO(ticket.getId(), (CustomerDTO) ticketDetails.get("customer"), ticket.getSeat(), ticket.isCheckedBaggageIncluded(), ticket.getStatus(), flight));
+        result.put("qr-code", generateQr(ticket.getId()));
+        return result;
     }
 
     @Override
@@ -159,7 +174,7 @@ public class TicketServiceImpl implements ITicketService {
     public void board(String ticketId) {
         Ticket ticket = ticketRepository.findById(ticketId).orElseThrow(() ->
                 new NotFoundException("Ticket", "id", ticketId));
-        if(ticket.getStatus().equals(TicketStatus.RESERVED)) {
+        if(ticket.getStatus().equals(TicketStatus.BOOKED)) {
             ticket.setStatus(TicketStatus.BOARDED);
             ticketRepository.save(ticket);
         } else if (ticket.getStatus().equals(TicketStatus.BOARDED)) {
@@ -187,8 +202,8 @@ public class TicketServiceImpl implements ITicketService {
                 .customerId(Objects.requireNonNull(customerResponseEntity.getBody()).getAccount().getId())
                 .seat(ticketBookRequest.getSeat())
                 .checkedBaggageIncluded(ticketBookRequest.isCheckedBaggageIncluded())
-                .price(ticketBookRequest.getChargeRequest().getAmount())
-                .status(TicketStatus.RESERVED)
+//                .price(ticketBookRequest.getChargeRequest().getAmount())
+                .status(TicketStatus.BOOKED)
                 .build();
         Ticket savedTicket = ticketRepository.save(ticket);
         HashMap<String,Object> ticketDetails = new HashMap<>();

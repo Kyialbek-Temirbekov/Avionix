@@ -135,7 +135,7 @@ public class DataLoader implements CommandLineRunner {
                 .seat("1A")
                 .checkedBaggageIncluded(true)
                 .price(100.0)
-                .status(TicketStatus.RESERVED)
+                .status(TicketStatus.BOOKED)
                 .build();
 
         Ticket ticket2 = Ticket.builder()
@@ -143,7 +143,7 @@ public class DataLoader implements CommandLineRunner {
                 .seat("3A")
                 .checkedBaggageIncluded(false)
                 .price(200.0)
-                .status(TicketStatus.RESERVED)
+                .status(TicketStatus.BOOKED)
                 .build();
 
         Ticket ticket3 = Ticket.builder()
@@ -151,7 +151,7 @@ public class DataLoader implements CommandLineRunner {
                 .seat("3B")
                 .checkedBaggageIncluded(true)
                 .price(150.0)
-                .status(TicketStatus.RESERVED)
+                .status(TicketStatus.BOOKED)
                 .build();
 
         Ticket ticket4 = Ticket.builder()
@@ -159,7 +159,7 @@ public class DataLoader implements CommandLineRunner {
                 .seat("5A")
                 .checkedBaggageIncluded(false)
                 .price(120.0)
-                .status(TicketStatus.RESERVED)
+                .status(TicketStatus.BOOKED)
                 .build();
 
         Ticket ticket5 = Ticket.builder()
@@ -167,7 +167,7 @@ public class DataLoader implements CommandLineRunner {
                 .seat("7A")
                 .checkedBaggageIncluded(true)
                 .price(250.0)
-                .status(TicketStatus.RESERVED)
+                .status(TicketStatus.BOOKED)
                 .build();
 
         Ticket ticket6 = Ticket.builder()
@@ -175,7 +175,7 @@ public class DataLoader implements CommandLineRunner {
                 .seat("8D")
                 .checkedBaggageIncluded(false)
                 .price(110.0)
-                .status(TicketStatus.RESERVED)
+                .status(TicketStatus.BOOKED)
                 .build();
 
         return Arrays.asList(ticket1, ticket2, ticket3, ticket4, ticket5, ticket6);

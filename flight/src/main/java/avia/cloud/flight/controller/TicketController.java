@@ -34,6 +34,10 @@ public class TicketController {
     public ResponseEntity<List<TicketDTO>> fetchCustomerTickets(@RequestHeader(name = "Authorization") String authToken, @RequestParam @SupportedLanguage String lan) {
         return ResponseEntity.status(HttpStatus.OK).body(iTicketService.fetchCustomerTickets(authToken, lan));
     }
+    @GetMapping("/paymentLink")
+    public ResponseEntity<HashMap<String, Object>> createPaymentLink(@RequestParam String flightId, @RequestParam boolean checkedBaggageIncluded) throws StripeException {
+        return ResponseEntity.status(HttpStatus.OK).body(iTicketService.createPaymentLink(flightId, checkedBaggageIncluded));
+    }
     @PostMapping("/book")
     public ResponseEntity<HashMap<String, Object>> bookTicket(@Valid @RequestBody TicketBookRequest ticketBookRequest, @RequestHeader("Authorization") String token) throws StripeException, TemplateException, IOException, WriterException {
         return ResponseEntity.status(HttpStatus.CREATED).body(iTicketService.bookTicket(ticketBookRequest,token));

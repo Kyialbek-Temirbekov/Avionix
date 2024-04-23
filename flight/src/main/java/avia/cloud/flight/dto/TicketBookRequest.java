@@ -18,6 +18,5 @@ public class TicketBookRequest {
     @NotNull
     private String seat;
     private boolean checkedBaggageIncluded;
-    @JsonProperty("charge")
-    private ChargeRequest chargeRequest;
+    private String paymentLinkId;
 }

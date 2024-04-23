@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public interface ITicketService {
+    HashMap<String, Object> createPaymentLink(String flightId, boolean checkedBaggageIncluded) throws StripeException;
     List<TicketDTO> fetchCustomerTickets(String token, String lan);
     HashMap<String, Object> bookTicket(TicketBookRequest ticketBookRequest, String token) throws StripeException, IOException, TemplateException, WriterException;
     TicketDTO fetchTicket(String ticketId, String authToken, String lan);
