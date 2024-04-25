@@ -12,14 +12,14 @@ import org.mapstruct.Named;
 @Mapper
 public interface AccountMapper {
 //    @Mapping(source = "account", target = "account", qualifiedByName = "accountToAccountDTO")
-    @Mapping(source = "account.image", target = "account.imageUrl", qualifiedByName = "encodeImage")
-    @Mapping(target = "account.phone", ignore = true)
-    CustomerDTO customerToCustomerDTO(Customer customer);
-    @Named("accountToAccountDTO")
-    @Mapping(source = "image", target = "imageUrl", qualifiedByName = "encodeImage")
-    AccountDTO accountToAccountDTO(Account account);
-    @Named("encodeImage")
-    default String encodeImage(byte[] imageBytes) {
-        return ImageUtils.getBase64Image(imageBytes).substring(0,30);
-    }
+////    @Mapping(source = "account.image", target = "account.imageUrl", qualifiedByName = "encodeImage")
+////    @Mapping(target = "account.phone", ignore = true)
+//    CustomerDTO customerToCustomerDTO(Customer customer);
+//    @Named("accountToAccountDTO")
+//    @Mapping(source = "image", target = "imageUrl", qualifiedByName = "encodeImage")
+//    AccountDTO accountToAccountDTO(Account account);
+//    @Named("encodeImage")
+//    default String encodeImage(byte[] imageBytes) {
+//        return ImageUtils.getBase64Image(imageBytes).substring(0,30);
+//    }
 }

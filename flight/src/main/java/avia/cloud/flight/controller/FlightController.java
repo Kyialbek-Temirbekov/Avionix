@@ -62,12 +62,12 @@ public class FlightController {
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
     @GetMapping()
-    public ResponseEntity<HashMap<String, Object>> searchFlights(@RequestParam String origin,
-                                                                 @RequestParam String destination,
-                                                                 @RequestParam boolean oneWay,
-                                                                 @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate departureDate,
-                                                                 @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate returnDate,
-                                                                 @RequestParam int adults,
+    public ResponseEntity<HashMap<String, Object>> searchFlights(@RequestParam(required = false) String origin,
+                                                                 @RequestParam(required = false) String destination,
+                                                                 @RequestParam(required = false) boolean oneWay,
+                                                                 @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate departureDate,
+                                                                 @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate returnDate,
+                                                                 @RequestParam(required = false) Integer adults,
                                                                  @RequestParam(defaultValue = "ECONOMY,PREMIUM_ECONOMY,BUSINESS,FIRST") List<Cabin> cabins,
                                                                  @RequestParam(required = false) Currency currency,
                                                                  @RequestParam(defaultValue = "0.0") @PositiveOrZero double minPrice,
@@ -81,7 +81,7 @@ public class FlightController {
                                                                  @RequestParam(defaultValue = "" + Long.MAX_VALUE) @PositiveOrZero long maxTransitDuration,
                                                                  @RequestParam(required = false) String airlineId,
                                                                  @RequestParam(defaultValue = "0") @PositiveOrZero int page,
-                                                                 @RequestParam(defaultValue = "8") @PositiveOrZero int pageSize,
+                                                                 @RequestParam(defaultValue = "20") @PositiveOrZero int pageSize,
                                                                  @RequestParam(defaultValue = "ASC")@Pattern(regexp = "(ASC|DESC)", message = "Invalid input. Allowed values: ASC, DESC") String direction,
                                                                  @RequestParam(defaultValue = "departureFlightDuration") @Pattern(regexp = "(departureFlightDuration|departureTransitDuration|tariff\\.price)", message = "Invalid input. Allowed values: departureFlightDuration, departureTransitDuration, tariff.price") String property,
                                                                  @RequestParam(defaultValue = "en") String lan,

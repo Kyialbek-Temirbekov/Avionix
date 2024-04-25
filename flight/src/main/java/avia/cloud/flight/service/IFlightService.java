@@ -18,7 +18,7 @@ public interface IFlightService {
     void updateStatus(String flightId, FlightStatus status);
     FlightDTO convertToFlightDTO(Flight flight, String lan);
     HashMap<String, Object> findPlaneSeatDetails(String flightId);
-    HashMap<String, Object> searchFlights(String origin, String destination, boolean oneWay, LocalDate departureDate, LocalDate returnDate, int adults, List<Cabin> cabins, Currency currency, double minPrice, double maxPrice, Integer stops, Boolean checkedBaggageIncluded, Boolean cabinBaggageIncluded, long minFlightDuration, long maxFlightDuration, long minTransitDuration, long maxTransitDuration, String airlineId, int page, int pageSize, String direction, String property, String lan, String url);
+    HashMap<String, Object> searchFlights(String origin, String destination, boolean oneWay, LocalDate departureDate, LocalDate returnDate, Integer adults, List<Cabin> cabins, Currency currency, double minPrice, double maxPrice, Integer stops, Boolean checkedBaggageIncluded, Boolean cabinBaggageIncluded, long minFlightDuration, long maxFlightDuration, long minTransitDuration, long maxTransitDuration, String airlineId, int page, int pageSize, String direction, String property, String lan, String url);
     HashMap<String,Object> fetchOwnerFlights(String token, String lan, int page, int pageSize,String url);
     List<FlightDTO> fetchFlights(String text, String lan);
     FlightDTO fetchFlight(String flightId, String lan);

@@ -83,7 +83,7 @@ public class FlightServiceImpl implements IFlightService {
     }
 
     @Override
-    public HashMap<String, Object> searchFlights(String origin, String destination, boolean oneWay, LocalDate departureDate, LocalDate returnDate, int adults, List<Cabin> cabins, Currency currency, double minPrice, double maxPrice, Integer stops, Boolean checkedBaggageIncluded, Boolean cabinBaggageIncluded, long minFlightDuration, long maxFlightDuration, long minTransitDuration, long maxTransitDuration, String airlineId, int page, int pageSize, String direction, String property, String lan, String url) {
+    public HashMap<String, Object> searchFlights(String origin, String destination, boolean oneWay, LocalDate departureDate, LocalDate returnDate, Integer adults, List<Cabin> cabins, Currency currency, double minPrice, double maxPrice, Integer stops, Boolean checkedBaggageIncluded, Boolean cabinBaggageIncluded, long minFlightDuration, long maxFlightDuration, long minTransitDuration, long maxTransitDuration, String airlineId, int page, int pageSize, String direction, String property, String lan, String url) {
         Pageable pageable = PageRequest.of(page, pageSize, Sort.by(Sort.Direction.fromString(direction),property));
         Page<Flight> flightPage = flightRepository.searchFlights(origin,destination,oneWay,departureDate, adults, cabins, currency, minPrice, maxPrice, stops, checkedBaggageIncluded, cabinBaggageIncluded, minFlightDuration, maxFlightDuration, minTransitDuration, maxTransitDuration, airlineId, pageable);
         List<FlightDTO> flights = flightPage.getContent().stream().map(flight -> convertToFlightDTO(flight,lan)).toList();
