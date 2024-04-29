@@ -19,7 +19,7 @@ public class JwtService {
         return new Authorization(
                 "JWT",
                 getToken(username,authorities,"ACCESS_TOKEN",3600000),
-                3600000,
+                604800000,
                 getToken(username,authorities,"REFRESH_TOKEN",604800000),
                 604800000,
                 authorities

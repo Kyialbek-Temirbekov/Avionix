@@ -44,9 +44,9 @@ public class AccountServiceImpl implements IAccountService {
     public Authorization confirmEmail(VerificationInfo verificationInfo) {
         Account user = accountRepository.findFirstByEmailOrderByCreatedAtDesc(verificationInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("User","email", verificationInfo.getEmail()));
-//        if(!user.getCode().equals(verificationInfo.getCode())) {
-//            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
-//        }
+        if(!user.getCode().equals(verificationInfo.getCode())) {
+            throw new BadCredentialsException("Invalid code: " + verificationInfo.getCode());
+        }
         user.setEnabled(true);
         user.setCode(null);
         accountRepository.save(user);

@@ -419,7 +419,7 @@
     "role": "GUEST",
     "target": "ticket",
     "create": false,
-    "read": false,
+    "read": true,
     "update": false,
     "delete": false
   },

@@ -156,7 +156,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>adpsorcerer/avionix-${project.artifactId}:r1.7a</image>
+						<image>adpsorcerer/avionix-${project.artifactId}:r1.29a</image>
 					</to>
 				</configuration>
 			</plugin>

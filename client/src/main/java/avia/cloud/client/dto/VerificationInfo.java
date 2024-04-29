@@ -11,6 +11,7 @@ import lombok.experimental.SuperBuilder;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @SuperBuilder(toBuilder = true)
 public class VerificationInfo {
     @NotNull
