@@ -103,9 +103,9 @@ public class AccountServiceImpl implements IAccountService {
     public void resetPassword(PasswordResetInfo passwordResetInfo) {
         Account account = accountRepository.findByEmailAndEnabledTrue(passwordResetInfo.getEmail())
                 .orElseThrow(() -> new NotFoundException("Account","email", passwordResetInfo.getEmail()));
-//        if(!account.getCode().equals(passwordResetInfo.getCode())) {
-//            throw new BadCredentialsException("Invalid code: " + passwordResetInfo.getCode());
-//        }
+        if(!account.getCode().equals(passwordResetInfo.getCode())) {
+            throw new BadCredentialsException("Invalid code: " + passwordResetInfo.getCode());
+        }
         account.setCode(null);
         account.setPassword(passwordEncoder.encode(passwordResetInfo.getPassword()));
         accountRepository.save(account);
