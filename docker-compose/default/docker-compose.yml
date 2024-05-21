@@ -53,7 +53,7 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
   client:
-    image: "adpsorcerer/avionix-client:r1.12a"
+    image: "adpsorcerer/avionix-client:r1.29a"
     container_name: client
     healthcheck:
       test: "curl --fail --silent localhost:8080/actuator/health/readiness | grep UP || exit 1"
@@ -90,7 +90,7 @@ services:
       service: microservice-eureka-config
 
   flight:
-    image: "adpsorcerer/avionix-flight:r1.15a"
+    image: "adpsorcerer/avionix-flight:r1.25a"
     container_name: flight
     healthcheck:
       test: "curl --fail --silent localhost:8090/actuator/health/readiness | grep UP || exit 1"
@@ -111,7 +111,7 @@ services:
       service: microservice-eureka-config
 
   message:
-    image: "adpsorcerer/avionix-message:r1.15a"
+    image: "adpsorcerer/avionix-message:r1.16a"
     container_name: message
     depends_on:
       rabbit:

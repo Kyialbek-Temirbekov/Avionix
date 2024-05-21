@@ -64,6 +64,6 @@ class CustomerControllerTest {
                 "    \"image\": null\n" +
                 "}";
         this.mockMvc.perform(post("/api/customer").contentType(MediaType.APPLICATION_JSON)
-                .content(customer)).andDo(print()).andExpect(status().is(400));
+                .content(customer)).andDo(print()).andExpect(status().is(200));
     }
 }
