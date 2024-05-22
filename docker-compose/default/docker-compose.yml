@@ -90,7 +90,7 @@ services:
       service: microservice-eureka-config
 
   flight:
-    image: "adpsorcerer/avionix-flight:r1.25a"
+    image: "adpsorcerer/avionix-flight:r1.22m"
     container_name: flight
     healthcheck:
       test: "curl --fail --silent localhost:8090/actuator/health/readiness | grep UP || exit 1"

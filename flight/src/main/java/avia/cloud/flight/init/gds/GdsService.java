@@ -151,8 +151,8 @@ public class GdsService extends RestTemplate {
             List<Flight> fetchedFlights = gdsService.fetchFlights(
                     originCode,
                     destinationCode,
-                    LocalDate.of(2024,4,20).toString(),
-                    LocalDate.of(2024,4,24).toString(),
+                    LocalDate.of(2024,6,3).toString(),
+                    LocalDate.of(2024,6,5).toString(),
                     1,
                     20,
                     cabin

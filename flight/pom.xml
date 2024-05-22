@@ -169,7 +169,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>adpsorcerer/avionix-${project.artifactId}:r1.25a</image>
+						<image>adpsorcerer/avionix-${project.artifactId}:r1.22m</image>
 					</to>
 				</configuration>
 			</plugin>
