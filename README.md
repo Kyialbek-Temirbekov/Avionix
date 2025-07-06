@@ -1,4 +1,3 @@
-Here's the README.md file for your project:
 
 # Online Flight Reservation Platform
 
@@ -51,5 +50,3 @@ To run the project:
 1. Start the Config Server and Eureka Server first
 2. Then start other microservices in any order
 3. The Gateway Server should be the entry point for all API requests
-
-Detailed setup instructions for each service can be found in their respective directories.
